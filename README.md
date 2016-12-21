@@ -1,7 +1,7 @@
 # wcag21
 WCAG 2.1 and support materials
 
-The issues on the wcag 2.1 repo are currently reserved for success criteria proposals for wcag 2.1. Discussion of changes for understanding documents and techniques should take place on the list or is the wcag 2.0 repo issues.
+The issues on the wcag 2.1 repo are currently reserved for success criteria proposals for wcag 2.1. Discussion of changes for understanding documents and techniques should take place on the list or in the wcag 2.0 repo issues.
 
 ## Adding Success Criteria
 
@@ -12,7 +12,7 @@ The issues on the wcag 2.1 repo are currently reserved for success criteria prop
 1. Open the guidelines/index.html file in an HTML-capable editor.
 1. Select the guideline into which you will add the SC, and add it after all the existing SC in the guideline, *regardless of the conformance level and expected number of the proposed SC*.
 1. Follow the [success criteria format](#user-content-success-criteria-format) below to create the SC content.
-1. Save the file and commit the change. In the comments, reference the issue number from which the proposal was developed starting with a hash, e.g., `#1`. 
+1. Save the file and commit the change. NOTE: It is important to also add a suitable 'commit message'. In the comments, reference the issue number from which the proposal was developed starting with a hash, e.g., `#1`. 
 1. Submit a [pull request](https://help.github.com/articles/using-pull-requests/) to make the proposal available for WG review.
 1. When ready, the editors will accept the pull request and then merge it into master. You can delete the branch in your fork after the pull request has been accepted.
 
