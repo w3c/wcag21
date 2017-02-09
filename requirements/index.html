@@ -277,6 +277,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     
     #respec-ui {
       position: fixed;
+      display: flex;
+      flex-direction: row-reverse;
       top: 20px;
       right: 20px;
       width: 202px;
@@ -294,22 +296,26 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     
     .respec-info-button {
       border: none;
+      opacity: .5;
       border-radius: 2em;
       margin-right: 1em;
       min-width: 3.5em;
     }
     
+    .respec-info-button:focus {
+      opacity: 1;
+      transition: opacity .2s;
+    }
+    
     #respec-pill:disabled {
-      margin: 10px auto;
       font-size: 2.8px;
-      position: relative;
       text-indent: -9999em;
       border-top: 1.1em solid rgba(40, 40, 40, 0.2);
       border-right: 1.1em solid rgba(40, 40, 40, 0.2);
       border-bottom: 1.1em solid rgba(40, 40, 40, 0.2);
       border-left: 1.1em solid #ffffff;
       transform: translateZ(0);
-      animation: respec-spin 1.1s infinite linear;
+      animation: respec-spin .5s infinite linear;
       box-shadow: none;
     }
     
@@ -332,18 +338,28 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     #respec-pill:hover,
     #respec-pill:focus {
       color: rgb(0, 0, 0);
-      transition: color .2s
+      background-color: rgb(245, 245, 245);
+      transition: color .2s;
     }
     
     #respec-menu {
+      position: absolute;
+      margin: 0;
+      padding: 0;
       font-family: sans-serif;
       background: #fff;
       box-shadow: 1px 1px 8px 0 rgba(100, 100, 100, .5);
       width: 200px;
       display: none;
       text-align: left;
-      margin-top: 5px;
+      margin-top: 32px;
       font-size: .8em;
+    }
+    
+    #respec-menu li {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
     }
     
     .respec-save-button {
@@ -367,12 +383,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       outline-style: none;
     }
     
-    #respec-ui button.respec-pill-error {
+    #respec-pill-error {
       background-color: red;
       color: white;
     }
     
-    #respec-ui button.respec-pill-warning {
+    #respec-pill-warning {
       background-color: orange;
       color: white;
     }
@@ -386,7 +402,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       padding: 1.2em 1.2em;
     }
     
-    #respec-menu button.respec-option:hover {
+    #respec-menu button.respec-option:hover,
+    #respec-menu button:focus {
       background-color: #eeeeee;
     }
     
@@ -397,6 +414,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     #respec-ui button.respec-option:last-child {
       border: none;
       border-radius: inherit;
+    }
+    
+    .respec-offending-element {
+      display: inline-block;
+      position: relative;
+      background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x;
     }
     
     @media print {
@@ -412,10 +435,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <!--<link href="../common/css/common.css" rel="stylesheet" type="text/css"/>-->
   <!--<script src="../common/biblio.js" class="remove"></script>-->
 
-  <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
+  <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <link rel="canonical" href="https://www.w3.org/TR/wcag-1.1-requirements/">
-  <meta name="generator" content="ReSpec 7.1.0">
+  <meta name="generator" content="ReSpec 10.0.0">
   <script id="initialUserConfig" type="application/json">
     {
       "trace": true,
@@ -454,17 +477,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       "wgURI": "http://www.w3.org/WAI/GL/",
       "wgPublicList": "public-comments-wcag20",
       "wgPatentURI": "http://www.w3.org/2004/01/pp-impl/35422/status",
-      "maxTocLevel": 4
+      "maxTocLevel": 4,
+      "publishDate": "2017-02-09"
     }
   </script>
 </head>
-<body class="h-entry toc-inline" role="document" id="respecDocument">
+<body aria-busy="false" class="h-entry toc-inline" role="document" id="respecDocument">
   <div class="head" role="contentinfo" id="respecHeader">
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
     <h1 class="title p-name" id="title" property="dcterms:title">Requirements for Web Content Accessibility Guidelines 2.1</h1>
-    <h2 id="w3c-editor-s-draft-21-december-2016"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2016-12-21">21 December 2016</time></h2>
+    <h2 id="w3c-editor-s-draft-09-february-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-02-09">09 February 2017</time></h2>
     <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="http://w3c.github.io/wcag21/requirements/">http://w3c.github.io/wcag21/requirements/</a></dd>
@@ -485,7 +509,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
     </dl>
     <p class="copyright">
-      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016
+      <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2016-2017
 
       <a href="https://www.w3.org/"><abbr title="World Wide Web Consortium">W3C</abbr></a><sup>®</sup> (<a href="https://www.csail.mit.edu/"><abbr title="Massachusetts Institute of Technology">MIT</abbr></a>,
       <a href="https://www.ercim.eu/"><abbr title="European Research Consortium for Informatics and Mathematics">ERCIM</abbr></a>,
