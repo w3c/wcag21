@@ -775,15 +775,31 @@
 					<p>Components that have the <a>same functionality</a> within a <a>set of Web pages</a> are identified consistently.</p>
 				</section>
 
-				<section class="sc">
-					<h4>Change on Request</h4>
+				
+</section>
+      	<section class="sc">
+					<h4>Accidental Activation</h4>
 					<p class="conformance-level">AAA</p>
 					<p class="change">Unchanged</p>
 					<p><a>Changes of context</a> are initiated only by user request or a <a>mechanism</a> is available to turn off such changes.</p>
 				</section>
+      
+      <section class="sc">
+					<h4>Accidental Activation</h4>
+					<p class="conformance-level">A</p>
+					<p class="change">Unchanged</p>
+          <p>For single pointer activation, at least one of the following is true:</p>
+<ul><li>Activation is on the up-event, either explicitly or implicitly as a platform's generic activation/click event;</li>
+<li>A mechanism is available that allows the user to choose the up-event as an option;</li>
+<li>Confirmation is provided, which can dismiss activation;</li>
+<li>Activation is reversible;</li>
+<li>Timing of activation is essential and waiting for the up-event would invalidate the activity.</li></ul>
+<p>Note: This success criteria applies when platform assistive technology (e.g. screen reader) that remaps touch gestures is not turned on - see proposed SC Touch with Assistive Technology.</p>
+  </section>
 			</section>
 
 			<section class="guideline">
+        <section class="sc">
 				<h3>Input Assistance</h3>
 				<p>Help users avoid and correct mistakes.</p>
 
