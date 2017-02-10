@@ -1528,6 +1528,91 @@
 				</dd>
 			</dl>
 		</section>
+    
+    <section class="sc">
+        <h4>Familiar Design (Minimum)</h4>
+        <p class="conformance-level">A</p>
+        <p class="change">New</p>
+        <p><strong>Familiar design (Minimum):</strong> <a>Help</a>, navigation to help and search forms are easily identifiable and available to the user in one or more of the following ways:
+        <oL>
+            <li><strong>Platform specific:</strong> A platform specific user interface design.</li>
+            <li>An adaptive user interface design that can be personalized.</li>
+            <li><strong>User interface from a prior version:</strong> A user interface design that was used successfully by users in a prior version of the application.</li>
+        </oL>
+        <p><strong>Exception:</strong> The style is an essential part of the main function of the site, such as for a game.</p>
+        <section>
+            <h4>Related Glossary Additions or Changes</h4>
+                <dt><dfn>help</dfn></dt>
+                <dd>A mechanism provided to give a user access to help content, a support page or a support function </dd>    
+        </section>
+        <section>
+            <h4>What Principle and Guideline the SC falls within.</h4>
+            <p>Principle 3, Guideline 3.2: Predictable</p>
+        </section>
+        <section>
+            <h4>Description and Benefits</h4>
+            <p>Many people cannot easily learn new design metaphors or remember things which they have learned for example, people with Mild Cognitive Impairment (MCI) or dementia. Without these skills it can be much harder or impossible to:</p>
+            <ul>
+                <li>Locate desired items to interact with and</li>
+                <li>Know what the interaction may do.</li>
+                <li>However at a minimum level (Conformance level A) as many users as possible should be able to reach help and a search mechanism.</li>
+            </ul>
+            <p>
+            Using a familiar design, terms and symbols is key to being able to use the Web for people who cannot remember new symbols for example, people with memory related impairments like dementia. Therefore, this success criteria addresses the user need for things to be familiar including:</p>
+            <ul>
+                <li>Location of elements</li>
+                <li>Symbols</li>
+            </ul>
+            <p>When an author is creating a platform specific UI, the look and feel of these features should appear and operate in a manner which is consistent with the platform or be capable of being personalized. The only exception would be a design that has been proven through user testing to be intuitive and easy to use even though it departs from that of the platform.</p>
+            <p>COGA is also working on standardizing the relevant semantics and personalization settings to support alternative implementations.</p>
+        </section>
+    </section>
+    <section>
+        <h4>Related Resources</h4>
+        <p>Resources are for information purposes only. No endorsement is intended or implied.</p>
+        <ul>
+            <li><a href="https://w3c.github.io/wcag/coga/user-research.html">COGA User Research</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/">COGA Gap Analysis</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">User needs Table: 6, 7, 8 and 9</a></li>
+            <li><a href="https://w3c.github.io/wcag/coga/user-research.html">COGA Background research document</a></li>
+            <li><a href="https://w3c.github.io/personalization-semantics/">Semantics for adaptive interfaces</a></li>
+            <li><a href="https://developer.apple.com/ios/human-interface-guidelines/visual-design/layout/">Xcode - Interface Builder</a></li>
+            <li><a href="https://developer.android.com/guide/practices/ui_guidelines/index.html">Android User Interface Guidelines</a></li>
+            <li><a href="https://www.nngroup.com/articles/the-need-for-web-design-standards/">Nielsen Norman Group - The Need for Web Design Standards</a></li>
+            <li><a href="https://w3c.github.io/wcag/coga/user-research.html">Background research document - 3.7.6.1 Consistency</a>a></li>
+
+        </ul>
+    </section>    
+    <section>
+        <h4>Testability</h4>
+        <h5>Test procedure</h5>
+        <p>Identify any help, navigation to help and search forms . Where item 1, 2 or 3 can be applied, confirm that either; and present tense and active voice have not been used, then the content fails this success criterion.</p>
+        <ol>
+            <li>The icons and navigation conform to a standard identified in a WCAG technique or in the UI standard of the native platform</li>
+            <li>Semantics are used to enable personalization</li>
+            <li>A roll back option to the previous interface that has been in use by the user is available (in this case the roll back must be to a user interface that has been previously widely used)</li>
+        </ol>
+    </section>
+    <section>
+        <h4>Techniques</h4>
+        <p>The more predictable your content is the easier it is to know how to use it.</p>
+        <ul>
+            <li>Using standard Web layout design, so it is easy to find the help and search. In 2015 for English sites this includes:</li>
+                <ul>
+            <li>The location of the search box is in the top right hand corner</li>
+            <li>A question mark as the graphical symbol for help, etc</li>
+            <li>Using COGA semantics such that search and help components and icons are programmatic determinable and that their positions can be standardized via personalization</li>
+                </ul>
+            <p>Following the standard user interface guidelines for a specific platform. See also:</p>
+            <li>Using concrete wording; or</li>
+            <ul>
+                <li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-bars/navigation-bars/">iOS UI Bars</a></li>
+                <li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-views/action-sheets/">iOS UI Views</a></li>
+                <li><a href="https://developer.apple.com/ios/human-interface-guidelines/ui-controls/buttons/">iOS UI Controls</a></li>
+            </ul>
+            <p>Follow the standard user interface guidelines for a specific platform.</p>
+        </ul>
+    </section>
 
 		<section class="appendix" id="acknowledgments">
 			<h1>Acknowledgments</h1>
