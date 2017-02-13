@@ -431,6 +431,22 @@
 						</dd>
 					</dl>
 				</section>
+        
+				<section class="sc">
+					<h4>User Interface Component Contrast (Minimum)</h4>
+					<p class="conformance-level">AA</p>
+					<p class="change">New</p>
+          <p>The visual presentation of </p>
+					<ol>
+  						<li><a href="https://www.w3.org/TR/WCAG20/#essentialdef">essential</a> graphical objects for user interface component(s) or a border line thereof, and</li>
+  						<li>the focus and selection indicator(s) of user interface component(s),</li>
+					</ol>
+					<p> has a contrast ratio of at least 4.5:1 against the immediate surrounding color(s), except for the situations listed below:</p>
+					<ol>
+ 						 <li><strong>Thicker:</strong> A contrast ratio of 3:1 is required where the minimum width and height are at least 3 CSS pixels, for either the graphical object or (one of) their border line(s).</li>
+  						<li><strong>Inactive:</strong> Disabled or otherwise inactive user interface components are exempt from this requirement. In all other states (including when the page is scrolled) the contrast requirement is applicable.</li>
+					</ol>            
+				</section>
 
 				<section class="sc">
 					<h4>Contrast (Enhanced)</h4>
@@ -1211,12 +1227,17 @@
 					<p>In Japanese, the phrase "さじを投げる" literally translates into "he throws a spoon," but it means that there is nothing he can do and finally he gives up.</p>
 					<p>In Dutch, "Hij ging met de kippen op stok" literally translates into "He went to roost with the chickens," but it means that he went to bed early.</p>
 				</dd>
-				<dt><dfn>image of text</dfn></dt>
+        <dt><dfn>image of text</dfn></dt>
 				<dd>
 					<p>text that has been rendered in a non-text form (e.g., an image) in order to achieve a particular visual effect</p>
 					<p>This does not include <a>text</a> that is part of a picture that contains significant other visual content.</p>
 					<p>A person's name on a nametag in a photograph.</p>
 				</dd>
+        <dt><dfn>immediate surrounding color(s)</dfn></dt>
+				<dd>
+					<p>the color(s) adjacent to the entire length of the outer perimeter of the element</p>
+				</dd>
+        
 				<dt><dfn>informative</dfn></dt>
 				<dd>
 					<p>for information purposes and not required for conformance</p>
