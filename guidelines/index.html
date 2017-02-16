@@ -393,8 +393,88 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: white;
     }
     
+    .respec-warning-list,
+    .respec-error-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: sans-serif;
+      background-color: rgb(255, 251, 230);
+      font-size: .9em;
+    }
+    
+    .respec-warning-list li,
+    .respec-error-list li {
+      padding: 0.4em 0.7em;
+    }
+    
+    .respec-warning-list li::before {
+      content: "⚠️";
+      padding-right: .5em;
+    }
+    
+    .respec-warning-list li {
+      color: rgb(92, 59, 0);
+      border-bottom: thin solid rgb(255, 245, 194);
+    }
+    
+    .respec-error-list,
+    .respec-error-list li {
+      background-color: rgb(255, 240, 240);
+    }
+    
+    .respec-error-list li::before {
+      content: "💥";
+      padding-right: .5em;
+    }
+    
+    .respec-error-list li {
+      padding: 0.4em 0.7em;
+      color: rgb(92, 59, 0);
+      border-bottom: thin solid rgb(255, 215, 215);
+    }
+    
+    #respec-overlay {
+      display: block;
+      opacity: 0;
+      position: fixed;
+      zIndex: 10000;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background: #000;
+    }
+    
+    .respec-modal {
+      display: block;
+      position: fixed;
+      opacity: 0;
+      z-index: 11000;
+      margin: auto;
+      top: 10%;
+      background: #fff;
+      border: 5px solid #666;
+      min-width: 20%;
+      width: 70%;
+      padding: 0;
+      max-height: 80%;
+      overflow-y: auto;
+      margin: 0 -.5cm
+    }
+    
+    .respec-modal h3 {
+      margin: 0;
+      padding: .2em;
+      text-align: center;
+      color: black;
+      background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
+      font-size: 1em;
+    }
+    
     #respec-menu button.respec-option {
       background: white;
+      padding: 0 .2cm;
       border: none;
       width: 100%;
       text-align: left;
@@ -438,7 +518,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
   <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <link rel="canonical" href="https://www.w3.org/TR/WCAG21/">
-  <meta name="generator" content="ReSpec 10.1.7">
+  <meta name="generator" content="ReSpec 10.1.9">
   <script id="initialUserConfig" type="application/json">
     {
       "trace": true,
@@ -524,7 +604,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           "title": "International Standard Classification of Education"
         }
       },
-      "publishDate": "2017-02-14"
+      "publishDate": "2017-02-16"
     }
   </script>
 </head>
@@ -534,7 +614,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
     <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.0</h1>
-    <h2 id="w3c-editor-s-draft-14-february-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-02-14">14 February 2017</time></h2>
+    <h2 id="w3c-editor-s-draft-16-february-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-02-16">16 February 2017</time></h2>
     <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="https://w3c.github.io/wcag21/guidelines/">https://w3c.github.io/wcag21/guidelines/</a></dd>
@@ -882,7 +962,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>All <a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn">non-text content</a> that is presented to the user has a <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn">text alternative</a> that serves the equivalent purpose, except for the situations listed below.</p>
         <dl>
           <dt>Controls, Input</dt>
@@ -928,7 +1007,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>For <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn">audio-only</a> and prerecorded <a href="#dfn-video-only" class="internalDFN" data-link-type="dfn">video-only</a> media, the following are true, except when the audio or video is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn">media alternative for text</a> and is clearly labeled as such:</p>
         <dl>
           <dt>Prerecorded Audio-only</dt>
@@ -948,7 +1026,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-captions" class="internalDFN" data-link-type="dfn">Captions</a> are provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>, except when the media is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn">media alternative for text</a> and is clearly labeled as such.</p>
       </section>
 
@@ -958,7 +1035,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn">alternative for time-based media</a> or <a href="#dfn-audio-description" class="internalDFN" data-link-type="dfn">audio description</a> of the <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> content is provided for <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>, except when the media is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn">media alternative for text</a> and is clearly labeled as such.</p>
       </section>
 
@@ -968,7 +1044,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-captions" class="internalDFN" data-link-type="dfn">Captions</a> are provided for all <a href="#dfn-live" class="internalDFN" data-link-type="dfn">live</a> <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>.</p>
       </section>
 
@@ -978,7 +1053,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-audio-description" class="internalDFN" data-link-type="dfn">Audio description</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>.</p>
       </section>
 
@@ -988,7 +1062,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-sign-language-interpretation" class="internalDFN" data-link-type="dfn">Sign language interpretation</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>.</p>
       </section>
 
@@ -998,7 +1071,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>Where pauses in foreground audio are insufficient to allow <a href="#dfn-audio-description" class="internalDFN" data-link-type="dfn">audio descriptions</a> to convey the sense of the video, <a href="#dfn-extended-audio-description" class="internalDFN" data-link-type="dfn">extended audio description</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> content in <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a>.</p>
       </section>
 
@@ -1008,7 +1080,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn">alternative for time-based media</a> is provided for all <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a> and for all prerecorded <a href="#dfn-video-only" class="internalDFN" data-link-type="dfn">video-only</a> media.</p>
       </section>
 
@@ -1018,7 +1089,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>An <a href="#dfn-alternative-for-time-based-media" class="internalDFN" data-link-type="dfn">alternative for time-based media</a> that presents equivalent information for <a href="#dfn-live" class="internalDFN" data-link-type="dfn">live</a> <a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn">audio-only</a> content is provided.</p>
       </section>
     </section>
@@ -1036,7 +1106,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>Information, <a href="#dfn-structure" class="internalDFN" data-link-type="dfn">structure</a>, and <a href="#dfn-relationships" class="internalDFN" data-link-type="dfn">relationships</a> conveyed through <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn">presentation</a> can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a> or are available in text.</p>
       </section>
 
@@ -1046,7 +1115,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>When the sequence in which content is presented affects its meaning, a <a href="#dfn-correct-reading-sequence" class="internalDFN" data-link-type="dfn">correct reading sequence</a> can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>.</p>
       </section>
 
@@ -1056,7 +1124,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>Instructions provided for understanding and operating content do not rely solely on sensory characteristics of components such as shape, size, visual location, orientation, or sound.</p>
       </section>
     </section>
@@ -1074,7 +1141,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>Color is not used as the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element.</p>
       </section>
 
@@ -1084,7 +1150,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>If any audio on a Web page plays automatically for more than 3 seconds, either a <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to pause or stop the audio, or a mechanism is available to control audio volume independently from the overall system volume level.</p>
       </section>
 
@@ -1094,7 +1159,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>The visual presentation of <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> and <a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">images of text</a> has a <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn">contrast ratio</a> of at least 4.5:1, except for the following:</p>
         <dl>
           <dt>Large Text</dt>
@@ -1118,7 +1182,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>Except for <a href="#dfn-captions" class="internalDFN" data-link-type="dfn">captions</a> and <a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">images of text</a>, <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> can be resized without <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technology</a> up to 200 percent without loss of content or functionality.</p>
       </section>
 
@@ -1128,7 +1191,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>If the technologies being used can achieve the visual presentation, <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> is used to convey information rather than <a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">images of text</a> except for the following:</p>
         <dl>
           <dt>Customizable</dt>
@@ -1148,7 +1210,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>The visual presentation of <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> and <a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">images of text</a> has a <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn">contrast ratio</a> of at least 7:1, except for the following:</p>
         <dl>
           <dt>Large Text</dt>
@@ -1172,7 +1233,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>For <a href="#dfn-prerecorded" class="internalDFN" data-link-type="dfn">prerecorded</a> <a href="#dfn-audio-only" class="internalDFN" data-link-type="dfn">audio-only</a> content that (1) contains primarily speech in the foreground, (2) is not an audio <a href="#dfn-captcha" class="internalDFN" data-link-type="dfn">CAPTCHA</a> or audio logo, and (3) is not vocalization intended to be primarily musical expression such as singing or rapping, at least one of the following is true:</p>
         <dl>
           <dt>No Background</dt>
@@ -1197,7 +1257,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>For the visual presentation of <a href="#dfn-blocks-of-text" class="internalDFN" data-link-type="dfn">blocks of text</a>, a <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to achieve the following:</p>
       </section>
 
@@ -1207,7 +1266,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">Images of text</a> are only used for <a href="#dfn-pure-decoration" class="internalDFN" data-link-type="dfn">pure decoration</a> or where a particular presentation of <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> to the information being conveyed.</p>
       </section>
     </section>
@@ -1234,7 +1292,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a> without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.</p>
       </section>
 
@@ -1244,7 +1301,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>If keyboard focus can be moved to a component of the page using a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.</p>
       </section>
 
@@ -1254,7 +1310,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a> without requiring specific timings for individual keystrokes.</p>
       </section>
     </section>
@@ -1272,7 +1327,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>For each time limit that is set by the content, at least one of the following is true:</p>
         <dl>
           <dt>Turn off</dt>
@@ -1308,7 +1362,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>For moving, <a href="#dfn-blinking" class="internalDFN" data-link-type="dfn">blinking</a>, scrolling, or auto-updating information, all of the following are true:</p>
         <dl>
           <dt>Moving, blinking, scrolling</dt>
@@ -1328,7 +1381,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>Timing is not an <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> part of the event or activity presented by the content, except for non-interactive <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a> and <a href="#dfn-real-time-event" class="internalDFN" data-link-type="dfn">real-time events</a>.</p>
       </section>
 
@@ -1338,7 +1390,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>Interruptions can be postponed or suppressed by the user, except interruptions involving an <a href="#dfn-emergency" class="internalDFN" data-link-type="dfn">emergency</a>.</p>
       </section>
 
@@ -1348,7 +1399,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>When an authenticated session expires, the user can continue the activity without loss of data after re-authenticating.</p>
       </section>
     </section>
@@ -1366,7 +1416,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> do not contain anything that flashes more than three times in any one second period, or the <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn">general flash and red flash thresholds</a>.</p>
       </section>
 
@@ -1376,7 +1425,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> do not contain anything that <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flashes</a> more than three times in any one second period.</p>
       </section>
     </section>
@@ -1394,7 +1442,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to bypass blocks of content that are repeated on multiple <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a>.</p>
       </section>
 
@@ -1404,7 +1451,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> have titles that describe topic or purpose.</p>
       </section>
 
@@ -1414,7 +1460,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>If a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> can be <a href="#dfn-navigated-sequentially" class="internalDFN" data-link-type="dfn">navigated sequentially</a> and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.</p>
       </section>
 
@@ -1424,7 +1469,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>The <a href="#dfn-link-purpose" class="internalDFN" data-link-type="dfn">purpose of each link</a> can be determined from the link text alone or from the link text together with its <a href="#dfn-programmatically-determined-link-context" class="internalDFN" data-link-type="dfn">programmatically determined link context</a>, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general" class="internalDFN" data-link-type="dfn">ambiguous to users in general</a>.</p>
       </section>
 
@@ -1434,7 +1478,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>More than one way is available to locate a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> except where the Web Page is the result of, or a step in, a <a href="#dfn-process" class="internalDFN" data-link-type="dfn">process</a>.</p>
       </section>
 
@@ -1444,7 +1487,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>Headings and <a href="#dfn-label" class="internalDFN" data-link-type="dfn">labels</a> describe topic or purpose.</p>
       </section>
 
@@ -1454,7 +1496,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>Any keyboard operable user interface has a mode of operation where the keyboard focus indicator is visible.</p>
       </section>
 
@@ -1464,7 +1505,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>Information about the user's location within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> is available.</p>
       </section>
 
@@ -1474,7 +1514,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general" class="internalDFN" data-link-type="dfn">ambiguous to users in general</a>.</p>
       </section>
 
@@ -1484,7 +1523,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-section" class="internalDFN" data-link-type="dfn">Section</a> headings are used to organize the content.</p>
       </section>
     </section>
@@ -1511,7 +1549,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>The default <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language</a> of each <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>.</p>
       </section>
 
@@ -1521,7 +1558,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>The <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language</a> of each passage or phrase in the content can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a> except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.</p>
       </section>
 
@@ -1531,7 +1567,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available for identifying specific definitions of words or phrases <a href="#dfn-used-in-an-unusual-or-restricted-way" class="internalDFN" data-link-type="dfn">used in an unusual or restricted way</a>, including <a href="#dfn-idiom" class="internalDFN" data-link-type="dfn">idioms</a> and <a href="#dfn-jargon" class="internalDFN" data-link-type="dfn">jargon</a>.</p>
       </section>
 
@@ -1541,7 +1576,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> for identifying the expanded form or meaning of <a href="#dfn-abbreviation" class="internalDFN" data-link-type="dfn">abbreviations</a> is available.</p>
       </section>
 
@@ -1551,7 +1585,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>When text requires reading ability more advanced than the <a href="#dfn-lower-secondary-education-level" class="internalDFN" data-link-type="dfn">lower secondary education level</a> after removal of proper names and titles, <a href="#dfn-supplemental-content" class="internalDFN" data-link-type="dfn">supplemental content</a>, or a version that does not require reading ability more advanced than the lower secondary education level, is available.</p>
       </section>
 
@@ -1561,7 +1594,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.</p>
       </section>
     </section>
@@ -1579,7 +1611,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>When any <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface component</a> receives focus, it does not initiate a <a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">change of context</a>.</p>
       </section>
 
@@ -1589,7 +1620,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>Changing the setting of any <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface component</a> does not automatically cause a <a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">change of context</a> unless the user has been advised of the behavior before using the component.</p>
       </section>
 
@@ -1599,7 +1629,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>Navigational mechanisms that are repeated on multiple <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> occur in the <a href="#dfn-same-relative-order" class="internalDFN" data-link-type="dfn">same relative order</a> each time they are repeated, unless a change is initiated by the user.</p>
       </section>
 
@@ -1609,7 +1638,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>Components that have the <a href="#dfn-same-functionality" class="internalDFN" data-link-type="dfn">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified consistently.</p>
       </section>
 
@@ -1619,7 +1647,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">Changes of context</a> are initiated only by user request or a <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to turn off such changes.</p>
       </section>
     </section>
@@ -1637,7 +1664,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn">input error</a> is automatically detected, the item that is in error is identified and the error is described to the user in text.</p>
       </section>
 
@@ -1647,7 +1673,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-label" class="internalDFN" data-link-type="dfn">Labels</a> or instructions are provided when content requires user input.</p>
       </section>
 
@@ -1657,7 +1682,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn">input error</a> is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.</p>
       </section>
 
@@ -1667,7 +1691,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AA</p>
-        <p class="change">Unchanged</p>
         <p>For <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that cause <a href="#dfn-legal-commitments" class="internalDFN" data-link-type="dfn">legal commitments</a> or financial transactions for the user to occur, that modify or delete <a href="#dfn-user-controllable" class="internalDFN" data-link-type="dfn">user-controllable</a> data in data storage systems, or that submit user test responses, at least one of the following is true:</p>
       </section>
 
@@ -1677,7 +1700,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p><a href="#dfn-context-sensitive-help" class="internalDFN" data-link-type="dfn">Context-sensitive help</a> is available.</p>
       </section>
 
@@ -1687,7 +1709,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">AAA</p>
-        <p class="change">Unchanged</p>
         <p>For <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that require the user to submit information, at least one of the following is true:</p>
       </section>
     </section>
@@ -1714,7 +1735,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>In content implemented using markup languages, elements have complete start and end tags, elements are nested according to their specifications, elements do not contain duplicate attributes, and any IDs are unique, except where the specifications allow these features.</p>
       </section>
 
@@ -1724,7 +1744,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </span>
         </h4>
         <p class="conformance-level">A</p>
-        <p class="change">Unchanged</p>
         <p>For all <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface components</a> (including but not limited to: form elements, links and components generated by scripts), the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> and <a href="#dfn-role" class="internalDFN" data-link-type="dfn">role</a> can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>; states, properties, and values that can be set by the user can be <a href="#dfn-programmatically-set" class="internalDFN" data-link-type="dfn">programmatically set</a>; and notification of changes to these items is available to <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>.</p>
       </section>
     </section>
@@ -2551,7 +2570,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </span>
       </h3>
       <dl class="bibliography" resource=""><dt id="bib-RFC2119">[RFC2119]</dt>
-        <dd>S. Bradner. IETF. <a href="https://tools.ietf.org/html/rfc2119" property="dc:requires"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119" property="dc:requires">https://tools.ietf.org/html/rfc2119</a>
+        <dd><a href="https://tools.ietf.org/html/rfc2119" property="dc:requires"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner. IETF. March 1997. Best Current Practice. URL: <a href="https://tools.ietf.org/html/rfc2119" property="dc:requires">https://tools.ietf.org/html/rfc2119</a>
         </dd>
       </dl>
     </section>
@@ -2562,17 +2581,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </span>
       </h3>
       <dl class="bibliography" resource=""><dt id="bib-CAPTCHA">[CAPTCHA]</dt>
-        <dd>Carnegie Mellon University. <a href="http://www.captcha.net/" property="dc:references"><cite>The CAPTCHA Project</cite></a>. URL: <a href="http://www.captcha.net/" property="dc:references">http://www.captcha.net/</a>
+        <dd><a href="http://www.captcha.net/" property="dc:references"><cite>The CAPTCHA Project</cite></a>. Carnegie Mellon University. URL: <a href="http://www.captcha.net/" property="dc:references">http://www.captcha.net/</a>
         </dd><dt id="bib-HARDING-BINNIE">[HARDING-BINNIE]</dt>
-        <dd>Harding G. F. A.; Binnie, C.D.. <cite>Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape</cite>. 2002.
+        <dd><cite>Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape</cite>Harding G. F. A.; Binnie, C.D..2002.
         </dd><dt id="bib-IEC-4WD">[IEC-4WD]</dt>
-        <dd><cite>IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB</cite>. May 5, 1998.
+        <dd><cite>IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB</cite>May 5, 1998.
         </dd><dt id="bib-UNESCO">[UNESCO]</dt>
         <dd><a href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm" property="dc:references"><cite>International Standard Classification of Education</cite></a>. 1997. URL: <a href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm" property="dc:references">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</a>
         </dd><dt id="bib-WAI-WEBCONTENT">[WAI-WEBCONTENT]</dt>
-        <dd>Wendy Chisholm; Gregg Vanderheiden; Ian Jacobs. W3C. <a href="https://www.w3.org/TR/WAI-WEBCONTENT" property="dc:references"><cite>Web Content Accessibility Guidelines 1.0</cite></a>. 5 May 1999. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WAI-WEBCONTENT" property="dc:references">https://www.w3.org/TR/WAI-WEBCONTENT</a>
+        <dd><a href="https://www.w3.org/TR/WAI-WEBCONTENT" property="dc:references"><cite>Web Content Accessibility Guidelines 1.0</cite></a>. Wendy Chisholm; Gregg Vanderheiden; Ian Jacobs. W3C. 5 May 1999. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WAI-WEBCONTENT" property="dc:references">https://www.w3.org/TR/WAI-WEBCONTENT</a>
         </dd><dt id="bib-sRGB">[sRGB]</dt>
-        <dd>M. Stokes; M. Anderson; S. Chandrasekar; R. Motta. <a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references"><cite>A Standard Default Color Space for the Internet - sRGB, Version 1.10</cite></a>. November 5, 1996. URL: <a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references">http://www.w3.org/Graphics/Color/sRGB.html</a>
+        <dd><a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references"><cite>A Standard Default Color Space for the Internet - sRGB, Version 1.10</cite></a>. M. Stokes; M. Anderson; S. Chandrasekar; R. Motta.November 5, 1996. URL: <a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references">http://www.w3.org/Graphics/Color/sRGB.html</a>
         </dd>
       </dl>
     </section>

@@ -393,8 +393,88 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: white;
     }
     
+    .respec-warning-list,
+    .respec-error-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-family: sans-serif;
+      background-color: rgb(255, 251, 230);
+      font-size: .9em;
+    }
+    
+    .respec-warning-list li,
+    .respec-error-list li {
+      padding: 0.4em 0.7em;
+    }
+    
+    .respec-warning-list li::before {
+      content: "⚠️";
+      padding-right: .5em;
+    }
+    
+    .respec-warning-list li {
+      color: rgb(92, 59, 0);
+      border-bottom: thin solid rgb(255, 245, 194);
+    }
+    
+    .respec-error-list,
+    .respec-error-list li {
+      background-color: rgb(255, 240, 240);
+    }
+    
+    .respec-error-list li::before {
+      content: "💥";
+      padding-right: .5em;
+    }
+    
+    .respec-error-list li {
+      padding: 0.4em 0.7em;
+      color: rgb(92, 59, 0);
+      border-bottom: thin solid rgb(255, 215, 215);
+    }
+    
+    #respec-overlay {
+      display: block;
+      opacity: 0;
+      position: fixed;
+      zIndex: 10000;
+      top: 0px;
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      background: #000;
+    }
+    
+    .respec-modal {
+      display: block;
+      position: fixed;
+      opacity: 0;
+      z-index: 11000;
+      margin: auto;
+      top: 10%;
+      background: #fff;
+      border: 5px solid #666;
+      min-width: 20%;
+      width: 70%;
+      padding: 0;
+      max-height: 80%;
+      overflow-y: auto;
+      margin: 0 -.5cm
+    }
+    
+    .respec-modal h3 {
+      margin: 0;
+      padding: .2em;
+      text-align: center;
+      color: black;
+      background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
+      font-size: 1em;
+    }
+    
     #respec-menu button.respec-option {
       background: white;
+      padding: 0 .2cm;
       border: none;
       width: 100%;
       text-align: left;
@@ -438,7 +518,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
   <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <link rel="canonical" href="https://www.w3.org/TR/wcag-1.1-requirements/">
-  <meta name="generator" content="ReSpec 10.1.7">
+  <meta name="generator" content="ReSpec 10.1.9">
   <script id="initialUserConfig" type="application/json">
     {
       "trace": true,
@@ -478,7 +558,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       "wgPublicList": "public-comments-wcag20",
       "wgPatentURI": "http://www.w3.org/2004/01/pp-impl/35422/status",
       "maxTocLevel": 4,
-      "publishDate": "2017-02-14"
+      "publishDate": "2017-02-16"
     }
   </script>
 </head>
@@ -488,7 +568,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
     <h1 class="title p-name" id="title" property="dcterms:title">Requirements for Web Content Accessibility Guidelines 2.1</h1>
-    <h2 id="w3c-editor-s-draft-14-february-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-02-14">14 February 2017</time></h2>
+    <h2 id="w3c-editor-s-draft-16-february-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-02-16">16 February 2017</time></h2>
     <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="http://w3c.github.io/wcag21/requirements/">http://w3c.github.io/wcag21/requirements/</a></dd>
@@ -700,11 +780,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </span>
       </h3>
       <dl class="bibliography" resource=""><dt id="bib-WCAG20">[WCAG20]</dt>
-        <dd>Ben Caldwell; Michael Cooper; Loretta Guarino Reid; Gregg Vanderheiden et al. W3C. <a href="https://www.w3.org/TR/WCAG20/" property="dc:references"><cite>Web Content Accessibility Guidelines (WCAG) 2.0</cite></a>. 11 December 2008. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG20/" property="dc:references">https://www.w3.org/TR/WCAG20/</a>
+        <dd><a href="https://www.w3.org/TR/WCAG20/" property="dc:references"><cite>Web Content Accessibility Guidelines (WCAG) 2.0</cite></a>. Ben Caldwell; Michael Cooper; Loretta Guarino Reid; Gregg Vanderheiden et al. W3C. 11 December 2008. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WCAG20/" property="dc:references">https://www.w3.org/TR/WCAG20/</a>
         </dd><dt id="bib-media-accessibility-reqs">[media-accessibility-reqs]</dt>
-        <dd>Shane McCarron; Michael Cooper; Mark Sadecki. W3C. <a href="https://www.w3.org/TR/media-accessibility-reqs/" property="dc:references"><cite>Media Accessibility User Requirements</cite></a>. 3 December 2015. W3C Note. URL: <a href="https://www.w3.org/TR/media-accessibility-reqs/" property="dc:references">https://www.w3.org/TR/media-accessibility-reqs/</a>
+        <dd><a href="https://www.w3.org/TR/media-accessibility-reqs/" property="dc:references"><cite>Media Accessibility User Requirements</cite></a>. Shane McCarron; Michael Cooper; Mark Sadecki. W3C. 3 December 2015. W3C Note. URL: <a href="https://www.w3.org/TR/media-accessibility-reqs/" property="dc:references">https://www.w3.org/TR/media-accessibility-reqs/</a>
         </dd><dt id="bib-wcag2-req">[wcag2-req]</dt>
-        <dd>Gregg Vanderheiden; John Slatin; Wendy Chisholm. W3C. <a href="https://www.w3.org/TR/wcag2-req/" property="dc:references"><cite>Requirements for WCAG 2.0</cite></a>. 25 April 2006. W3C Note. URL: <a href="https://www.w3.org/TR/wcag2-req/" property="dc:references">https://www.w3.org/TR/wcag2-req/</a>
+        <dd><a href="https://www.w3.org/TR/wcag2-req/" property="dc:references"><cite>Requirements for WCAG 2.0</cite></a>. Gregg Vanderheiden; John Slatin; Wendy Chisholm. W3C. 25 April 2006. W3C Note. URL: <a href="https://www.w3.org/TR/wcag2-req/" property="dc:references">https://www.w3.org/TR/wcag2-req/</a>
         </dd>
       </dl>
     </section>
