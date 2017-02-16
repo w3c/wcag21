@@ -1329,6 +1329,105 @@
 				</dd>
 			</dl>
 		</section>
+    <section class="sc">
+        <h4>Clear Controls</h4>
+        <p class="conformance-level">AA</p>
+        <p class="change">New</p>
+        <p><strong>Clear controls:</strong> Visual interactive controls are clear or clear controls are easily available through personalization that conforms to all of the following:</p>
+        <ul>
+            <li>Interactive controls are visually discriminable and have a border around the interactive area of the element with a contrast ratio of at least 4.5:1 with its background, or has fill that provides a contrast ratio of at least 3:1 from the background. It is sufficient for links to be consistently underlined.</li>
+            <li>Interactive controls are available in a standard style that indicates how they can be used and what action it will trigger or have clearly labelled instructions that explains their use.</li>
+        </ul>
+        <p>An exception is available if the style is an essential part of the main function of the site, such as for a game.</p>
+        <!-- if SC has sub-points -->
+        <!--<dl>
+            <dt>{Point Handle}</dt>
+            <dd>{Point Text}</dd>
+        </dl>-->
+        <section>
+            <h4>Related Glossary additions or changes</h4>
+            <dt><dfn>Easily available (or easily available mode or setting)</dfn></dt>
+            <dd>
+                <ul>
+                    <li>Can be set one time with as wide a scope as possible (such as using the standards of the OS, ETSI or GPII when available)</li>
+                    <li>And with the option to save or change the setting, were available interoperability but also for a scope of the set of web pages</li>
+                    <li>And is reachable from each screen where it may be needed, and the path and control conforms to all of the document.</li>
+                </ul>
+            </dd>
+        </section>
+        <section>
+            <h4>What Principle and Guideline the SC falls within.</h4>
+            <p>Principle 3, The COGA task force suggests that updates to this principle apply to content other than text content only.</p>
+        </section>
+        <section>
+            <h4>Description</h4>
+            <p>The intent of this success criterion is to help a person understand which elements in the content are interactive. The success criterion would be met by ensuring there are sufficient visual affordances to indicate the boundaries of an element and how to interact with it. This will not only set it apart from plain text content that is not interactive, but also indicate the clickable area for easier selection. We want to avoid people accidentally triggering events and ensure that they know how to trigger the events that they need.</p>
+            <p>Note that visual affordances can take different forms. One common visual affordance is to display an underline under a link. Another is to provide borders around interactive elements that have sufficient contrast to show the active clickable area for the element.</p>
+        </section>
+        <!-- if SC has notes -->
+        <p class="note">{Note}</p>
+    </section>
+    <section>
+        <h4>Benefits</h4>
+        <p>Many people cannot easily learn design metaphors that cause interactive controls to have subtle visual differences from the rest of the content such as techniques found in flat design. When interactive controls have understandable visual affordances, users can more easily locate desired items to interact with and know what that interaction might do. In addition, when users can easily see the active boundaries for controls it improves the ability to select that control via a pointing device or by touch. This is discussed fully in the <a href="https://rawgit.com/w3c/coga/master/issue-papers/flat-design.html">COGA Flat Design Issue Paper</a>.</p>
+        <p>Many people cannot easily learn new design metaphors or remember things that they have learned for example, people with Mild Cognitive Impairment (MCI) or dementia. Without these skills it can be much harder or impossible to know what the interaction may do and to learn new controls. As one user with mild dementia stated "I have great difficulty remembering things, working things out, and interpreting things." As long as interfaces are familiar and clear the user can continue to use the Web.</p>
+    </section>
+    <section>
+        <h4>Related Resources</h4>
+        <p>Resources are for information purposes only. No endorsement is intended or implied</p>
+        <ol>
+            <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/#issues-with-flat-design">Gap analysis section 2.3.1 Issues with Flat Design</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">User needs Table (Table 5: Simple and Clear Interface)</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">See also: User needs Table:</a>6, 7,8 and 9</li>
+            <li><a href="https://w3c.github.io/wcag/coga/user-research.html">Background research document</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/issue-papers/links-buttons.html">Semantics for adaptive interfaces</a></li>
+            <li><a href="https://rawgit.com/w3c/coga/master/techniques/index.htm">COGA Techniques Techniques</a> for the Cognitive and Learning Disabilities Accessibility Task Force (COGA) Section 2.6.1 Use clear visual affordances</li>
+        </ol>
+    </section>
+    <section>
+        <h4>Testability</h4>
+        <ol>
+            <li>Confirm that links are underlined or can be underlined via personalization</li>
+            <li>Other Interactive controls - Confirm one of the following:
+                <ol>
+                    <li>A border is present around the interactive area of the element with a contrast ratio of at least 4.5:1 with its background,</li>
+                    <li>or has a fill that provides a contrast ratio of at least 3:1 from the background.</li>
+                </ol>
+                    <li>Confirm one of the following:</li>
+                <ol>
+                    <li></li>
+                </ol>
+        </ol>
+    </section>
+    <section>
+        <h4>Techniques</h4>
+        <ol>
+            <li>Existing technique: <a href="http://www.w3.org/TR/WCAG20-TECHS/G183.html">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them</a></li>
+            <li>New technique: Providing a border around the interactive area of the element with a contrast ratio of 4.5:1 with its background, or has fill that provides a contrast ratio of at least 3:1 from the background.
+        Some examples of interactive elements where the border would be most helpful:
+        i. Icons
+        ii. Buttons
+        iii. Text input fields
+        iv. Switches
+        v Sliders</li>
+            <li>New technique: Providing an underline to identify links</li>
+            <li>New technique: Using personalization to enhance visual affordances on interactive elements</li>
+            <li>New technique: Using standard controls</li>
+            <li>Adding semantics to enable personalized controls</li>
+            <li>Adding instructions</li>
+            <li>Adding semantics to enable instructions</li>
+        </ol>
+    </section>
+    <section class="note">
+        <h4>Working groups notes</h4>
+        <p>Could be merged with the Low Vision and Mobile TF SC such as <a href="https://www.w3.org/WAI/GL/low-vision-a11y-tf/wiki/Metadata_On_Hover">ìMetadata On Hoverî</a> and is ìContent that appears on hover should not obscure the triggering element or other content.</p>
+        <p>Alternative wording</p>
+        <p>Interactive controls use a visual style that makes it understandable that the controls are interactive and indicate the active area for the control with the following exception:</p>
+        <ul>
+            <li>Customizable: The visual affordances for interactive controls are available through personalization.</li>
+        </ul>
+        <p>Original wording: Interactive controls are clear or clear controls are easily available through personalization Boundaries on an interactive controls and icons should have a sufficient color contrast of 1.5 (visual only) or can be emphasized in the modality of the user. Auditory emphasis can include slightly louder content, a change in the pitch or a change in the voice.</p>
+    </section>
 
 		<section class="appendix" id="acknowledgments">
 			<h1>Acknowledgments</h1>
