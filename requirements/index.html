@@ -135,6 +135,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       border: 0;
     }
   </style>
+  <title>Requirements for Web Content Accessibility Guidelines 2.1</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <!-- <script src='http://pandora.aptest.com/respec/js/require.js' data-main="http://pandora.aptest.com/respec/js/profile-w3c-common" async class='remove'></script> -->
+  <!--<link href="../common/css/common.css" rel="stylesheet" type="text/css"/>-->
+  <!--<script src="../common/biblio.js" class="remove"></script>-->
+
   <style id="respec-mainstyle">
     /*****************************************************************
  * ReSpec 3 CSS
@@ -268,10 +275,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     .section dl.attrs dd,
     .section dl.eldef dd {
       margin-bottom: 0;
-    }
-    
-    .respec-hidden {
-      display: none;
     }
     
     #respec-ui {
@@ -511,6 +514,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x;
     }
     
+    @supports (text-decoration-style: wavy) {
+      .respec-offending-element {
+        background: none;
+        text-decoration-line: underline;
+        text-decoration-style: wavy;
+        text-decoration-color: red;
+      }
+    }
+    
     #issue-summary>ul,
     .respec-dfn-list {
       column-count: 2;
@@ -527,17 +539,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       }
     }
   </style>
-  <title>Requirements for Web Content Accessibility Guidelines 2.1</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <!-- <script src='http://pandora.aptest.com/respec/js/require.js' data-main="http://pandora.aptest.com/respec/js/profile-w3c-common" async class='remove'></script> -->
-  <!--<link href="../common/css/common.css" rel="stylesheet" type="text/css"/>-->
-  <!--<script src="../common/biblio.js" class="remove"></script>-->
-
-  <!--[if lt IE 9]><script src='https://www.w3.org/2008/site/js/html5shiv.js'></script><![endif]-->
   <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <link rel="canonical" href="https://www.w3.org/TR/wcag-1.1-requirements/">
-  <meta name="generator" content="ReSpec 10.5.11">
+  <meta name="generator" content="ReSpec 11.2.1">
   <script id="initialUserConfig" type="application/json">
     {
       "trace": true,
@@ -586,7 +590,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
     <h1 class="title p-name" id="title" property="dcterms:title">Requirements for Web Content Accessibility Guidelines 2.1</h1>
-    <h2 id="w3c-editor-s-draft-06-march-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-03-06">06 March 2017</time></h2>
+    <h2 id="w3c-editor-s-draft-14-march-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-03-14">14 March 2017</time></h2>
     <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="http://w3c.github.io/wcag21/requirements/">http://w3c.github.io/wcag21/requirements/</a></dd>
