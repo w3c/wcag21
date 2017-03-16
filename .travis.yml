@@ -33,7 +33,7 @@ script:
   - cp -r ../../w3c/wcag21/css css
   - cp ../../w3c/wcag21/guidelines/guidelines.css guidelines/guidelines.css
   - cp ../../w3c/wcag21/guidelines/relative-luminance.xml guidelines/relative-luminance.xml 
-  - node ../../node_modules/respec/tools/respec2html.js --src file://`pwd`/../../w3c/wcag21/guidelines/index.html --out guidelines/index.html
+  - node ../../w3c/wcag21/node_modules/respec/tools/respec2html.js --src file://`pwd`/../../w3c/wcag21/guidelines/index.html --out guidelines/index.html
 
 after_success:
   - git add -A .
