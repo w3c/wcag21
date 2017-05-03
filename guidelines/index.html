@@ -273,13 +273,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       color: #900;
     }
 
-    h1 acronym,
-    h2 acronym,
-    h3 acronym,
-    h4 acronym,
-    h5 acronym,
-    h6 acronym,
-    a acronym,
     h1 abbr,
     h2 abbr,
     h3 abbr,
@@ -390,270 +383,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       margin-bottom: 0;
     }
 
-    #respec-ui {
-      position: fixed;
-      display: flex;
-      flex-direction: row-reverse;
-      top: 20px;
-      right: 20px;
-      width: 202px;
-      text-align: right;
-      z-index: 9000;
-    }
-
-    #respec-pill,
-    .respec-info-button {
-      background: #fff;
-      height: 2.5em;
-      color: rgb(120, 120, 120);
-      border: 1px solid #ccc;
-      box-shadow: 1px 1px 8px 0 rgba(100, 100, 100, .5);
-    }
-
-    .respec-info-button {
-      border: none;
-      opacity: .75;
-      border-radius: 2em;
-      margin-right: 1em;
-      min-width: 3.5em;
-    }
-
-    .respec-info-button:focus,
-    .respec-info-button:hover {
-      opacity: 1;
-      transition: opacity .2s;
-    }
-
-    #respec-pill:disabled {
-      font-size: 2.8px;
-      text-indent: -9999em;
-      border-top: 1.1em solid rgba(40, 40, 40, 0.2);
-      border-right: 1.1em solid rgba(40, 40, 40, 0.2);
-      border-bottom: 1.1em solid rgba(40, 40, 40, 0.2);
-      border-left: 1.1em solid #ffffff;
-      transform: translateZ(0);
-      animation: respec-spin .5s infinite linear;
-      box-shadow: none;
-    }
-
-    #respec-pill:disabled,
-    #respec-pill:disabled:after {
-      border-radius: 50%;
-      width: 10em;
-      height: 10em;
-    }
-
-    @keyframes respec-spin {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
-
-    #respec-pill:hover,
-    #respec-pill:focus {
-      color: rgb(0, 0, 0);
-      background-color: rgb(245, 245, 245);
-      transition: color .2s;
-    }
-
-    #respec-menu {
-      position: absolute;
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background: #fff;
-      box-shadow: 1px 1px 8px 0 rgba(100, 100, 100, .5);
-      width: 200px;
-      display: none;
-      text-align: left;
-      margin-top: 32px;
-      font-size: .8em;
-    }
-
-    #respec-menu li {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    .respec-save-buttons {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(47%, 2fr));
-      grid-gap: .5cm;
-      padding: .5cm;
-    }
-
-    .respec-save-button:link {
-      padding-top: 16px;
-      color: rgb(240, 240, 240);
-      background: rgb(42, 90, 168);
-      justify-self: stretch;
-      height: 1cm;
-      text-decoration: none;
-      text-align: center;
-      font-size: inherit;
-      border: none;
-      border-radius: 0.2cm;
-    }
-
-    .respec-save-button:link:hover {
-      color: white;
-      background: rgb(42, 90, 168);
-      padding: 0;
-      margin: 0;
-      border: 0;
-      padding-top: 16px;
-    }
-
-
-    #respec-ui button:focus,
-    #respec-pill:focus,
-    .respec-option:focus {
-      outline: 0;
-      outline-style: none;
-    }
-
-    #respec-pill-error {
-      background-color: red;
-      color: white;
-    }
-
-    #respec-pill-warning {
-      background-color: orange;
-      color: white;
-    }
-
-    .respec-warning-list,
-    .respec-error-list {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      font-family: sans-serif;
-      background-color: rgb(255, 251, 230);
-      font-size: .9em;
-    }
-
-    .respec-warning-list li,
-    .respec-error-list li {
-      padding: 0.4em 0.7em;
-    }
-
-    .respec-warning-list li::before {
-      content: "⚠️";
-      padding-right: .5em;
-    }
-
-    .respec-warning-list li {
-      color: rgb(92, 59, 0);
-      border-bottom: thin solid rgb(255, 245, 194);
-    }
-
-    .respec-error-list,
-    .respec-error-list li {
-      background-color: rgb(255, 240, 240);
-    }
-
-    .respec-error-list li::before {
-      content: "💥";
-      padding-right: .5em;
-    }
-
-    .respec-error-list li {
-      padding: 0.4em 0.7em;
-      color: rgb(92, 59, 0);
-      border-bottom: thin solid rgb(255, 215, 215);
-    }
-
-    #respec-overlay {
-      display: block;
-      opacity: 0;
-      position: fixed;
-      z-index: 10000;
-      top: 0px;
-      left: 0px;
-      height: 100%;
-      width: 100%;
-      background: #000;
-    }
-
-    .respec-modal {
-      display: block;
-      position: fixed;
-      opacity: 0;
-      z-index: 11000;
-      margin: auto;
-      top: 10%;
-      background: #fff;
-      border: 5px solid #666;
-      min-width: 20%;
-      width: 79%;
-      padding: 0;
-      max-height: 80%;
-      overflow-y: auto;
-      margin: 0 -.5cm
-    }
-
-    @media screen and (min-width: 78em) {
-      .respec-modal {
-        width: 62%;
-      }
-    }
-
-    .respec-modal h3 {
-      margin: 0;
-      padding: .2em;
-      text-align: center;
-      color: black;
-      background: linear-gradient(to bottom, rgba(238, 238, 238, 1) 0%, rgba(238, 238, 238, 1) 50%, rgba(204, 204, 204, 1) 100%);
-      font-size: 1em;
-    }
-
-    .respec-modal .inside p {
-      padding-left: 1cm;
-    }
-
-    #respec-menu button.respec-option {
-      background: white;
-      padding: 0 .2cm;
-      border: none;
-      width: 100%;
-      text-align: left;
-      font-size: inherit;
-      padding: 1.2em 1.2em;
-    }
-
-    #respec-menu button.respec-option:hover,
-    #respec-menu button:focus {
-      background-color: #eeeeee;
-    }
-
-    .respec-cmd-icon {
-      padding-right: .5em;
-    }
-
-    #respec-ui button.respec-option:last-child {
-      border: none;
-      border-radius: inherit;
-    }
-
-    .respec-offending-element {
-      display: inline-block;
-      position: relative;
-      background: url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x;
-    }
-
-    @supports (text-decoration-style: wavy) {
-      .respec-offending-element {
-        background: none;
-        text-decoration-line: underline;
-        text-decoration-style: wavy;
-        text-decoration-color: red;
-      }
-    }
-
     #issue-summary>ul,
     .respec-dfn-list {
       column-count: 2;
@@ -664,34 +393,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       list-style: none;
     }
 
-
-    .respec-button-copy-paste {
-      position: absolute;
-      display: block;
-      padding: 0px 8px;
-      height: 28px;
-      width: 40px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid rgb(144, 184, 222);
-      border-radius: 0px 0px 3px 0;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-      -webkit-appearance: none;
-      margin: 0px 127px;
-      border-left: 0;
-    }
-
-    p+.respec-button-copy-paste {
-      margin: 1px 127px;
-    }
-
     @media print {
       .removeOnSave {
         display: none;
@@ -700,7 +401,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   </style>
   <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
   <link rel="canonical" href="https://www.w3.org/TR/WCAG21/">
-  <meta name="generator" content="ReSpec 11.4.1">
+  <meta name="generator" content="ReSpec 11.4.4">
   <script id="initialUserConfig" type="application/json">
     {
       "trace": true,
@@ -807,7 +508,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
     <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
-    <h2 id="w3c-editor-s-draft-19-april-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-04-19">19 April 2017</time></h2>
+    <h2 id="w3c-editor-s-draft-03-may-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-05-03">03 May 2017</time></h2>
     <dl>
       <dt>This version:</dt>
       <dd><a class="u-url" href="https://w3c.github.io/wcag21/guidelines/">https://w3c.github.io/wcag21/guidelines/</a></dd>
@@ -862,9 +563,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>To comment, <a href="https://github.com/w3c/wcag21/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG 2.1 GitHub repository</a>. Although the proposed Success Criteria in this document reference issues tracking discussion, the Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
 
     <p>
-      This document was published by the <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a> as an Editor's Draft. If you wish to make comments regarding this document, please send them to
+      This document was published by the <a href="https://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a> as an Editor's Draft. Comments regarding this document are welcome. Please send them to
       <a href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</a> (<a href="mailto:public-comments-wcag20-request@w3.org?subject=subscribe">subscribe</a>,
-      <a href="https://lists.w3.org/Archives/Public/public-comments-wcag20/">archives</a>). All comments are welcome.
+      <a href="https://lists.w3.org/Archives/Public/public-comments-wcag20/">archives</a>).
     </p>
     <p>
       Publication as an Editor's Draft does not imply endorsement by the <abbr title="World Wide Web Consortium">W3C</abbr> Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.
@@ -975,10 +676,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </ol>
       </li>
       <li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">6. </span>Glossary</a></li>
-      <li class="tocline"><a href="#references" class="tocxref"><span class="secno">A. </span>References</a>
+      <li class="tocline"><a href="#changelog" class="tocxref"><span class="secno">A. </span>Change Log</a>
         <ol class="toc">
-          <li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">A.1 </span>Normative references</a></li>
-          <li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">A.2 </span>Informative references</a></li>
+          <li class="tocline"><a href="#substantive-changes-since-the-last-public-working-draft" class="tocxref"><span class="secno">A.1 </span>Substantive changes since the <span class="formerLink">last public working draft</span></a></li>
+          <li class="tocline"><a href="#other-substantive-changes-since-the-first-public-working-draft" class="tocxref"><span class="secno">A.2 </span>Other substantive changes since the <span class="formerLink">first public working draft</span></a></li>
+        </ol>
+      </li>
+      <li class="tocline"><a href="#references" class="tocxref"><span class="secno">B. </span>References</a>
+        <ol class="toc">
+          <li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">B.1 </span>Normative references</a></li>
+          <li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">B.2 </span>Informative references</a></li>
         </ol>
       </li>
     </ol>
@@ -1063,7 +770,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Provide text alternatives for any non-text content so that it can be changed into other forms people need, such as large print, braille, speech, symbols or simpler language.</p>
 
-      <section data-include="sc/20/non-text-content.html" data-include-replace="true" data-include-id="include-29946023662538823" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/non-text-content.html" data-include-replace="true" data-include-id="include-16982146309376" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
     </section>
 
     <section class="guideline" id="time-based-media" typeof="bibo:Chapter" resource="#time-based-media" property="bibo:hasPart">
@@ -1073,23 +780,23 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Provide alternatives for time-based media.</p>
 
-      <section data-include="sc/20/audio-only-and-video-only-prerecorded.html" data-include-replace="true" data-include-id="include-8931008729725767" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/audio-only-and-video-only-prerecorded.html" data-include-replace="true" data-include-id="include-28279505349026324" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/captions-prerecorded.html" data-include-replace="true" data-include-id="include-9103198583555161" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/captions-prerecorded.html" data-include-replace="true" data-include-id="include-6492083603387302" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/audio-description-or-media-alternative-prerecorded.html" data-include-replace="true" data-include-id="include-6830746437480517" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/audio-description-or-media-alternative-prerecorded.html" data-include-replace="true" data-include-id="include-6885788976993605" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/captions-live.html" data-include-replace="true" data-include-id="include-5616880172128838" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/captions-live.html" data-include-replace="true" data-include-id="include-7950100598526291" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/audio-description-prerecorded.html" data-include-replace="true" data-include-id="include-8342210090023168" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/audio-description-prerecorded.html" data-include-replace="true" data-include-id="include-4028383254724508" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/sign-language-prerecorded.html" data-include-replace="true" data-include-id="include-6408066023007453" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/sign-language-prerecorded.html" data-include-replace="true" data-include-id="include-00802023651698991" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/extended-audio-description-prerecorded.html" data-include-replace="true" data-include-id="include-35331530317951243" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/extended-audio-description-prerecorded.html" data-include-replace="true" data-include-id="include-006515931761771787" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/media-alternative-prerecorded.html" data-include-replace="true" data-include-id="include-20462185054865145" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/media-alternative-prerecorded.html" data-include-replace="true" data-include-id="include-556189470457801" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/audio-only-live.html" data-include-replace="true" data-include-id="include-1166524015103012" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/audio-only-live.html" data-include-replace="true" data-include-id="include-37070909864254187" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
     </section>
 
     <section class="guideline" id="adaptable" typeof="bibo:Chapter" resource="#adaptable" property="bibo:hasPart">
@@ -1099,11 +806,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Create content that can be presented in different ways (for example simpler layout) without losing information or structure.</p>
 
-      <section data-include="sc/20/info-and-relationships.html" data-include-replace="true" data-include-id="include-03830767995064188" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/info-and-relationships.html" data-include-replace="true" data-include-id="include-39544542318837506" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/meaningful-sequence.html" data-include-replace="true" data-include-id="include-7879066586624681" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/meaningful-sequence.html" data-include-replace="true" data-include-id="include-7029680844785504" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/sensory-characteristics.html" data-include-replace="true" data-include-id="include-5912103746493182" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/sensory-characteristics.html" data-include-replace="true" data-include-id="include-1184711106678118" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/support-personalization-minimum.html" data-include-replace="true"></section> -->
     </section>
@@ -1115,30 +822,30 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Make it easier for users to see and hear content including separating foreground from background.</p>
 
-      <section data-include="sc/20/use-of-color.html" data-include-replace="true" data-include-id="include-5452339319666062" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/use-of-color.html" data-include-replace="true" data-include-id="include-743945647370335" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/audio-control.html" data-include-replace="true" data-include-id="include-8873932275975258" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/audio-control.html" data-include-replace="true" data-include-id="include-34956893539690936" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/contrast-minimum.html" data-include-replace="true" data-include-id="include-9535318737893663" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/contrast-minimum.html" data-include-replace="true" data-include-id="include-1573280606134575" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/resize-text.html" data-include-replace="true" data-include-id="include-9340882093269407" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/resize-text.html" data-include-replace="true" data-include-id="include-07219931741575736" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/images-of-text.html" data-include-replace="true" data-include-id="include-9005416437002933" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/images-of-text.html" data-include-replace="true" data-include-id="include-2651147629935817" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/contrast-enhanced.html" data-include-replace="true" data-include-id="include-047757375194469764" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/contrast-enhanced.html" data-include-replace="true" data-include-id="include-9592374276789566" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/low-or-no-background-audio.html" data-include-replace="true" data-include-id="include-9666973572924547" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/low-or-no-background-audio.html" data-include-replace="true" data-include-id="include-8610610714336693" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/visual-presentation.html" data-include-replace="true" data-include-id="include-21495405508657606" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
+      <section data-include="sc/20/visual-presentation.html" data-include-replace="true" data-include-id="include-02768863722237036" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
       </section>
 
-      <section data-include="sc/20/images-of-text-no-exception.html" data-include-replace="true" data-include-id="include-12757711157973617" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/images-of-text-no-exception.html" data-include-replace="true" data-include-id="include-16636753334094512" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/linearization.html" data-include-replace="true"></section> -->
 
-      <section data-include="sc/21/resize-content.html" data-include-replace="true" data-include-id="include-46918111209838176" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/21/resize-content.html" data-include-replace="true" data-include-id="include-7808710530461858" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/21/graphics-contrast.html" data-include-replace="true" data-include-id="include-057270569814156236" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/21/graphics-contrast.html" data-include-replace="true" data-include-id="include-616370080123251" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/printing.html" data-include-replace="true"></section> -->
 
@@ -1166,11 +873,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Make all functionality available from a keyboard.</p>
 
-      <section data-include="sc/20/keyboard.html" data-include-replace="true" data-include-id="include-06946224647178378" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/keyboard.html" data-include-replace="true" data-include-id="include-8500964632002868" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/no-keyboard-trap.html" data-include-replace="true" data-include-id="include-6483538614446558" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/no-keyboard-trap.html" data-include-replace="true" data-include-id="include-9212125618279945" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/keyboard-no-exception.html" data-include-replace="true" data-include-id="include-5982167675916443" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/keyboard-no-exception.html" data-include-replace="true" data-include-id="include-21223755440956737" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/speech-input.html" data-include-replace="true"></section> -->
 
@@ -1183,21 +890,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Provide users enough time to read and use content.</p>
 
-      <section data-include="sc/20/timing-adjustable.html" data-include-replace="true" data-include-id="include-7354854063251863" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/timing-adjustable.html" data-include-replace="true" data-include-id="include-9429163643253866" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/pause-stop-hide.html" data-include-replace="true" data-include-id="include-2280745989927182" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/pause-stop-hide.html" data-include-replace="true" data-include-id="include-18235702108815266" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/no-timing.html" data-include-replace="true" data-include-id="include-44212532578598496" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/no-timing.html" data-include-replace="true" data-include-id="include-7799606995899349" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/interruptions.html" data-include-replace="true" data-include-id="include-43116137209459127" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/interruptions.html" data-include-replace="true" data-include-id="include-22351583987119872" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/re-authenticating.html" data-include-replace="true" data-include-id="include-5773446894348748" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/re-authenticating.html" data-include-replace="true" data-include-id="include-9516029957294083" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/timeouts.html" data-include-replace="true"></section> -->
 
       <!-- <section data-include="sc/21/animation-from-interactions.html" data-include-replace="true"></section> -->
 
-      <section data-include="sc/21/interruptions-minimum.html" data-include-replace="true" data-include-id="include-31733872586973577" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/21/interruptions-minimum.html" data-include-replace="true" data-include-id="include-21312839022532204" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/accessible-authentication.html" data-include-replace="true"></section> -->
 
@@ -1210,9 +917,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Do not design content in a way that is known to cause seizures.</p>
 
-      <section data-include="sc/20/three-flashes-or-below-threshold.html" data-include-replace="true" data-include-id="include-3916946904035583" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/three-flashes-or-below-threshold.html" data-include-replace="true" data-include-id="include-24613666584922234" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/three-flashes.html" data-include-replace="true" data-include-id="include-9954732827339465" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/three-flashes.html" data-include-replace="true" data-include-id="include-2917540375405714" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/safety.html" data-include-replace="true"></section> -->
 
@@ -1226,25 +933,25 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Provide ways to help users navigate, find content, and determine where they are.</p>
 
-      <section data-include="sc/20/bypass-blocks.html" data-include-replace="true" data-include-id="include-8440528786731161" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/bypass-blocks.html" data-include-replace="true" data-include-id="include-34422185503179836" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/page-titled.html" data-include-replace="true" data-include-id="include-8774022782365931" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/page-titled.html" data-include-replace="true" data-include-id="include-09057236377154343" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/focus-order.html" data-include-replace="true" data-include-id="include-6279556040883463" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/focus-order.html" data-include-replace="true" data-include-id="include-6447760051156668" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/link-purpose-in-context.html" data-include-replace="true" data-include-id="include-6714849833691259" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/link-purpose-in-context.html" data-include-replace="true" data-include-id="include-1781004250749647" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/multiple-ways.html" data-include-replace="true" data-include-id="include-01789701467328908" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/multiple-ways.html" data-include-replace="true" data-include-id="include-1289826159462819" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/headings-and-labels.html" data-include-replace="true" data-include-id="include-8913491456464" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/headings-and-labels.html" data-include-replace="true" data-include-id="include-598204746752323" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/focus-visible.html" data-include-replace="true" data-include-id="include-27140842656629527" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/focus-visible.html" data-include-replace="true" data-include-id="include-48635089239677365" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/location.html" data-include-replace="true" data-include-id="include-9928568464777694" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/location.html" data-include-replace="true" data-include-id="include-5958066834794509" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/link-purpose-link-only.html" data-include-replace="true" data-include-id="include-5623872494931457" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/link-purpose-link-only.html" data-include-replace="true" data-include-id="include-30918990700460336" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/section-headings.html" data-include-replace="true" data-include-id="include-19347055321644224" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/section-headings.html" data-include-replace="true" data-include-id="include-43084226798362324" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/single-key-shortcuts.html" data-include-replace="true"></section> -->
 
@@ -1309,17 +1016,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Make text content readable and understandable.</p>
 
-      <section data-include="sc/20/language-of-page.html" data-include-replace="true" data-include-id="include-6019924770623055" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/language-of-page.html" data-include-replace="true" data-include-id="include-01985589975669444" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/language-of-parts.html" data-include-replace="true" data-include-id="include-39947570413712064" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/language-of-parts.html" data-include-replace="true" data-include-id="include-7844022274980462" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/unusual-words.html" data-include-replace="true" data-include-id="include-20967459509122066" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/unusual-words.html" data-include-replace="true" data-include-id="include-15697856184483427" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/abbreviations.html" data-include-replace="true" data-include-id="include-44968782233238613" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/abbreviations.html" data-include-replace="true" data-include-id="include-8926406862193272" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/reading-level.html" data-include-replace="true" data-include-id="include-4382606480914577" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/reading-level.html" data-include-replace="true" data-include-id="include-2879003625008427" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/pronunciation.html" data-include-replace="true" data-include-id="include-6260285537497607" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/pronunciation.html" data-include-replace="true" data-include-id="include-05584253777628678" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/plain-language-minimum.html" data-include-replace="true"></section> -->
 
@@ -1346,17 +1053,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Make Web pages appear and operate in predictable ways.</p>
 
-      <section data-include="sc/20/on-focus.html" data-include-replace="true" data-include-id="include-17093763256455263" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/on-focus.html" data-include-replace="true" data-include-id="include-8863544600537567" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/on-input.html" data-include-replace="true" data-include-id="include-060523082646946724" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/on-input.html" data-include-replace="true" data-include-id="include-8138388423156449" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/consistent-navigation.html" data-include-replace="true" data-include-id="include-44198065811971987" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/consistent-navigation.html" data-include-replace="true" data-include-id="include-34054034824496804" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/consistent-identification.html" data-include-replace="true" data-include-id="include-22408280297374517" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/consistent-identification.html" data-include-replace="true" data-include-id="include-3576484590788829" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/change-on-request.html" data-include-replace="true" data-include-id="include-25523501108266844" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/change-on-request.html" data-include-replace="true" data-include-id="include-6126313989770693" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/21/accidental-activation.html" data-include-replace="true" data-include-id="include-9297980803678545" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
+      <section data-include="sc/21/accidental-activation.html" data-include-replace="true" data-include-id="include-013957649076370204" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
       </section>
 
       <!-- <section data-include="sc/21/familiar-design-minimum.html" data-include-replace="true"></section> -->
@@ -1376,18 +1083,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Help users avoid and correct mistakes.</p>
 
-      <section data-include="sc/20/error-identification.html" data-include-replace="true" data-include-id="include-7092286399930221" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/error-identification.html" data-include-replace="true" data-include-id="include-012803716546687882" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/labels-or-instructions.html" data-include-replace="true" data-include-id="include-16144080704829467" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/labels-or-instructions.html" data-include-replace="true" data-include-id="include-5508351846198336" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/error-suggestion.html" data-include-replace="true" data-include-id="include-3143054062930035" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/error-suggestion.html" data-include-replace="true" data-include-id="include-5392980569259416" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/error-prevention-legal-financial-data.html" data-include-replace="true" data-include-id="include-48679715943030866" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
+      <section data-include="sc/20/error-prevention-legal-financial-data.html" data-include-replace="true" data-include-id="include-035500769655009146" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
       </section>
 
-      <section data-include="sc/20/help.html" data-include-replace="true" data-include-id="include-04024674022784236" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/help.html" data-include-replace="true" data-include-id="include-4571008549960658" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/error-prevention-all.html" data-include-replace="true" data-include-id="include-7379814610105631" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
+      <section data-include="sc/20/error-prevention-all.html" data-include-replace="true" data-include-id="include-9398683621955612" typeof="bibo:Chapter" resource="" property="bibo:hasPart">
       </section>
 
       <!-- <section data-include="sc/21/minimize-user-errors.html" data-include-replace="true"></section> -->
@@ -1439,9 +1146,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </h3>
       <p>Maximize compatibility with current and future user agents, including assistive technologies.</p>
 
-      <section data-include="sc/20/parsing.html" data-include-replace="true" data-include-id="include-5762347111064785" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/parsing.html" data-include-replace="true" data-include-id="include-07969729619902166" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
-      <section data-include="sc/20/name-role-value.html" data-include-replace="true" data-include-id="include-18112857259602477" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
+      <section data-include="sc/20/name-role-value.html" data-include-replace="true" data-include-id="include-46367149841816446" typeof="bibo:Chapter" resource="" property="bibo:hasPart"></section>
 
       <!-- <section data-include="sc/21/non-interference-with-assistive-technology.html" data-include-replace="true"></section> -->
 
@@ -1633,7 +1340,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </h2>
     <dl id="terms">
 
-      <dt data-include="terms/20/abbreviation.html" data-include-replace="true" data-include-id="include-415644029676284">
+      <dt data-include="terms/20/abbreviation.html" data-include-replace="true" data-include-id="include-8797104937564446">
 <dd>
    
    <p>shortened form of a word, phrase, or name where the abbreviation has not become part
@@ -1680,7 +1387,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/accessibility-supported.html" data-include-replace="true" data-include-id="include-40920003703249086">
+      <dt data-include="terms/20/accessibility-supported.html" data-include-replace="true" data-include-id="include-09532398866388703">
 <dd>
    
    <p>supported by users' <a class="respec-offending-element" title="Linking error: not matching <dfn>">assistive technologies</a> as well as the accessibility features in browsers and other <a class="respec-offending-element" title="Linking error: not matching <dfn>">user agents</a></p>
@@ -1792,7 +1499,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/additional-pointer-sensor-information.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/alternative-for-time-based-media.html" data-include-replace="true" data-include-id="include-3179825336628337">
+      <dt data-include="terms/20/alternative-for-time-based-media.html" data-include-replace="true" data-include-id="include-7672486663710256">
 <dd>
    
    <p>document including correctly sequenced text descriptions of time-based visual and
@@ -1807,7 +1514,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/ambiguous-to-users-in-general.html" data-include-replace="true" data-include-id="include-10078304307814911">
+      <dt data-include="terms/20/ambiguous-to-users-in-general.html" data-include-replace="true" data-include-id="include-033138111093675704">
 <dd>
    
    <p>the purpose cannot be determined from the link and all information of the Web page
@@ -1823,7 +1530,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/ascii-art.html" data-include-replace="true" data-include-id="include-6188581104683082">
+      <dt data-include="terms/20/ascii-art.html" data-include-replace="true" data-include-id="include-9526503914388873">
 <dd>
    
    <p>picture created by a spatial arrangement of characters or glyphs (typically from the
@@ -1832,7 +1539,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/assistive-technology.html" data-include-replace="true" data-include-id="include-42817626713510304">
+      <dt data-include="terms/20/assistive-technology.html" data-include-replace="true" data-include-id="include-5501509179367092">
 <dd>
    
    <p>hardware and/or software that acts as a <a class="respec-offending-element" title="Linking error: not matching <dfn>">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements
@@ -1895,7 +1602,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/audio.html" data-include-replace="true" data-include-id="include-17476744946631184">
+      <dt data-include="terms/20/audio.html" data-include-replace="true" data-include-id="include-9395889848384231">
 <dd>
    
    <p>the technology of sound reproduction</p>
@@ -1906,7 +1613,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/audio-description.html" data-include-replace="true" data-include-id="include-6375329430111938">
+      <dt data-include="terms/20/audio-description.html" data-include-replace="true" data-include-id="include-3441020304763962">
 <dd>
    
    <p>narration added to the soundtrack to describe important visual details that cannot
@@ -1930,7 +1637,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/audio-feedback.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/audio-only.html" data-include-replace="true" data-include-id="include-2834219397290456">
+      <dt data-include="terms/20/audio-only.html" data-include-replace="true" data-include-id="include-2862472398762914">
 <dd>
    
    <p>a time-based presentation that contains only <a class="respec-offending-element" title="Linking error: not matching <dfn>">audio</a> (no <a class="respec-offending-element" title="Linking error: not matching <dfn>">video</a> and no interaction)
@@ -1942,7 +1649,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/beginners-help.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/blinking.html" data-include-replace="true" data-include-id="include-937261619266649">
+      <dt data-include="terms/20/blinking.html" data-include-replace="true" data-include-id="include-30051199881755575">
 <dd>
    
    <p>switch back and forth between two visual states in a way that is meant to draw attention</p>
@@ -1953,14 +1660,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/blocks-of-text.html" data-include-replace="true" data-include-id="include-4462733360825828">
+      <dt data-include="terms/20/blocks-of-text.html" data-include-replace="true" data-include-id="include-4392596995683231">
 <dd>
    
    <p>more than one sentence of text</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/captcha.html" data-include-replace="true" data-include-id="include-7352918078568209">
+      <dt data-include="terms/20/captcha.html" data-include-replace="true" data-include-id="include-5694485276700787">
 <dd>
    
    <p>initialism for "Completely Automated Public Turing test to tell Computers and Humans
@@ -1978,7 +1685,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/captions.html" data-include-replace="true" data-include-id="include-5585276165523216">
+      <dt data-include="terms/20/captions.html" data-include-replace="true" data-include-id="include-4408646032288035">
 <dd>
    
    <p>synchronized visual and/or <a class="respec-offending-element" title="Linking error: not matching <dfn>">text alternative</a> for both speech and non-speech audio information needed to understand the media content
@@ -2010,7 +1717,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/change-of-content.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/changes-of-context.html" data-include-replace="true" data-include-id="include-029845555575238825">
+      <dt data-include="terms/20/changes-of-context.html" data-include-replace="true" data-include-id="include-43076781181044366">
 <dd>
    
    <p>major changes in the content of the <a class="respec-offending-element" title="Linking error: not matching <dfn>">Web page</a> that, if made without user awareness, can disorient users who are not able to view
@@ -2054,14 +1761,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/concrete-wording.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/conformance.html" data-include-replace="true" data-include-id="include-8084088073698164">
+      <dt data-include="terms/20/conformance.html" data-include-replace="true" data-include-id="include-7515616712412574">
 <dd>
    
    <p>satisfying all the requirements of a given standard, guideline or specification</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/conforming-alternate-version.html" data-include-replace="true" data-include-id="include-24516461945926515">
+      <dt data-include="terms/20/conforming-alternate-version.html" data-include-replace="true" data-include-id="include-8797041095236218">
 <dd>
    
    <p>version that</p>
@@ -2131,7 +1838,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/content.html" data-include-replace="true" data-include-id="include-9451910847826697">
+      <dt data-include="terms/20/content.html" data-include-replace="true" data-include-id="include-9131892273142335">
 <dd>
    
    <p>information and sensory experience to be communicated to the user by means of a <a class="respec-offending-element" title="Linking error: not matching <dfn>">user agent</a>, including code or markup that defines the content's <a class="respec-offending-element" title="Linking error: not matching <dfn>">structure</a>, <a class="respec-offending-element" title="Linking error: not matching <dfn>">presentation</a>, and interactions
@@ -2139,7 +1846,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/context-sensitive-help.html" data-include-replace="true" data-include-id="include-2275382973875757">
+      <dt data-include="terms/20/context-sensitive-help.html" data-include-replace="true" data-include-id="include-5867400852516549">
 <dd>
    
    <p>help text that provides information related to the function currently being performed</p>
@@ -2150,7 +1857,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/contextual-information.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/contrast-ratio.html" data-include-replace="true" data-include-id="include-062119814228638326">
+      <dt data-include="terms/20/contrast-ratio.html" data-include-replace="true" data-include-id="include-768295716143373">
 <dd>
    
    <p>(L1 + 0.05) / (L2 + 0.05), where</p>
@@ -2198,7 +1905,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/correct-reading-sequence.html" data-include-replace="true" data-include-id="include-02799620434979211">
+      <dt data-include="terms/20/correct-reading-sequence.html" data-include-replace="true" data-include-id="include-6575735175853663">
 <dd>
    
    <p>any sequence where words and paragraphs are presented in an order that does not change
@@ -2215,7 +1922,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/device-sensor.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/21/css-pixel.html" data-include-replace="true" data-include-id="include-16053459866698527">
+      <dt data-include="terms/21/css-pixel.html" data-include-replace="true" data-include-id="include-3472607705907471">
 <dd class="new">
    					
    <p class="change">New</p>
@@ -2231,7 +1938,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    				
 </dd></dt>
 
-      <dt data-include="terms/21/easily-available.html" data-include-replace="true" data-include-id="include-2238567765468058">
+      <dt data-include="terms/21/easily-available.html" data-include-replace="true" data-include-id="include-8189529914738427">
 <dd class="new">
    					
    <p class="change">New</p>
@@ -2255,7 +1962,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    				
 </dd></dt>
 
-      <dt data-include="terms/20/emergency.html" data-include-replace="true" data-include-id="include-8973820037731799">
+      <dt data-include="terms/20/emergency.html" data-include-replace="true" data-include-id="include-6373557690145819">
 <dd>
    
    <p>a sudden, unexpected situation or occurrence that requires immediate action to preserve
@@ -2264,7 +1971,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/essential.html" data-include-replace="true" data-include-id="include-46496275354490835">
+      <dt data-include="terms/20/essential.html" data-include-replace="true" data-include-id="include-364960512365643">
 <dd>
    					
    <p>if removed, would fundamentally change the information or functionality of the content,
@@ -2275,7 +1982,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/essential.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/extended-audio-description.html" data-include-replace="true" data-include-id="include-7249761422147856">
+      <dt data-include="terms/20/extended-audio-description.html" data-include-replace="true" data-include-id="include-3983303408524017">
 <dd>
    
    <p>audio description that is added to an audiovisual presentation by pausing the <a class="respec-offending-element" title="Linking error: not matching <dfn>">video</a> so that there is time to add additional description
@@ -2286,7 +1993,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/flash.html" data-include-replace="true" data-include-id="include-31482113485655283">
+      <dt data-include="terms/20/flash.html" data-include-replace="true" data-include-id="include-899390564612907">
 <dd>
    
    <p>a pair of opposing changes in <a class="respec-offending-element" title="Linking error: not matching <dfn>">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency
@@ -2301,7 +2008,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/functionality.html" data-include-replace="true" data-include-id="include-39457843692746675">
+      <dt data-include="terms/20/functionality.html" data-include-replace="true" data-include-id="include-15092446614085375">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">processes</a> and outcomes achievable through user action
@@ -2309,7 +2016,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/general-flash-and-red-flash-thresholds.html" data-include-replace="true" data-include-id="include-8697753877008152">
+      <dt data-include="terms/20/general-flash-and-red-flash-thresholds.html" data-include-replace="true" data-include-id="include-6501397378388165">
 <dd>
    
    <p>a <a class="respec-offending-element" title="Linking error: not matching <dfn>">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
@@ -2379,7 +2086,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/help.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/human-language.html" data-include-replace="true" data-include-id="include-009688194096468594">
+      <dt data-include="terms/20/human-language.html" data-include-replace="true" data-include-id="include-170657970254795">
 <dd>
    
    <p>language that is spoken, written or signed (through visual or tactile means) to communicate
@@ -2395,7 +2102,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/identify-the-user.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/idiom.html" data-include-replace="true" data-include-id="include-9656522480214522">
+      <dt data-include="terms/20/idiom.html" data-include-replace="true" data-include-id="include-0042953094047637475">
 <dd>
    
    <p>phrase whose meaning cannot be deduced from the meaning of the individual words and
@@ -2420,7 +2127,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/image-of-text.html" data-include-replace="true" data-include-id="include-5301682290699712">
+      <dt data-include="terms/20/image-of-text.html" data-include-replace="true" data-include-id="include-018291807791743775">
 <dd>
    
    <p>text that has been rendered in a non-text form (e.g., an image) in order to achieve
@@ -2440,14 +2147,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/informational-content.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/informative.html" data-include-replace="true" data-include-id="include-7092425386966288">
+      <dt data-include="terms/20/informative.html" data-include-replace="true" data-include-id="include-0762745047481388">
 <dd>
    
    <p>for information purposes and not required for conformance</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/input-error.html" data-include-replace="true" data-include-id="include-41480556118138323">
+      <dt data-include="terms/20/input-error.html" data-include-replace="true" data-include-id="include-9326534119125762">
 <dd>
    
    <p>information provided by the user that is not accepted</p>
@@ -2467,7 +2174,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/jargon.html" data-include-replace="true" data-include-id="include-05655644294845663">
+      <dt data-include="terms/20/jargon.html" data-include-replace="true" data-include-id="include-3544098752656062">
 <dd>
    
    <p>words used in a particular way by people in a particular field</p>
@@ -2476,7 +2183,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/keyboard-interface.html" data-include-replace="true" data-include-id="include-001994315584448181">
+      <dt data-include="terms/20/keyboard-interface.html" data-include-replace="true" data-include-id="include-045818164368457426">
 <dd>
    
    <p>interface used by software to obtain keystroke input</p>
@@ -2500,7 +2207,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/label.html" data-include-replace="true" data-include-id="include-6888129997784493">
+      <dt data-include="terms/20/label.html" data-include-replace="true" data-include-id="include-03217347189973441">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">text</a> or other component with a <a class="respec-offending-element" title="Linking error: not matching <dfn>">text alternative</a> that is presented to a user to identify a component within Web <a class="respec-offending-element" title="Linking error: not matching <dfn>">content</a></p>
@@ -2513,7 +2220,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/large-scale.html" data-include-replace="true" data-include-id="include-9603397050564606">
+      <dt data-include="terms/20/large-scale.html" data-include-replace="true" data-include-id="include-9111275900524902">
 <dd>
    
    <p>with at least 18 point or 14 point bold or font size that would yield equivalent size
@@ -2555,7 +2262,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/legal-commitments.html" data-include-replace="true" data-include-id="include-9813788341019571">
+      <dt data-include="terms/20/legal-commitments.html" data-include-replace="true" data-include-id="include-5754325017841115">
 <dd>
    
    <p>transactions where the person incurs a legally binding obligation or benefit</p>
@@ -2566,14 +2273,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/link-purpose.html" data-include-replace="true" data-include-id="include-19620952742467912">
+      <dt data-include="terms/20/link-purpose.html" data-include-replace="true" data-include-id="include-7334886842972346">
 <dd>
    
    <p>nature of the result obtained by activating a hyperlink</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/live.html" data-include-replace="true" data-include-id="include-11922075399801013">
+      <dt data-include="terms/20/live.html" data-include-replace="true" data-include-id="include-7725452323099262">
 <dd>
    
    <p>information captured from a real-world event and transmitted to the receiver with
@@ -2591,7 +2298,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/long-document.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/lower-secondary-education-level.html" data-include-replace="true" data-include-id="include-4704702713194604">
+      <dt data-include="terms/20/lower-secondary-education-level.html" data-include-replace="true" data-include-id="include-3473173704521759">
 <dd>
    
    <p>the two or three year period of education that begins after completion of six years
@@ -2603,7 +2310,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/mechanism.html" data-include-replace="true" data-include-id="include-9335623318706445">
+      <dt data-include="terms/20/mechanism.html" data-include-replace="true" data-include-id="include-37957111763434237">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">process</a> or technique for achieving a result
@@ -2616,7 +2323,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/media-alternative-for-text.html" data-include-replace="true" data-include-id="include-49867786153339266">
+      <dt data-include="terms/20/media-alternative-for-text.html" data-include-replace="true" data-include-id="include-4709171754036976">
 <dd>
    
    <p>media that presents no more information than is already presented in text (directly
@@ -2630,7 +2337,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/name.html" data-include-replace="true" data-include-id="include-16725032805231344">
+      <dt data-include="terms/20/name.html" data-include-replace="true" data-include-id="include-15626755381757307">
 <dd>
    
    <p>text by which software can identify a component within Web content to the user</p>
@@ -2643,7 +2350,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/navigated-sequentially.html" data-include-replace="true" data-include-id="include-8978163612954122">
+      <dt data-include="terms/20/navigated-sequentially.html" data-include-replace="true" data-include-id="include-7139696766127415">
 <dd>
    
    <p>navigated in the order defined for advancing focus (from one element to the next)
@@ -2655,7 +2362,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/non-numerical-value.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/non-text-content.html" data-include-replace="true" data-include-id="include-6219193781868892">
+      <dt data-include="terms/20/non-text-content.html" data-include-replace="true" data-include-id="include-4402337499318383">
 <dd>
    
    <p>any content that is not a sequence of characters that can be <a class="respec-offending-element" title="Linking error: not matching <dfn>">programmatically determined</a> or where the sequence is not expressing something in <a class="respec-offending-element" title="Linking error: not matching <dfn>">human language</a></p>
@@ -2668,7 +2375,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/non-typical-option.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/normative.html" data-include-replace="true" data-include-id="include-9783197338693597">
+      <dt data-include="terms/20/normative.html" data-include-replace="true" data-include-id="include-901422750551053">
 <dd>
    
    <p>required for conformance</p>
@@ -2677,7 +2384,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/on-a-full-screen-window.html" data-include-replace="true" data-include-id="include-6301846227311885">
+      <dt data-include="terms/20/on-a-full-screen-window.html" data-include-replace="true" data-include-id="include-5456536917380141">
 <dd>
    
    <p>on the most common sized desktop/laptop display with the viewport maximized</p>
@@ -2691,7 +2398,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/orientation.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/paused.html" data-include-replace="true" data-include-id="include-4637757440679584">
+      <dt data-include="terms/20/paused.html" data-include-replace="true" data-include-id="include-08153624246958713">
 <dd>
    
    <p>stopped by user request and not resumed until requested by user</p>
@@ -2704,14 +2411,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/pointer-input.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/prerecorded.html" data-include-replace="true" data-include-id="include-5975992978037938">
+      <dt data-include="terms/20/prerecorded.html" data-include-replace="true" data-include-id="include-568047648590829">
 <dd>
    
    <p>information that is not <a class="respec-offending-element" title="Linking error: not matching <dfn>">live</a></p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/presentation.html" data-include-replace="true" data-include-id="include-013986334345922335">
+      <dt data-include="terms/20/presentation.html" data-include-replace="true" data-include-id="include-6431463859782831">
 <dd>
    
    <p>rendering of the <a class="respec-offending-element" title="Linking error: not matching <dfn>">content</a> in a form to be perceived by users
@@ -2719,7 +2426,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/primary-education-level.html" data-include-replace="true" data-include-id="include-6754824745479744">
+      <dt data-include="terms/20/primary-education-level.html" data-include-replace="true" data-include-id="include-8549157132810217">
 <dd>
    
    <p>six year time period that begins between the ages of five and seven, possibly without
@@ -2734,7 +2441,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/primary-modality.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/process.html" data-include-replace="true" data-include-id="include-12773790174558064">
+      <dt data-include="terms/20/process.html" data-include-replace="true" data-include-id="include-9058705851728095">
 <dd>
    
    <p>series of user actions where each action is required in order to complete an activity</p>
@@ -2750,7 +2457,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/programmatically-determined.html" data-include-replace="true" data-include-id="include-6009283783995094">
+      <dt data-include="terms/20/programmatically-determined.html" data-include-replace="true" data-include-id="include-36291342184166164">
 <dd>
    
    <p>determined by software from author-supplied data provided in a way that different
@@ -2768,7 +2475,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/programmatically-determined-link-context.html" data-include-replace="true" data-include-id="include-2639416509733543">
+      <dt data-include="terms/20/programmatically-determined-link-context.html" data-include-replace="true" data-include-id="include-1037905336543048">
 <dd>
    
    <p>additional information that can be <a class="respec-offending-element" title="Linking error: not matching <dfn>">programmatically determined</a> from <a class="respec-offending-element" title="Linking error: not matching <dfn>">relationships</a> with a link, combined with the link text, and presented to users in different modalities
@@ -2787,7 +2494,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/programmatic-notification.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/programmatically-set.html" data-include-replace="true" data-include-id="include-8929656529097463">
+      <dt data-include="terms/20/programmatically-set.html" data-include-replace="true" data-include-id="include-7523318555238743">
 <dd>
    
    <p>set by software using methods that are supported by user agents, including assistive
@@ -2796,7 +2503,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/pure-decoration.html" data-include-replace="true" data-include-id="include-8502566919126069">
+      <dt data-include="terms/20/pure-decoration.html" data-include-replace="true" data-include-id="include-324551203108951">
 <dd>
    
    <p>serving only an aesthetic purpose, providing no information, and having no functionality</p>
@@ -2811,7 +2518,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/rapid-feedback.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/real-time-event.html" data-include-replace="true" data-include-id="include-8084406416165646">
+      <dt data-include="terms/20/real-time-event.html" data-include-replace="true" data-include-id="include-3364301625776114">
 <dd>
    
    <p>event that a) occurs at the same time as the viewing and b) is not completely generated
@@ -2830,14 +2537,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/relationships.html" data-include-replace="true" data-include-id="include-45821624884487955">
+      <dt data-include="terms/20/relationships.html" data-include-replace="true" data-include-id="include-1787448169855772">
 <dd>
    
    <p>meaningful associations between distinct pieces of content</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/relative-luminance.html" data-include-replace="true" data-include-id="include-2743714281653633">
+      <dt data-include="terms/20/relative-luminance.html" data-include-replace="true" data-include-id="include-21944810494772216">
 <dd>
    
    <p>the relative brightness of any point in a colorspace, normalized to 0 for darkest
@@ -2900,7 +2607,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/reliable-and-achievable.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/relied-upon.html" data-include-replace="true" data-include-id="include-23773573979309193">
+      <dt data-include="terms/20/relied-upon.html" data-include-replace="true" data-include-id="include-9353065082551024">
 <dd>
    
    <p>the content would not <a class="respec-offending-element" title="Linking error: not matching <dfn>">conform</a> if that <a class="respec-offending-element" title="Linking error: not matching <dfn>">technology</a> is turned off or is not supported
@@ -2908,7 +2615,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/role.html" data-include-replace="true" data-include-id="include-22624912917990514">
+      <dt data-include="terms/20/role.html" data-include-replace="true" data-include-id="include-4624763429503784">
 <dd>
    
    <p>text or number by which software can identify the function of a component within Web
@@ -2921,7 +2628,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/same-functionality-.html" data-include-replace="true" data-include-id="include-11047859559414053">
+      <dt data-include="terms/20/same-functionality-.html" data-include-replace="true" data-include-id="include-6629183410688546">
 <dd>
    
    <p>same result when used</p>
@@ -2934,7 +2641,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/same-relative-order.html" data-include-replace="true" data-include-id="include-6914068833238267">
+      <dt data-include="terms/20/same-relative-order.html" data-include-replace="true" data-include-id="include-066988273016507">
 <dd>
    
    <p>same position relative to other items</p>
@@ -2947,14 +2654,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/satisfies-a-success-criterion.html" data-include-replace="true" data-include-id="include-31150360781590347">
+      <dt data-include="terms/20/satisfies-a-success-criterion.html" data-include-replace="true" data-include-id="include-7221131084967967">
 <dd>
    
    <p>the success criterion does not evaluate to 'false' when applied to the page</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/section.html" data-include-replace="true" data-include-id="include-3208397531130016">
+      <dt data-include="terms/20/section.html" data-include-replace="true" data-include-id="include-4086441678963715">
 <dd>
    
    <p>A self-contained portion of written content that deals with one or more related topics
@@ -2967,7 +2674,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/set-of-web-pages.html" data-include-replace="true" data-include-id="include-19297128032731847">
+      <dt data-include="terms/20/set-of-web-pages.html" data-include-replace="true" data-include-id="include-6608303734034229">
 <dd>
    
    <p>collection of <a class="respec-offending-element" title="Linking error: not matching <dfn>">Web pages</a> that share a common purpose and that are created by the same author, group or organization
@@ -2989,7 +2696,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/sign-language.html" data-include-replace="true" data-include-id="include-7410377123077299">
+      <dt data-include="terms/20/sign-language.html" data-include-replace="true" data-include-id="include-3869710118366869">
 <dd>
    
    <p>a language using combinations of movements of the hands and arms, facial expressions,
@@ -2998,7 +2705,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/sign-language-interpretation.html" data-include-replace="true" data-include-id="include-12929325550178472">
+      <dt data-include="terms/20/sign-language-interpretation.html" data-include-replace="true" data-include-id="include-9627828351564673">
 <dd>
    
    <p>translation of one language, generally a spoken language, into a <a class="respec-offending-element" title="Linking error: not matching <dfn>">sign language</a></p>
@@ -3013,7 +2720,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/single-character-shortcut.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/21/single-pointer-activation.html" data-include-replace="true" data-include-id="include-6518609211614481">
+      <dt data-include="terms/21/single-pointer-activation.html" data-include-replace="true" data-include-id="include-9725714571340425">
 <dd class="new">
    					
    <p class="change">new</p>
@@ -3029,7 +2736,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/small-web-site.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/specific-sensory-experience.html" data-include-replace="true" data-include-id="include-3707733634614474">
+      <dt data-include="terms/20/specific-sensory-experience.html" data-include-replace="true" data-include-id="include-36625691734352195">
 <dd>
    
    <p>a sensory experience that is not purely decorative and does not primarily convey important
@@ -3044,7 +2751,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/standardized-technique.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/structure.html" data-include-replace="true" data-include-id="include-5610758941496585">
+      <dt data-include="terms/20/structure.html" data-include-replace="true" data-include-id="include-18150680975153666">
 <dd>
    
    <ol>
@@ -3059,7 +2766,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/supplemental-content.html" data-include-replace="true" data-include-id="include-7011367709588736">
+      <dt data-include="terms/20/supplemental-content.html" data-include-replace="true" data-include-id="include-2707889733253137">
 <dd>
    
    <p>additional <a class="respec-offending-element" title="Linking error: not matching <dfn>">content</a> that illustrates or clarifies the primary content
@@ -3077,7 +2784,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/synchronized-media.html" data-include-replace="true" data-include-id="include-6692323141728482">
+      <dt data-include="terms/20/synchronized-media.html" data-include-replace="true" data-include-id="include-06863987306414687">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">audio</a> or <a class="respec-offending-element" title="Linking error: not matching <dfn>">video</a> synchronized with another format for presenting information and/or with time-based
@@ -3088,7 +2795,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/target.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/technology.html" data-include-replace="true" data-include-id="include-5788424744772847">
+      <dt data-include="terms/20/technology.html" data-include-replace="true" data-include-id="include-7501379301651463">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">mechanism</a> for encoding instructions to be rendered, played or executed by <a class="respec-offending-element" title="Linking error: not matching <dfn>">user agents</a></p>
@@ -3109,14 +2816,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/text.html" data-include-replace="true" data-include-id="include-02567817085919266">
+      <dt data-include="terms/20/text.html" data-include-replace="true" data-include-id="include-9679572856248118">
 <dd>
    
    <p>sequence of characters that can be <a class="respec-offending-element" title="Linking error: not matching <dfn>">programmatically determined</a>, where the sequence is expressing something in <a class="respec-offending-element" title="Linking error: not matching <dfn>">human language</a></p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/text-alternative.html" data-include-replace="true" data-include-id="include-2935529784250963">
+      <dt data-include="terms/20/text-alternative.html" data-include-replace="true" data-include-id="include-5527258746267532">
 <dd>
    
    <p><a class="respec-offending-element" title="Linking error: not matching <dfn>">Text</a> that is programmatically associated with <a class="respec-offending-element" title="Linking error: not matching <dfn>">non-text content</a> or referred to from text that is programmatically associated with non-text content.
@@ -3135,7 +2842,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/understandable-language.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/21/up-event.html" data-include-replace="true" data-include-id="include-5149591860311253">
+      <dt data-include="terms/21/up-event.html" data-include-replace="true" data-include-id="include-2757344465509237">
 <dd class="new">
   <p class="change">new</p>
   <p>The activation of a component when the trigger stimulus is released. On different
@@ -3145,7 +2852,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dd>
 </dt>
 
-      <dt data-include="terms/20/used-in-an-unusual-or-restricted-way.html" data-include-replace="true" data-include-id="include-531300149191857">
+      <dt data-include="terms/20/used-in-an-unusual-or-restricted-way.html" data-include-replace="true" data-include-id="include-8954233331823771">
 <dd>
    
    <p>words used in such a way that requires users to know exactly which definition to apply
@@ -3162,7 +2869,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
       <!-- <dt data-include="terms/21/user-action.html" data-include-replace="true"></dt> -->
 
-      <dt data-include="terms/20/user-agent.html" data-include-replace="true" data-include-id="include-05714475131722252">
+      <dt data-include="terms/20/user-agent.html" data-include-replace="true" data-include-id="include-8806810056666692">
 <dd>
    
    <p>any software that retrieves and presents Web content for users</p>
@@ -3172,7 +2879,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/user-controllable.html" data-include-replace="true" data-include-id="include-24568410671183072">
+      <dt data-include="terms/20/user-controllable.html" data-include-replace="true" data-include-id="include-38092367323193255">
 <dd>
    
    <p>data that is intended to be accessed by users</p>
@@ -3183,7 +2890,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/user-interface-component.html" data-include-replace="true" data-include-id="include-9425178503069453">
+      <dt data-include="terms/20/user-interface-component.html" data-include-replace="true" data-include-id="include-602042515677619">
 <dd>
    
    <p>a part of the content that is perceived by users as a single control for a distinct
@@ -3210,7 +2917,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/video.html" data-include-replace="true" data-include-id="include-06933192906453267">
+      <dt data-include="terms/20/video.html" data-include-replace="true" data-include-id="include-9713684033642835">
 <dd>
    
    <p>the technology of moving or sequenced pictures or images</p>
@@ -3219,7 +2926,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/video-only.html" data-include-replace="true" data-include-id="include-504643036735968">
+      <dt data-include="terms/20/video-only.html" data-include-replace="true" data-include-id="include-25402130425538694">
 <dd>
    
    <p>a time-based presentation that contains only <a class="respec-offending-element" title="Linking error: not matching <dfn>">video</a> (no <a class="respec-offending-element" title="Linking error: not matching <dfn>">audio</a> and no interaction)
@@ -3227,7 +2934,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/viewport.html" data-include-replace="true" data-include-id="include-3048244875490742">
+      <dt data-include="terms/20/viewport.html" data-include-replace="true" data-include-id="include-3298839323134488">
 <dd>
    
    <p>object in which the user agent presents content</p>
@@ -3243,14 +2950,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd></dt>
 
-      <dt data-include="terms/20/visually-customized.html" data-include-replace="true" data-include-id="include-5269287432018492">
+      <dt data-include="terms/20/visually-customized.html" data-include-replace="true" data-include-id="include-42089392668749515">
 <dd>
    
    <p>the font, size, color, and background can be set</p>
    
 </dd></dt>
 
-      <dt data-include="terms/20/web-page.html" data-include-replace="true" data-include-id="include-07362307413337876">
+      <dt data-include="terms/20/web-page.html" data-include-replace="true" data-include-id="include-6303071420294659">
 <dd>
    
    <p>a non-embedded resource obtained from a single URI using HTTP plus any other resources
@@ -3290,19 +2997,52 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
     </dl>
   </section>
-  <div data-include="../acknowledgements.html" data-include-replace="true" data-include-id="include-5146293517930656">
+
+  <section class="appendix" id="changelog" typeof="bibo:Chapter" resource="#changelog" property="bibo:hasPart">
+    <!--OddPage-->
+    <h2 id="h-changelog" resource="#h-changelog"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Change Log<span class="permalink" typeof="bookmark"><a href="#changelog" aria-label="Permalink for A. Change Log" title="Permalink for A. Change Log" property="url"><span property="title" content="A. Change Log">§</span></a>
+      </span>
+      </span>
+    </h2>
+    <p>The full <a href="https://github.com/w3c/wcag21/commits/master/guidelines">commit history to WCAG 2.1</a> is available.</p>
+
+    <section id="substantive-changes-since-the-last-public-working-draft" typeof="bibo:Chapter" resource="#substantive-changes-since-the-last-public-working-draft" property="bibo:hasPart">
+      <h3 id="h-substantive-changes-since-the-last-public-working-draft" resource="#h-substantive-changes-since-the-last-public-working-draft"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Substantive changes since the <a href="https://www.w3.org/TR/2017/WD-WCAG21-20170419/">last public working draft</a><span class="permalink" typeof="bookmark"><a href="#substantive-changes-since-the-last-public-working-draft" aria-label="Permalink for A.1 Substantive changes since the last public working draft" title="Permalink for A.1 Substantive changes since the last public working draft" property="url"><span property="title" content="A.1 Substantive changes since the last public working draft">§</span></a>
+        </span>
+        </span>
+      </h3>
+      <ul>
+        <li><a href="@@">@@</a></li>
+      </ul>
+    </section>
+
+    <section id="other-substantive-changes-since-the-first-public-working-draft" typeof="bibo:Chapter" resource="#other-substantive-changes-since-the-first-public-working-draft" property="bibo:hasPart">
+      <h3 id="h-other-substantive-changes-since-the-first-public-working-draft" resource="#h-other-substantive-changes-since-the-first-public-working-draft"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.2 </span>Other substantive changes since the <a href="https://www.w3.org/TR/2017/WD-WCAG21-20170228/">first public working draft</a><span class="permalink" typeof="bookmark"><a href="#other-substantive-changes-since-the-first-public-working-draft" aria-label="Permalink for A.2 Other substantive changes since the first public working draft" title="Permalink for A.2 Other substantive changes since the first public working draft" property="url"><span property="title" content="A.2 Other substantive changes since the first public working draft">§</span></a>
+        </span>
+        </span>
+      </h3>
+      <ul>
+        <li>2017-03-16: Remove Success Criteria that were listed as "proposals" in the First Public Working Draft but not yet past the Working Group consensus process.</li>
+        <li>2017-04-13: Added definition of <a class="respec-offending-element" title="Linking error: not matching <dfn>">easily available</a>.</li>
+        <li>2017-04-14: Accepted new version of <a href="#accidental-activation">Accidental Activation</a>, changing "Timing of event is essential..." to "Down-event activation event is essential..." and removing note about applicability when AT that remaps touch gestures is not turned on.</li>
+        <li>2017-04-14: Added content that had been omitted from WCAG 2.0 Success Criteria <a href="#error-prevention-legal-financial-data">Error Prevention (Legal, Financial, Data)</a>, <a href="#error-prevention-all">Error Prevention (All)</a>, and <a href="#visual-presentation">Visual Presentation</a>.</li>
+        <li>2017-04-19: Added definition of <a class="respec-offending-element" title="Linking error: not matching <dfn>">essential</a> (which had been omitted from WCAG 2.0 terms) and <a class="respec-offending-element" title="Linking error: not matching <dfn>">css pixel</a>.</li>
+      </ul>
+    </section>
+  </section>
+  <div data-include="../acknowledgements.html" data-include-replace="true" data-include-id="include-22774267345143429">
   </div>
 
 
   <section id="references" class="appendix" typeof="bibo:Chapter" resource="#references" property="bibo:hasPart">
     <!--OddPage-->
-    <h2 id="h-references" resource="#h-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>References<span class="permalink" typeof="bookmark"><a href="#references" aria-label="Permalink for A. References" title="Permalink for A. References" property="url"><span property="title" content="A. References">§</span></a>
+    <h2 id="h-references" resource="#h-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">B. </span>References<span class="permalink" typeof="bookmark"><a href="#references" aria-label="Permalink for B. References" title="Permalink for B. References" property="url"><span property="title" content="B. References">§</span></a>
       </span>
       </span>
     </h2>
 
     <section id="normative-references" typeof="bibo:Chapter" resource="#normative-references" property="bibo:hasPart">
-      <h3 id="h-normative-references" resource="#h-normative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Normative references<span class="permalink" typeof="bookmark"><a href="#normative-references" aria-label="Permalink for A.1 Normative references" title="Permalink for A.1 Normative references" property="url"><span property="title" content="A.1 Normative references">§</span></a>
+      <h3 id="h-normative-references" resource="#h-normative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">B.1 </span>Normative references<span class="permalink" typeof="bookmark"><a href="#normative-references" aria-label="Permalink for B.1 Normative references" title="Permalink for B.1 Normative references" property="url"><span property="title" content="B.1 Normative references">§</span></a>
         </span>
         </span>
       </h3>
@@ -3317,7 +3057,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </section>
 
     <section id="informative-references" typeof="bibo:Chapter" resource="#informative-references" property="bibo:hasPart">
-      <h3 id="h-informative-references" resource="#h-informative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.2 </span>Informative references<span class="permalink" typeof="bookmark"><a href="#informative-references" aria-label="Permalink for A.2 Informative references" title="Permalink for A.2 Informative references" property="url"><span property="title" content="A.2 Informative references">§</span></a>
+      <h3 id="h-informative-references" resource="#h-informative-references"><span property="xhv:role" resource="xhv:heading"><span class="secno">B.2 </span>Informative references<span class="permalink" typeof="bookmark"><a href="#informative-references" aria-label="Permalink for B.2 Informative references" title="Permalink for B.2 Informative references" property="url"><span property="title" content="B.2 Informative references">§</span></a>
         </span>
         </span>
       </h3>
