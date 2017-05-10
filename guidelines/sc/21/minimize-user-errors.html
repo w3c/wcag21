@@ -9,9 +9,16 @@
    <p class="issue">This is a proposed Success Criterion that has not yet been formally approved by the
       Working Group. Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/13">Issue 13</a> and <a href="https://github.com/w3c/wcag21/pull/97">Pull Request 97</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p>
-   					
-   <p>The user can select from a choice of valid input values, unless there are more than thirty one valid values for any section of the input field or unless this interferes with the main purpose of the content (such as an evaluation application).</p>
-  <p>Alternative formats of separator characters such as dash, dots, bracket and spaces are accepted in numerical inputs except for the use of a dot as a decimal mark.
-   </p>
-   				
+   	
+<p>
+        Where it is possible to provide pre-defined choices, the user can select from a list of valid input values.
+        Where users must manually enter numerical inputs, alternative separator characters are accepted.</p>
+
+    Exceptions:
+<ul>
+    <li>    Where pre-defined choices for a piece of data have more than thirty-one valid values, it is not necessary to provide pre-defined choices. For example, a piece of data with more then 31 choices could be a year in a date field.
+  </li><li>    Where pre-defined choices interfere with the main purpose of the content.
+    </li><li>     Where alternative separator characters could alter the numeric value, such as substituting commas with periods.
+</li></ul> 
+
 </section>
