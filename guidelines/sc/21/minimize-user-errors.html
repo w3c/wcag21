@@ -1,24 +1,31 @@
 <section class="sc proposed">
-   					
-   <h4>Minimize user errors</h4>
-   					
-   <p class="conformance-level">A</p>
-   					
-   <p class="change">Proposed</p>
-   					
-   <p class="issue">This is a proposed Success Criterion that has not yet been formally approved by the
+<h4>Minimize user input errors</h4>
+  <p class="conformance-level">A</p>
+  <p class="change">Proposed</p>
+  <p class="issue">This is a proposed Success Criterion that has not yet been formally approved by the
       Working Group. Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/13">Issue 13</a> and <a href="https://github.com/w3c/wcag21/pull/97">Pull Request 97</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p>
    	
-<p>
-        Where it is possible to provide pre-defined choices, the user can select from a list of valid input values.
-        Where users must manually enter numerical inputs, alternative separator characters are accepted.</p>
+  <p>Where users are required to submit information, all of the following are true:</p>
+    <ol>
+      <li>Where all possible inputs come from a discrete set of data values, a user can select from a choice of valid input values without manually entering the value.</li>
+      <li>Where numerical data needs to be manually entered, a user can leave out separator characters or use alternative separator characters.</li>
+    </ol>
 
-    Exceptions:
-<ul>
-    <li>    Where pre-defined choices for a piece of data have more than thirty-one valid values, it is not necessary to provide pre-defined choices. For example, a piece of data with more then 31 choices could be a year in a date field.
-  </li><li>    Where pre-defined choices interfere with the main purpose of the content.
-    </li><li>     Where alternative separator characters could alter the numeric value, such as substituting commas with periods.
-</li></ul> 
-
+ <p>Exceptions:</p>
+    <ul>
+      <li>Where the set of discrete data values is larger than thirty-one valid values.</li>
+      <li>Where providing a list of valid input values interferes with the main purpose of the content.</li>
+      <li>Where leaving out or substituting separator characters could alter the numeric value, such as substituting commas with periods.</li>
+    </ul> 
+  <h3>Definitions</h3>
+  <p><strong>Separator characters</strong></p>
+  <p>Delineators between sequences of numbers, which are used to separate a long numeric string into culturally 
+    or visually accepted groupings. Separators are common in dates, phone numbers and identify numbers. 
+    Common separators include forward slashes (/), colons (:), dashes (-), commas (,) and spaces. 
+    In a numeric string, an alternative separator key could be any alpha or punctuation key which does not 
+    affect the value of the numeric string.</p>
+  <p><strong>Discrete data</strong></p>  
+  <p>Data that can only take certain values. Discrete data is based on counts. Only a finite number of values is possible, 
+    and the values cannot be subdivided meaningfully.</p>
 </section>
