@@ -11,7 +11,7 @@ var respecConfig = {
 	specStatus:           "WD",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	publishDate:          "2017-06-29",
+	publishDate:          "2017-06-30",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
