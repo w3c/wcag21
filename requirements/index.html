@@ -95,7 +95,7 @@
         }
 
         code {
-            color: #C83500;
+            color: #c83500;
         }
 
         th code {
@@ -178,6 +178,41 @@
         #issue-summary li,
         .respec-dfn-list li {
             list-style: none;
+        }
+
+        details.respec-tests-details {
+            margin-left: 1em;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        details.respec-tests-details>* {
+            padding-right: 2em;
+        }
+
+        details.respec-tests-details[open] {
+            z-index: 999999;
+            position: absolute;
+            border: thin solid #cad3e2;
+            border-radius: .3em;
+            background-color: white;
+            padding-bottom: .5em;
+        }
+
+        details.respec-tests-details[open]>summary {
+            border-bottom: thin solid #cad3e2;
+            padding-left: 1em;
+            margin-bottom: 1em;
+            line-height: 2em;
+        }
+
+        details.respec-tests-details>ul {
+            width: 100%;
+            margin-top: -0.3em;
+        }
+
+        details.respec-tests-details>li {
+            padding-left: 1em;
         }
 
         @media print {
@@ -289,7 +324,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </style>
     <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
     <link rel="canonical" href="https://www.w3.org/TR/wcag-1.1-requirements/">
-    <meta name="generator" content="ReSpec 15.3.0">
+    <meta name="generator" content="ReSpec 15.7.4">
     <script id="initialUserConfig" type="application/json">
         {
             "trace": true,
@@ -329,9 +364,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             "wgPublicList": "public-comments-wcag20",
             "wgPatentURI": "http://www.w3.org/2004/01/pp-impl/35422/status",
             "maxTocLevel": 4,
-            "publishDate": "2017-07-18",
-            "publishISODate": "2017-07-18T00:00:00.000Z",
-            "generatedSubtitle": "Editor's Draft 18 July 2017"
+            "publishDate": "2017-08-04",
+            "publishISODate": "2017-08-04T00:00:00.000Z",
+            "generatedSubtitle": "Editor's Draft 04 August 2017"
         }
     </script>
 </head>
@@ -343,7 +378,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </p>
         <p></p>
         <h1 class="title p-name" id="title" property="dcterms:title">Requirements for Web Content Accessibility Guidelines 2.1</h1>
-        <h2 id="w3c-editor's-draft-18-july-2017§"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-07-18">18 July 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 18 July 2017" title="Permalink for W3C Editor's Draft 18 July 2017" property="url"><span property="title" content="W3C Editor's Draft 18 July 2017">§</span></a>
+        <h2 id="w3c-editor's-draft-04-august-2017§"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-08-04">04 August 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 04 August 2017" title="Permalink for W3C Editor's Draft 04 August 2017" property="url"><span property="title" content="W3C Editor's Draft 04 August 2017">§</span></a>
             </span>
         </h2>
         <dl>

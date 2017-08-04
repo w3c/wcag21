@@ -209,7 +209,7 @@
         }
 
         code {
-            color: #C83500;
+            color: #c83500;
         }
 
         th code {
@@ -292,6 +292,41 @@
         #issue-summary li,
         .respec-dfn-list li {
             list-style: none;
+        }
+
+        details.respec-tests-details {
+            margin-left: 1em;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        details.respec-tests-details>* {
+            padding-right: 2em;
+        }
+
+        details.respec-tests-details[open] {
+            z-index: 999999;
+            position: absolute;
+            border: thin solid #cad3e2;
+            border-radius: .3em;
+            background-color: white;
+            padding-bottom: .5em;
+        }
+
+        details.respec-tests-details[open]>summary {
+            border-bottom: thin solid #cad3e2;
+            padding-left: 1em;
+            margin-bottom: 1em;
+            line-height: 2em;
+        }
+
+        details.respec-tests-details>ul {
+            width: 100%;
+            margin-top: -0.3em;
+        }
+
+        details.respec-tests-details>li {
+            padding-left: 1em;
         }
 
         @media print {
@@ -403,7 +438,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     </style>
     <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED">
     <link rel="canonical" href="https://www.w3.org/TR/WCAG21/">
-    <meta name="generator" content="ReSpec 15.3.0">
+    <meta name="generator" content="ReSpec 15.7.4">
     <script id="initialUserConfig" type="application/json">
         {
             "trace": true,
@@ -493,9 +528,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     "title": "International Standard Classification of Education"
                 }
             },
-            "publishDate": "2017-07-18",
-            "publishISODate": "2017-07-18T00:00:00.000Z",
-            "generatedSubtitle": "Editor's Draft 18 July 2017"
+            "publishDate": "2017-08-04",
+            "publishISODate": "2017-08-04T00:00:00.000Z",
+            "generatedSubtitle": "Editor's Draft 04 August 2017"
         }
     </script>
 </head>
@@ -507,7 +542,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </p>
         <p></p>
         <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
-        <h2 id="w3c-editor's-draft-18-july-2017§"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-07-18">18 July 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 18 July 2017" title="Permalink for W3C Editor's Draft 18 July 2017" property="url"><span property="title" content="W3C Editor's Draft 18 July 2017">§</span></a>
+        <h2 id="w3c-editor's-draft-04-august-2017§"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-08-04">04 August 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 04 August 2017" title="Permalink for W3C Editor's Draft 04 August 2017" property="url"><span property="title" content="W3C Editor's Draft 04 August 2017">§</span></a>
             </span>
         </h2>
         <dl>
@@ -649,6 +684,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                             <li class="tocline"><a href="#zoom-content" class="tocxref"><span class="secno">1.4.10 </span>Zoom content</a></li>
                             <li class="tocline"><a href="#graphics-contrast" class="tocxref"><span class="secno">1.4.11 </span>Graphics Contrast</a></li>
                             <li class="tocline"><a href="#user-interface-component-contrast-(minimum)" class="tocxref"><span class="secno">1.4.12 </span>User Interface Component Contrast (Minimum)</a></li>
+                            <li class="tocline"><a href="#adapting-text" class="tocxref"><span class="secno">1.4.13 </span>Adapting Text</a></li>
                         </ol>
                     </li>
                 </ol>
@@ -1493,7 +1529,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/zoom-content.html">Understanding Zoom content</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
@@ -1528,7 +1563,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/graphics-contrast.html">Understanding Graphics Contrast</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
@@ -1576,7 +1610,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/user-interface-component-contrast-minimum.html">Understanding User Interface Component Contrast (Minimum)</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
@@ -1618,7 +1651,37 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </div>
             </section>
 
-            <!-- <section data-include="sc/21/adapting-text.html" data-include-replace="true"></section> -->
+            <section class="sc new" id="adapting-text" typeof="bibo:Chapter" resource="#adapting-text" property="bibo:hasPart">
+
+                <h4 id="x1.4.13-adapting-text§" resource="#x1.4.13-adapting-text§"><span property="xhv:role" resource="xhv:heading"><span class="secno">1.4.13 </span>Adapting Text<span class="permalink" typeof="bookmark"><a href="#adapting-text" aria-label="Permalink for 1.4.13 Adapting Text" title="Permalink for 1.4.13 Adapting Text" property="url"><span property="title" content="1.4.13 Adapting Text">§</span></a>
+                    </span>
+                    </span>
+                </h4>
+
+                <p class="conformance-level">AA</p>
+
+                <p class="change">New</p>
+
+                <p>If the technologies being used allow the <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a> to <a href="#dfn-adapt" class="internalDFN" data-link-type="dfn">adapt</a> <a href="#dfn-style-properties" class="internalDFN"
+                        data-link-type="dfn">style properties</a> of <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a>, then no loss of <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> content or functionality
+                    occurs by adapting all of the following:</p>
+
+                <ol>
+                    <li>line height (line spacing) to at least 1.5 times the font size</li>
+                    <li>spacing underneath paragraphs to at least 2 times the font size</li>
+                    <li>letter spacing (tracking) to at least 0.12 times the font size<a></a></li>
+                    <li>word spacing to at least 0.16 times the font size</li>
+                </ol>
+
+                <p>Note: Examples of text that are typically not affected by <a>style properties</a> are open <a>captions</a> and <a>images of text</a>, which are not expected to adapt.</p>
+
+                <div class="note">
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note8"><span>Note</span></div>
+                    <p class="">Editor's note: The Working Group seeks to include overriding text color, background color, and font-family as part of this SC, but is not yet able to identify a way to do so that is sufficiently testable.</p>
+                </div>
+
+            </section>
+
 
             <!-- <section data-include="sc/21/popup-interference-.html" data-include-replace="true"></section> -->
         </section>
@@ -1648,19 +1711,19 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a> without
-                    requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's movement and not just the endpoints.
+                <p>All <a>functionality</a> of the content is operable through a <a>keyboard interface</a> without requiring specific timings for individual keystrokes, except where the underlying function requires input that depends on the path of the user's
+                    movement and not just the endpoints.
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note8"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note9"><span>Note</span></div>
                     <p class="">This exception relates to the underlying function, not the input technique. For example, if using handwriting to enter text, the input technique (handwriting) requires path-dependent input but the underlying function (text input) does
                         not.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note9"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note10"><span>Note</span></div>
                     <p class="">This does not forbid and should not discourage providing mouse input or other input methods in addition to keyboard operation.
                     </p>
                 </div>
@@ -1676,12 +1739,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>If keyboard focus can be moved to a component of the page using a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a>, then focus can be moved away from that component using only a keyboard
-                    interface, and, if it requires more than unmodified arrow or tab keys or other standard exit methods, the user is advised of the method for moving focus away.
+                <p>If keyboard focus can be moved to a component of the page using a <a>keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface, and, if it requires more than unmodified arrow or tab keys or
+                    other standard exit methods, the user is advised of the method for moving focus away.
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note10"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note11"><span>Note</span></div>
                     <p class="">Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.
                         See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
                     </p>
@@ -1698,8 +1761,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> of the content is operable through a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a> without
-                    requiring specific timings for individual keystrokes.
+                <p>All <a>functionality</a> of the content is operable through a <a>keyboard interface</a> without requiring specific timings for individual keystrokes.
                 </p>
 
             </section>
@@ -1767,7 +1829,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                     <dd>
 
-                        <p>The time limit is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> and extending it would invalidate the activity; or
+                        <p>The time limit is <a>essential</a> and extending it would invalidate the activity; or
                         </p>
 
                     </dd>
@@ -1783,7 +1845,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </dl>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note11"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note12"><span>Note</span></div>
                     <p class="">This success criterion helps ensure that users can complete tasks without unexpected changes in content or context that are a result of a time limit. This success criterion should be considered in conjunction with <a href="#on-focus">Success Criterion 3.2.1</a>,
                         which puts limits on changes of content or context as a result of user action.
                     </p>
@@ -1800,7 +1862,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>For moving, <a href="#dfn-blinking" class="internalDFN" data-link-type="dfn">blinking</a>, scrolling, or auto-updating information, all of the following are true:
+                <p>For moving, <a>blinking</a>, scrolling, or auto-updating information, all of the following are true:
                 </p>
 
                 <dl>
@@ -1809,9 +1871,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                     <dd>
 
-                        <p>For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to <a href="#dfn-paused"
-                                class="internalDFN" data-link-type="dfn">pause</a>, stop, or hide it unless the movement, blinking, or scrolling is part of an activity where it is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>;
-                            and
+                        <p>For any moving, blinking or scrolling information that (1) starts automatically, (2) lasts more than five seconds, and (3) is presented in parallel with other content, there is a mechanism for the user to <a>pause</a>, stop, or
+                            hide it unless the movement, blinking, or scrolling is part of an activity where it is <a>essential</a>; and
                         </p>
 
                     </dd>
@@ -1829,27 +1890,27 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </dl>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note12"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note13"><span>Note</span></div>
                     <p class="">For requirements related to flickering or flashing content, refer to <a href="#seizures">Guideline 2.3</a>.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note13"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note14"><span>Note</span></div>
                     <p class="">Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.
                         See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note14"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note15"><span>Note</span></div>
                     <p class="">Content that is updated periodically by software or that is streamed to the user agent is not required to preserve or present information that is generated or received between the initiation of the pause and resuming presentation,
                         as this may not be technically possible, and in many situations could be misleading to do so.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note15"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note16"><span>Note</span></div>
                     <p class="">An animation that occurs as part of a preload phase or similar situation can be considered essential if interaction cannot occur during that phase for all users and if not indicating progress could confuse users or cause them to think
                         that content was frozen or broken.
                     </p>
@@ -1866,8 +1927,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>Timing is not an <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> part of the event or activity presented by the content, except for non-interactive
-                    <a href="#dfn-synchronized-media" class="internalDFN" data-link-type="dfn">synchronized media</a> and <a href="#dfn-real-time-event" class="internalDFN" data-link-type="dfn">real-time events</a>.
+                <p>Timing is not an <a>essential</a> part of the event or activity presented by the content, except for non-interactive
+                    <a>synchronized media</a> and <a>real-time events</a>.
                 </p>
 
             </section>
@@ -1881,7 +1942,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>Interruptions can be postponed or suppressed by the user, except interruptions involving an <a href="#dfn-emergency" class="internalDFN" data-link-type="dfn">emergency</a>.
+                <p>Interruptions can be postponed or suppressed by the user, except interruptions involving an <a>emergency</a>.
                 </p>
 
             </section>
@@ -1911,7 +1972,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/interruptions-minimum.html">Understanding Interruptions (minimum)</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
@@ -1922,7 +1982,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </p>
                 </div>
 
-                <p>There is an <a href="#dfn-easily-available" class="internalDFN" data-link-type="dfn">easily available</a> mechanism to postpone and suppress interruptions and changes in content unless they are initiated by the user or involve an emergency.
+                <p>There is an <a>easily available</a> mechanism to postpone and suppress interruptions and changes in content unless they are initiated by the user or involve an emergency.
                 </p>
 
             </section>
@@ -1933,7 +1993,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                     </span>
                 </h4>
-                <div class="doclinks"><a href="../understanding/21/accessible-authentication.html">Understanding Accessible Authentication</a></div>
                 <p class="conformance-level">A</p>
                 <p class="change">New</p>
                 <div class="ednote">
@@ -1976,11 +2035,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> do not contain anything that flashes more than three times in any one second period, or the <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flash</a>                    is below the <a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn">general flash and red flash thresholds</a>.
+                <p><a>Web pages</a> do not contain anything that flashes more than three times in any one second period, or the <a>flash</a> is below the <a>general flash and red flash thresholds</a>.
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note16"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note17"><span>Note</span></div>
                     <p class="">Since any content that does not meet this success criterion can interfere with a user's ability to use the whole page, all content on the Web page (whether it is used to meet other success criteria or not) must meet this success criterion.
                         See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
                     </p>
@@ -1997,7 +2056,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> do not contain anything that <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flashes</a> more than three times in any one second period.
+                <p><a>Web pages</a> do not contain anything that <a>flashes</a> more than three times in any one second period.
                 </p>
 
             </section>
@@ -2023,7 +2082,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to bypass blocks of content that are repeated on multiple <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a>.
+                <p>A <a>mechanism</a> is available to bypass blocks of content that are repeated on multiple <a>Web pages</a>.
                 </p>
 
             </section>
@@ -2037,7 +2096,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p><a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> have titles that describe topic or purpose.
+                <p><a>Web pages</a> have titles that describe topic or purpose.
                 </p>
 
             </section>
@@ -2051,8 +2110,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>If a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> can be <a href="#dfn-navigated-sequentially" class="internalDFN" data-link-type="dfn">navigated sequentially</a> and the navigation sequences affect meaning
-                    or operation, focusable components receive focus in an order that preserves meaning and operability.
+                <p>If a <a>Web page</a> can be <a>navigated sequentially</a> and the navigation sequences affect meaning or operation, focusable components receive focus in an order that preserves meaning and operability.
                 </p>
 
             </section>
@@ -2066,9 +2124,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>The <a href="#dfn-link-purpose" class="internalDFN" data-link-type="dfn">purpose of each link</a> can be determined from the link text alone or from the link text together with its
-                    <a href="#dfn-programmatically-determined-link-context" class="internalDFN" data-link-type="dfn">programmatically determined link context</a>, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general"
-                        class="internalDFN" data-link-type="dfn">ambiguous to users in general</a>.
+                <p>The <a>purpose of each link</a> can be determined from the link text alone or from the link text together with its
+                    <a>programmatically determined link context</a>, except where the purpose of the link would be <a>ambiguous to users in general</a>.
                 </p>
 
             </section>
@@ -2082,8 +2139,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>More than one way is available to locate a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> except where
-                    the Web Page is the result of, or a step in, a <a href="#dfn-process" class="internalDFN" data-link-type="dfn">process</a>.
+                <p>More than one way is available to locate a <a>Web page</a> within a <a>set of Web pages</a> except where the Web Page is the result of, or a step in, a <a>process</a>.
                 </p>
 
             </section>
@@ -2097,7 +2153,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>Headings and <a href="#dfn-label" class="internalDFN" data-link-type="dfn">labels</a> describe topic or purpose.
+                <p>Headings and <a>labels</a> describe topic or purpose.
                 </p>
 
             </section>
@@ -2125,7 +2181,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>Information about the user's location within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> is available.
+                <p>Information about the user's location within a <a>set of Web pages</a> is available.
                 </p>
 
             </section>
@@ -2139,8 +2195,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be <a href="#dfn-ambiguous-to-users-in-general"
-                        class="internalDFN" data-link-type="dfn">ambiguous to users in general</a>.
+                <p>A <a>mechanism</a> is available to allow the purpose of each link to be identified from link text alone, except where the purpose of the link would be <a>ambiguous to users in general</a>.
                 </p>
 
             </section>
@@ -2154,18 +2209,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p><a href="#dfn-section" class="internalDFN" data-link-type="dfn">Section</a> headings are used to organize the content.
+                <p><a>Section</a> headings are used to organize the content.
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note17"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note18"><span>Note</span></div>
                     <p class="">"Heading" is used in its general sense and includes titles and other ways to add a heading to different types of content.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note18"><span>Note</span></div>
-                    <p class="">This success criterion covers sections within writing, not <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface components</a>. User Interface components are covered under <a href="#name-role-value">Success Criterion 4.1.2</a>.
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note19"><span>Note</span></div>
+                    <p class="">This success criterion covers sections within writing, not <a>user interface components</a>. User Interface components are covered under <a href="#name-role-value">Success Criterion 4.1.2</a>.
                     </p>
                 </div>
 
@@ -2178,16 +2233,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/character-key-shortcuts.html">Understanding Character Key Shortcuts</a></div>
                 <p class="conformance-level">A</p>
 
                 <p class="change">New</p>
 
-                <p>If a <a href="#dfn-keyboard-shortcut" class="internalDFN" data-link-type="dfn">keyboard shortcut</a> consisting entirely of one or more <a href="#dfn-character-key" class="internalDFN" data-link-type="dfn">character keys</a> is implemented
-                    by the content, then a mechanism is available to turn it off or to remap it to a shortcut that uses at least one non-character key. </p>
+                <p>If a <a>keyboard shortcut</a> consisting entirely of one or more <a>character keys</a> is implemented by the content, then a mechanism is available to turn it off or to remap it to a shortcut that uses at least one non-character key. </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note19"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note20"><span>Note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/69">Issue 69</a> and <a href="https://github.com/w3c/wcag21/pull/133">Pull Request 133</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a>                        for each discrete comment in GitHub.</p>
                 </div>
 
@@ -2241,7 +2294,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/orientation.html">Understanding Orientation</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
@@ -2253,8 +2305,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </p>
                 </div>
 
-                <p>Content is not locked to a specific <a href="#dfn-display-orientation" class="internalDFN" data-link-type="dfn">display orientation</a>, and functionality of the content is operable in all display orientations, except where display orientation
-                    is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> for use of the content.
+                <p>Content is not locked to a specific <a>display orientation</a>, and functionality of the content is operable in all display orientations, except where display orientation is <a>essential</a> for use of the content.
                 </p>
 
             </section>
@@ -2267,19 +2318,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </span>
                 </span>
             </h3>
-            <p class="new">New</p>
+            <p class="change">New</p>
 
             <section class="sc new" id="accessible-name" typeof="bibo:Chapter" resource="#accessible-name" property="bibo:hasPart">
                 <h4 id="x2.7.1-accessible-name§" resource="#x2.7.1-accessible-name§"><span property="xhv:role" resource="xhv:heading"><span class="secno">2.7.1 </span>Accessible Name<span class="permalink" typeof="bookmark"><a href="#accessible-name" aria-label="Permalink for 2.7.1 Accessible Name" title="Permalink for 2.7.1 Accessible Name" property="url"><span property="title" content="2.7.1 Accessible Name">§</span></a>
                     </span>
                     </span>
                 </h4>
-                <div class="doclinks"><a href="../understanding/21/accessible-name.html">Understanding Accessible Name</a></div>
                 <p class="conformance-level">A</p>
                 <p class="change">New</p>
-                <p>Where an active control has a visible label, the <a class="respec-offending-element" title="Linking error: not matching <dfn>">accessible name</a> for the control includes the text string used for its visible label.</p>
+                <p>Where an active control has a visible label, the <a>accessible name</a> for the control includes the text string used for its visible label.</p>
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note20"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note21"><span>Note</span></div>
                     <p class="">A best practice is to place the text string at the start of the text string.</p>
                 </div>
                 <div class="ednote">
@@ -2290,7 +2340,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </div>
 
             </section>
-            --&gt;
+
 
         </section>
 
@@ -2319,8 +2369,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>The default <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language</a> of each <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> can be <a href="#dfn-programmatically-determined"
-                        class="internalDFN" data-link-type="dfn">programmatically determined</a>.
+                <p>The default <a>human language</a> of each <a>Web page</a> can be <a>programmatically determined</a>.
                 </p>
 
             </section>
@@ -2334,7 +2383,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>The <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language</a> of each passage or phrase in the content can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>                    except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular of the immediately surrounding text.
+                <p>The <a>human language</a> of each passage or phrase in the content can be <a>programmatically determined</a> except for proper names, technical terms, words of indeterminate language, and words or phrases that have become part of the vernacular
+                    of the immediately surrounding text.
                 </p>
 
             </section>
@@ -2348,8 +2398,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available for identifying specific definitions of words or phrases <a href="#dfn-used-in-an-unusual-or-restricted-way" class="internalDFN" data-link-type="dfn">used in an unusual or restricted way</a>,
-                    including <a href="#dfn-idiom" class="internalDFN" data-link-type="dfn">idioms</a> and <a href="#dfn-jargon" class="internalDFN" data-link-type="dfn">jargon</a>.
+                <p>A <a>mechanism</a> is available for identifying specific definitions of words or phrases <a>used in an unusual or restricted way</a>, including <a>idioms</a> and <a>jargon</a>.
                 </p>
 
             </section>
@@ -2363,7 +2412,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> for identifying the expanded form or meaning of <a href="#dfn-abbreviation" class="internalDFN" data-link-type="dfn">abbreviations</a> is available.
+                <p>A <a>mechanism</a> for identifying the expanded form or meaning of <a>abbreviations</a> is available.
                 </p>
 
             </section>
@@ -2377,8 +2426,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>When text requires reading ability more advanced than the <a href="#dfn-lower-secondary-education-level" class="internalDFN" data-link-type="dfn">lower secondary education level</a> after removal of proper names and titles, <a href="#dfn-supplemental-content"
-                        class="internalDFN" data-link-type="dfn">supplemental content</a>, or a version that does not require reading ability more advanced than the lower secondary education level, is available.
+                <p>When text requires reading ability more advanced than the <a>lower secondary education level</a> after removal of proper names and titles, <a>supplemental content</a>, or a version that does not require reading ability more advanced than
+                    the lower secondary education level, is available.
                 </p>
 
             </section>
@@ -2392,7 +2441,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.
+                <p>A <a>mechanism</a> is available for identifying specific pronunciation of words where meaning of the words, in context, is ambiguous without knowing the pronunciation.
                 </p>
 
             </section>
@@ -2431,7 +2480,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>When any <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface component</a> receives focus, it does not initiate a <a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">change of context</a>.
+                <p>When any <a>user interface component</a> receives focus, it does not initiate a <a>change of context</a>.
                 </p>
 
             </section>
@@ -2445,7 +2494,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>Changing the setting of any <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface component</a> does not automatically cause a <a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">change of context</a>                    unless the user has been advised of the behavior before using the component.
+                <p>Changing the setting of any <a>user interface component</a> does not automatically cause a <a>change of context</a> unless the user has been advised of the behavior before using the component.
                 </p>
 
             </section>
@@ -2459,7 +2508,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>Navigational mechanisms that are repeated on multiple <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a>                    occur in the <a href="#dfn-same-relative-order" class="internalDFN" data-link-type="dfn">same relative order</a> each time they are repeated, unless a change is initiated by the user.
+                <p>Navigational mechanisms that are repeated on multiple <a>Web pages</a> within a <a>set of Web pages</a> occur in the <a>same relative order</a> each time they are repeated, unless a change is initiated by the user.
                 </p>
 
             </section>
@@ -2473,8 +2522,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>Components that have the <a href="#dfn-same-functionality" class="internalDFN" data-link-type="dfn">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified
-                    consistently.
+                <p>Components that have the <a>same functionality</a> within a <a>set of Web pages</a> are identified consistently.
                 </p>
 
             </section>
@@ -2488,8 +2536,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p><a href="#dfn-changes-of-context" class="internalDFN" data-link-type="dfn">Changes of context</a> are initiated only by user request or a <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> is available to turn
-                    off such changes.
+                <p><a>Changes of context</a> are initiated only by user request or a <a>mechanism</a> is available to turn off such changes.
                 </p>
 
             </section>
@@ -2501,7 +2548,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/accidental-activation.html">Understanding Accidental Activation</a></div>
                 <p class="conformance-level">A</p>
 
                 <p class="change">New</p>
@@ -2513,10 +2559,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </p>
                 </div>
 
-                <p>For <a href="#dfn-single-pointer-activation" class="internalDFN" data-link-type="dfn">single pointer activation</a>, at least one of the following is true:</p>
+                <p>For <a>single pointer activation</a>, at least one of the following is true:</p>
 
                 <ul>
-                    <li>Activation is on the <a href="#dfn-up-event" class="internalDFN" data-link-type="dfn">up-event</a>, either explicitly or implicitly as a platform's generic activation/click event;
+                    <li>Activation is on the <a>up-event</a>, either explicitly or implicitly as a platform's generic activation/click event;
                     </li>
 
                     <li>A mechanism is available that allows the user to choose the up-event as an option;</li>
@@ -2542,32 +2588,30 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                 </h4>
 
-                <div class="doclinks"><a href="../understanding/21/change-of-content.html">Understanding Change of Content</a></div>
                 <p class="conformance-level">AA</p>
 
                 <p class="change">New</p>
 
-                <p>Programmatic notification is provided for each <a href="#dfn-change-of-content" class="internalDFN" data-link-type="dfn">change of content</a> that indicates a user action was taken or that conveys information, unless one or more of the
-                    following is true:
+                <p>Programmatic notification is provided for each <a>change of content</a> that indicates a user action was taken or that conveys information, unless one or more of the following is true:
                 </p>
 
                 <ul>
                     <li>There is a programmatically determined relationship between the new content and the control that triggers it;
                     </li>
                     <li>The user has been advised of the change of content before or as a result of using the control;</li>
-                    <li>The change of content is not a result of a user action AND not related to the <a href="#dfn-primary-purpose-of-the-page" class="internalDFN" data-link-type="dfn">primary purpose of the page</a>.
+                    <li>The change of content is not a result of a user action AND not related to the <a>primary purpose of the page</a>.
                     </li>
                 </ul>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note21"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note22"><span>Note</span></div>
                     <p class="">The Working Group is including this proposed Success Criteria for comment, but has not reached consensus on how to best handle web pages and applications with continual changes of content such as games and simulations and seeks additional
                         input from reviewers on this point.
                     </p>
                 </div>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note22"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note23"><span>Note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/2">Issue 2</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
@@ -2598,7 +2642,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn">input error</a> is automatically detected, the item that is in error is identified and the error is described to the user in text.
+                <p>If an <a>input error</a> is automatically detected, the item that is in error is identified and the error is described to the user in text.
                 </p>
 
             </section>
@@ -2612,7 +2656,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p><a href="#dfn-label" class="internalDFN" data-link-type="dfn">Labels</a> or instructions are provided when content requires user input.
+                <p><a>Labels</a> or instructions are provided when content requires user input.
                 </p>
 
             </section>
@@ -2626,8 +2670,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn">input error</a> is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the
-                    security or purpose of the content.
+                <p>If an <a>input error</a> is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
                 </p>
 
             </section>
@@ -2641,8 +2684,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AA</p>
 
-                <p>For <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that cause <a href="#dfn-legal-commitments" class="internalDFN" data-link-type="dfn">legal commitments</a> or financial transactions for the user to occur,
-                    that modify or delete <a href="#dfn-user-controllable" class="internalDFN" data-link-type="dfn">user-controllable</a> data in data storage systems, or that submit user test responses, at least one of the following is true:
+                <p>For <a>Web pages</a> that cause <a>legal commitments</a> or financial transactions for the user to occur, that modify or delete <a>user-controllable</a> data in data storage systems, or that submit user test responses, at least one of
+                    the following is true:
                 </p>
 
                 <dl>
@@ -2666,7 +2709,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p><a href="#dfn-context-sensitive-help" class="internalDFN" data-link-type="dfn">Context-sensitive help</a> is available.
+                <p><a>Context-sensitive help</a> is available.
                 </p>
 
             </section>
@@ -2680,7 +2723,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">AAA</p>
 
-                <p>For <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that require the user to submit information, at least one of the following is true:
+                <p>For <a>Web pages</a> that require the user to submit information, at least one of the following is true:
                 </p>
 
                 <dl>
@@ -2757,7 +2800,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note23"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note24"><span>Note</span></div>
                     <p class="">Start and end tags that are missing a critical character in their formation, such as a closing angle bracket or a mismatched attribute value quotation mark are not complete.
                     </p>
                 </div>
@@ -2773,14 +2816,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="conformance-level">A</p>
 
-                <p>For all <a href="#dfn-user-interface-component" class="internalDFN" data-link-type="dfn">user interface components</a> (including but not limited to: form elements, links and components generated by scripts), the <a href="#dfn-name" class="internalDFN"
-                        data-link-type="dfn">name</a> and <a href="#dfn-role" class="internalDFN" data-link-type="dfn">role</a> can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>; states,
-                    properties, and values that can be set by the user can be <a href="#dfn-programmatically-set" class="internalDFN" data-link-type="dfn">programmatically set</a>; and notification of changes to these items is available to <a href="#dfn-user-agent"
-                        class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>.
+                <p>For all <a>user interface components</a> (including but not limited to: form elements, links and components generated by scripts), the <a>name</a> and <a>role</a> can be <a>programmatically determined</a>; states, properties, and values
+                    that can be set by the user can be <a>programmatically set</a>; and notification of changes to these items is available to <a>user agents</a>, including <a>assistive technologies</a>.
                 </p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note24"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note25"><span>Note</span></div>
                     <p class="">This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.
                     </p>
                 </div>
@@ -2806,9 +2847,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 
         <!--<h1>Conformance</h1>-->
-        <p>This section lists requirements for <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn">conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what
-            it means to be <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility supported</a>, since only accessibility-supported ways of using technologies can be <a href="#dfn-relied-upon" class="internalDFN"
-                data-link-type="dfn">relied upon</a> for conformance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
+        <p>This section lists requirements for <a>conformance</a> to WCAG 2.1. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a>accessibility supported</a>, since only accessibility-supported
+            ways of using technologies can be <a>relied upon</a> for conformance. <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance</a> includes further explanation of the accessibility-supported concept.</p>
 
         <section id="conformance-reqs" typeof="bibo:Chapter" resource="#conformance-reqs" property="bibo:hasPart">
             <h3 id="x5.1-conformance-requirements§" resource="#x5.1-conformance-requirements§"><span property="xhv:role" resource="xhv:heading"><span class="secno">5.1 </span>Conformance Requirements<span class="permalink" typeof="bookmark"><a href="#conformance-reqs" aria-label="Permalink for 5.1 Conformance Requirements" title="Permalink for 5.1 Conformance Requirements" property="url"><span property="title" content="5.1 Conformance Requirements">§</span></a>
@@ -2824,8 +2864,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </h4>
                 <p>One of the following levels of conformance is met in full.</p>
                 <ul>
-                    <li>For Level A conformance (the minimum level of conformance), the <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a>
-                        <a href="#dfn-satisfies-a-success-criterion" class="internalDFN" data-link-type="dfn">satisfies</a> all the Level A Success Criteria, or a <a href="#dfn-conforming-alternate-version" class="internalDFN" data-link-type="dfn">conforming alternate version</a>                        is provided.</li>
+                    <li>For Level A conformance (the minimum level of conformance), the <a>Web page</a>
+                        <a>satisfies</a> all the Level A Success Criteria, or a <a>conforming alternate version</a> is provided.</li>
                     <li>For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
                     <li>For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
                 </ul>
@@ -2838,11 +2878,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                     </span>
                 </h4>
-                <p><a href="#dfn-conformance" class="internalDFN" data-link-type="dfn">Conformance</a> (and conformance level) is for full <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page(s)</a> only, and cannot be achieved if part
-                    of a Web page is excluded.</p>
-                <p>For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation
-                    of a video.</p>
-                <p>Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p>
+                <p><a>Conformance</a> (and conformance level) is for full <a>Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.</p>
+                <div class="note">
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note26"><span>Note</span></div>
+                    <p class="">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation
+                        of a video.</p>
+                </div>
+                <div class="note">
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note27"><span>Note</span></div>
+                    <p class="">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p>
+                </div>
+                <div class="note">
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note28"><span>Note</span></div>
+                    <p class="new"><span class="change">New</span> A full page includes each variation of the page that is automatically generated by the page for various screen sizes. Each of these variations needs to conform (or needs to have a conforming alternate
+                        version) in order for the entire page to conform.</p>
+                </div>
             </section>
 
             <section id="cc3" typeof="bibo:Chapter" resource="#cc3" property="bibo:hasPart">
@@ -2850,9 +2900,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                     </span>
                 </h4>
-                <p>When a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> is one of a series of Web pages presenting a <a href="#dfn-process" class="internalDFN" data-link-type="dfn">process</a> (i.e., a sequence of steps that
-                    need to be completed in order to accomplish an activity), all Web pages in the process conform at the specified level or better. (Conformance is not possible at a particular level if any page in the process does not conform at that
-                    level or better.)</p>
+                <p>When a <a>Web page</a> is one of a series of Web pages presenting a <a>process</a> (i.e., a sequence of steps that need to be completed in order to accomplish an activity), all Web pages in the process conform at the specified level or
+                    better. (Conformance is not possible at a particular level if any page in the process does not conform at that level or better.)</p>
                 <p>An online store has a series of pages that are used to select and purchase products. All pages in the series from start to finish (checkout) conform in order for any page that is part of the process to conform.</p>
             </section>
 
@@ -2861,9 +2910,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                     </span>
                 </h4>
-                <p>Only <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility-supported</a> ways of using <a href="#dfn-technology" class="internalDFN" data-link-type="dfn">technologies</a> are <a href="#dfn-relied-upon"
-                        class="internalDFN" data-link-type="dfn">relied upon</a> to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is accessibility
-                    supported. (See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding accessibility support</a>.)</p>
+                <p>Only <a>accessibility-supported</a> ways of using <a>technologies</a> are <a>relied upon</a> to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available
+                    in a way that is accessibility supported. (See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding accessibility support</a>.)</p>
             </section>
 
             <section id="cc5" typeof="bibo:Chapter" resource="#cc5" property="bibo:hasPart">
@@ -2871,11 +2919,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </span>
                     </span>
                 </h4>
-                <p>If <a href="#dfn-technology" class="internalDFN" data-link-type="dfn"> technologies </a> are used in a way that is not <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility supported</a>, or if they
-                    are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> as a whole continues to meet
-                    the conformance requirements under each of the following conditions:</p>
+                <p>If <a> technologies </a> are used in a way that is not <a>accessibility supported</a>, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the <a>Web page</a>                    as a whole continues to meet the conformance requirements under each of the following conditions:</p>
                 <ol>
-                    <li>when any technology that is not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a> is turned on in a user agent,</li>
+                    <li>when any technology that is not <a>relied upon</a> is turned on in a user agent,</li>
                     <li>when any technology that is not relied upon is turned off in a user agent, and</li>
                     <li>when any technology that is not relied upon is not supported by a user agent</li>
                 </ol>
@@ -2905,7 +2951,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </span>
                 </span>
             </h3>
-            <p>Conformance is defined only for <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a>. However, a conformance claim may be made to cover one page, a series of pages, or multiple related Web pages.</p>
+            <p>Conformance is defined only for <a>Web pages</a>. However, a conformance claim may be made to cover one page, a series of pages, or multiple related Web pages.</p>
 
             <section id="conformance-required" typeof="bibo:Chapter" resource="#conformance-required" property="bibo:hasPart">
                 <h4 id="x5.2.1-required-components-of-a-conformance-claim§" resource="#x5.2.1-required-components-of-a-conformance-claim§"><span property="xhv:role" resource="xhv:heading"><span class="secno">5.2.1 </span>Required Components of a Conformance Claim<span class="permalink" typeof="bookmark"><a href="#conformance-required" aria-label="Permalink for 5.2.1 Required Components of a Conformance Claim" title="Permalink for 5.2.1 Required Components of a Conformance Claim" property="url"><span property="title" content="5.2.1 Required Components of a Conformance Claim">§</span></a>
@@ -2923,8 +2969,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                         <p>Web-based products that do not have a URI prior to installation on the customer's Web site may have a statement that the product would conform when installed.</p>
                     </li>
                     <li>A list of the <strong>
-                                <a href="#dfn-technology" class="internalDFN" data-link-type="dfn">Web content technologies</a>
-                                <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a></strong>.</li>
+                                <a>Web content technologies</a>
+                                <a>relied upon</a></strong>.</li>
                 </ol>
                 <p>If a conformance logo is used, it would constitute a claim and must be accompanied by the required components of a conformance claim listed above.</p>
             </section>
@@ -2937,10 +2983,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>In addition to the required components of a conformance claim above, consider providing additional information to assist users. Recommended additional information includes:</p>
                 <ul>
                     <li>A list of success criteria beyond the level of conformance claimed that have been met. This information should be provided in a form that users can use, preferably machine-readable metadata.</li>
-                    <li>A list of the specific technologies that are " <em>used but not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a></em>."</li>
+                    <li>A list of the specific technologies that are " <em>used but not <a>relied upon</a></em>."</li>
                     <li>A list of user agents, including assistive technologies that were used to test the content.</li>
                     <li>Information about any additional steps taken that go beyond the success criteria to enhance accessibility.</li>
-                    <li>A machine-readable metadata version of the list of specific technologies that are <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a>.</li>
+                    <li>A machine-readable metadata version of the list of specific technologies that are <a>relied upon</a>.</li>
                     <li>A machine-readable metadata version of the conformance claim.</li>
                 </ul>
                 <p>Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Claims</a> for more information and example conformance claims.</p>
@@ -2980,8 +3026,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </span>
                 </span>
             </h3>
-            <p>A "statement of partial conformance due to language" may be made when the page does not conform, but would conform if <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility support</a> existed for (all
-                of) the language(s) used on the page. The form of that statement would be, "This page does not conform, but would conform to WCAG 2.1 at level X if accessibility support existed for the following language(s):"</p>
+            <p>A "statement of partial conformance due to language" may be made when the page does not conform, but would conform if <a>accessibility support</a> existed for (all of) the language(s) used on the page. The form of that statement would be,
+                "This page does not conform, but would conform to WCAG 2.1 at level X if accessibility support existed for the following language(s):"</p>
         </section>
 
     </section>
@@ -3034,10 +3080,22 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-accessible-name">Accessible Name</dfn></dt>
+            <dd class="new">
+
+                <p class="change">New</p>
+
+                <p>The name of a user interface element. The value of the accessible name may be derived from a visible (e.g., the visible text on a button) or invisible (e.g., the text alternative that describes an icon) property of the user interface element.
+                    A simple use for the accessible name property may be illustrated by an "OK" button. The text "OK" is the accessible name. When the button receives focus, assistive technologies may concatenate the platform's role description with the
+                    accessible name. For example, a screen reader may speak "push-button OK" or "OK button".</p>
+
+            </dd>
+
+
             <dt><dfn data-dfn-type="dfn" id="dfn-accessibility-supported">accessibility supported</dfn></dt>
             <dd>
 
-                <p>supported by users' <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a> as well as the accessibility features in browsers and other <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agents</a></p>
+                <p>supported by users' <a>assistive technologies</a> as well as the accessibility features in browsers and other <a>user agents</a></p>
 
                 <p>To qualify as an accessibility-supported use of a Web content technology (or feature of a technology), both 1 and 2 must be satisfied for a Web content technology (or feature):
                 </p>
@@ -3046,8 +3104,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                     <li>
 
-                        <p><strong>The way that the <a href="#dfn-technology" class="internalDFN" data-link-type="dfn">Web content technology</a> is used must be supported by users' assistive technology (AT). </strong> This means that the way that the technology
-                            is used has been tested for interoperability with users' assistive technology in the <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language(s)</a> of the content,
+                        <p><strong>The way that the <a>Web content technology</a> is used must be supported by users' assistive technology (AT). </strong> This means that the way that the technology is used has been tested for interoperability with users'
+                            assistive technology in the <a>human language(s)</a> of the content,
                         </p>
 
                         <p><strong>AND</strong></p>
@@ -3110,12 +3168,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     as accessibility supported. (See <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Level of Assistive Technology Support Needed for "Accessibility Support"</a>.)
                 </p>
 
-                <p>Web technologies can be used in ways that are not accessibility supported as long as they are not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a> and the page as a whole meets the conformance requirements,
-                    including <a href="#cc4">Conformance Criterion 4</a> and <a href="#cc5">Conformance Criterion 5</a>, are met.
+                <p>Web technologies can be used in ways that are not accessibility supported as long as they are not <a>relied upon</a> and the page as a whole meets the conformance requirements, including <a href="#cc4">Conformance Criterion 4</a> and
+                    <a
+                        href="#cc5">Conformance Criterion 5</a>, are met.
                 </p>
 
-                <p>When a <a href="#dfn-technology" class="internalDFN" data-link-type="dfn">Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire technology or all uses of the technology are supported.
-                    Most technologies, including HTML, lack support for at least one feature or use. Pages conform to WCAG only if the uses of the technology that are accessibility supported can be relied upon to meet WCAG requirements.
+                <p>When a <a>Web Technology</a> is used in a way that is "accessibility supported," it does not imply that the entire technology or all uses of the technology are supported. Most technologies, including HTML, lack support for at least one
+                    feature or use. Pages conform to WCAG only if the uses of the technology that are accessibility supported can be relied upon to meet WCAG requirements.
                 </p>
 
                 <p>When citing Web content technologies that have multiple versions, the version(s) supported should be specified.
@@ -3127,6 +3186,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
 
             </dd>
+
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-adapt">Adapt</dfn></dt>
+            <dd class="new">
+
+                <p class="change">New</p>
+
+                <p>formatting being overridden by the client</p>
+            </dd>
+
 
             <!-- <dt data-include="terms/21/additional-pointer-sensor-information.html" data-include-replace="true"></dt> -->
 
@@ -3165,8 +3233,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dt>
             <dd>
 
-                <p>hardware and/or software that acts as a <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities
-                    that go beyond those offered by mainstream user agents
+                <p>hardware and/or software that acts as a <a>user agent</a>, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents
                 </p>
 
                 <p>functionality provided by assistive technology includes alternative presentations (e.g., as synthesized speech or magnified content), alternative input methods (e.g., voice), additional navigation or orientation mechanisms, and content
@@ -3225,14 +3292,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>narration added to the soundtrack to describe important visual details that cannot be understood from the main soundtrack alone
                 </p>
 
-                <p>Audio description of <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> provides information about actions, characters, scene changes, on-screen text, and other visual content.
+                <p>Audio description of <a>video</a> provides information about actions, characters, scene changes, on-screen text, and other visual content.
                 </p>
 
-                <p>In standard audio description, narration is added during existing pauses in dialogue. (See also <a href="#dfn-extended-audio-description" class="internalDFN" data-link-type="dfn">extended audio description</a>.)
+                <p>In standard audio description, narration is added during existing pauses in dialogue. (See also <a>extended audio description</a>.)
                 </p>
 
-                <p>Where all of the <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> information is already provided in existing <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a>, no additional audio description
-                    is necessary.
+                <p>Where all of the <a>video</a> information is already provided in existing <a>audio</a>, no additional audio description is necessary.
                 </p>
 
                 <p>Also called "video description" and "descriptive narration."</p>
@@ -3244,7 +3310,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-audio-only">audio-only</dfn></dt>
             <dd>
 
-                <p>a time-based presentation that contains only <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> (no <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> and no interaction)
+                <p>a time-based presentation that contains only <a>audio</a> (no <a>video</a> and no interaction)
                 </p>
 
             </dd>
@@ -3258,7 +3324,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p>switch back and forth between two visual states in a way that is meant to draw attention</p>
 
-                <p>See also <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flash</a>. It is possible for something to be large enough and blink brightly enough at the right frequency to be also classified as a flash.
+                <p>See also <a>flash</a>. It is possible for something to be large enough and blink brightly enough at the right frequency to be also classified as a flash.
                 </p>
 
             </dd>
@@ -3287,7 +3353,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-captions">captions</dfn></dt>
             <dd>
 
-                <p>synchronized visual and/or <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn">text alternative</a> for both speech and non-speech audio information needed to understand the media content
+                <p>synchronized visual and/or <a>text alternative</a> for both speech and non-speech audio information needed to understand the media content
                 </p>
 
                 <p>Captions are similar to dialogue-only subtitles except captions convey not only the content of spoken dialogue, but also equivalents for non-dialogue audio information needed to understand the program content, including sound effects,
@@ -3296,15 +3362,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p>Closed Captions are equivalents that can be turned on and off with some players.</p>
 
-                <p>Open Captions are any captions that cannot be turned off. For example, if the captions are visual equivalent <a href="#dfn-image-of-text" class="internalDFN" data-link-type="dfn">images of text</a> embedded in <a href="#dfn-video" class="internalDFN"
-                        data-link-type="dfn">video</a>.
+                <p>Open Captions are any captions that cannot be turned off. For example, if the captions are visual equivalent <a>images of text</a> embedded in <a>video</a>.
                 </p>
 
                 <p>Captions should not obscure or obstruct relevant information in the video.</p>
 
                 <p>In some countries, captions are called subtitles.</p>
 
-                <p><a href="#dfn-audio-description" class="internalDFN" data-link-type="dfn">Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information that is already presented visually.
+                <p><a>Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information that is already presented visually.
                 </p>
 
             </dd>
@@ -3335,22 +3400,22 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-changes-of-context">changes of context</dfn></dt>
             <dd>
 
-                <p>major changes in the content of the <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> that, if made without user awareness, can disorient users who are not able to view the entire page simultaneously
+                <p>major changes in the content of the <a>Web page</a> that, if made without user awareness, can disorient users who are not able to view the entire page simultaneously
                 </p>
 
                 <p>Changes in context include changes of:</p>
 
                 <ol>
 
-                    <li><a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a>;
+                    <li><a>user agent</a>;
                     </li>
 
-                    <li><a href="#dfn-viewport" class="internalDFN" data-link-type="dfn">viewport</a>;
+                    <li><a>viewport</a>;
                     </li>
 
                     <li>focus;</li>
 
-                    <li><a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a> that changes the meaning of the <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a>.
+                    <li><a>content</a> that changes the meaning of the <a>Web page</a>.
                     </li>
 
                 </ol>
@@ -3388,8 +3453,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                     <li>conforms at the designated level, and</li>
 
-                    <li>provides all of the same information and <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> in the same <a href="#dfn-human-language" class="internalDFN" data-link-type="dfn">human language</a>,
-                        and
+                    <li>provides all of the same information and <a>functionality</a> in the same <a>human language</a>, and
                     </li>
 
                     <li>is as up to date as the non-conforming content, and</li>
@@ -3399,8 +3463,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                         <ol>
 
-                            <li>the conforming version can be reached from the non-conforming page via an <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility-supported</a>
-                                <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a>, or
+                            <li>the conforming version can be reached from the non-conforming page via an <a>accessibility-supported</a>
+                                <a>mechanism</a>, or
                             </li>
 
                             <li>the non-conforming version can only be reached from the conforming version, or</li>
@@ -3429,7 +3493,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>The conforming alternative version does not need to reside within the scope of conformance, or even on the same Web site, as long as it is as freely available as the non-conforming version.
                 </p>
 
-                <p>Alternate versions should not be confused with <a href="#dfn-supplemental-content" class="internalDFN" data-link-type="dfn">supplementary content</a>, which support the original page and enhance comprehension.
+                <p>Alternate versions should not be confused with <a>supplementary content</a>, which support the original page and enhance comprehension.
                 </p>
 
                 <p>Setting user preferences within the content to produce a conforming version is an acceptable mechanism for reaching another version as long as the method used to set the preferences is accessibility supported.
@@ -3443,8 +3507,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dt>
             <dd>
 
-                <p>information and sensory experience to be communicated to the user by means of a <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a>, including code or markup that defines the content's <a href="#dfn-structure"
-                        class="internalDFN" data-link-type="dfn">structure</a>, <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn">presentation</a>, and interactions
+                <p>information and sensory experience to be communicated to the user by means of a <a>user agent</a>, including code or markup that defines the content's <a>structure</a>, <a>presentation</a>, and interactions
                 </p>
 
             </dd>
@@ -3467,10 +3530,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <ul>
 
-                    <li>L1 is the <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn">relative luminance</a> of the lighter of the colors, and
+                    <li>L1 is the <a>relative luminance</a> of the lighter of the colors, and
                     </li>
 
-                    <li>L2 is the <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn">relative luminance</a> of the darker of the colors.
+                    <li>L2 is the <a>relative luminance</a> of the darker of the colors.
                     </li>
 
                 </ul>
@@ -3602,10 +3665,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-extended-audio-description">extended audio description</dfn></dt>
             <dd>
 
-                <p>audio description that is added to an audiovisual presentation by pausing the <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> so that there is time to add additional description
+                <p>audio description that is added to an audiovisual presentation by pausing the <a>video</a> so that there is time to add additional description
                 </p>
 
-                <p>This technique is only used when the sense of the <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> would be lost without the additional <a href="#dfn-audio-description" class="internalDFN" data-link-type="dfn">audio description</a>                    and the pauses between dialogue/narration are too short.
+                <p>This technique is only used when the sense of the <a>video</a> would be lost without the additional <a>audio description</a> and the pauses between dialogue/narration are too short.
                 </p>
 
             </dd>
@@ -3613,13 +3676,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-flash">flash</dfn></dt>
             <dd>
 
-                <p>a pair of opposing changes in <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency range
+                <p>a pair of opposing changes in <a>relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency range
                 </p>
 
-                <p>See <a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
+                <p>See <a>general flash and red flash thresholds</a> for information about types of flash that are not allowed.
                 </p>
 
-                <p>See also <a href="#dfn-blinking" class="internalDFN" data-link-type="dfn">blinking</a>.
+                <p>See also <a>blinking</a>.
                 </p>
 
             </dd>
@@ -3627,7 +3690,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-functionality">functionality</dfn></dt>
             <dd>
 
-                <p><a href="#dfn-process" class="internalDFN" data-link-type="dfn">processes</a> and outcomes achievable through user action
+                <p><a>processes</a> and outcomes achievable through user action
                 </p>
 
             </dd>
@@ -3635,7 +3698,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dfn></dt>
             <dd>
 
-                <p>a <a href="#dfn-flash" class="internalDFN" data-link-type="dfn">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+                <p>a <a>flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
                 </p>
 
                 <ol>
@@ -3652,8 +3715,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <ul>
 
-                    <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="#dfn-relative-luminance" class="internalDFN" data-link-type="dfn">relative luminance</a> of 10% or more of the maximum relative luminance where the
-                        relative luminance of the darker image is below 0.80; and where "a pair of opposing changes" is an increase followed by a decrease, or a decrease followed by an increase, and
+                    <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a>relative luminance</a> of 10% or more of the maximum relative luminance where the relative luminance of the darker image is below 0.80; and where "a pair
+                        of opposing changes" is an increase followed by a decrease, or a decrease followed by an increase, and
                     </li>
 
                     <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red.
@@ -3695,7 +3758,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>language that is spoken, written or signed (through visual or tactile means) to communicate with humans
                 </p>
 
-                <p>See also <a href="#dfn-sign-language" class="internalDFN" data-link-type="dfn">sign language</a>.
+                <p>See also <a>sign language</a>.
                 </p>
 
             </dd>
@@ -3730,7 +3793,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>text that has been rendered in a non-text form (e.g., an image) in order to achieve a particular visual effect
                 </p>
 
-                <p>This does not include <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> that is part of a picture that contains significant other visual content.
+                <p>This does not include <a>text</a> that is part of a picture that contains significant other visual content.
                 </p>
 
                 <p>A person's name on a nametag in a photograph.</p>
@@ -3759,7 +3822,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <ol>
 
-                    <li>Information that is required by the <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> but omitted by the user
+                    <li>Information that is required by the <a>Web page</a> but omitted by the user
                     </li>
 
                     <li>Information that is provided by the user but that falls outside the required data format or values
@@ -3809,10 +3872,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-label">label</dfn></dt>
             <dd>
 
-                <p><a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or other component with a <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn">text alternative</a> that is presented to a user to identify a component
-                    within Web <a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a></p>
+                <p><a>text</a> or other component with a <a>text alternative</a> that is presented to a user to identify a component within Web <a>content</a></p>
 
-                <p>A label is presented to all users whereas the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases the name and the label are the same.
+                <p>A label is presented to all users whereas the <a>name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases the name and the label are the same.
                 </p>
 
                 <p>The term label is not limited to the label element in HTML.</p>
@@ -3883,7 +3945,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-lower-secondary-education-level">lower secondary education level</dfn></dt>
             <dd>
 
-                <p>the two or three year period of education that begins after completion of six years of school and ends nine years after the beginning of <a href="#dfn-primary-education-level" class="internalDFN" data-link-type="dfn">primary education</a></p>
+                <p>the two or three year period of education that begins after completion of six years of school and ends nine years after the beginning of <a>primary education</a></p>
 
                 <p>This definition is based on the International Standard Classification of Education [
                     <cite><a class="bibref" href="#bib-UNESCO">UNESCO</a></cite>].
@@ -3894,11 +3956,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-mechanism">mechanism</dfn></dt>
             <dd>
 
-                <p><a href="#dfn-process" class="internalDFN" data-link-type="dfn">process</a> or technique for achieving a result
+                <p><a>process</a> or technique for achieving a result
                 </p>
 
-                <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agent" class="internalDFN"
-                        data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>.
+                <p>The mechanism may be explicitly provided in the content, or may be <a>relied upon</a> to be provided by either the platform or by <a>user agents</a>, including <a>assistive technologies</a>.
                 </p>
 
                 <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
@@ -3921,7 +3982,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p>text by which software can identify a component within Web content to the user</p>
 
-                <p>The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-label" class="internalDFN" data-link-type="dfn">label</a> is presented to all users. In many (but not all) cases, the label and the name are the same.
+                <p>The name may be hidden and only exposed by assistive technology, whereas a <a>label</a> is presented to all users. In many (but not all) cases, the label and the name are the same.
                 </p>
 
                 <p>This is unrelated to the name attribute in HTML.</p>
@@ -3931,7 +3992,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-navigated-sequentially">navigated sequentially</dfn></dt>
             <dd>
 
-                <p>navigated in the order defined for advancing focus (from one element to the next) using a <a href="#dfn-keyboard-interface" class="internalDFN" data-link-type="dfn">keyboard interface</a></p>
+                <p>navigated in the order defined for advancing focus (from one element to the next) using a <a>keyboard interface</a></p>
 
             </dd>
 
@@ -3942,10 +4003,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-non-text-content">non-text content</dfn></dt>
             <dd>
 
-                <p>any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language"
-                        class="internalDFN" data-link-type="dfn">human language</a></p>
+                <p>any content that is not a sequence of characters that can be <a>programmatically determined</a> or where the sequence is not expressing something in <a>human language</a></p>
 
-                <p>This includes <a href="#dfn-ascii-art" class="internalDFN" data-link-type="dfn">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution), and images representing text
+                <p>This includes <a>ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution), and images representing text
                 </p>
 
             </dd>
@@ -3990,14 +4050,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-prerecorded">prerecorded</dfn></dt>
             <dd>
 
-                <p>information that is not <a href="#dfn-live" class="internalDFN" data-link-type="dfn">live</a></p>
+                <p>information that is not <a>live</a></p>
 
             </dd>
 
             <dt><dfn data-dfn-type="dfn" id="dfn-presentation">presentation</dfn></dt>
             <dd>
 
-                <p>rendering of the <a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a> in a form to be perceived by users
+                <p>rendering of the <a>content</a> in a form to be perceived by users
                 </p>
 
             </dd>
@@ -4045,8 +4105,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dd>
 
                 <p>determined by software from author-supplied data provided in a way that different
-                    <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a>, can extract and present this information
-                    to users in different modalities
+                    <a>user agents</a>, including <a>assistive technologies</a>, can extract and present this information to users in different modalities
                 </p>
 
                 <p>Determined in a markup language from elements and attributes that are accessed directly by commonly available assistive technology.
@@ -4060,7 +4119,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-programmatically-determined-link-context">programmatically determined link context</dfn></dt>
             <dd>
 
-                <p>additional information that can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a> from <a href="#dfn-relationships" class="internalDFN" data-link-type="dfn">relationships</a>                    with a link, combined with the link text, and presented to users in different modalities
+                <p>additional information that can be <a>programmatically determined</a> from <a>relationships</a> with a link, combined with the link text, and presented to users in different modalities
                 </p>
 
                 <p>In HTML, information that is programmatically determinable from a link in English includes text that is in the same paragraph, list, or table cell as the link or in a table header cell that is associated with the table cell that contains
@@ -4181,7 +4240,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dt>
             <dd>
 
-                <p>the content would not <a href="#dfn-conformance" class="internalDFN" data-link-type="dfn">conform</a> if that <a href="#dfn-technology" class="internalDFN" data-link-type="dfn">technology</a> is turned off or is not supported
+                <p>the content would not <a>conform</a> if that <a>technology</a> is turned off or is not supported
                 </p>
 
             </dd>
@@ -4237,23 +4296,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt><dfn data-dfn-type="dfn" id="dfn-set-of-web-pages">set of Web pages</dfn></dt>
-            <dd>
+            404: Not Found
 
-                <p>collection of <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that share a common purpose and that are created by the same author, group or organization
-                </p>
-
-                <p>Different language versions would be considered different sets of Web pages.</p>
-
-                <p class="changed">Example: A publication is split across multiple Web pages, where each page contains one chapter or other significant section of the work. The publication is logically a single contiguous unit, and contains navigation features that enable
-                    access to the full set of pages.
-                </p>
-
-                <p>Example: A publication is split across multiple Web pages, where each page contains one chapter or other significant section of the work. The publication is logically a single contiguous unit, and contains navigation features that enable
-                    access to the full set of pages.
-                </p>
-
-            </dd>
 
             <dt><dfn data-dfn-type="dfn" id="dfn-sign-language">sign language</dfn></dt>
             <dd>
@@ -4266,7 +4310,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-sign-language-interpretation">sign language interpretation</dfn></dt>
             <dd>
 
-                <p>translation of one language, generally a spoken language, into a <a href="#dfn-sign-language" class="internalDFN" data-link-type="dfn">sign language</a></p>
+                <p>translation of one language, generally a spoken language, into a <a>sign language</a></p>
 
                 <p>True sign languages are independent languages that are unrelated to the spoken language(s) of the same country or region.
                 </p>
@@ -4313,26 +4357,42 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <ol>
 
-                    <li>The way the parts of a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a> are organized in relation to each other; and
+                    <li>The way the parts of a <a>Web page</a> are organized in relation to each other; and
                     </li>
 
-                    <li>The way a collection of <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> is organized
+                    <li>The way a collection of <a>Web pages</a> is organized
                     </li>
 
                 </ol>
 
             </dd>
 
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-style-properties">Style Properties</dfn></dt>
+            <dd class="new">
+                <p class="change">New</p>
+                <p>properties whose values determine the presentation (e.g. font, color, size, location, padding, volume, synthesized speech prosody) of content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille display) by user agents</p>
+                <p>
+                </p>
+                <p>Style properties can have several origins:</p>
+                <ul>
+                    <li>user agent default styles: The default style property values applied in the absence of any author or user styles. Some web content technologies specify a default rendering; others do not.</li>
+                    <li>author styles: Style property values that are set by the author as part of the content (e.g. in-line styles, author style sheets).
+                    </li>
+                    <li>user styles: Style property values that are set by the user (e.g. via user agent interface settings, user style sheets).</li>
+                </ul>
+            </dd>
+
+
             <dt><dfn data-dfn-type="dfn" id="dfn-supplemental-content">supplemental content</dfn></dt>
             <dd>
 
-                <p>additional <a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a> that illustrates or clarifies the primary content
+                <p>additional <a>content</a> that illustrates or clarifies the primary content
                 </p>
 
-                <p>An audio version of a <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web page</a>.
+                <p>An audio version of a <a>Web page</a>.
                 </p>
 
-                <p>An illustration of a complex <a href="#dfn-process" class="internalDFN" data-link-type="dfn">process</a>.
+                <p>An illustration of a complex <a>process</a>.
                 </p>
 
                 <p>A paragraph summarizing the major outcomes and recommendations made in a research study.
@@ -4343,8 +4403,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-synchronized-media">synchronized media</dfn></dt>
             <dd>
 
-                <p><a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> or <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> synchronized with another format for presenting information and/or with time-based interactive
-                    components, unless the media is a <a href="#dfn-media-alternative-for-text" class="internalDFN" data-link-type="dfn">media alternative for text</a> that is clearly labeled as such
+                <p><a>audio</a> or <a>video</a> synchronized with another format for presenting information and/or with time-based interactive components, unless the media is a <a>media alternative for text</a> that is clearly labeled as such
                 </p>
 
             </dd>
@@ -4355,7 +4414,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dt>
             <dd>
 
-                <p><a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agents</a></p>
+                <p><a>mechanism</a> for encoding instructions to be rendered, played or executed by <a>user agents</a></p>
 
                 <p>As used in these guidelines "Web Technology" and the word "technology" (when used alone) both refer to Web Content Technologies.
                 </p>
@@ -4372,16 +4431,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-text">text</dfn></dt>
             <dd>
 
-                <p>sequence of characters that can be <a href="#dfn-programmatically-determined" class="internalDFN" data-link-type="dfn">programmatically determined</a>, where the sequence is expressing something in <a href="#dfn-human-language" class="internalDFN"
-                        data-link-type="dfn">human language</a></p>
+                <p>sequence of characters that can be <a>programmatically determined</a>, where the sequence is expressing something in <a>human language</a></p>
 
             </dd>
 
             <dt><dfn data-dfn-type="dfn" id="dfn-text-alternative">text alternative</dfn></dt>
             <dd>
 
-                <p><a href="#dfn-text" class="internalDFN" data-link-type="dfn">Text</a> that is programmatically associated with <a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn">non-text content</a> or referred to from text that
-                    is programmatically associated with non-text content. Programmatically associated text is text whose location can be programmatically determined from the non-text content.
+                <p><a>Text</a> that is programmatically associated with <a>non-text content</a> or referred to from text that is programmatically associated with non-text content. Programmatically associated text is text whose location can be programmatically
+                    determined from the non-text content.
                 </p>
 
                 <p>An image of a chart is described in text in the paragraph after the chart. The short text alternative for the chart indicates that a description follows.
@@ -4421,8 +4479,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p>any software that retrieves and presents Web content for users</p>
 
-                <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technology" class="internalDFN" data-link-type="dfn">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web
-                    content.
+                <p>Web browsers, media players, plug-ins, and other programs — including <a>assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
                 </p>
 
             </dd>
@@ -4470,7 +4527,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-video-only">video-only</dfn></dt>
             <dd>
 
-                <p>a time-based presentation that contains only <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> (no <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a> and no interaction)
+                <p>a time-based presentation that contains only <a>video</a> (no <a>audio</a> and no interaction)
                 </p>
 
             </dd>
@@ -4480,8 +4537,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p>object in which the user agent presents content</p>
 
-                <p>The <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a> presents content through one or more viewports. Viewports include windows, frames, loudspeakers, and virtual magnifying glasses. A viewport may contain
-                    another viewport (e.g., nested frames). Interface components created by the user agent such as prompts, menus, and alerts are not viewports.
+                <p>The <a>user agent</a> presents content through one or more viewports. Viewports include windows, frames, loudspeakers, and virtual magnifying glasses. A viewport may contain another viewport (e.g., nested frames). Interface components
+                    created by the user agent such as prompts, menus, and alerts are not viewports.
                 </p>
 
                 <p>This definition is based on <a href="http://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a>.
@@ -4499,7 +4556,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt><dfn data-dfn-type="dfn" id="dfn-web-page">Web page</dfn></dt>
             <dd>
 
-                <p>a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agent" class="internalDFN" data-link-type="dfn">user agent</a></p>
+                <p>a non-embedded resource obtained from a single URI using HTTP plus any other resources that are used in the rendering or intended to be rendered together with it by a <a>user agent</a></p>
 
                 <p>Although any "other resources" would be rendered together with the primary resource, they would not necessarily be rendered simultaneously with each other.
                 </p>
@@ -4534,12 +4591,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
         </h2>
         <p>The full <a href="https://github.com/w3c/wcag21/commits/master/guidelines">commit history to WCAG 2.1</a> is available.</p>
         <section id="substantive-changes-since-the-last-public-working-draft" typeof="bibo:Chapter" resource="#substantive-changes-since-the-last-public-working-draft" property="bibo:hasPart">
-            <h3 id="a.1-substantive-changes-since-the-last-public-working-draft§" resource="#a.1-substantive-changes-since-the-last-public-working-draft§"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Substantive changes since the <a href="https://www.w3.org/TR/2017/WD-WCAG21-20170419/">last public working draft</a><span class="permalink" typeof="bookmark"><a href="#substantive-changes-since-the-last-public-working-draft" aria-label="Permalink for A.1 Substantive changes since the last public working draft" title="Permalink for A.1 Substantive changes since the last public working draft" property="url"><span property="title" content="A.1 Substantive changes since the last public working draft">§</span></a>
+            <h3 id="a.1-substantive-changes-since-the-last-public-working-draft§" resource="#a.1-substantive-changes-since-the-last-public-working-draft§"><span property="xhv:role" resource="xhv:heading"><span class="secno">A.1 </span>Substantive changes since the <a href="https://www.w3.org/TR/2017/WD-WCAG21-20170630/">last public working draft</a><span class="permalink" typeof="bookmark"><a href="#substantive-changes-since-the-last-public-working-draft" aria-label="Permalink for A.1 Substantive changes since the last public working draft" title="Permalink for A.1 Substantive changes since the last public working draft" property="url"><span property="title" content="A.1 Substantive changes since the last public working draft">§</span></a>
                 </span>
                 </span>
             </h3>
             <ul>
-                <li><a href="@@">@@</a></li>
+                <li>2017-07-18: Added <a href="#accessible-name">Accessible Name</a>.</li>
+                <li>2017-07-25: Added <a href="#adapting-text">Adapting Text</a> with definitions for <a>adapt</a> and <a>style properties</a>.</li>
+                <li>2017-07-25: Added note to <a href="#cc2">Conformance Criterion 2</a> about full page variants.</li>
             </ul>
         </section>
         <section id="other-substantive-changes-since-the-first-public-working-draft" typeof="bibo:Chapter" resource="#other-substantive-changes-since-the-first-public-working-draft" property="bibo:hasPart">
@@ -4549,12 +4608,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             </h3>
             <ul>
                 <li>2017-03-16: Remove Success Criteria that were listed as "proposals" in the First Public Working Draft but not yet past the Working Group consensus process.</li>
-                <li>2017-04-13: Added definition of <a href="#dfn-easily-available" class="internalDFN" data-link-type="dfn">easily available</a>.</li>
+                <li>2017-04-13: Added definition of <a>easily available</a>.</li>
                 <li>2017-04-14: Accepted new version of <a href="#accidental-activation">Accidental Activation</a>, changing "Timing of event is essential..." to "Down-event activation event is essential..." and removing note about applicability when AT that
                     remaps touch gestures is not turned on.</li>
                 <li>2017-04-14: Added content that had been omitted from WCAG 2.0 Success Criteria <a href="#error-prevention-legal-financial-data">Error Prevention (Legal, Financial, Data)</a>, <a href="#error-prevention-all">Error Prevention (All)</a>,
                     and <a href="#visual-presentation">Visual Presentation</a>.</li>
-                <li>2017-04-19: Added definition of <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> (which had been omitted from WCAG 2.0 terms) and <a href="#dfn-css-pixel" class="internalDFN" data-link-type="dfn">css pixel</a>.</li>
+                <li>2017-04-19: Added definition of <a>essential</a> (which had been omitted from WCAG 2.0 terms) and <a>css pixel</a>.</li>
+                <li>2017-05-24: Added "color" to WCAG 2.0 <a href="#sensory-characteristics">1.3.3 Sensory Characteristics</a>, and removed note about color from that and <a href="#use-of-color">1.4.1 Use of Color</a>, to reflect a <a href="https://www.w3.org/WAI/WCAG20/errata/">WCAG 2.0 erratum</a>.</li>
+                <li>2017-06-06: Added <a href="#change-of-content">Change of Content</a> and definition <a>primary purpose of the page</a>.</li>
+                <li>2017-06-09: Added <a href="#character-key-shortcuts">Character Key Shortcuts</a> (which was in the First Public Working Draft as "Single-key Shortcuts").</li>
+                <li>2017-06-23: Added <a href="#zoom-content">Zoom Content</a> (which was in the First Public Working Draft as "Resize Content"), <a href="#accessible-authentication">Accessible Authentication</a>, <a href="#user-interface-component-contrast-minimum">User Interface Component Contrast (Minimum)</a>.</li>
+                <li>2017-06-27: Added <a href="#orientation">Orientation</a>, changed term "orientation" to <a>display orientation</a>, and added examples to definition of <a>essential</a>.</li>
             </ul>
         </section>
     </section>
