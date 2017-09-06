@@ -738,6 +738,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                             <li class="tocline"><a href="#link-purpose-(link-only)" class="tocxref"><span class="secno">2.4.9 </span>Link Purpose (Link Only)</a></li>
                             <li class="tocline"><a href="#section-headings" class="tocxref"><span class="secno">2.4.10 </span>Section Headings</a></li>
                             <li class="tocline"><a href="#character-key-shortcuts" class="tocxref"><span class="secno">2.4.11 </span>Character Key Shortcuts</a></li>
+                            <li class="tocline"><a href="#accessible-name" class="tocxref"><span class="secno">2.4.12 </span>Accessible Name</a></li>
                         </ol>
                     </li>
                     <li class="tocline"><a href="#pointer-accessible" class="tocxref"><span class="secno">2.5 </span>Pointer Accessible</a>
@@ -750,13 +751,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </li>
                     <li class="tocline"><a href="#additional-sensor-inputs" class="tocxref"><span class="secno">2.6 </span>Additional sensor inputs</a>
                         <ol class="toc">
-                            <li class="tocline"><a href="#orientation" class="tocxref"><span class="secno">2.6.1 </span>Orientation</a></li>
-                        </ol>
-                    </li>
-                    <li class="tocline"><a href="#speech" class="tocxref"><span class="secno">2.7 </span>Speech</a>
-                        <ol class="toc">
-                            <li class="tocline"><a href="#device-sensors" class="tocxref"><span class="secno">2.7.1 </span>Device Sensors</a></li>
-                            <li class="tocline"><a href="#accessible-name" class="tocxref"><span class="secno">2.7.2 </span>Accessible Name</a></li>
+                            <li class="tocline"><a href="#device-sensors" class="tocxref"><span class="secno">2.6.1 </span>Device Sensors</a></li>
+                            <li class="tocline"><a href="#orientation" class="tocxref"><span class="secno">2.6.2 </span>Orientation</a></li>
                         </ol>
                     </li>
                 </ol>
@@ -2433,6 +2429,30 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             </section>
 
 
+            <section class="sc new" id="accessible-name" typeof="bibo:Chapter" resource="#accessible-name" property="bibo:hasPart">
+                <h4 id="x2.4.12-accessible-name§" resource="#x2.4.12-accessible-name§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.4.12 </span>Accessible Name<span class="permalink" typeof="bookmark"><a href="#accessible-name" aria-label="Permalink for 2.4.12 Accessible Name" title="Permalink for 2.4.12 Accessible Name" property="url"><span property="title" content="2.4.12 Accessible Name">§</span></a>
+                    </span>
+                    </span>
+                </h4>
+                <div class="doclinks"><a href="../understanding/21/accessible-name.html">Understanding Accessible Name</a></div>
+                <p class="conformance-level">(Level A)</p>
+                <p class="change">[New]</p>
+                <div class="ednote">
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote15"><span>Editor's note</span></div>
+                    <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/68">Issue 68</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
+                        comment in GitHub.
+                    </p>
+                </div>
+
+                <p>Where an active control has a visible label, the <a href="#dfn-accessible-name" class="internalDFN" data-link-type="dfn">accessible name</a> for the control includes the text string used for its visible label.</p>
+                <div class="note">
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note23"><span>Note</span></div>
+                    <p class="">A best practice is to place the text string at the start of the text string.</p>
+                </div>
+
+            </section>
+
+
         </section>
 
         <section class="guideline new" id="pointer-accessible" typeof="bibo:Chapter" resource="#pointer-accessible" property="bibo:hasPart">
@@ -2456,7 +2476,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote15"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote16"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/61">Issue 61</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
@@ -2465,7 +2485,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>All functionality can be operated with a single untimed pointer gesture unless a multipoint or timed gesture is essential.</p>
 
                 <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note23"><span>Note</span></div>
+                    <div class="note-title marker" aria-level="5" role="heading" id="h-note24"><span>Note</span></div>
                     <p class="">This requirement applies to web content which interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).
                     </p>
                 </div>
@@ -2482,7 +2502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="conformance-level">(Level AA)</p>
                 <p class="change">[New]</p>
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote16"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote17"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/64">Issue 64</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
@@ -2504,7 +2524,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote17"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote18"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.</p>
                 </div>
@@ -2529,7 +2549,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </dl>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote18"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote19"><span>Editor's note</span></div>
                     <p class="">The exact parameters of the exception on grouped links are still under discussion by the Working Group.</p>
                 </div>
 
@@ -2549,7 +2569,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote19"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote20"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.</p>
                 </div>
@@ -2569,54 +2589,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <p class="change">[New]</p>
 
             <div class="ednote">
-                <div class="ednote-title marker" aria-level="4" role="heading" id="h-ednote20"><span>Editor's note</span></div>
+                <div class="ednote-title marker" aria-level="4" role="heading" id="h-ednote21"><span>Editor's note</span></div>
                 <p class="">Guideline text needed</p>
             </div>
 
-            <!-- <section data-include="sc/21/device-sensors.html" data-include-replace="true"></section> -->
-
-            <section class="sc new" id="orientation" typeof="bibo:Chapter" resource="#orientation" property="bibo:hasPart">
-
-                <h4 id="x2.6.1-orientation§" resource="#x2.6.1-orientation§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.6.1 </span>Orientation<span class="permalink" typeof="bookmark"><a href="#orientation" aria-label="Permalink for 2.6.1 Orientation" title="Permalink for 2.6.1 Orientation" property="url"><span property="title" content="2.6.1 Orientation">§</span></a>
-                    </span>
-                    </span>
-                </h4>
-
-                <div class="doclinks"><a href="../understanding/21/orientation.html">Understanding Orientation</a></div>
-                <p class="conformance-level">(Level AA)</p>
-
-                <p class="change">[New]</p>
-
-                <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote21"><span>Editor's note</span></div>
-                    <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/70">Issue 70</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
-                        comment in GitHub.
-                    </p>
-                </div>
-
-                <p>Content is not locked to a specific <a href="#dfn-display-orientation" class="internalDFN" data-link-type="dfn">display orientation</a>, and functionality of the content is operable in all display orientations, except where display orientation
-                    is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> for use of the content.
-                </p>
-
-            </section>
-
-
-        </section>
-
-        <section class="guideline new" id="speech" typeof="bibo:Chapter" resource="#speech" property="bibo:hasPart">
-            <h3 id="x2.7-speech§" resource="#x2.7-speech§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Guideline 2.7 </span>Speech<span class="permalink" typeof="bookmark"><a href="#speech" aria-label="Permalink for 2.7 Speech" title="Permalink for 2.7 Speech" property="url"><span property="title" content="2.7 Speech">§</span></a>
-                </span>
-                </span>
-            </h3>
-            <p class="change">[New]</p>
-
-            <div class="ednote">
-                <div class="ednote-title marker" aria-level="4" role="heading" id="h-ednote22"><span>Editor's note</span></div>
-                <p class="">Guideline text needed</p>
-            </div>
             <section class="sc new" id="device-sensors" typeof="bibo:Chapter" resource="#device-sensors" property="bibo:hasPart">
 
-                <h4 id="x2.7.1-device-sensors§" resource="#x2.7.1-device-sensors§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.7.1 </span>Device Sensors<span class="permalink" typeof="bookmark"><a href="#device-sensors" aria-label="Permalink for 2.7.1 Device Sensors" title="Permalink for 2.7.1 Device Sensors" property="url"><span property="title" content="2.7.1 Device Sensors">§</span></a>
+                <h4 id="x2.6.1-device-sensors§" resource="#x2.6.1-device-sensors§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.6.1 </span>Device Sensors<span class="permalink" typeof="bookmark"><a href="#device-sensors" aria-label="Permalink for 2.6.1 Device Sensors" title="Permalink for 2.6.1 Device Sensors" property="url"><span property="title" content="2.6.1 Device Sensors">§</span></a>
                     </span>
                     </span>
                 </h4>
@@ -2627,7 +2606,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote23"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote22"><span>Editor's note</span></div>
                     <p class="">This is a proposed Success Criterion that has not yet been formally approved by the Working Group. Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/67">Issue 67</a>. To file comments on this proposal,
                         please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
                     </p>
@@ -2638,7 +2617,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote24"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote23"><span>Editor's note</span></div>
                     <p class="">The Working Group has identified questions of scope for this Success Criterion, and is exploring rewording to resolve this. The main question is about the relationship to indirect motion associated with operating a keyboard, pointer,
                         or assistive technology. Draft new wording is available at <a href="https://github.com/w3c/wcag21/issues/67#issuecomment-325716721">https://github.com/w3c/wcag21/issues/67#issuecomment-325716721</a></p>
                 </div>
@@ -2646,26 +2625,28 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             </section>
 
 
-            <section class="sc new" id="accessible-name" typeof="bibo:Chapter" resource="#accessible-name" property="bibo:hasPart">
-                <h4 id="x2.7.2-accessible-name§" resource="#x2.7.2-accessible-name§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.7.2 </span>Accessible Name<span class="permalink" typeof="bookmark"><a href="#accessible-name" aria-label="Permalink for 2.7.2 Accessible Name" title="Permalink for 2.7.2 Accessible Name" property="url"><span property="title" content="2.7.2 Accessible Name">§</span></a>
+            <section class="sc new" id="orientation" typeof="bibo:Chapter" resource="#orientation" property="bibo:hasPart">
+
+                <h4 id="x2.6.2-orientation§" resource="#x2.6.2-orientation§"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.6.2 </span>Orientation<span class="permalink" typeof="bookmark"><a href="#orientation" aria-label="Permalink for 2.6.2 Orientation" title="Permalink for 2.6.2 Orientation" property="url"><span property="title" content="2.6.2 Orientation">§</span></a>
                     </span>
                     </span>
                 </h4>
-                <div class="doclinks"><a href="../understanding/21/accessible-name.html">Understanding Accessible Name</a></div>
-                <p class="conformance-level">(Level A)</p>
+
+                <div class="doclinks"><a href="../understanding/21/orientation.html">Understanding Orientation</a></div>
+                <p class="conformance-level">(Level AA)</p>
+
                 <p class="change">[New]</p>
+
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote25"><span>Editor's note</span></div>
-                    <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/68">Issue 68</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote24"><span>Editor's note</span></div>
+                    <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/70">Issue 70</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
                 </div>
 
-                <p>Where an active control has a visible label, the <a href="#dfn-accessible-name" class="internalDFN" data-link-type="dfn">accessible name</a> for the control includes the text string used for its visible label.</p>
-                <div class="note">
-                    <div class="note-title marker" aria-level="5" role="heading" id="h-note24"><span>Note</span></div>
-                    <p class="">A best practice is to place the text string at the start of the text string.</p>
-                </div>
+                <p>Content is not locked to a specific <a href="#dfn-display-orientation" class="internalDFN" data-link-type="dfn">display orientation</a>, and functionality of the content is operable in all display orientations, except where display orientation
+                    is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> for use of the content.
+                </p>
 
             </section>
 
@@ -2869,7 +2850,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote26"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote25"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/65">Issue 65</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
@@ -2908,7 +2889,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p class="change">[New]</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote27"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="5" role="heading" id="h-ednote26"><span>Editor's note</span></div>
                     <p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/2">Issue 2</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete
                         comment in GitHub.
                     </p>
@@ -3860,7 +3841,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>The following form field types are documented as widely recognized:</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote28"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote27"><span>Editor's note</span></div>
                     <p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p>
                 </div>
 
@@ -3964,7 +3945,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>The following form field types are documented as widely recognized:</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote29"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote28"><span>Editor's note</span></div>
                     <p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p>
                 </div>
 
@@ -4086,7 +4067,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>The following link types are documented as widely recognized:</p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote30"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote29"><span>Editor's note</span></div>
                     <p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p>
                 </div>
 
@@ -4975,7 +4956,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
 
                 <div class="ednote">
-                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote31"><span>Editor's note</span></div>
+                    <div class="ednote-title marker" aria-level="3" role="heading" id="h-ednote30"><span>Editor's note</span></div>
                     <p class="">Proposed modification: Region of the display that will accept a pointer action. If a portion of a target that does not perform the same action or go to the same page is overlapped by another target such that it cannot receive pointer
                         actions, then that portion is not considered part of the target for purposes of target measurements.
                     </p>
