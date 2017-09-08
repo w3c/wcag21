@@ -2860,7 +2860,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                     </p>
                 </div>
 
-                <p>For <a class="respec-offending-element" title="Linking error: not matching <dfn>">single-pointer activation</a>, at least one of the following is true:</p>
+                <p>For <a href="#dfn-single-pointer-activation" class="internalDFN" data-link-type="dfn">single-pointer activation</a>, at least one of the following is true:</p>
 
                 <ul>
                     <li>Activation is on the <a href="#dfn-up-event" class="internalDFN" data-link-type="dfn">up-event</a>, either explicitly or implicitly as a platform's generic activation/click event;
@@ -3347,14 +3347,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-accessible-name">Accessible Name</dfn></dt>
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-accessible-name">accessible name</dfn></dt>
             <dd class="new">
 
                 <p class="change">[New]</p>
 
-                <p>The name of a user interface element. The value of the accessible name may be derived from a visible (e.g., the visible text on a button) or invisible (e.g., the text alternative that describes an icon) property of the user interface element.
-                    A simple use for the accessible name property may be illustrated by an "OK" button. The text "OK" is the accessible name. When the button receives focus, assistive technologies may concatenate the platform's role description with the
-                    accessible name. For example, a screen reader may speak "push-button OK" or "OK button".</p>
+                <p>name of a user interface element</p>
+                <p>The value of the accessible name may be derived from a visible (e.g., the visible text on a button) or invisible (e.g., the text alternative that describes an icon) property of the user interface element. A simple use for the accessible
+                    name property may be illustrated by an "OK" button. The text "OK" is the accessible name. When the button receives focus, assistive technologies may concatenate the platform's role description with the accessible name. For example,
+                    a screen reader may speak "push-button OK" or "OK button".</p>
 
             </dd>
 
@@ -3453,7 +3454,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-adapt">Adapt</dfn></dt>
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-adapt">adapt</dfn></dt>
             <dd class="new">
 
                 <p class="change">[New]</p>
@@ -3640,8 +3641,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="change">[New]</p>
 
-                <p>A single printable Unicode code point, any keyboard character that is printable, i.e. letters of the alphabet including capitals, punctuation, numbers, and symbols. Note that the Space and Enter keys, which return empty spaces rather than
-                    characters, are not character keys.</p>
+                <p>single printable Unicode code point, any keyboard character that is printable, i.e. letters of the alphabet including capitals, punctuation, numbers, and symbols</p>
+                <p>Note that the Space and Enter keys, which return empty spaces rather than characters, are not character keys.</p>
 
             </dd>
 
@@ -3687,16 +3688,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
 
             </dd>
-
-            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-complex-gestures">complex gestures</dfn></dt>
-            <dd class="new">
-
-                <p class="change">[New]</p>
-
-                <p>A timed or multi-point gesture. Examples of a multi-pointer gesture include two-finger pinch/zoom</p>
-
-            </dd>
-
 
             <dt><dfn data-dfn-type="dfn" id="dfn-conformance">conformance</dfn></dt>
             <dd>
@@ -4132,7 +4123,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="change">[New]</p>
 
-                <p>a device component that detects and responds to some type of input from the physical environment</p>
+                <p>device component that detects and responds to some type of input from the physical environment</p>
                 <p>Examples on mobile devices are the measurement of motion, orientation, and various environmental conditions.</p>
 
             </dd>
@@ -4174,13 +4165,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <p>one or more of the following are true:</p>
                 <ul>
 
-                    <li>can be set one time with as wide a scope as possible (such as using the standards of the operating system, from <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=64840">ISO 9241-112</a> [[ISO_9241-112]] or <a href="http://gpii.net/"><abbr title="Global Public Inclusive Infrastructure">GPII</abbr></a>                        [<cite><a class="bibref" href="#bib-GPII">GPII</a></cite>] when available)
+                    <li>can be set one time with as wide a scope as possible (such as using the standards of the operating system, from <a href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=64840">ISO 9241-112</a> [[ISO_9241-112]] or <a href="http://gpii.net/"><abbr title="Global Public Inclusive Infrastructure">GPII</abbr></a>                        [<cite><a class="bibref" href="#bib-GPII">GPII</a></cite>] when available);
                     </li>
 
-                    <li>has the option to save or change the setting, where available interoperably, but also for the scope of the set of web pages
+                    <li>has the option to save or change the setting, where available interoperably, but also for the scope of the set of web pages;
                     </li>
 
-                    <li>is reachable from each screen where it may be needed, and the path and the control conforms to all of this document
+                    <li>is reachable from each screen where it may be needed, and the path and the control conforms to all of this document.
                     </li>
 
                 </ul>
@@ -4209,13 +4200,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <ul>
 
-                    <li>banking site where a check deposit has to be in a certain orientation</li>
+                    <li>Banking site where a check deposit has to be in a certain orientation;</li>
 
-                    <li>piano app in landscape mode</li>
+                    <li>Piano app in landscape mode;</li>
 
-                    <li>content for apps and devices that do not support the change of display orientation, such as slide presentations to projectors and televisions</li>
+                    <li>Content for apps and devices that do not support the change of display orientation, such as slide presentations to projectors and televisions;</li>
 
-                    <li>virtual reality and augmented reality content in which landscape and portrait display orientations are not generally applicable in binary fashion</li>
+                    <li>Virtual reality and augmented reality content in which landscape and portrait display orientations are not generally applicable in binary fashion.</li>
 
                 </ul>
 
@@ -4408,7 +4399,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="change">[New]</p>
 
-                <p>An alternative means of triggering an action by the pressing of one or more keys.</p>
+                <p>alternative means of triggering an action by the pressing of one or more keys</p>
 
             </dd>
 
@@ -4623,7 +4614,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
                 <p class="change">[New]</p>
 
-                <p>If removed, the page would lose its meaning or main reason for existing.
+                <p>if removed, the page would lose its meaning or main reason for existing
                 </p>
 
             </dd>
@@ -4831,10 +4822,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt><dfn data-dfn-type="dfn" id="dfn-set-of-web-pages">set of Web pages</dfn></dt>
+            <dt><dfn data-dfn-type="dfn" id="dfn-set-of-web-pages">set of web pages</dfn></dt>
             <dd>
 
-                <p>collection of <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">Web pages</a> that share a common purpose and that are created by the same author, group or organization
+                <p>collection of <a href="#dfn-web-page" class="internalDFN" data-link-type="dfn">web pages</a> that share a common purpose and that are created by the same author, group or organization
                 </p>
 
                 <p class="changed">Examples include a publication which is split across multiple Web pages, where each page contains one chapter or other significant section of the work. The publication is logically a single contiguous unit, and contains navigation features
@@ -4867,15 +4858,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-single-pointer-activation">single pointer activation</dfn></dt>
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-single-pointer-activation">single-pointer activation</dfn></dt>
             <dd class="new">
 
                 <p class="change">[new]</p>
 
-                <p>One point of contact with the screen (vs. multi-touch). A pointer can be any point of contact on the screen made by a mouse cursor, pen, touch (including multi-touch), or other pointing input device. This model makes it easier to write
-                    sites and applications that work well no matter what hardware the user has. For scenarios when device-specific handling is desired, this specification also defines properties for inspecting. <a href="http://www.w3.org/TR/pointerevents/">Pointer Events (REC)</a>
-                    <a
-                        href="https://w3c.github.io/pointerevents/">Pointer Events Level 2 (ED)</a>
+                <p>one point of contact with the screen</p>
+                <p>This is in contast to multi-touch. A pointer can be any point of contact on the screen made by a mouse cursor, pen, touch (including multi-touch), or other pointing input device. This model makes it easier to write sites and applications
+                    that work well no matter what hardware the user has. For scenarios when device-specific handling is desired, the <a href="http://www.w3.org/TR/pointerevents/">Pointer Events</a> [<cite><a class="bibref" href="#bib-pointerevents">pointerevents</a></cite>]
+                    specification also defines properties for inspecting.
 
                 </p>
 
@@ -4907,7 +4898,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             </dd>
 
-            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-style-properties">Style Properties</dfn></dt>
+            <dt class="new"><dfn data-dfn-type="dfn" id="dfn-style-properties">style properties</dfn></dt>
             <dd class="new">
                 <p class="change">[New]</p>
                 <p>properties whose values determine the presentation (e.g. font, color, size, location, padding, volume, synthesized speech prosody) of content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille display) by user agents</p>
@@ -4915,10 +4906,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </p>
                 <p>Style properties can have several origins:</p>
                 <ul>
-                    <li>user agent default styles: The default style property values applied in the absence of any author or user styles. Some web content technologies specify a default rendering; others do not.</li>
-                    <li>author styles: Style property values that are set by the author as part of the content (e.g. in-line styles, author style sheets).
+                    <li>User agent default styles: The default style property values applied in the absence of any author or user styles. Some web content technologies specify a default rendering; others do not;</li>
+                    <li>Author styles: Style property values that are set by the author as part of the content (e.g. in-line styles, author style sheets);
                     </li>
-                    <li>user styles: Style property values that are set by the user (e.g. via user agent interface settings, user style sheets).</li>
+                    <li>User styles: Style property values that are set by the user (e.g. via user agent interface settings, user style sheets).</li>
                 </ul>
             </dd>
 
@@ -5013,8 +5004,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             <dt class="new"><dfn data-dfn-type="dfn" id="dfn-up-event">up-event</dfn></dt>
             <dd class="new">
                 <p class="change">[new]</p>
-                <p>The activation of a component when the trigger stimulus is released. On different platforms the "up-event" may be called different things, such as "touchend" or "mouseup". Example: For touchscreen interaction, the event is triggered when
-                    a finger is lifted from the touchscreen at the end of a tap.</p>
+                <p>activation of a component when the trigger stimulus is released</p>
+                <p>On different platforms the "up-event" may be called different things, such as "touchend" or "mouseup".</p>
+                <p>Example: For touchscreen interaction, the event is triggered when a finger is lifted from the touchscreen at the end of a tap.</p>
             </dd>
 
 
@@ -5376,6 +5368,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 </dd><dt id="bib-WCAG20-TECHS">[WCAG20-TECHS]</dt>
                 <dd><a href="https://www.w3.org/TR/WCAG20-TECHS/" property="dc:references"><cite>Techniques for WCAG 2.0</cite></a>. Michael Cooper; Andrew Kirkpatrick; Joshue O Connor et al. W3C. 7 October 2016. W3C Note. URL: <a href="https://www.w3.org/TR/WCAG20-TECHS/"
                         property="dc:references">https://www.w3.org/TR/WCAG20-TECHS/</a>
+                </dd><dt id="bib-pointerevents">[pointerevents]</dt>
+                <dd><a href="https://www.w3.org/TR/pointerevents/" property="dc:references"><cite>Pointer Events</cite></a>. Jacob Rossi; Matt Brubeck. W3C. 24 February 2015. W3C Recommendation. URL: <a href="https://www.w3.org/TR/pointerevents/" property="dc:references">https://www.w3.org/TR/pointerevents/</a>
                 </dd><dt id="bib-sRGB">[sRGB]</dt>
                 <dd><a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references"><cite>A Standard Default Color Space for the Internet - sRGB, Version 1.10</cite></a>. M. Stokes; M. Anderson; S. Chandrasekar; R. Motta.November 5, 1996. URL:
                     <a href="http://www.w3.org/Graphics/Color/sRGB.html" property="dc:references">http://www.w3.org/Graphics/Color/sRGB.html</a>
