@@ -1,0 +1,9 @@
+<dt class="new"><dfn>programmatic notification</dfn></dt>
+<dd class="new">
+   					
+   <p class="change">New</p>
+   					
+   <p>notification set by the content which can be announced to the user without virtual or actual focus, using methods that are supported by user agents, including assistive technologies</p>
+   <p>Example: a screen reader announces to a user that their shopping cart has been updated after they select an item for purchase.</p>
+   				
+</dd>
