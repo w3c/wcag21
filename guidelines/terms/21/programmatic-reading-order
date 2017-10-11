@@ -1,0 +1,9 @@
+
+<dt class="new"><dfn data-lt="adapted">programmatic reading order</dfn></dt>
+<dd class="new">
+   					
+   <p class="change">New</p>
+<p>The order of content presented to the end user.</p>
+<p >Code used for layout and programming which is typically not presented to the end user is not considered in calculating the programmatic reading order.</p>
+</dd>
+
