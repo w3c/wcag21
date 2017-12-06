@@ -90,13 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -369,7 +363,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 806239092;--></p>
+  <p><!--_hyper: -546712402;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-06-december-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-12-06">06 December 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 06 December 2017" title="Permalink for W3C Editor's Draft 06 December 2017" property="url"><span property="title" content="W3C Editor's Draft 06 December 2017">§</span></a></span></h2>
   <dl>
@@ -601,7 +601,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
           </p>
         
 
-</section><nav id="toc"><h2 class="introductory" id="table-of-contents" resource="#table-of-contents"><span property="xhv:role" resource="xhv:heading">Table of Contents<span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents" property="url"><span property="title" content="Table of Contents">§</span></a></span></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref">Introduction</a><ol class="toc"><li class="tocline"><a href="#about-this-draft" class="tocxref"><span class="secno">0.1 </span>About This Draft</a></li><li class="tocline"><a href="#background-on-wcag-2" class="tocxref"><span class="secno">0.2 </span>Background on WCAG 2</a></li><li class="tocline"><a href="#conformance-to-wcag-2-1" class="tocxref"><span class="secno">0.3 </span>Conformance to WCAG 2.1</a></li><li class="tocline"><a href="#future-work-on-wcag-2-1" class="tocxref"><span class="secno">0.4 </span>Future work on WCAG 2.1</a></li><li class="tocline"><a href="#later-versions-of-accessibility-guidelines" class="tocxref"><span class="secno">0.5 </span>Later versions of Accessibility Guidelines</a></li></ol></li><li class="tocline"><a href="#perceivable" class="tocxref"><span class="secno">1. </span> Perceivable </a><ol class="toc"><li class="tocline"><a href="#text-alternatives" class="tocxref"><span class="secno">1.1 </span>Text Alternatives</a><ol class="toc"><li class="tocline"><a href="#non-text-content" class="tocxref"><span class="secno">1.1.1 </span>Non-text Content</a></li></ol></li><li class="tocline"><a href="#time-based-media" class="tocxref"><span class="secno">1.2 </span>Time-based Media</a><ol class="toc"><li class="tocline"><a href="#audio-only-and-video-only-prerecorded" class="tocxref"><span class="secno">1.2.1 </span>Audio-only and Video-only (Prerecorded)</a></li><li class="tocline"><a href="#captions-prerecorded" class="tocxref"><span class="secno">1.2.2 </span>Captions (Prerecorded)</a></li><li class="tocline"><a href="#audio-description-or-media-alternative-prerecorded" class="tocxref"><span class="secno">1.2.3 </span>Audio Description or Media Alternative (Prerecorded)</a></li><li class="tocline"><a href="#captions-live" class="tocxref"><span class="secno">1.2.4 </span>Captions (Live)</a></li><li class="tocline"><a href="#audio-description-prerecorded" class="tocxref"><span class="secno">1.2.5 </span>Audio Description (Prerecorded)</a></li><li class="tocline"><a href="#sign-language-prerecorded" class="tocxref"><span class="secno">1.2.6 </span>Sign Language (Prerecorded)</a></li><li class="tocline"><a href="#extended-audio-description-prerecorded" class="tocxref"><span class="secno">1.2.7 </span>Extended Audio Description (Prerecorded)</a></li><li class="tocline"><a href="#media-alternative-prerecorded" class="tocxref"><span class="secno">1.2.8 </span>Media Alternative (Prerecorded)</a></li><li class="tocline"><a href="#audio-only-live" class="tocxref"><span class="secno">1.2.9 </span>Audio-only (Live)</a></li></ol></li><li class="tocline"><a href="#adaptable" class="tocxref"><span class="secno">1.3 </span>Adaptable</a><ol class="toc"><li class="tocline"><a href="#info-and-relationships" class="tocxref"><span class="secno">1.3.1 </span>Info and Relationships</a></li><li class="tocline"><a href="#meaningful-sequence" class="tocxref"><span class="secno">1.3.2 </span>Meaningful Sequence</a></li><li class="tocline"><a href="#sensory-characteristics" class="tocxref"><span class="secno">1.3.3 </span>Sensory Characteristics</a></li><li class="tocline"><a href="#purpose-of-controls" class="tocxref"><span class="secno">1.3.4 </span>Purpose of Controls</a></li><li class="tocline"><a href="#contextual-information" class="tocxref"><span class="secno">1.3.5 </span>Contextual Information</a></li></ol></li><li class="tocline"><a href="#distinguishable" class="tocxref"><span class="secno">1.4 </span>Distinguishable</a><ol class="toc"><li class="tocline"><a href="#use-of-color" class="tocxref"><span class="secno">1.4.1 </span>Use of Color</a></li><li class="tocline"><a href="#audio-control" class="tocxref"><span class="secno">1.4.2 </span>Audio Control</a></li><li class="tocline"><a href="#contrast-minimum" class="tocxref"><span class="secno">1.4.3 </span>Contrast (Minimum)</a></li><li class="tocline"><a href="#resize-text" class="tocxref"><span class="secno">1.4.4 </span>Resize text</a></li><li class="tocline"><a href="#images-of-text" class="tocxref"><span class="secno">1.4.5 </span>Images of Text</a></li><li class="tocline"><a href="#contrast-enhanced" class="tocxref"><span class="secno">1.4.6 </span>Contrast (Enhanced)</a></li><li class="tocline"><a href="#low-or-no-background-audio" class="tocxref"><span class="secno">1.4.7 </span>Low or No Background Audio</a></li><li class="tocline"><a href="#visual-presentation" class="tocxref"><span class="secno">1.4.8 </span>Visual Presentation</a></li><li class="tocline"><a href="#images-of-text-no-exception" class="tocxref"><span class="secno">1.4.9 </span>Images of Text (No Exception)</a></li><li class="tocline"><a href="#reflow" class="tocxref"><span class="secno">1.4.10 </span>Reflow</a></li><li class="tocline"><a href="#graphics-contrast" class="tocxref"><span class="secno">1.4.11 </span>Graphics Contrast</a></li><li class="tocline"><a href="#text-spacing" class="tocxref"><span class="secno">1.4.12 </span>Text Spacing</a></li><li class="tocline"><a href="#content-on-hover-or-focus" class="tocxref"><span class="secno">1.4.13 </span>Content on Hover or Focus</a></li></ol></li></ol></li><li class="tocline"><a href="#operable" class="tocxref"><span class="secno">2. </span> Operable </a><ol class="toc"><li class="tocline"><a href="#keyboard-accessible" class="tocxref"><span class="secno">2.1 </span>Keyboard Accessible</a><ol class="toc"><li class="tocline"><a href="#keyboard" class="tocxref"><span class="secno">2.1.1 </span>Keyboard</a></li><li class="tocline"><a href="#no-keyboard-trap" class="tocxref"><span class="secno">2.1.2 </span>No Keyboard Trap</a></li><li class="tocline"><a href="#keyboard-no-exception" class="tocxref"><span class="secno">2.1.3 </span>Keyboard (No Exception)</a></li></ol></li><li class="tocline"><a href="#enough-time" class="tocxref"><span class="secno">2.2 </span>Enough Time</a><ol class="toc"><li class="tocline"><a href="#timing-adjustable" class="tocxref"><span class="secno">2.2.1 </span>Timing Adjustable</a></li><li class="tocline"><a href="#pause-stop-hide" class="tocxref"><span class="secno">2.2.2 </span>Pause, Stop, Hide</a></li><li class="tocline"><a href="#no-timing" class="tocxref"><span class="secno">2.2.3 </span>No Timing</a></li><li class="tocline"><a href="#interruptions" class="tocxref"><span class="secno">2.2.4 </span>Interruptions</a></li><li class="tocline"><a href="#re-authenticating" class="tocxref"><span class="secno">2.2.5 </span>Re-authenticating</a></li><li class="tocline"><a href="#accessible-authentication" class="tocxref"><span class="secno">2.2.6 </span>Accessible Authentication</a></li><li class="tocline"><a href="#interruptions-minimum" class="tocxref"><span class="secno">2.2.7 </span>Interruptions (Minimum)</a></li><li class="tocline"><a href="#timeouts" class="tocxref"><span class="secno">2.2.8 </span>Timeouts</a></li><li class="tocline"><a href="#animation-from-interactions" class="tocxref"><span class="secno">2.2.9 </span>Animation from Interactions</a></li></ol></li><li class="tocline"><a href="#seizures" class="tocxref"><span class="secno">2.3 </span>Seizures</a><ol class="toc"><li class="tocline"><a href="#three-flashes-or-below-threshold" class="tocxref"><span class="secno">2.3.1 </span>Three Flashes or Below Threshold</a></li><li class="tocline"><a href="#three-flashes" class="tocxref"><span class="secno">2.3.2 </span>Three Flashes</a></li></ol></li><li class="tocline"><a href="#navigable" class="tocxref"><span class="secno">2.4 </span>Navigable</a><ol class="toc"><li class="tocline"><a href="#bypass-blocks" class="tocxref"><span class="secno">2.4.1 </span>Bypass Blocks</a></li><li class="tocline"><a href="#page-titled" class="tocxref"><span class="secno">2.4.2 </span>Page Titled</a></li><li class="tocline"><a href="#focus-order" class="tocxref"><span class="secno">2.4.3 </span>Focus Order</a></li><li class="tocline"><a href="#link-purpose-in-context" class="tocxref"><span class="secno">2.4.4 </span>Link Purpose (In Context)</a></li><li class="tocline"><a href="#multiple-ways" class="tocxref"><span class="secno">2.4.5 </span>Multiple Ways</a></li><li class="tocline"><a href="#headings-and-labels" class="tocxref"><span class="secno">2.4.6 </span>Headings and Labels</a></li><li class="tocline"><a href="#focus-visible" class="tocxref"><span class="secno">2.4.7 </span>Focus Visible</a></li><li class="tocline"><a href="#location" class="tocxref"><span class="secno">2.4.8 </span>Location</a></li><li class="tocline"><a href="#link-purpose-link-only" class="tocxref"><span class="secno">2.4.9 </span>Link Purpose (Link Only)</a></li><li class="tocline"><a href="#section-headings" class="tocxref"><span class="secno">2.4.10 </span>Section Headings</a></li><li class="tocline"><a href="#character-key-shortcuts" class="tocxref"><span class="secno">2.4.11 </span>Character Key Shortcuts</a></li><li class="tocline"><a href="#label-in-name" class="tocxref"><span class="secno">2.4.12 </span>Label in Name</a></li></ol></li><li class="tocline"><a href="#pointer-accessible" class="tocxref"><span class="secno">2.5 </span>Pointer Accessible</a><ol class="toc"><li class="tocline"><a href="#pointer-gestures" class="tocxref"><span class="secno">2.5.1 </span>Pointer Gestures</a></li><li class="tocline"><a href="#accidental-activation" class="tocxref"><span class="secno">2.5.2 </span>Accidental Activation</a></li><li class="tocline"><a href="#target-size" class="tocxref"><span class="secno">2.5.3 </span>Target Size</a></li><li class="tocline"><a href="#target-size-enhanced" class="tocxref"><span class="secno">2.5.4 </span>Target Size (Enhanced)</a></li><li class="tocline"><a href="#concurrent-input-mechanisms" class="tocxref"><span class="secno">2.5.5 </span>Concurrent Input Mechanisms</a></li></ol></li><li class="tocline"><a href="#additional-sensor-inputs" class="tocxref"><span class="secno">2.6 </span>Additional sensor inputs</a><ol class="toc"><li class="tocline"><a href="#device-sensors" class="tocxref"><span class="secno">2.6.1 </span>Device Sensors</a></li><li class="tocline"><a href="#orientation" class="tocxref"><span class="secno">2.6.2 </span>Orientation</a></li></ol></li></ol></li><li class="tocline"><a href="#understandable" class="tocxref"><span class="secno">3. </span> Understandable </a><ol class="toc"><li class="tocline"><a href="#readable" class="tocxref"><span class="secno">3.1 </span>Readable</a><ol class="toc"><li class="tocline"><a href="#language-of-page" class="tocxref"><span class="secno">3.1.1 </span>Language of Page</a></li><li class="tocline"><a href="#language-of-parts" class="tocxref"><span class="secno">3.1.2 </span>Language of Parts</a></li><li class="tocline"><a href="#unusual-words" class="tocxref"><span class="secno">3.1.3 </span>Unusual Words</a></li><li class="tocline"><a href="#abbreviations" class="tocxref"><span class="secno">3.1.4 </span>Abbreviations</a></li><li class="tocline"><a href="#reading-level" class="tocxref"><span class="secno">3.1.5 </span>Reading Level</a></li><li class="tocline"><a href="#pronunciation" class="tocxref"><span class="secno">3.1.6 </span>Pronunciation</a></li></ol></li><li class="tocline"><a href="#predictable" class="tocxref"><span class="secno">3.2 </span>Predictable</a><ol class="toc"><li class="tocline"><a href="#on-focus" class="tocxref"><span class="secno">3.2.1 </span>On Focus</a></li><li class="tocline"><a href="#on-input" class="tocxref"><span class="secno">3.2.2 </span>On Input</a></li><li class="tocline"><a href="#consistent-navigation" class="tocxref"><span class="secno">3.2.3 </span>Consistent Navigation</a></li><li class="tocline"><a href="#consistent-identification" class="tocxref"><span class="secno">3.2.4 </span>Consistent Identification</a></li><li class="tocline"><a href="#change-on-request" class="tocxref"><span class="secno">3.2.5 </span>Change on Request</a></li><li class="tocline"><a href="#change-of-content" class="tocxref"><span class="secno">3.2.6 </span>Change of Content</a></li></ol></li><li class="tocline"><a href="#input-assistance" class="tocxref"><span class="secno">3.3 </span>Input Assistance</a><ol class="toc"><li class="tocline"><a href="#error-identification" class="tocxref"><span class="secno">3.3.1 </span>Error Identification</a></li><li class="tocline"><a href="#labels-or-instructions" class="tocxref"><span class="secno">3.3.2 </span>Labels or Instructions</a></li><li class="tocline"><a href="#error-suggestion" class="tocxref"><span class="secno">3.3.3 </span>Error Suggestion</a></li><li class="tocline"><a href="#error-prevention-legal-financial-data" class="tocxref"><span class="secno">3.3.4 </span>Error Prevention (Legal, Financial, Data)</a></li><li class="tocline"><a href="#help" class="tocxref"><span class="secno">3.3.5 </span>Help</a></li><li class="tocline"><a href="#error-prevention-all" class="tocxref"><span class="secno">3.3.6 </span>Error Prevention (All)</a></li></ol></li></ol></li><li class="tocline"><a href="#robust" class="tocxref"><span class="secno">4. </span> Robust </a><ol class="toc"><li class="tocline"><a href="#compatible" class="tocxref"><span class="secno">4.1 </span>Compatible</a><ol class="toc"><li class="tocline"><a href="#parsing" class="tocxref"><span class="secno">4.1.1 </span>Parsing</a></li><li class="tocline"><a href="#name-role-value" class="tocxref"><span class="secno">4.1.2 </span>Name, Role, Value</a></li></ol></li></ol></li><li class="tocline"><a href="#conformance" class="tocxref"><span class="secno">5. </span>Conformance</a><ol class="toc"><li class="tocline"><a href="#conformance-reqs" class="tocxref"><span class="secno">5.1 </span>Conformance Requirements</a><ol class="toc"><li class="tocline"><a href="#cc1" class="tocxref"><span class="secno">5.1.1 </span>Conformance Level</a></li><li class="tocline"><a href="#cc2" class="tocxref"><span class="secno">5.1.2 </span>Full pages</a></li><li class="tocline"><a href="#cc3" class="tocxref"><span class="secno">5.1.3 </span>Complete processes</a></li><li class="tocline"><a href="#cc4" class="tocxref"><span class="secno">5.1.4 </span>Only Accessibility-Supported Ways of Using Technologies</a></li><li class="tocline"><a href="#cc5" class="tocxref"><span class="secno">5.1.5 </span>Non-Interference</a></li></ol></li><li class="tocline"><a href="#conformance-claims" class="tocxref"><span class="secno">5.2 </span>Conformance Claims (Optional) </a><ol class="toc"><li class="tocline"><a href="#conformance-required" class="tocxref"><span class="secno">5.2.1 </span>Required Components of a Conformance Claim</a></li><li class="tocline"><a href="#conformance-optional" class="tocxref"><span class="secno">5.2.2 </span>Optional Components of a Conformance Claim </a></li></ol></li><li class="tocline"><a href="#conformance-partial" class="tocxref"><span class="secno">5.3 </span>Statement of Partial Conformance - Third Party Content</a></li><li class="tocline"><a href="#conformance-partial-lang" class="tocxref"><span class="secno">5.4 </span>Statement of Partial Conformance - Language</a></li></ol></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">6. </span>Glossary</a></li><li class="tocline"><a href="#changelog" class="tocxref"><span class="secno">A. </span>Change Log</a><ol class="toc"><li class="tocline"><a href="#substantive-changes-since-the-last-public-working-draft" class="tocxref"><span class="secno">A.1 </span>Substantive changes since the <span class="formerLink">last public working draft</span></a></li><li class="tocline"><a href="#other-substantive-changes-since-the-first-public-working-draft" class="tocxref"><span class="secno">A.2 </span>Other substantive changes since the <span class="formerLink">first public working draft</span></a></li></ol></li><li class="tocline"><a href="#acknowledgments" class="tocxref"><span class="secno">B. </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_participants-active" class="tocxref"><span class="secno">B.1 </span>Participants of the WCAG WG active in the development of this document:</a></li><li class="tocline"><a href="#ack_participants-previous" class="tocxref"><span class="secno">B.2 </span>Other previously active WCAG WG participants and other contributors to WCAG 2.0, WCAG 2.1, or supporting resources </a></li><li class="tocline"><a href="#enabling-funders" class="tocxref"><span class="secno">B.3 </span>Enabling funders</a></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">C. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">C.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">C.2 </span>Informative references</a></li></ol></li></ol></nav>
+</section><nav id="toc"><h2 class="introductory" id="table-of-contents" resource="#table-of-contents"><span property="xhv:role" resource="xhv:heading">Table of Contents<span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for Table of Contents" title="Permalink for Table of Contents" property="url"><span property="title" content="Table of Contents">§</span></a></span></span></h2><ol class="toc"><li class="tocline"><a href="#abstract" class="tocxref">Abstract</a></li><li class="tocline"><a href="#sotd" class="tocxref">Status of This Document</a></li><li class="tocline"><a href="#intro" class="tocxref">Introduction</a><ol class="toc"><li class="tocline"><a href="#about-this-draft" class="tocxref"><span class="secno">0.1 </span>About This Draft</a></li><li class="tocline"><a href="#background-on-wcag-2" class="tocxref"><span class="secno">0.2 </span>Background on WCAG 2</a></li><li class="tocline"><a href="#conformance-to-wcag-2-1" class="tocxref"><span class="secno">0.3 </span>Conformance to WCAG 2.1</a></li><li class="tocline"><a href="#future-work-on-wcag-2-1" class="tocxref"><span class="secno">0.4 </span>Future work on WCAG 2.1</a></li><li class="tocline"><a href="#later-versions-of-accessibility-guidelines" class="tocxref"><span class="secno">0.5 </span>Later versions of Accessibility Guidelines</a></li></ol></li><li class="tocline"><a href="#perceivable" class="tocxref"><span class="secno">1. </span> Perceivable </a><ol class="toc"><li class="tocline"><a href="#text-alternatives" class="tocxref"><span class="secno">1.1 </span>Text Alternatives</a><ol class="toc"><li class="tocline"><a href="#non-text-content" class="tocxref"><span class="secno">1.1.1 </span>Non-text Content</a></li></ol></li><li class="tocline"><a href="#time-based-media" class="tocxref"><span class="secno">1.2 </span>Time-based Media</a><ol class="toc"><li class="tocline"><a href="#audio-only-and-video-only-prerecorded" class="tocxref"><span class="secno">1.2.1 </span>Audio-only and Video-only (Prerecorded)</a></li><li class="tocline"><a href="#captions-prerecorded" class="tocxref"><span class="secno">1.2.2 </span>Captions (Prerecorded)</a></li><li class="tocline"><a href="#audio-description-or-media-alternative-prerecorded" class="tocxref"><span class="secno">1.2.3 </span>Audio Description or Media Alternative (Prerecorded)</a></li><li class="tocline"><a href="#captions-live" class="tocxref"><span class="secno">1.2.4 </span>Captions (Live)</a></li><li class="tocline"><a href="#audio-description-prerecorded" class="tocxref"><span class="secno">1.2.5 </span>Audio Description (Prerecorded)</a></li><li class="tocline"><a href="#sign-language-prerecorded" class="tocxref"><span class="secno">1.2.6 </span>Sign Language (Prerecorded)</a></li><li class="tocline"><a href="#extended-audio-description-prerecorded" class="tocxref"><span class="secno">1.2.7 </span>Extended Audio Description (Prerecorded)</a></li><li class="tocline"><a href="#media-alternative-prerecorded" class="tocxref"><span class="secno">1.2.8 </span>Media Alternative (Prerecorded)</a></li><li class="tocline"><a href="#audio-only-live" class="tocxref"><span class="secno">1.2.9 </span>Audio-only (Live)</a></li></ol></li><li class="tocline"><a href="#adaptable" class="tocxref"><span class="secno">1.3 </span>Adaptable</a><ol class="toc"><li class="tocline"><a href="#info-and-relationships" class="tocxref"><span class="secno">1.3.1 </span>Info and Relationships</a></li><li class="tocline"><a href="#meaningful-sequence" class="tocxref"><span class="secno">1.3.2 </span>Meaningful Sequence</a></li><li class="tocline"><a href="#sensory-characteristics" class="tocxref"><span class="secno">1.3.3 </span>Sensory Characteristics</a></li><li class="tocline"><a href="#identify-common-purpose" class="tocxref"><span class="secno">1.3.4 </span>Identify Common Purpose</a></li><li class="tocline"><a href="#contextual-information" class="tocxref"><span class="secno">1.3.5 </span>Contextual Information</a></li></ol></li><li class="tocline"><a href="#distinguishable" class="tocxref"><span class="secno">1.4 </span>Distinguishable</a><ol class="toc"><li class="tocline"><a href="#use-of-color" class="tocxref"><span class="secno">1.4.1 </span>Use of Color</a></li><li class="tocline"><a href="#audio-control" class="tocxref"><span class="secno">1.4.2 </span>Audio Control</a></li><li class="tocline"><a href="#contrast-minimum" class="tocxref"><span class="secno">1.4.3 </span>Contrast (Minimum)</a></li><li class="tocline"><a href="#resize-text" class="tocxref"><span class="secno">1.4.4 </span>Resize text</a></li><li class="tocline"><a href="#images-of-text" class="tocxref"><span class="secno">1.4.5 </span>Images of Text</a></li><li class="tocline"><a href="#contrast-enhanced" class="tocxref"><span class="secno">1.4.6 </span>Contrast (Enhanced)</a></li><li class="tocline"><a href="#low-or-no-background-audio" class="tocxref"><span class="secno">1.4.7 </span>Low or No Background Audio</a></li><li class="tocline"><a href="#visual-presentation" class="tocxref"><span class="secno">1.4.8 </span>Visual Presentation</a></li><li class="tocline"><a href="#images-of-text-no-exception" class="tocxref"><span class="secno">1.4.9 </span>Images of Text (No Exception)</a></li><li class="tocline"><a href="#reflow" class="tocxref"><span class="secno">1.4.10 </span>Reflow</a></li><li class="tocline"><a href="#graphics-contrast" class="tocxref"><span class="secno">1.4.11 </span>Graphics Contrast</a></li><li class="tocline"><a href="#text-spacing" class="tocxref"><span class="secno">1.4.12 </span>Text Spacing</a></li><li class="tocline"><a href="#content-on-hover-or-focus" class="tocxref"><span class="secno">1.4.13 </span>Content on Hover or Focus</a></li></ol></li></ol></li><li class="tocline"><a href="#operable" class="tocxref"><span class="secno">2. </span> Operable </a><ol class="toc"><li class="tocline"><a href="#keyboard-accessible" class="tocxref"><span class="secno">2.1 </span>Keyboard Accessible</a><ol class="toc"><li class="tocline"><a href="#keyboard" class="tocxref"><span class="secno">2.1.1 </span>Keyboard</a></li><li class="tocline"><a href="#no-keyboard-trap" class="tocxref"><span class="secno">2.1.2 </span>No Keyboard Trap</a></li><li class="tocline"><a href="#keyboard-no-exception" class="tocxref"><span class="secno">2.1.3 </span>Keyboard (No Exception)</a></li></ol></li><li class="tocline"><a href="#enough-time" class="tocxref"><span class="secno">2.2 </span>Enough Time</a><ol class="toc"><li class="tocline"><a href="#timing-adjustable" class="tocxref"><span class="secno">2.2.1 </span>Timing Adjustable</a></li><li class="tocline"><a href="#pause-stop-hide" class="tocxref"><span class="secno">2.2.2 </span>Pause, Stop, Hide</a></li><li class="tocline"><a href="#no-timing" class="tocxref"><span class="secno">2.2.3 </span>No Timing</a></li><li class="tocline"><a href="#interruptions" class="tocxref"><span class="secno">2.2.4 </span>Interruptions</a></li><li class="tocline"><a href="#re-authenticating" class="tocxref"><span class="secno">2.2.5 </span>Re-authenticating</a></li><li class="tocline"><a href="#accessible-authentication" class="tocxref"><span class="secno">2.2.6 </span>Accessible Authentication</a></li><li class="tocline"><a href="#interruptions-minimum" class="tocxref"><span class="secno">2.2.7 </span>Interruptions (Minimum)</a></li><li class="tocline"><a href="#timeouts" class="tocxref"><span class="secno">2.2.8 </span>Timeouts</a></li><li class="tocline"><a href="#animation-from-interactions" class="tocxref"><span class="secno">2.2.9 </span>Animation from Interactions</a></li></ol></li><li class="tocline"><a href="#seizures" class="tocxref"><span class="secno">2.3 </span>Seizures</a><ol class="toc"><li class="tocline"><a href="#three-flashes-or-below-threshold" class="tocxref"><span class="secno">2.3.1 </span>Three Flashes or Below Threshold</a></li><li class="tocline"><a href="#three-flashes" class="tocxref"><span class="secno">2.3.2 </span>Three Flashes</a></li></ol></li><li class="tocline"><a href="#navigable" class="tocxref"><span class="secno">2.4 </span>Navigable</a><ol class="toc"><li class="tocline"><a href="#bypass-blocks" class="tocxref"><span class="secno">2.4.1 </span>Bypass Blocks</a></li><li class="tocline"><a href="#page-titled" class="tocxref"><span class="secno">2.4.2 </span>Page Titled</a></li><li class="tocline"><a href="#focus-order" class="tocxref"><span class="secno">2.4.3 </span>Focus Order</a></li><li class="tocline"><a href="#link-purpose-in-context" class="tocxref"><span class="secno">2.4.4 </span>Link Purpose (In Context)</a></li><li class="tocline"><a href="#multiple-ways" class="tocxref"><span class="secno">2.4.5 </span>Multiple Ways</a></li><li class="tocline"><a href="#headings-and-labels" class="tocxref"><span class="secno">2.4.6 </span>Headings and Labels</a></li><li class="tocline"><a href="#focus-visible" class="tocxref"><span class="secno">2.4.7 </span>Focus Visible</a></li><li class="tocline"><a href="#location" class="tocxref"><span class="secno">2.4.8 </span>Location</a></li><li class="tocline"><a href="#link-purpose-link-only" class="tocxref"><span class="secno">2.4.9 </span>Link Purpose (Link Only)</a></li><li class="tocline"><a href="#section-headings" class="tocxref"><span class="secno">2.4.10 </span>Section Headings</a></li><li class="tocline"><a href="#character-key-shortcuts" class="tocxref"><span class="secno">2.4.11 </span>Character Key Shortcuts</a></li><li class="tocline"><a href="#label-in-name" class="tocxref"><span class="secno">2.4.12 </span>Label in Name</a></li></ol></li><li class="tocline"><a href="#pointer-accessible" class="tocxref"><span class="secno">2.5 </span>Pointer Accessible</a><ol class="toc"><li class="tocline"><a href="#pointer-gestures" class="tocxref"><span class="secno">2.5.1 </span>Pointer Gestures</a></li><li class="tocline"><a href="#accidental-activation" class="tocxref"><span class="secno">2.5.2 </span>Accidental Activation</a></li><li class="tocline"><a href="#target-size" class="tocxref"><span class="secno">2.5.3 </span>Target Size</a></li><li class="tocline"><a href="#target-size-enhanced" class="tocxref"><span class="secno">2.5.4 </span>Target Size (Enhanced)</a></li><li class="tocline"><a href="#concurrent-input-mechanisms" class="tocxref"><span class="secno">2.5.5 </span>Concurrent Input Mechanisms</a></li></ol></li><li class="tocline"><a href="#additional-sensor-inputs" class="tocxref"><span class="secno">2.6 </span>Additional sensor inputs</a><ol class="toc"><li class="tocline"><a href="#device-sensors" class="tocxref"><span class="secno">2.6.1 </span>Device Sensors</a></li><li class="tocline"><a href="#orientation" class="tocxref"><span class="secno">2.6.2 </span>Orientation</a></li></ol></li></ol></li><li class="tocline"><a href="#understandable" class="tocxref"><span class="secno">3. </span> Understandable </a><ol class="toc"><li class="tocline"><a href="#readable" class="tocxref"><span class="secno">3.1 </span>Readable</a><ol class="toc"><li class="tocline"><a href="#language-of-page" class="tocxref"><span class="secno">3.1.1 </span>Language of Page</a></li><li class="tocline"><a href="#language-of-parts" class="tocxref"><span class="secno">3.1.2 </span>Language of Parts</a></li><li class="tocline"><a href="#unusual-words" class="tocxref"><span class="secno">3.1.3 </span>Unusual Words</a></li><li class="tocline"><a href="#abbreviations" class="tocxref"><span class="secno">3.1.4 </span>Abbreviations</a></li><li class="tocline"><a href="#reading-level" class="tocxref"><span class="secno">3.1.5 </span>Reading Level</a></li><li class="tocline"><a href="#pronunciation" class="tocxref"><span class="secno">3.1.6 </span>Pronunciation</a></li></ol></li><li class="tocline"><a href="#predictable" class="tocxref"><span class="secno">3.2 </span>Predictable</a><ol class="toc"><li class="tocline"><a href="#on-focus" class="tocxref"><span class="secno">3.2.1 </span>On Focus</a></li><li class="tocline"><a href="#on-input" class="tocxref"><span class="secno">3.2.2 </span>On Input</a></li><li class="tocline"><a href="#consistent-navigation" class="tocxref"><span class="secno">3.2.3 </span>Consistent Navigation</a></li><li class="tocline"><a href="#consistent-identification" class="tocxref"><span class="secno">3.2.4 </span>Consistent Identification</a></li><li class="tocline"><a href="#change-on-request" class="tocxref"><span class="secno">3.2.5 </span>Change on Request</a></li><li class="tocline"><a href="#change-of-content" class="tocxref"><span class="secno">3.2.6 </span>Change of Content</a></li></ol></li><li class="tocline"><a href="#input-assistance" class="tocxref"><span class="secno">3.3 </span>Input Assistance</a><ol class="toc"><li class="tocline"><a href="#error-identification" class="tocxref"><span class="secno">3.3.1 </span>Error Identification</a></li><li class="tocline"><a href="#labels-or-instructions" class="tocxref"><span class="secno">3.3.2 </span>Labels or Instructions</a></li><li class="tocline"><a href="#error-suggestion" class="tocxref"><span class="secno">3.3.3 </span>Error Suggestion</a></li><li class="tocline"><a href="#error-prevention-legal-financial-data" class="tocxref"><span class="secno">3.3.4 </span>Error Prevention (Legal, Financial, Data)</a></li><li class="tocline"><a href="#help" class="tocxref"><span class="secno">3.3.5 </span>Help</a></li><li class="tocline"><a href="#error-prevention-all" class="tocxref"><span class="secno">3.3.6 </span>Error Prevention (All)</a></li></ol></li></ol></li><li class="tocline"><a href="#robust" class="tocxref"><span class="secno">4. </span> Robust </a><ol class="toc"><li class="tocline"><a href="#compatible" class="tocxref"><span class="secno">4.1 </span>Compatible</a><ol class="toc"><li class="tocline"><a href="#parsing" class="tocxref"><span class="secno">4.1.1 </span>Parsing</a></li><li class="tocline"><a href="#name-role-value" class="tocxref"><span class="secno">4.1.2 </span>Name, Role, Value</a></li></ol></li></ol></li><li class="tocline"><a href="#conformance" class="tocxref"><span class="secno">5. </span>Conformance</a><ol class="toc"><li class="tocline"><a href="#conformance-reqs" class="tocxref"><span class="secno">5.1 </span>Conformance Requirements</a><ol class="toc"><li class="tocline"><a href="#cc1" class="tocxref"><span class="secno">5.1.1 </span>Conformance Level</a></li><li class="tocline"><a href="#cc2" class="tocxref"><span class="secno">5.1.2 </span>Full pages</a></li><li class="tocline"><a href="#cc3" class="tocxref"><span class="secno">5.1.3 </span>Complete processes</a></li><li class="tocline"><a href="#cc4" class="tocxref"><span class="secno">5.1.4 </span>Only Accessibility-Supported Ways of Using Technologies</a></li><li class="tocline"><a href="#cc5" class="tocxref"><span class="secno">5.1.5 </span>Non-Interference</a></li></ol></li><li class="tocline"><a href="#conformance-claims" class="tocxref"><span class="secno">5.2 </span>Conformance Claims (Optional) </a><ol class="toc"><li class="tocline"><a href="#conformance-required" class="tocxref"><span class="secno">5.2.1 </span>Required Components of a Conformance Claim</a></li><li class="tocline"><a href="#conformance-optional" class="tocxref"><span class="secno">5.2.2 </span>Optional Components of a Conformance Claim </a></li></ol></li><li class="tocline"><a href="#conformance-partial" class="tocxref"><span class="secno">5.3 </span>Statement of Partial Conformance - Third Party Content</a></li><li class="tocline"><a href="#conformance-partial-lang" class="tocxref"><span class="secno">5.4 </span>Statement of Partial Conformance - Language</a></li></ol></li><li class="tocline"><a href="#glossary" class="tocxref"><span class="secno">6. </span>Glossary</a></li><li class="tocline"><a href="#commonpurposes" class="tocxref"><span class="secno">7. </span>Common Purposes for User Interface Components</a><ol class="toc"><li class="tocline"><a href="#control-purposes" class="tocxref"><span class="secno">7.1 </span>Common Control Purposes</a></li><li class="tocline"><a href="#control-purposes" class="tocxref"><span class="secno">7.2 </span>Common Input Control Purposes</a></li></ol></li><li class="tocline"><a href="#changelog" class="tocxref"><span class="secno">A. </span>Change Log</a><ol class="toc"><li class="tocline"><a href="#substantive-changes-since-the-last-public-working-draft" class="tocxref"><span class="secno">A.1 </span>Substantive changes since the <span class="formerLink">last public working draft</span></a></li><li class="tocline"><a href="#other-substantive-changes-since-the-first-public-working-draft" class="tocxref"><span class="secno">A.2 </span>Other substantive changes since the <span class="formerLink">first public working draft</span></a></li></ol></li><li class="tocline"><a href="#acknowledgments" class="tocxref"><span class="secno">B. </span>Acknowledgments</a><ol class="toc"><li class="tocline"><a href="#ack_participants-active" class="tocxref"><span class="secno">B.1 </span>Participants of the WCAG WG active in the development of this document:</a></li><li class="tocline"><a href="#ack_participants-previous" class="tocxref"><span class="secno">B.2 </span>Other previously active WCAG WG participants and other contributors to WCAG 2.0, WCAG 2.1, or supporting resources </a></li><li class="tocline"><a href="#enabling-funders" class="tocxref"><span class="secno">B.3 </span>Enabling funders</a></li></ol></li><li class="tocline"><a href="#references" class="tocxref"><span class="secno">C. </span>References</a><ol class="toc"><li class="tocline"><a href="#normative-references" class="tocxref"><span class="secno">C.1 </span>Normative references</a></li><li class="tocline"><a href="#informative-references" class="tocxref"><span class="secno">C.2 </span>Informative references</a></li></ol></li></ol></nav>
         <section class="informative introductory" id="intro" typeof="bibo:Chapter" resource="#intro" property="bibo:hasPart">
             <!--OddPage--><h2 id="introduction" resource="#introduction"><span property="xhv:role" resource="xhv:heading">Introduction</span></h2><p><em>This section is non-normative.</em></p>
 
@@ -909,20 +909,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </section>
 
-                <section class="sc new" id="purpose-of-controls" typeof="bibo:Chapter" resource="#purpose-of-controls" property="bibo:hasPart">
+                <section class="sc new" id="identify-common-purpose" typeof="bibo:Chapter" resource="#identify-common-purpose" property="bibo:hasPart">
 	
-	<h4 id="x1-3-4-purpose-of-controls" resource="#x1-3-4-purpose-of-controls"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 1.3.4 </span>Purpose of Controls<span class="permalink" typeof="bookmark"><a href="#purpose-of-controls" aria-label="Permalink for 1.3.4 Purpose of Controls" title="Permalink for 1.3.4 Purpose of Controls" property="url"><span property="title" content="1.3.4 Purpose of Controls">§</span></a></span></span></h4>
+	<h4 id="x1-3-4-identify-common-purpose" resource="#x1-3-4-identify-common-purpose"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 1.3.4 </span>Identify Common Purpose<span class="permalink" typeof="bookmark"><a href="#identify-common-purpose" aria-label="Permalink for 1.3.4 Identify Common Purpose" title="Permalink for 1.3.4 Identify Common Purpose" property="url"><span property="title" content="1.3.4 Identify Common Purpose">§</span></a></span></span></h4>
 	
-	<div class="doclinks"><a href="../understanding/21/purpose-of-controls.html">Understanding Purpose of Controls</a></div><p class="conformance-level">(Level AA)</p>
+	<div class="doclinks"><a href="../understanding/21/identify-common-purpose.html">Understanding Identify Common Purpose</a></div><p class="conformance-level">(Level AA)</p>
 	
 	<p class="change">[New]</p>
 	
 	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/6">Issue 6</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
 	
-	<p>In content implemented using markup languages, the conventional name of <a href="#dfn-conventional-form-fields" class="internalDFN" data-link-type="dfn">conventional form fields</a>, <a href="#dfn-conventional-buttons-or-controls" class="internalDFN" data-link-type="dfn">conventional buttons or controls</a>, or <a href="#dfn-conventional-links" class="internalDFN" data-link-type="dfn">conventional links</a> can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn">programmatically determined</a>.</p>
-
-<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group seeks feedback on the lists of terms included in the definitions. These lists are likely to change as items are likely to be refined, removed or added.</p></div>
+	<p>In content implemented using markup languages, for each user interface component that serves a purpose identified in the <a href="#commonpurposes">Common Purposes for User Interface Components</a> section, that purpose can be programmatically determined.</p>
 	
 </section>
 
@@ -935,7 +933,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
 	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/6">Issue 6</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/6">Issue 6</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
    					
 <p>In content implemented using markup languages, <a href="#dfn-contextual-information" class="internalDFN" data-link-type="dfn">contextual information</a> for controls, symbols, and regions can be programmatically determined using a publicly available vocabulary.</p>
@@ -1196,7 +1194,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/77">Issue 77</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/77">Issue 77</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    					
    <p>Reflow: Content can be presented at a width equivalent to 320 CSS pixels without loss of information or functionality, and without requiring scrolling in two dimensions, except for parts of the content which require two-dimensional layout for usage or meaning.</p>
@@ -1219,7 +1217,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/9">Issue 9</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-2" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/9">Issue 9</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 		
    </p></div>
    					
@@ -1237,7 +1235,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       						
    </dl>
 
-  	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-4" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group is interested in feedback on challenges evaluating images to determine what parts are required for comprehension of content, and whether the Understanding document clarifies how to resolve the challenges.</p></div>
+  	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-3" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group is interested in feedback on challenges evaluating images to determine what parts are required for comprehension of content, and whether the Understanding document clarifies how to resolve the challenges.</p></div>
   
 </section>
 
@@ -1253,7 +1251,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
 	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-5" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/74">Issue 74</a>, <a href="https://github.com/w3c/wcag21/issues/78">Issue 78</a>, and <a href="https://github.com/w3c/wcag21/issues/79">Issue 79</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-4" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/74">Issue 74</a>, <a href="https://github.com/w3c/wcag21/issues/78">Issue 78</a>, and <a href="https://github.com/w3c/wcag21/issues/79">Issue 79</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
   
    <p>If the technologies being used allow the <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agent</a> to set <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> <a href="#dfn-style-properties" class="internalDFN" data-link-type="dfn">style properties</a>, then no loss of content or functionality occurs by setting all of the following and by changing no other style property:</p>
    
@@ -1264,7 +1262,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
      <li>Word spacing to at least 0.16 times the font size.</li>
    </ul>
   
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-6" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group seeks examples in the wild of text content outside of <a href="#dfn-blocks-of-text" class="internalDFN" data-link-type="dfn">blocks of text</a> where it would be impossible to meet this SC. The SC's scope may be narrowed based upon implementation testing.</p></div>
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-5" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group seeks examples in the wild of text content outside of <a href="#dfn-blocks-of-text" class="internalDFN" data-link-type="dfn">blocks of text</a> where it would be impossible to meet this SC. The SC's scope may be narrowed based upon implementation testing.</p></div>
    				
 </section>
 
@@ -1277,7 +1275,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
        
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-7" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/75">Issue 75</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-6" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/75">Issue 75</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
 
     	<p>When a <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface component</a> which receives keyboard focus or pointer hover causes content to become visible, the following are true:</p>
@@ -1544,7 +1542,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <h4 id="x2-2-6-accessible-authentication" resource="#x2-2-6-accessible-authentication"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.2.6 </span>Accessible Authentication<span class="permalink" typeof="bookmark"><a href="#accessible-authentication" aria-label="Permalink for 2.2.6 Accessible Authentication" title="Permalink for 2.2.6 Accessible Authentication" property="url"><span property="title" content="2.2.6 Accessible Authentication">§</span></a></span></span></h4>
    <div class="doclinks"><a href="../understanding/21/accessible-authentication.html">Understanding Accessible Authentication</a></div><p class="conformance-level">(Level A)</p>
    <p class="change">[New]</p>
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-8" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/23">Issue 23</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-7" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/23">Issue 23</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
 	<p>Essential steps of an authentication process which rely upon recalling or transcribing information have one of the following:</p>
   <ul><li>alternative essential steps, which do not rely upon recalling or transcribing information</li><li>
@@ -1567,7 +1565,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-9" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/47">Issue 47</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-8" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/47">Issue 47</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    					
    <p>A mechanism is <a href="#dfn-easily-available" class="internalDFN" data-link-type="dfn">easily available</a> to postpone and suppress interruptions and changes in content, unless they
@@ -1584,7 +1582,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-10" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/14">Issue 14</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-9" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/14">Issue 14</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    		
    <p>Where data can be lost due to user inactivity, users are warned about the estimated length of inactivity that generates the data loss, unless the data is preserved for a minimum of 20 hours of user inactivity.</p>
@@ -1602,7 +1600,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-11" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/18">Issue 18</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-10" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/18">Issue 18</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    					
    <p>For non-essential animations triggered by a user action, 
@@ -1781,7 +1779,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-12" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/69">Issue 69</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-11" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/69">Issue 69</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
 	
   <p>If a <a href="#dfn-keyboard-shortcuts" class="internalDFN" data-link-type="dfn">keyboard shortcut</a> consisting entirely of one or more <a href="#dfn-character-keys" class="internalDFN" data-link-type="dfn">character keys</a> is implemented in content, then a mechanism is available to turn it off or to remap it to a shortcut that can use at least one non-character key, unless the keyboard shortcut for a <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface component</a> is only active when that component has focus.</p>
 
@@ -1792,7 +1790,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <h4 id="x2-4-12-label-in-name" resource="#x2-4-12-label-in-name"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.4.12 </span>Label in Name<span class="permalink" typeof="bookmark"><a href="#label-in-name" aria-label="Permalink for 2.4.12 Label in Name" title="Permalink for 2.4.12 Label in Name" property="url"><span property="title" content="2.4.12 Label in Name">§</span></a></span></span></h4>
    <div class="doclinks"><a href="../understanding/21/label-in-name.html">Understanding Label in Name</a></div><p class="conformance-level">(Level A)</p>
    <p class="change">[New]</p>
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-13" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/68">Issue 68</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-12" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/68">Issue 68</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
 	
   <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">labels</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">images of text</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> contains the text presented.</p>
@@ -1817,7 +1815,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-14" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/61">Issue 61</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-13" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/61">Issue 61</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    				
    <p>All functionality which uses multipoint or path-based gestures for operation can be operated with a single-point activation, unless a multipoint or path-based gesture is essential.</p>
@@ -1836,7 +1834,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-15" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/65">Issue 65</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-14" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/65">Issue 65</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
    					
    <p>For <a href="#dfn-single-pointer-activation" class="internalDFN" data-link-type="dfn">single-pointer activation</a>, at least one of the following is true:</p>
@@ -1868,7 +1866,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-16" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-15" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
 	
   <p>The size of the <a href="#dfn-target" class="internalDFN" data-link-type="dfn">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn">pointer inputs</a> is at least 44 by 22 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn">CSS pixels</a> except when:</p>
 <dl>
@@ -1893,7 +1891,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
 	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-17" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-16" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/60">Issue 60</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div>
    					   					
   <p>The size of the <a href="#dfn-target" class="internalDFN" data-link-type="dfn">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn">pointer inputs</a> is at least 44 by 44 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn">CSS pixels</a> except when:</p>
 <dl>
@@ -1914,7 +1912,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <h4 id="x2-5-5-concurrent-input-mechanisms" resource="#x2-5-5-concurrent-input-mechanisms"><span property="xhv:role" resource="xhv:heading"><span class="secno">Success Criterion 2.5.5 </span>Concurrent Input Mechanisms<span class="permalink" typeof="bookmark"><a href="#concurrent-input-mechanisms" aria-label="Permalink for 2.5.5 Concurrent Input Mechanisms" title="Permalink for 2.5.5 Concurrent Input Mechanisms" property="url"><span property="title" content="2.5.5 Concurrent Input Mechanisms">§</span></a></span></span></h4>
    <div class="doclinks"><a href="../understanding/21/concurrent-input-mechanisms.html">Understanding Concurrent Input Mechanisms</a></div><p class="conformance-level">(Level AAA)</p>
   <p class="change">[New]</p>
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-18" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/64">Issue 64</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-17" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/64">Issue 64</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
   <p>Web content does not restrict use of input modalities available on a platform except where the restriction is essential, required to ensure the security of the content, or required to respect user settings.</p>   					
 </section>
@@ -1926,7 +1924,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <h3 id="x2-6-additional-sensor-inputs" resource="#x2-6-additional-sensor-inputs"><span property="xhv:role" resource="xhv:heading"><span class="secno">Guideline 2.6 </span>Additional sensor inputs<span class="permalink" typeof="bookmark"><a href="#additional-sensor-inputs" aria-label="Permalink for 2.6 Additional sensor inputs" title="Permalink for 2.6 Additional sensor inputs" property="url"><span property="title" content="2.6 Additional sensor inputs">§</span></a></span></span></h3>
                 <p class="change">[New]</p>
             	
-            	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-19" aria-level="4"><span>Editor's note</span></div><p class="">Guideline text needed</p></div>
+            	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-18" aria-level="4"><span>Editor's note</span></div><p class="">Guideline text needed</p></div>
 
                 <section class="sc new" id="device-sensors" typeof="bibo:Chapter" resource="#device-sensors" property="bibo:hasPart">
    					
@@ -1936,7 +1934,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-20" aria-level="5"><span>Editor's note</span></div><p class="">This is a proposed Success Criterion that has not yet been formally approved by the
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-19" aria-level="5"><span>Editor's note</span></div><p class="">This is a proposed Success Criterion that has not yet been formally approved by the
       Working Group. Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/67">Issue 67</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
    </p></div>
 
@@ -1944,7 +1942,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       it would invalidate the activity.
    </p>
    				
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-21" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group has identified questions of scope for this Success Criterion, and is exploring rewording to resolve this. The main question is about the relationship to indirect motion associated with operating a keyboard, pointer, or assistive technology. Draft new wording is available at <a href="https://github.com/w3c/wcag21/issues/67#issuecomment-325716721">https://github.com/w3c/wcag21/issues/67#issuecomment-325716721</a></p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-20" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group has identified questions of scope for this Success Criterion, and is exploring rewording to resolve this. The main question is about the relationship to indirect motion associated with operating a keyboard, pointer, or assistive technology. Draft new wording is available at <a href="https://github.com/w3c/wcag21/issues/67#issuecomment-325716721">https://github.com/w3c/wcag21/issues/67#issuecomment-325716721</a></p></div>
 	
 </section>
 
@@ -1957,7 +1955,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-22" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/70">Issue 70</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-21" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/70">Issue 70</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
   </p></div>
   
   <p>Content does not restrict its view and operation to a single <a href="#dfn-display-orientation" class="internalDFN" data-link-type="dfn">display orientation</a>, such as portrait or landscape, unless a specific display orientation is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>.</p>
@@ -2117,7 +2115,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
 	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-23" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/2">Issue 2</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-22" aria-level="5"><span>Editor's note</span></div><p class="">Discussion of the issue is available in <a href="https://github.com/w3c/wcag21/issues/2">Issue 2</a>. To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
    					
    <p>Programmatic notification is provided for each <a href="#dfn-change-of-content" class="internalDFN" data-link-type="dfn">change of content</a> that indicates a user action was taken or that conveys information, unless one or more
@@ -2132,7 +2130,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       </li>      					
    </ul>
    				
-     <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-24" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group is including this proposed Success Criteria for comment, but has not reached consensus on how to best handle web pages and applications with continual changes of content such as games and simulations and seeks additional input from reviewers on this point.
+     <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-23" aria-level="5"><span>Editor's note</span></div><p class="">The Working Group is including this proposed Success Criteria for comment, but has not reached consensus on how to best handle web pages and applications with continual changes of content such as games and simulations and seeks additional input from reviewers on this point.
    </p></div>
 
 </section>
@@ -3002,281 +3000,6 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd>
             	
-               	<dt class="new"><dfn data-dfn-type="dfn" id="dfn-conventional-buttons-or-controls">conventional buttons or controls</dfn></dt>
-<dd class="new">
-   					
-	<p class="change">[New]</p>
-	
-	<p>widely recognized button or control types</p>
-	
-	<p>The following form field types are documented as widely recognized:</p>
-	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-25" aria-level="3"><span>Editor's note</span></div><p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p></div>
-	
-	<dl>
-		<dt>compose</dt>
-		<dd>compose new item such as an email. </dd>
-		<dt>next</dt>
-		<dd>move to the next item in the series </dd>
-		<dt> delete </dt>
-		<dd>delete current item, selected control or text </dd>
-		<dt> previous </dt>
-		<dd> move to the previous item in the series </dd>
-		<dt> toc </dt>
-		<dd> opens a table of content </dd>
-		<dt> submit </dt>
-		<dd> submits the form data or request to the server </dd>
-		<dt> undo </dt>
-		<dd> revert to the state before the user's most recent changes </dd>
-		<dt> cancel </dt>
-		<dd> closes the dialog and discards any changes the user may have made within that dialog </dd>
-		<dt>reset</dt>
-		<dd> resets all the controls to their initial values </dd> 
-		<dt> label </dt>
-		<dd> add label to the selected item or the item at the current location. </dd>
-		<dt> buy</dt>
-		<dd> buy the selected item or buy the item at the current location . Often involves adding the current item into a shopping cart.</dd>
-		<dt> add </dt>
-		<dd> add the selected item or the item at the current location to a list</dd>
-		<dt> move </dt>
-		<dd> move the selected item</dd>
-		<dt> save </dt>
-		<dd>save the current content </dd>
-		<dt> send </dt>
-		<dd> send a form, email or request</dd> 
-		<dt> close </dt>
-		<dd> close current dialog</dd>
-		<dt> more </dt>
-		<dd> show more information</dd>
-		<dt> print </dt>
-		<dd> print current page, selection or the item at the current location </dd>
-		<dt> received </dt>
-		<dd> open received folder</dd>
-		<dt> sent </dt>
-		<dd> open sent folder</dd>
-		<dt> edit </dt>
-		<dd> edit current item, selection or the item at the current location </dd>
-		<dt> forward </dt>
-		<dd> forward to current item such as an email</dd>
-		<dt> reply </dt>
-		<dd> reply to current item such as an email</dd>
-		<dt> upload </dt>
-		<dd> upload file to the server </dd>
-		<dt>open </dt>
-		<dd>open new item </dd>
-		<dt> new </dt>
-		<dd> open new item</dd>
-		<dt> settings </dt>
-		<dd> open settings and options</dd>
-		<dt> mode </dt>
-		<dd> change the mode or functionality </dd>
-		<dt> higher </dt>
-		<dd> increases the level of the relevant setting </dd>
-		<dt>lower </dt>
-		<dd> increases the level of the relevant setting </dd>
-		<dt> my profile </dt>
-		<dd>opens the user’s profile page </dd>
-		<dt> expand </dt>
-		<dd> expand or unexpand the current item</dd>
-		<dt> refresh</dt>
-		<dd> manually refresh the current contents of the screen </dd>
-		<dt> properties </dt>
-		<dd> shows the properties of the item </dd>
-		<dt> help</dt>
-		<dd> opens a help function </dd>
-		<dt> cut</dt>
-		<dd> removes the selected control, item or text and places it on the Clipboard</dd>
-		<dt> copy </dt>
-		<dd> copies the selected control, item or text onto the Clipboard</dd>
-		<dt> color </dt>
-		<dd> opens a color picker </dd>
-		<dt> date </dt>
-		<dd> opens a date control </dd>
-		<dt> remove </dt>
-		<dd> remove an item from a list </dd>
-		<dt>right </dt>
-		<dd> moves a selected item to the right to another column or list </dd>
-		<dt>left </dt>
-		<dd> moves a selected item to the left to another column or list </dd>
-	</dl>
-	
-</dd>
-
-             	
-               	<dt class="new"><dfn data-dfn-type="dfn" id="dfn-conventional-form-fields">conventional form fields</dfn></dt>
-<dd class="new">
-   					
-	<p class="change">[New]</p>
-	
-	<p>widely recognized form field types</p>
-	
-	<p>The following form field types are documented as widely recognized:</p>
-	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-26" aria-level="3"><span>Editor's note</span></div><p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p></div>
-	
-	<dl>
-		<dt>name</dt>
-		<dd>full name </dd>
-		<dt>honorific-prefix</dt>
-		<dd>prefix or title (Mr., Mrs. Dr., etc.) </dd>
-		<dt>given-name</dt>
-		<dd>given or first name </dd>
-		<dt>additional-name </dt>
-		<dd>additional or middle name </dd>
-		<dt>additional-name-initial</dt>
-		<dd>additional or middle name initial </dd>
-		<dt>family-name</dt>
-		<dd>family name, surname, or last name </dd>
-		<dt>honorific-suffix </dt>
-		<dd>suffix (Jr., II, etc.) </dd>
-		<dt>nickname</dt>
-		<dd>nickname </dd>
-		<dt>street-address </dt>
-		<dd>full street address condensed into one line </dd>
-		<dt>address-line1 </dt>
-		<dd>first line of street address </dd>
-		<dt>address-line2 </dt>
-		<dd>second line of street address </dd>
-		<dt>address-line3 </dt>
-		<dd>third line of street address </dd>
-		<dt>city or locality</dt>
-		<dd>locality or city </dd>
-		<dt>area</dt>
-		<dd>administrative area, state, province, or region </dd>
-		<dt>postal-code </dt>
-		<dd>postal or ZIP code </dd>
-		<dt>country</dt>
-		<dd>country name </dd>
-		<dt>email</dt>
-		<dd>email address </dd>
-		<dt>tel</dt>
-		<dd>full phone number, including country code </dd>
-		<dt>tel-country-code </dt>
-		<dd>international country code </dd>
-		<dt>tel-national </dt>
-		<dd>national phone number: full number minus country code </dd>
-		<dt>tel-area-code </dt>
-		<dd>area code </dd>
-		<dt>tel-local </dt>
-		<dd>local phone number: full number minus country and area codes </dd>
-		<dt>tel-extension </dt>
-		<dd>phone extension number </dd>
-		<dt>fax</dt>
-		<dd>full fax number, including country code </dd>
-		<dt>fax-country-code </dt>
-		<dd>international country code </dd>
-		<dt>fax-national </dt>
-		<dd>national fax number: full number minus country code </dd>
-		<dt>fax-area-code </dt>
-		<dd>area code </dd>
-		<dt>fax-local </dt>
-		<dd>local fax number: full number minus country and area codes </dd>
-		<dt>fax-extension </dt>
-		<dd>fax extension number </dd>
-		<dt>cc-name </dt>
-		<dd>full name, as it appears on credit card </dd>
-		<dt>cc-number </dt>
-		<dd>credit card number </dd>
-		<dt>cc-exp-month </dt>
-		<dd>month of expiration of credit card </dd>
-		<dt>cc-exp-year </dt>
-		<dd>year of expiration of credit card </dd>
-		<dt>cc-exp </dt>
-		<dd>date of expiration of credit card </dd>
-		<dt>cc-csc </dt>
-		<dd>credit card security code </dd>
-		<dt>language</dt>
-		<dd>preferred language </dd>
-		<dt>bday</dt>
-		<dd>birthday </dd>
-		<dt>bday-year </dt>
-		<dd>year of birthday </dd>
-		<dt>bday-month </dt>
-		<dd>month of birthday </dd>
-		<dt>bday-day </dt>
-		<dd>day of birthday </dd>
-		<dt>topic</dt>
-		<dd>Topic for the form. Typically selected from a list of reserved words </dd>
-		<dt>comment</dt>
-		<dd>comment section. Typically a free text field </dd>
-		<dt>subject</dt>
-		<dd>form subject. Typically a free text field </dd>
-		<dt>answer</dt>
-		<dd>answer to a section question </dd>
-		<dt>org</dt>
-		<dd>company or organization </dd>
-		<dt>organization-title </dt>
-		<dd>user's position or title within company or organization </dd>
-		<dt>sex </dt>
-		<dd>sex or gender </dd>
-		<dt>gender</dt>
-		<dd>gender identity </dd>
-		<dt>url</dt>
-		<dd>Website URL </dd>
-		<dt>photo</dt>
-		<dd>photo or avatar </dd>
-		<dt>section-***** </dt>
-		<dd>used to group forms together </dd>
-	</dl>
-			
-</dd>
-
-            	
-              	<dt class="new"><dfn data-dfn-type="dfn" id="dfn-conventional-links">conventional links</dfn></dt>
-<dd class="new">
-   					
-	<p class="change">[New]</p>
-	
-	<p>widely recognized link types</p>
-	
-	<p>The following link types are documented as widely recognized:</p>
-	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-27" aria-level="3"><span>Editor's note</span></div><p class="">The Working Group seeks feedback on the list below. This list is likely to change as items are likely to be refined, removed or added. </p></div>
-	
-	<dl>
-		<dt> home </dt>
-		<dd> initial or main page of a website or application</dd>
-		<dt> contact us </dt>
-		<dd> opes contact information for content owner or producer </dd>
-		<dt> our phone </dt>
-		<dd>phone content owner or producer </dd>
-		<dt> our email </dt>
-		<dd> email content owner or producer </dd>
-		<dt> site map </dt>
-		<dd> content containing a list of pages in a web site </dd>
-		<dt> help </dt>
-		<dd> a help function, support or instructions </dd>
-		<dt> chat help </dt>
-		<dd> Human help or a dialog help function such as a chat bot </dd>
-		<dt> about us </dt>
-		<dd> information about the content owner or producer </dd>
-		<dt> terms </dt>
-		<dd> terms and conditions </dd>
-		<dt> tools </dt>
-		<dd> available tools for the current content</dd>
-		<dt> services </dt>
-		<dd> services available from the content provider</dd>
-		<dt> products </dt>
-		<dd> products available from the content provider</dd>
-		<dt> comment </dt>
-		<dd> submit a comment on the current item </dd>
-		<dt> language </dt>
-		<dd> language options </dd>
-		<dt> sign in </dt>
-		<dd> sign in to current web site or application </dd>
-		<dt> sign out </dt>
-		<dd> sign out current web site or application </dd>
-		<dt> sign up </dt>
-		<dd> register for the current web site or application </dd>
-		<dt> social </dt>
-		<dd>content provider on social media </dd>
-		<dt> post </dt>
-		<dd> post current item. Item will be visible to other parties.</dd>
-	</dl>
-	
-</dd>
-
-
                 <dt><dfn data-dfn-type="dfn" id="dfn-correct-reading-sequence">correct reading sequence</dfn></dt>
 <dd>
    
@@ -4193,7 +3916,7 @@ sheets);</li>
 	<p>If a portion of a touch target that does not perform the same action or go to the same page is overlapped by another touch target such that it cannot receive touch actions, then that portion is not considered a touch target for purposes of touch target measurements.
    </p>
 
-     <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-28" aria-level="3"><span>Editor's note</span></div><p class="">Proposed modification: Region of the display that will accept a pointer action. If a portion of a target that does not perform the same action or go to the same page is overlapped by another target such that it cannot receive pointer actions, then that portion is not considered part of the target for purposes of target measurements.
+     <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-24" aria-level="3"><span>Editor's note</span></div><p class="">Proposed modification: Region of the display that will accept a pointer action. If a portion of a target that does not perform the same action or go to the same page is overlapped by another target such that it cannot receive pointer actions, then that portion is not considered part of the target for purposes of target measurements.
    </p></div>
   
 </dd>
@@ -4396,6 +4119,94 @@ sheets);</li>
 
             </dl>
         </section>
+    	<section id="commonpurposes" typeof="bibo:Chapter" resource="#commonpurposes" property="bibo:hasPart">
+        <!--OddPage--><h2 id="x7-common-purposes-for-user-interface-components" resource="#x7-common-purposes-for-user-interface-components"><span property="xhv:role" resource="xhv:heading"><span class="secno">7. </span>Common Purposes for User Interface Components<span class="permalink" typeof="bookmark"><a href="#commonpurposes" aria-label="Permalink for 7. Common Purposes for User Interface Components" title="Permalink for 7. Common Purposes for User Interface Components" property="url"><span property="title" content="7. Common Purposes for User Interface Components">§</span></a></span></span></h2>
+        <p>This section contains a listing of common <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface component</a> purposes. The terms below are not keywords which must be used, but instead represent purposes that must be captured in the taxonomy adopted by a webpage. Where applicable, authors mark up controls with the chosen taxonomy to indicate the semantic purpose. This provides the potential for user agents and assistive technologies to apply personalized presentations that can enable more people to understand and use the content.</p>
+    
+    <section id="control-purposes" typeof="bibo:Chapter" resource="#control-purposes" property="bibo:hasPart">
+        <h3 id="x7-1-common-control-purposes" resource="#x7-1-common-control-purposes"><span property="xhv:role" resource="xhv:heading"><span class="secno">7.1 </span>Common Control Purposes<span class="permalink" typeof="bookmark"><a href="#control-purposes" aria-label="Permalink for 7.1 Common Control Purposes" title="Permalink for 7.1 Common Control Purposes" property="url"><span property="title" content="7.1 Common Control Purposes">§</span></a></span></span></h3>
+      <p>The following items represent an intended destination or action.</p>
+        <ul>
+          <li>Table of Contents - View or go to a table of contents</li>
+          <li>Next - View or go to the next item in a series (e.g. a page in a book or next article)</li>
+          <li>Previous - View or go to the previous item in a series</li>
+          <li>Reply - Reply to current item (e.g. an email)</li>
+          <li>Forward - Forward the current item (e.g. an email)</li>
+          <li>Inbox - View the inbox (e.g. an email application inbox)</li>
+          <li>Sent items - View items sent (e.g. an email application sent message folder)</li>
+          <li>Sign in - View or go to sign in or login page or process</li>
+          <li>Sign out - Sign out from current web site or application</li>
+          <li>Sign up - Register or sign up for a web site or application</li>
+          <li>Upload - Upload a file to a server</li>
+          <li>Refresh - Manually refresh data or refresh the contents of the screen</li>
+          <li>Print - Print the current page, selection, or item</li>
+          <li>Reset - Reset all controls on the page to their initial values</li>
+          <li>Comment - Submit a comment [AT RISK]</li>
+          <li>Settings - View and/or edit settings and options</li>
+          <li>Increase - Increase the value of the relevant setting</li>
+          <li>Decrease - Decrease the value of the relevant setting</li>
+          <li>Remove - Remove an item</li>
+          <li>Checkout - Proceed to the purchasing process</li>
+          <li>Open - Open an existing file or item</li>
+          <li>Compose - Create a new item (e.g. an email, online document, etc.)</li>
+          <li>Edit - Edit current item, selection, or the item at the current location</li>
+          <li>Cut - Remove the selected item or text and copy to the device clipboard</li>
+          <li>Copy - Copy the selected item or text to the device clipboard</li>
+          <li>Paste - Add the contents of the device clipboard in the current context</li>
+          <li>Save - Save the current content</li>
+          <li>Submit - Complete a process involving user input</li>
+          <li>Delete - Delete the relevant or current item</li>
+          <li>Undo - Revert to the state prior to the last change</li>
+          <li>Cancel - Close a dialog or similar container, discarding any unsaved changes</li>
+          <li>Home - View the initial or main page of a website or application</li>
+          <li>Contact us - View the contact information for content owner or producer [AT RISK]</li>
+          <li>About us - View information about the content owner or producer [AT RISK]</li>
+          <li>Our phone - Phone number [AT RISK]</li>
+          <li>Our email - Contact email [AT RISK]</li>
+          <li>Site map - View content containing a list of pages in a web site</li>
+          <li>Help - View the help function, support or instructions</li>
+          <li>Chat help - View a help function delivered via a chat interface</li>
+          <li>Services - View services available from the content provider [AT RISK]</li>
+          <li>Products - View products available from the content provider [AT RISK]</li>
+          <li>Terms - View terms and conditions [AT RISK]</li>
+          <li>Language - Manage language options</li>
+          <li>Social - View the content provider on social media [AT RISK]</li>
+          <li>My profile - View the user's profile page [AT RISK]</li>
+        </ul>    
+
+  </section>
+    
+    <section id="control-purposes" typeof="bibo:Chapter" resource="#control-purposes" property="bibo:hasPart">
+        <h3 id="x7-2-common-input-control-purposes" resource="#x7-2-common-input-control-purposes"><span property="xhv:role" resource="xhv:heading"><span class="secno">7.2 </span>Common Input Control Purposes<span class="permalink" typeof="bookmark"><a href="#control-purposes" aria-label="Permalink for 7.2 Common Input Control Purposes" title="Permalink for 7.2 Common Input Control Purposes" property="url"><span property="title" content="7.2 Common Input Control Purposes">§</span></a></span></span></h3>
+        <p>The following input control purposes are intended to relate to the user of the content and pertain only to information related to that individual.</p>
+        <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-25" aria-level="4"><span>Editor's note</span></div><p class="">Editor’s Note: The intention of the Working Group is to scope the terms and definitions of the Control Purposes to be only about the user of the content. The note above was included to clarify this but some concerns have been raised that this is insufficient and that each definition should clarify this, in order to avoid authors thinking that they need to implement support for more controls than is necessary. The Working Group is interested in feedback on this specific question.</p></div>
+        <ul>
+          <li>Name - Inputs used to handle information about a user’s name(s) (e.g. first name, family name, suffix, etc.)</li>
+          <li>Professional Title - Job title (e.g., "Software Engineer", "Senior Vice President", "Deputy Managing Director")</li>
+          <li>Organization - Company name corresponding to the user</li>
+          <li>Address - Inputs used to handle address information (e.g. street address, city, region, postal code, etc.)</li>
+          <li>Country Code - A country's abbreviation code</li>
+          <li>Country Name - Full name of a country</li>
+          <li>Credit Card - Inputs used to handle information about credit card payments</li>
+          <li>Name on Credit Card - Full name as given on the payment instrument</li>
+          <li>Credit Card - Inputs used to handle information about credit card payments</li>
+          <li>Credit Card Number - Code identifying the payment instrument (e.g., the credit card number)</li>
+          <li>Credit Card Expiration Date - Expiration date of the payment instrument</li>
+          <li>Credit Card Security Code - Security code for the payment instrument (also known as the card security code (CSC), card validation code (CVC), card verification value (CVV), signature panel code (SPC), credit card ID (CCID), etc)</li>
+          <li>Credit Card Type - Type of payment instrument	(e.g. Visa)</li>
+          <li>Transaction Currency - The monetary system being used for the transaction</li>
+          <li>Transaction Amount - The amount that the user is committing to for a transaction (e.g., when entering a bid or sale price)</li>
+          <li>Language - Preferred language</li>
+          <li>Birthdate - Birthday information</li>
+          <li>URL - Home page or other Web page corresponding to the user</li>
+          <li>Photo - Photograph, icon, or other image corresponding to the user</li>
+          <li>Telephone Number - Inputs used to handle information about telephone numbers</li>
+          <li>Email Address - Email address</li>
+        </ul>    
+    </section>
+
+
+      </section>
     	<section class="appendix" id="changelog" typeof="bibo:Chapter" resource="#changelog" property="bibo:hasPart">
     		<!--OddPage--><h2 id="a-change-log" resource="#a-change-log"><span property="xhv:role" resource="xhv:heading"><span class="secno">A. </span>Change Log<span class="permalink" typeof="bookmark"><a href="#changelog" aria-label="Permalink for A. Change Log" title="Permalink for A. Change Log" property="url"><span property="title" content="A. Change Log">§</span></a></span></span></h2>
     		<p>The full <a href="https://github.com/w3c/wcag21/commits/master/guidelines">commit history to WCAG 2.1</a> is available.</p>
@@ -4430,7 +4241,7 @@ sheets);</li>
     			</ul>
     		</section>
     	</section>
-        <section class="appendix" id="acknowledgments" typeof="bibo:Chapter" resource="#acknowledgments" property="bibo:hasPart">
+      <section class="appendix" id="acknowledgments" typeof="bibo:Chapter" resource="#acknowledgments" property="bibo:hasPart">
     <!--OddPage--><h2 id="b-acknowledgments" resource="#b-acknowledgments"><span property="xhv:role" resource="xhv:heading"><span class="secno">B. </span>Acknowledgments<span class="permalink" typeof="bookmark"><a href="#acknowledgments" aria-label="Permalink for B. Acknowledgments" title="Permalink for B. Acknowledgments" property="url"><span property="title" content="B. Acknowledgments">§</span></a></span></span></h2>
     <p>Additional information about participation in the Web Content Accessibility Guidelines Working Group (WCAG WG) can be found on the <a href="http://www.w3.org/WAI/GL/">Working Group home page</a>.</p>
     
