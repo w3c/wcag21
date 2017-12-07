@@ -90,13 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -369,7 +363,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -577907165;--></p>
+  <p><!--_hyper: 1349621455;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-07-december-2017"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2017-12-07">07 December 2017</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 07 December 2017" title="Permalink for W3C Editor's Draft 07 December 2017" property="url"><span property="title" content="W3C Editor's Draft 07 December 2017">§</span></a></span></h2>
   <dl>
@@ -607,9 +607,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             <section id="about-this-draft" typeof="bibo:Chapter" resource="#about-this-draft" property="bibo:hasPart">
                 <h3 id="x0-1-about-this-draft" resource="#x0-1-about-this-draft"><span property="xhv:role" resource="xhv:heading"><span class="secno">0.1 </span>About This Draft<span class="permalink" typeof="bookmark"><a href="#about-this-draft" aria-label="Permalink for 0.1 About This Draft" title="Permalink for 0.1 About This Draft" property="url"><span property="title" content="0.1 About This Draft">§</span></a></span></span></h3>
-                <p>This is a draft of the guidelines, published to allow initial review of the structure, approach, and types of new success criteria. It does not yet include all the Success Criteria that have been proposed for WCAG 2.1, nor are the ones present necessarily in their final form.</p>
-                <p>Because WCAG 2.1 extends WCAG 2.0, all the Success Criteria from WCAG 2.0 are included. To differentiate new Success Criteria, they are labeled as "[New]" and displayed in a <span class="new">green box</span>. In this draft the WCAG 2.0 Success Criteria remain unchanged. This does create some redundancy but the Working Group seeks review of the new Success Criteria at this time and will evaluate where to modify existing WCAG 2.0 Success Criteria later in the process. </p>
-                <p>Not all Success Criteria proposals are included in the above list. The Working Group maintains a <a href="https://github.com/w3c/wcag21/issues/">full set of current Success Criterion proposals</a> which is also available for review and consideration for inclusion in future drafts.</p>
+				<p>Since the previous draft published in September, the Working Group has been working hard to review the final set of added success criteria in context of each other, and to address comments that have been submitted on drafts over the past year. This has resulted in changes to many of the success criteria to make them more implementable and backed by a stronger consensus. The Working Group expects these success criteria are in their final form, and plans to publish the Candidate Recommendation with these success criteria unless major concerns are raised by public review of this draft.</p>
+				<div class="note"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Note</span></div><p class="" id="further-work">The Working Group was not able to obtain consensus on all of the new success criteria in time for publication of this draft. Those success criteria are marked with editorial notes with pointers to ongoing discussion. If you have an interest in the final form of the success criteria, we encourage you to track the discussion and check the <a href="https://w3c.github.io/wcag21/guidelines/">editors' draft</a> for changes, and submit comments quickly if you have concerns about changes underway. The Candidate Recommendation will include the final form of these success criteria, though they will be marked as "at risk" due to the lack of review opportunity from this current draft.</p></div>
+                <p>Because WCAG 2.1 extends WCAG 2.0, all the Success Criteria from WCAG 2.0 are included. To differentiate new Success Criteria, they are labeled as "[New]" and displayed in a <span class="new">green box</span>. To keep the guidelines clear for people who are familiar with WCAG 2.0, the WCAG 2.0 Success Criteria remain unchanged and have not been merged, moved, or renumbered to accommodate the new WCAG 2.1 Success Criteria. For this reason, WCAG 2.1 Success Criteria appear after the WCAG 2.0 Success Criteria in each guideline, which means that Success Criteria are no longer grouped by conformance level.</p>
             </section>
 
             <section id="background-on-wcag-2" typeof="bibo:Chapter" resource="#background-on-wcag-2" property="bibo:hasPart">
@@ -632,7 +632,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
             <section id="conformance-to-wcag-2-1" typeof="bibo:Chapter" resource="#conformance-to-wcag-2-1" property="bibo:hasPart">
                 <h3 id="x0-3-conformance-to-wcag-2-1" resource="#x0-3-conformance-to-wcag-2-1"><span property="xhv:role" resource="xhv:heading"><span class="secno">0.3 </span>Conformance to WCAG 2.1<span class="permalink" typeof="bookmark"><a href="#conformance-to-wcag-2-1" aria-label="Permalink for 0.3 Conformance to WCAG 2.1" title="Permalink for 0.3 Conformance to WCAG 2.1" property="url"><span property="title" content="0.3 Conformance to WCAG 2.1">§</span></a></span></span></h3>
-                <p>WCAG 2.1 uses the same conformance model as WCAG 2.0, which is described in the <a href="#conformance">Conformance</a> section. The conformance section has not been updated in this Working Draft to describe how WCAG 2.1 conformance builds upon WCAG 2.0 conformance. In particular, it is intended that sites that conform to WCAG 2.1 also conform to WCAG 2.0, which means they meet the requirements of any policies that reference WCAG 2.0, while also better meeting the needs of users on the current Web. Conformance wording for this will be provided in a future Working Draft.</p>
+                <p>WCAG 2.1 uses the same conformance model as WCAG 2.0 with a couple additions, which is described in the <a href="#conformance">Conformance</a> section. The conformance section has not been updated in this Working Draft to describe how WCAG 2.1 conformance builds upon WCAG 2.0 conformance. In particular, it is intended that sites that conform to WCAG 2.1 also conform to WCAG 2.0, which means they meet the requirements of any policies that reference WCAG 2.0, while also better meeting the needs of users on the current Web. </p>
             </section>
 
             <section id="future-work-on-wcag-2-1" typeof="bibo:Chapter" resource="#future-work-on-wcag-2-1" property="bibo:hasPart">
@@ -933,7 +933,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
 	
-	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is unchanged from the previous Working Draft. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-0" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is <a href="#further-work">unchanged from the previous Working Draft</a>. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion. If you have strong views about the output of this discussion, please follow <a href="https://github.com/w3c/wcag21/issues?q=is%3Aopen+is%3Aissue+label%3A%7Ecomment-contextual-information">discussion in progress on Contextual Information issues</a>.</p></div>
   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-1" aria-level="5"><span>Editor's note</span></div><p class="">To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
    					
@@ -970,7 +970,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       volume independently from the overall system volume level.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
       ability to use the whole page, all content on the Web page (whether or not it is used
       to meet other success criteria) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p></div>
@@ -1061,7 +1061,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       
    </dl>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><p class="">Logotypes (text that is part of a logo or brand name) are considered essential.</p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><p class="">Logotypes (text that is part of a logo or brand name) are considered essential.</p></div>
    
 </section>
 
@@ -1145,7 +1145,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
             with the exception of occasional sounds that last for only one or two seconds.
          </p>
          
-         <div class="note"><div role="heading" class="note-title marker" id="h-note-1" aria-level="5"><span>Note</span></div><p class="">Per the definition of "decibel," background sound that meets this requirement will
+         <div class="note"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><p class="">Per the definition of "decibel," background sound that meets this requirement will
             be approximately four times quieter than the foreground speech content.
          </p></div>
          
@@ -1183,7 +1183,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p><a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">Images of text</a> are only used for <a href="#dfn-pure-decoration" class="internalDFN" data-link-type="dfn">pure decoration</a> or where a particular presentation of <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> to the information being conveyed.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-2" aria-level="5"><span>Note</span></div><p class="">Logotypes (text that is part of a logo or brand name) are considered essential.</p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><p class="">Logotypes (text that is part of a logo or brand name) are considered essential.</p></div>
    
 </section>
 
@@ -1200,10 +1200,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p>Reflow: Content can be presented at a width equivalent to 320 CSS pixels without loss of information or functionality, and without requiring scrolling in two dimensions, except for parts of the content which require two-dimensional layout for usage or meaning.</p>
   
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-3" aria-level="5"><span>Note</span></div><p class="">320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. 
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><p class="">320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. 
      For web pages which are designed to scroll horizontally, the 320px should be taken as the height rather than width.</p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-4" aria-level="5"><span>Note</span></div><p class="">Examples of content which require two-dimensional layout are images, maps, diagrams, 
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">Examples of content which require two-dimensional layout are images, maps, diagrams, 
      video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while
      manipulating content.</p></div>
    				
@@ -1293,8 +1293,8 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     	
     	<p>Exception: The visual presentation of the additional content is controlled by the user agent and is not modified by the author.</p>
 
-    	<div class="note"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute"><code>title</code> attribute</a>.</p></div>
-     <div class="note"><div role="heading" class="note-title marker" id="h-note-6" aria-level="5"><span>Note</span></div><p class="">Custom tooltips, sub-menus, and other nonmodal popups which display on hover and focus are examples of additional content covered by this criterion.</p></div>
+    	<div class="note"><div role="heading" class="note-title marker" id="h-note-6" aria-level="5"><span>Note</span></div><p class="">Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute"><code>title</code> attribute</a>.</p></div>
+     <div class="note"><div role="heading" class="note-title marker" id="h-note-7" aria-level="5"><span>Note</span></div><p class="">Custom tooltips, sub-menus, and other nonmodal popups which display on hover and focus are examples of additional content covered by this criterion.</p></div>
 
   </section>
 
@@ -1320,12 +1320,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       the endpoints.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-7" aria-level="5"><span>Note</span></div><p class="">This exception relates to the underlying function, not the input technique. For example,
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-8" aria-level="5"><span>Note</span></div><p class="">This exception relates to the underlying function, not the input technique. For example,
       if using handwriting to enter text, the input technique (handwriting) requires path-dependent
       input but the underlying function (text input) does not.
    </p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-8" aria-level="5"><span>Note</span></div><p class="">This does not forbid and should not discourage providing mouse input or other input
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-9" aria-level="5"><span>Note</span></div><p class="">This does not forbid and should not discourage providing mouse input or other input
       methods in addition to keyboard operation.
    </p></div>
    
@@ -1342,7 +1342,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       methods, the user is advised of the method for moving focus away.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-9" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-10" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
       ability to use the whole page, all content on the Web page (whether it is used to
       meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p></div>
@@ -1434,7 +1434,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       
    </dl>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-10" aria-level="5"><span>Note</span></div><p class="">This success criterion helps ensure that users can complete tasks without unexpected
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-11" aria-level="5"><span>Note</span></div><p class="">This success criterion helps ensure that users can complete tasks without unexpected
       changes in content or context that are a result of a time limit. This success criterion
       should be considered in conjunction with <a href="#on-focus">Success Criterion 3.2.1</a>, which puts limits on changes of content or context as a result of user action.
    </p></div>
@@ -1478,21 +1478,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       
    </dl>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-11" aria-level="5"><span>Note</span></div><p class="">For requirements related to flickering or flashing content, refer to <a href="#seizures">Guideline 2.3</a>.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-12" aria-level="5"><span>Note</span></div><p class="">For requirements related to flickering or flashing content, refer to <a href="#seizures">Guideline 2.3</a>.
    </p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-12" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
       ability to use the whole page, all content on the Web page (whether it is used to
       meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>Note</span></div><p class="">Content that is updated periodically by software or that is streamed to the user agent
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>Note</span></div><p class="">Content that is updated periodically by software or that is streamed to the user agent
       is not required to preserve or present information that is generated or received between
       the initiation of the pause and resuming presentation, as this may not be technically
       possible, and in many situations could be misleading to do so.
    </p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>Note</span></div><p class="">An animation that occurs as part of a preload phase or similar situation can be considered
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-15" aria-level="5"><span>Note</span></div><p class="">An animation that occurs as part of a preload phase or similar situation can be considered
       essential if interaction cannot occur during that phase for all users and if not indicating
       progress could confuse users or cause them to think that content was frozen or broken.
    </p></div>
@@ -1541,7 +1541,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <div class="doclinks"><a href="../understanding/21/accessible-authentication.html">Understanding Accessible Authentication</a></div><p class="conformance-level">(Level A)</p>
    <p class="change">[New]</p>
 
-  <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-8" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is unchanged from the previous Working Draft. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion, or on the <a href="https://www.w3.org/WAI/GL/wiki/2-2-6_Revision">current non-consensus alternative version</a>.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-8" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is <a href="#further-work">unchanged from the previous Working Draft</a>. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion, or on the <a href="https://www.w3.org/WAI/GL/wiki/2-2-6_Revision">current non-consensus alternative version</a>. If you have strong views about the output of this discussion, please follow <a href="https://github.com/w3c/wcag21/issues?q=is%3Aopen+is%3Aissue+label%3A%7Ecomment-accessible-authentication">discussion in progress on Accessible Authentication issues</a>.</p></div>
 	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-9" aria-level="5"><span>Editor's note</span></div><p class="">To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
   
@@ -1567,7 +1567,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
- <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-10" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is unchanged from the previous Working Draft. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion, or on the <a href="https://www.w3.org/WAI/GL/wiki/2-2-7_Revision">current non-consensus alternative version</a>.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-10" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is <a href="#further-work">unchanged from the previous Working Draft</a>. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion, or on the <a href="https://www.w3.org/WAI/GL/wiki/2-2-7_Revision">current non-consensus alternative version</a>. If you have strong views about the output of this discussion, please follow <a href="https://github.com/w3c/wcag21/issues?q=is%3Aopen+is%3Aissue+label%3A%7Ecomment-interruptions%28minimum%29">discussion in progress on Interruptions (Minimum) issues</a>.</p></div>
 	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-11" aria-level="5"><span>Editor's note</span></div><p class="">To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.</p></div> 
   
    <p>A mechanism is <a href="#dfn-easily-available" class="internalDFN" data-link-type="dfn">easily available</a> to postpone and suppress interruptions and changes in content, unless they
@@ -1590,7 +1590,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    		
    <p>Where data can be lost due to <a href="#dfn-user-inactivity" class="internalDFN" data-link-type="dfn">user inactivity</a>, users are warned about the estimated length of inactivity that generates the data loss, unless the data is preserved for a minimum of 20 hours of user inactivity.</p>
   
-<div class="note"><div role="heading" class="note-title marker" id="h-note-15" aria-level="5"><span>Note</span></div><p class="">Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.</p></div>
+<div class="note"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note</span></div><p class="">Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.</p></div>
   
 </section>
  
@@ -1603,7 +1603,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-13" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is unchanged from the previous Working Draft. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion.</p></div>
+	<div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-13" aria-level="5"><span>Editor's note</span></div><p class="">This Success Criterion is <a href="#further-work">unchanged from the previous Working Draft</a>. The Working Group received comments but was not able to reach consensus on language to address the comments. The Working Group is interested in additional comments on this version of the Success Criterion. If you have strong views about the output of this discussion, please follow <a href="https://github.com/w3c/wcag21/issues?q=is%3Aopen+is%3Aissue+label%3A%7Ecomment-animation-from-interactions">discussion in progress on Animation from Interactions issues</a>.</p></div>
   <div class="ednote"><div role="heading" class="ednote-title marker" id="h-ednote-14" aria-level="5"><span>Editor's note</span></div><p class="">To file comments on this proposal, please <a href="https://github.com/w3c/wcag21/issues/new">raise new issues</a> for each discrete comment in GitHub.
 	</p></div>
  					
@@ -1630,7 +1630,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       or the <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn">flash</a> is below the <a href="#dfn-general-flash-and-red-flash-thresholds" class="internalDFN" data-link-type="dfn">general flash and red flash thresholds</a>.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><p class="">Since any content that does not meet this success criterion can interfere with a user's
       ability to use the whole page, all content on the Web page (whether it is used to
       meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p></div>
@@ -1766,11 +1766,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p><a href="#dfn-section" class="internalDFN" data-link-type="dfn">Section</a> headings are used to organize the content.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-17" aria-level="5"><span>Note</span></div><p class="">"Heading" is used in its general sense and includes titles and other ways to add a
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>Note</span></div><p class="">"Heading" is used in its general sense and includes titles and other ways to add a
       heading to different types of content.
    </p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-18" aria-level="5"><span>Note</span></div><p class="">This success criterion covers sections within writing, not <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a>. User Interface components are covered under <a href="#name-role-value">Success Criterion 4.1.2</a>.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-19" aria-level="5"><span>Note</span></div><p class="">This success criterion covers sections within writing, not <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a>. User Interface components are covered under <a href="#name-role-value">Success Criterion 4.1.2</a>.
    </p></div>
    
 </section>
@@ -1799,7 +1799,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 	
   <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">labels</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">images of text</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> contains the text presented.</p>
   
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-19" aria-level="5"><span>Note</span></div><p class="">A best practice is to have  the text of the label at the start of the name.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-20" aria-level="5"><span>Note</span></div><p class="">A best practice is to have  the text of the label at the start of the name.</p></div>
 	
 </section>
 
@@ -1824,7 +1824,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    				
    <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> which uses multipoint or path-based gestures for operation can be operated with a <a href="#dfn-single-pointer" class="internalDFN" data-link-type="dfn">single pointer</a>, unless a multipoint or path-based gesture is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>.</p>
    					
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-20" aria-level="5"><span>Note</span></div><p class="">This requirement applies to web content which interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-21" aria-level="5"><span>Note</span></div><p class="">This requirement applies to web content which interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).
    </p></div>
 	
 </section>
@@ -1970,7 +1970,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
   
   <p>Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>.</p>
    				
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-21" aria-level="5"><span>Note</span></div><p class="">Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.</p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note</span></div><p class="">Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.</p></div>
    					
 </section>
 
@@ -2248,7 +2248,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       these features.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note</span></div><p class="">Start and end tags that are missing a critical character in their formation, such
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>Note</span></div><p class="">Start and end tags that are missing a critical character in their formation, such
       as a closing angle bracket or a mismatched attribute value quotation mark are not
       complete.
    </p></div>
@@ -2265,7 +2265,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> and <a href="#dfn-role" class="internalDFN" data-link-type="dfn">role</a> can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn">programmatically determined</a>; states, properties, and values that can be set by the user can be <a href="#dfn-programmatically-set" class="internalDFN" data-link-type="dfn">programmatically set</a>; and notification of changes to these items is available to <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a>.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-23" aria-level="5"><span>Note</span></div><p class="">This success criterion is primarily for Web authors who develop or script their own
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-24" aria-level="5"><span>Note</span></div><p class="">This success criterion is primarily for Web authors who develop or script their own
       user interface components. For example, standard HTML controls already meet this success
       criterion when used according to specification.
    </p></div>
@@ -2306,9 +2306,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                 <section id="cc2" typeof="bibo:Chapter" resource="#cc2" property="bibo:hasPart">
                     <h4 id="x5-1-2-full-pages" resource="#x5-1-2-full-pages"><span property="xhv:role" resource="xhv:heading"><span class="secno">5.1.2 </span>Full pages<span class="permalink" typeof="bookmark"><a href="#cc2" aria-label="Permalink for 5.1.2 Full pages" title="Permalink for 5.1.2 Full pages" property="url"><span property="title" content="5.1.2 Full pages">§</span></a></span></span></h4>
                     <p><a href="#dfn-conform" class="internalDFN" data-link-type="dfn">Conformance</a> (and conformance level) is for full <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn">Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.</p>
-                    <div class="note"><div role="heading" class="note-title marker" id="h-note-24" aria-level="5"><span>Note</span></div><p class="">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.</p></div>
-                    <div class="note"><div role="heading" class="note-title marker" id="h-note-25" aria-level="5"><span>Note</span></div><p class="">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p></div>
-                  <div class="note"><div role="heading" class="note-title marker" id="h-note-26" aria-level="5"><span>Note</span></div><p class="new"><span class="change">New</span> A full page includes each variation of the page that is automatically generated by the page for various screen sizes. Each of these variations needs to conform (or needs to have a conforming alternate version) in order for the entire page to conform.</p></div>
+                    <div class="note"><div role="heading" class="note-title marker" id="h-note-25" aria-level="5"><span>Note</span></div><p class="">For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.</p></div>
+                    <div class="note"><div role="heading" class="note-title marker" id="h-note-26" aria-level="5"><span>Note</span></div><p class="">Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.</p></div>
+                  <div class="note"><div role="heading" class="note-title marker" id="h-note-27" aria-level="5"><span>Note</span></div><p class="new"><span class="change">New</span> A full page includes each variation of the page that is automatically generated by the page for various screen sizes. Each of these variations needs to conform (or needs to have a conforming alternate version) in order for the entire page to conform.</p></div>
                 </section>
 
                 <section id="cc3" typeof="bibo:Chapter" resource="#cc3" property="bibo:hasPart">
@@ -2337,7 +2337,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
                         <li><strong>2.3.1 - Three Flashes or Below Threshold</strong>, and</li>
                         <li><strong>2.2.2 - Pause, Stop, Hide</strong>.</li>
                     </ul>
-                    <div class="note"><div role="heading" class="note-title marker" id="h-note-27" aria-level="5"><span>Note</span></div><p class="">If a page cannot conform (for example, a conformance test page or an example page), it cannot be included in the scope of conformance or in a conformance claim.</p></div>
+                    <div class="note"><div role="heading" class="note-title marker" id="h-note-28" aria-level="5"><span>Note</span></div><p class="">If a page cannot conform (for example, a conformance test page or an example page), it cannot be included in the scope of conformance or in a conformance claim.</p></div>
                     <p>For more information, including examples, see <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Conformance Requirements</a>.</p>
                 </section>
             </section>
@@ -3744,7 +3744,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-28" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-29" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
@@ -4036,7 +4036,7 @@ sheets);</li>
       menus, and alerts are not viewports.
    </p>
    
-   <p>This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a> [<cite><a class="bibref" href="#bib-WAI-USERAGENT">WAI-USERAGENT</a></cite>].
+   <p>This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a> [<cite><a class="bibref" href="#bib-UAAG10">UAAG10</a></cite>].
    </p>
    
 </dd>
@@ -4350,9 +4350,9 @@ sheets);</li>
 </dd><dt id="bib-IEC-4WD">[IEC-4WD]</dt><dd><cite>IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB</cite>May 5, 1998. 
 </dd><dt id="bib-pointerevents">[pointerevents]</dt><dd><a href="https://www.w3.org/TR/pointerevents/" property="dc:references"><cite>Pointer Events</cite></a>. Jacob Rossi; Matt Brubeck. W3C. 24 February 2015. W3C Recommendation. URL: <a href="https://www.w3.org/TR/pointerevents/" property="dc:references">https://www.w3.org/TR/pointerevents/</a>
 </dd><dt id="bib-sRGB">[sRGB]</dt><dd><a href="https://www.w3.org/Graphics/Color/sRGB.html" property="dc:references"><cite>A Standard Default Color Space for the Internet - sRGB, Version 1.10</cite></a>. M. Stokes; M. Anderson; S. Chandrasekar; R. Motta.November 5, 1996. URL: <a href="https://www.w3.org/Graphics/Color/sRGB.html" property="dc:references">https://www.w3.org/Graphics/Color/sRGB.html</a>
+</dd><dt id="bib-UAAG10">[UAAG10]</dt><dd><a href="https://www.w3.org/TR/UAAG10/" property="dc:references"><cite>User Agent Accessibility Guidelines 1.0</cite></a>. Ian Jacobs; Jon Gunderson; Eric Hansen. W3C. 17 December 2002. W3C Recommendation. URL: <a href="https://www.w3.org/TR/UAAG10/" property="dc:references">https://www.w3.org/TR/UAAG10/</a>
 </dd><dt id="bib-UNDERSTANDING-WCAG20">[UNDERSTANDING-WCAG20]</dt><dd><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/" property="dc:references"><cite>Understanding WCAG 2.0</cite></a>. Michael Cooper; Andrew Kirkpatrick; Joshue O Connor et al. W3C. 7 October 2016. W3C Note. URL: <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/" property="dc:references">https://www.w3.org/TR/UNDERSTANDING-WCAG20/</a>
 </dd><dt id="bib-UNESCO">[UNESCO]</dt><dd><a href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm" property="dc:references"><cite>International Standard Classification of Education</cite></a>. 1997. URL: <a href="http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm" property="dc:references">http://www.unesco.org/education/information/nfsunesco/doc/isced_1997.htm</a>
-</dd><dt id="bib-WAI-USERAGENT">[WAI-USERAGENT]</dt><dd><em style="color: #f00">Reference not found.</em>
 </dd><dt id="bib-WAI-WEBCONTENT">[WAI-WEBCONTENT]</dt><dd><a href="https://www.w3.org/TR/WAI-WEBCONTENT/" property="dc:references"><cite>Web Content Accessibility Guidelines 1.0</cite></a>. Wendy Chisholm; Gregg Vanderheiden; Ian Jacobs. W3C. 5 May 1999. W3C Recommendation. URL: <a href="https://www.w3.org/TR/WAI-WEBCONTENT/" property="dc:references">https://www.w3.org/TR/WAI-WEBCONTENT/</a>
 </dd><dt id="bib-WCAG20-TECHS">[WCAG20-TECHS]</dt><dd><a href="https://www.w3.org/TR/WCAG20-TECHS/" property="dc:references"><cite>Techniques for WCAG 2.0</cite></a>. Michael Cooper; Andrew Kirkpatrick; Joshue O Connor et al. W3C. 7 October 2016. W3C Note. URL: <a href="https://www.w3.org/TR/WCAG20-TECHS/" property="dc:references">https://www.w3.org/TR/WCAG20-TECHS/</a>
 </dd></dl></section></section><p role="navigation" id="back-to-top"><a href="#toc"><abbr title="Back to Top">↑</abbr></a></p><script src="https://www.w3.org/scripts/TR/2016/fixup.js"></script></body></html>
