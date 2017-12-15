@@ -5,7 +5,7 @@
 		<link rel="stylesheet" type="text/css" href="../../css/sources.css" class="remove" />
 	</head>
 	<body>
-		<h1>Understanding SC 2.5.3 Target Size</h1>
+		<h1>Understanding SC 2.5.4 Target Size (Enhanced)</h1>
 	<section id="intent">
 		<h2>Intent</h2>
 		<p>The intent of this success criterion is to help users who may have trouble activating a small target because of hand tremors, limited dexterity or other reasons. If the target is too small, it may be difficult to aim at the target. Mice and similar pointing devices can be hard to use for these users, and a larger target will help them greatly in having positive outcomes on the web page.</p>
@@ -35,20 +35,6 @@
 			<ul>
 			  <li><strong>Example 1: Buttons</strong><br>
 		      Three buttons are on-screen and the touch target area of each button is 44 by 44 CSS pixels.</li>
-			  <li><strong>Example 2: Customizable</strong><br>
-			    A mechnanism is provided to allow users to increase the target size of the targets on the page to meet the minimum target dimensions.<br>
-			  </li>
-			  <li><strong>Example 3:</strong> <strong>Redundant target<br>
-		      </strong>Multiple targets are provided on the page that perform the same function. One of the targets is 44 by 44 CSS pixels. The other targets do not have a minimum touch target of 44 by 44 CSS pixels.</li>
-			  <li><strong>Example 4: Anchor Link</strong><br>
-			    The target is an in-page link anchor and the target is less than 44px by 44px.  Users can scroll the screen
-			    using browser functions so target size does not need to be met.<br>
-		      </li>
-			  <li><strong>Example 5: In-Page Text Link</strong><br>
-			    Links 
-			  within a paragraph of text have varying touch target dimensions. Links within paragraphs of text do no need to meet the 44 by 44 CSS pixels requirements.</li>
-			  <li><strong>Example 6: Groups of Targets</strong><br>
-			    A navigation list contains more than 5 items and each target is 44 by 22 CSS pixels.</li>
       </ul>
 			<section class="example"></section>
 </section>
@@ -74,10 +60,7 @@
 				<section class="situation">
 					<ul>
 					  <li>					    Ensuring that touch targets are at least 44 by 44 CSS pixels.				      </li>
-					  <li>Ensuring groups of 5 or more targets have at least one dimension that is 44 CSS pixels and the other is at least 22 CSS pixels.
-					    <br>
-					  </li>
-					  <li>Providing a mechanism to change the size of the target independant of magnification.</li>
+					  <li>Ensuring inline links provide sufficiently large activation target.</li>
 		          </ul>
               </section>
 		  </section>
@@ -85,7 +68,7 @@
 				<h2>Advisory</h2>
 				<p class="instructions">Although not required for conformance, the following additional techniques should be considered in order to make content more accessible. Not all techniques can be used or would be effective in all situations.</p>
 				<ul>
-				  <li>Ensuring inline links provide sufficiently large activation target.</li>
+				  <li>none documented</li>
 			  </ul>
             </section>
 			<section id="failure">
@@ -93,7 +76,6 @@
 				<p class="instructions">The following are common mistakes that are considered failures of Success Criterion 2.5.3 by the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group.</p>
 				<ul>
 				  <li>Failure of success criterion 2.5.3 and 2.5.4 due to touch target being less than 44 by 44 CSS pixels.</li>
-				  <li>Failure of success criterion 2.5.3 due to groups of 5 or more touch targets being less than 44 by 22 or 22 by 44 CSS pixels.</li>
 		      </ul>
             </section>
 </section>
