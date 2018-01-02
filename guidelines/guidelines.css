@@ -47,3 +47,15 @@ dd.new, dd.proposed {
 div.note-title, div.ednote-title {
 	color: #008400
 }
+
+ol.common_purposes {
+  counter-reset: number;
+}
+ol.common_purposes li {
+  list-style: none;
+  counter-increment: number;
+}
+ol.common_purposes li::before {
+  content: "" counter(number) ": ";
+  position: relative;
+}
