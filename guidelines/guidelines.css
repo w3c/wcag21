@@ -56,6 +56,6 @@ ol.common_purposes li {
   counter-increment: number;
 }
 ol.common_purposes li::before {
-  content: "" counter(number) ": ";
+  content: "CP" counter(number) ": ";
   position: relative;
 }
