@@ -60,7 +60,7 @@ ol.common_purposes li::before {
   position: relative;
 }
 
-ol.common_purposes li::before {
+ol.common_input_purposes li::before {
   content: "CICP" counter(number) ": ";
   position: relative;
 }
