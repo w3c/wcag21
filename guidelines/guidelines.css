@@ -56,11 +56,11 @@ ol.common_purposes li, ol.common_input_purposes li {
   counter-increment: number;
 }
 ol.common_purposes li::before {
-  content: "CP0" counter(decimal-leading-zero) ": ";
+  content: "CP0" counter(number, decimal-leading-zero) ": ";
   position: relative;
 }
 
 ol.common_input_purposes li::before {
-  content: "ICP0" counter(decimal-leading-zero) ": ";
+  content: "ICP0" counter(number, decimal-leading-zero) ": ";
   position: relative;
 }
