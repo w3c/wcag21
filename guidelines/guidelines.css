@@ -47,3 +47,20 @@ dd.new, dd.proposed {
 div.note-title, div.ednote-title {
 	color: #008400
 }
+
+ol.common_purposes, ol.common_input_purposes {
+  counter-reset: number;
+}
+ol.common_purposes li, ol.common_input_purposes li {
+  list-style: none;
+  counter-increment: number;
+}
+ol.common_purposes li::before {
+  content: "CP0" counter(number, decimal-leading-zero) ": ";
+  position: relative;
+}
+
+ol.common_input_purposes li::before {
+  content: "ICP0" counter(number, decimal-leading-zero) ": ";
+  position: relative;
+}
