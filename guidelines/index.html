@@ -20,7 +20,9 @@
         	<p>Until WCAG 2.1 advances to W3C Recommendation, the current and referenceable document is Web Content Accessibility Guidelines 2.0 [[WCAG20]], published as a W3C Recommendation December 2008.</p>
         </section>
         <section id="sotd">
-            <p>To comment, <a href="https://github.com/w3c/wcag21/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG 2.1 GitHub repository</a>. Although the proposed Success Criteria in this document reference issues tracking discussion, the Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
+			<p>This is a <a href="https://www.w3.org/2017/Process-20170301/#RecsCR">Candidate Recommendation</a> of Web Content Accessibility Guidelines 2.1 (WCAG 2.1) from the <a href="http://www.w3.org/WAI/GL/">Accessibility Guidelines Working Group</a>. This version integrates some changes in response to comments received on the <a href="http://www.w3.org/TR/2017/WD-WCAG21-20171207/">7 December 2017 Working Draft</a> and earlier drafts. Success Criteria changed since the last draft are marked as "<a href="#at-risk">at risk</a>" because they have not yet had sufficient community review. The Working Group plans to advance past Candidate Recommendation when the <a href="#exit-criteria">Candidate Recommendation Exit Criteria</a> have been met.</p>
+			<p>Publication as a Candidate Recommendation indicates that the WCAG WG believes it has addressed all substantive issues and that the document is ready for trial implementations. The first public Working Draft of WCAG 2.1 was published 28 February 2017. Since then, the WCAG WG has published six additional Working Drafts, addressed more than 500 issues, and developed support information for the guidelines while adhering to a strict <a href="https://www.w3.org/WAI/GL/wiki/WCAG_2.1_timeline">timeline</a>. See <a href="http://www.w3.org/WAI/intro/w3c-process">How WAI Develops Accessibility Guidelines through the W3C Process</a> for more background on document maturity levels.</p>
+            <p>To comment, <a href="https://github.com/w3c/wcag21/issues/new">file an issue in the <abbr title="World Wide Web Consortium">W3C</abbr> WCAG 2.1 GitHub repository</a>. The Working Group requests that public comments be filed as new issues, one issue per discrete comment. It is free to create a GitHub account to file issues. If filing issues in GitHub is not feasible, send email to <a href="mailto:public-agwg-comments@w3.org?subject=WCAG%202.1%20public%20comment">public-agwg-comments@w3.org</a> (<a href="https://lists.w3.org/Archives/Public/public-agwg-comments/">comment archive</a>). </p>
         </section>
         <section class="informative introductory" id="intro">
             <h2>Introduction</h2>
@@ -662,6 +664,46 @@
         </section>
     	
     	<div data-include="controlpurposes.html" data-include-replace="true"></div>
+
+    	<section class="appendix" id="exit-criteria">
+			<h2>Candidate Recommendation Exit Criteria </h2>
+			<p>The Web Content Accessibility Guidelines Working Group intends to submit this document for consideration as a W3C <a href="https://www.w3.org/2017/Process-20170301/#rec-pr">Proposed Recommendation</a> as soon as the following conditions are met: </p>
+			<ol>
+				<li> At least 10 Web sites[<a href="#exit-criteria_note-1">1</a>] that conform to WCAG 2.1 [<a href="#exit-criteria_note-2">2</a>] are available, of which: <ul>
+						<li> At least eight conform at level AA </li>
+						<li> At least two conform at level AAA;</li>
+						<li> At least one conforming site relies on one platform (Operating system, user agent, assistive technology) with touch screen and small screen support.</li>
+					</ul></li>
+				<li> At least two implementations [<a href="#exit-criteria_note-3">3</a>] exist for each success criterion added in WCAG 2.1 (Success Criteria from WCAG 2.0 do not need new implementations); </li>
+				<li> Accessibility support documentation [<a href="#exit-criteria_note-4">4</a>] is provided such that: <ol>
+						<li> Evidence of successful implementation is available for SC added to WCAG 2.1.</li>
+						<li> Documentation is provided for at least four platforms (operating system/user agent/assistive technology combinations).</li>
+					</ol></li>
+				<li> All sufficient techniques listed in Understanding WCAG 2.1 at the end of the Candidate Recommendation period contain test procedures; </li>
+				<li> The Working Group has responded formally to all issues raised against this document related to any implementation efforts during the Candidate Recommendation period.</li>
+			</ol>
+			<p id="exit-criteria_note-1">[1] The conforming Web sites should be distinct and independently developed, represent diverse types of content including Content Management System (CMS)-generated content, utilize diverse Web technologies including W3C and non-W3C technologies, and have a varied representation of primary languages and scripts. Web applications can be single Web pages; otherwise conformance claims for Web sites should contain a minimum of 5 Web pages. Some success criteria may be satisfied in the conforming Web sites by the absence of applicable content on the Web pages, but Web sites should exhibit positive implementations of a significant number of success criteria at the corresponding level of conformance. </p>
+			<p id="exit-criteria_note-2">[2] For purpose of WCAG 2.1 implementation testing, conforming sites must actively meet new success criteria introduced in WCAG 2.1 along with relevant success criteria inherited from WCAG 2.0. Sites that only meet all WCAG 2.1 success criteria by virtue of inapplicability are not included. This is to ensure that WCAG 2.1 is actively tested, and the interaction of WCAG 2.1 success criteria with WCAG 2.0 success criteria is tested.</p>
+			<p id="exit-criteria_note-3">[3] The implementations of success criteria need not be within the conforming Web sites. Note that these implementations must contain content of the type addressed by the individual success criterion, that is, they cannot satisfy the success criteria purely by the absence of applicable content on the Web pages. </p>
+			<p id="exit-criteria_note-4">[4] In the absence of documentation of accessibility-supported technologies, conforming sites may show evidence by testing with assistive technologies. </p>
+			<p>Besides these implementations, feedback on implementation and use of this specification is welcome, including from implementations not selected as part of the formal implementation report for exiting Candidate Recommendation. </p>
+			<p>The <a href="https://www.w3.org/WAI/WCAG21/implementation-report/">implementation report</a> will be publicly released and is intended solely to be used as evidence of WCAG 2.1 implementability as a snapshot of the actual implementation behaviors at one moment in time. These implementations may not be the same as the Web sites available to the public. </p>
+			<p>Working closely with Web developers, the Working Group expects to receive initial implementations by <strong>28 February 2018</strong> and to show evidence of meeting the exit criteria by <strong>30 March 2018</strong> or soon thereafter. </p>
+		</section>
+		<section class="appendix" id="at-risk">
+			<h2>Items at Risk </h2>
+			<p>As a part of the <a href="https://www.w3.org/2017/Process-20170301/#RecsCR">Candidate Recommendation process,</a> any items that might change or where there may not be implementations can be marked as "at risk." This designation in no way implies that these success criteria are less important to accessibility. It allows the Working Group to take the actions proposed below if needed without publishing a new Candidate Recommendation. If normative changes are made to features that were not marked at risk, the Working Group would publish a new Candidate Recommendation to obtain review of those changes.</p>
+			<p>The following are considered to be features at risk:</p>
+			<ul>
+				<li><a href="#identify-purpose">Identify Purpose</a> could be removed if public feedback indicates excessive concerns with changes made from the previous Working Draft (under the name Contextual Information);</li>
+				<li><a href="#animation-from-interactions">Animation from Interactions</a> could be removed if public feedback indicates excessive concerns with changes made from the previous Working Draft.</li>
+			</ul>
+			<p>In addition to the above features at risk, the following success criteria were identified in the previous Working Draft as expected to be at risk in the Candidate Recommendation, but instead have already been removed because the Working Group did not accept changes needed to address open issues and there does not have a consensus-supported version of these Success Criteria to include in WCAG 2.1:</p>
+			<ul>
+				<li>Accessible Authentication;</li>
+				<li>Interruptions (Minimum).</li>
+			</ul>
+		</section>
     	
     	<section class="appendix" id="changelog">
     		<h2>Change Log</h2>
