@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -1132574771;--></p>
+  <p><!--_hyper: -88993154;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-17-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-17">17 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 17 January 2018" title="Permalink for W3C Editor's Draft 17 January 2018" property="url"><span property="title" content="W3C Editor's Draft 17 January 2018">§</span></a></span></h2>
   <dl>
@@ -1521,7 +1521,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <p>Where data can be lost due to <a href="#dfn-user-inactivity" class="internalDFN" data-link-type="dfn">user inactivity</a>, users are warned about the estimated length of inactivity that generates the data loss, unless the data is preserved for a minimum of 20 hours of user inactivity.</p>
+   <p>Users are warned of the duration of any <a href="#dfn-user-inactivity" class="internalDFN" data-link-type="dfn">user inactivity</a> that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.</p>
   
 <div class="note"><div role="heading" class="note-title marker" id="h-note-16" aria-level="5"><span>Note</span></div><p class="">Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.</p></div>
   
@@ -1720,7 +1720,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <div class="doclinks"><a href="https://www.w3.org/TR/WCAG21/quickref/#label-in-name">How to Meet Label in Name</a> <span class="screenreader">|</span> <br><a href="../understanding/21/label-in-name.html">Understanding Label in Name</a></div><p class="conformance-level">(Level A)</p>
    <p class="change">[New]</p>
 	
-  <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">labels</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">images of text</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> contains the text presented.</p>
+  <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">labels</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">images of text</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> contains the text presented visually.</p>
   
   <div class="note"><div role="heading" class="note-title marker" id="h-note-20" aria-level="5"><span>Note</span></div><p class="">A best practice is to have  the text of the label at the start of the name.</p></div>
 	
@@ -1849,12 +1849,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    <p class="change">[New]</p>
    					
-   <p><a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">Functionality</a> that can be operated by device motion or user motion can also be operated by <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> and can be disabled to prevent accidental actuation, except when:</p>
+   <p><a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">Functionality</a> that can be operated by device motion or user motion can also be operated by <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface components</a> and responding to the motion can be disabled to prevent accidental actuation, except when:</p>
    
    <dl>
    
-   <dt>Accessibility Supported</dt>
-   <dd>The motion is used to operate a keyboard, pointer, or <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technology</a>;</dd>
+   <dt>Supported Interface</dt>
+     <dd>The motion is used to operate functionality through an <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn">accessibility supported</a> interface;</dd>
    
    <dt>Essential</dt>
    <dd>The motion is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a> for the function and doing so would invalidate the activity.</dd>
