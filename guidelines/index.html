@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -1314845230;--></p>
+  <p><!--_hyper: 1435397598;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -3335,32 +3335,37 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p>any content that is not a sequence of characters that can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn">programmatically determined</a> or where the sequence is not expressing something in <a href="#dfn-human-language-s" class="internalDFN" data-link-type="dfn">human language</a></p>
    
-   <p>This includes <a href="#dfn-ascii-art" class="internalDFN" data-link-type="dfn">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-108" aria-level="3"><span>Note</span></div><p class="">This includes <a href="#dfn-ascii-art" class="internalDFN" data-link-type="dfn">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution),
       and images representing text
-   </p>
+   </p></div>
    
 </dd>
+
                 
                 <dt><dfn data-dfn-type="dfn" id="dfn-normative">normative</dfn></dt>
 <dd>
    
    <p>required for conformance</p>
    
-   <p>One may conform in a variety of well-defined ways to this document.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-109" aria-level="3"><span>Note</span></div><p class="">One may conform in a variety of well-defined ways to this document.</p></div>
+  
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-110" aria-level="3"><span>Note</span></div><p class="">Content identified as "<a href="#dfn-informative" class="internalDFN" data-link-type="dfn">informative</a>" or "non-normative" is never required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn">conformance</a>.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-on-a-full-screen-window">on a full-screen window</dfn></dt>
 <dd>
    
    <p>on the most common sized desktop/laptop display with the viewport maximized</p>
    
-   <p>Since people generally keep their computers for several years, it is best not to rely
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-111" aria-level="3"><span>Note</span></div><p class="">Since people generally keep their computers for several years, it is best not to rely
       on the latest desktop/laptop display resolutions but to consider the common desktop/laptop
       display resolutions over the course of several years when making this evaluation.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-lt="pause|paused" data-dfn-type="dfn" id="dfn-pause">paused</dfn></dt>
 <dd>
@@ -3508,7 +3513,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <dd class="new">
   <p class="change">[new]</p>
   <p>a perceivable, programmatically determined section of content.</p>
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-108" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-112" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
 </dd>
 
 
@@ -3658,7 +3663,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-109" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-113" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
