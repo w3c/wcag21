@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 566737066;--></p>
+  <p><!--_hyper: 325358595;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -2501,13 +2501,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       would not know what a link would do until they activated it)
    </p>
    
-   <p>The word guava in the following sentence "One of the notable exports is guava" is
+   <p class="example">The word guava in the following sentence "One of the notable exports is guava" is
       a link. The link could lead to a definition of guava, a chart listing the quantity
       of guava exported or a photograph of people harvesting guava. Until the link is activated,
       all readers are unsure and the person with a disability is not at any disadvantage.
    </p>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-ascii-art">ASCII art</dfn></dt>
 <dd>
@@ -2526,17 +2527,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       of users with disabilities that go beyond those offered by mainstream user agents
    </p>
    
-   <p>functionality provided by assistive technology includes alternative presentations
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-46" aria-level="3"><span>Note</span></div><p class="">functionality provided by assistive technology includes alternative presentations
       (e.g., as synthesized speech or magnified content), alternative input methods (e.g.,
       voice), additional navigation or orientation mechanisms, and content transformations
       (e.g., to make tables more accessible).
-   </p>
+   </p></div>
    
-   <p>Assistive technologies often communicate data and messages with mainstream user agents
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-47" aria-level="3"><span>Note</span></div><p class="">Assistive technologies often communicate data and messages with mainstream user agents
       by using and monitoring APIs.
-   </p>
+   </p></div>
    
-   <p>The distinction between mainstream user agents and assistive technologies is not absolute.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-48" aria-level="3"><span>Note</span></div><p class="">The distinction between mainstream user agents and assistive technologies is not absolute.
       Many mainstream user agents provide some features to assist individuals with disabilities.
       The basic difference is that mainstream user agents target broad and diverse audiences
       that usually include people with and without disabilities. Assistive technologies
@@ -2545,9 +2546,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       of its target users. The mainstream user agent may provide important functionality
       to assistive technologies like retrieving Web content from program objects or parsing
       markup into identifiable bundles.
-   </p>
+   </p></div>
    
-   <p>Assistive technologies that are important in the context of this document include
+   <p class="example">Assistive technologies that are important in the context of this document include
       the following:
    </p>
    
@@ -2582,16 +2583,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
 </dd>
 
+
                 <dt><dfn data-dfn-type="dfn" id="dfn-audio">audio</dfn></dt>
 <dd>
    
    <p>the technology of sound reproduction</p>
    
-   <p>Audio can be created synthetically (including speech synthesis), recorded from real
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-49" aria-level="3"><span>Note</span></div><p class="">Audio can be created synthetically (including speech synthesis), recorded from real
       world sounds, or both.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-lt="audio descriptions|audio description" data-dfn-type="dfn" id="dfn-audio-descriptions">audio description</dfn></dt>
 <dd>
@@ -2600,20 +2603,21 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       be understood from the main soundtrack alone
    </p>
    
-   <p>Audio description of <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> provides information about actions, characters, scene changes, on-screen text, and
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-50" aria-level="3"><span>Note</span></div><p class="">Audio description of <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> provides information about actions, characters, scene changes, on-screen text, and
       other visual content.
-   </p>
+   </p></div>
    
-   <p>In standard audio description, narration is added during existing pauses in dialogue.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-51" aria-level="3"><span>Note</span></div><p class="">In standard audio description, narration is added during existing pauses in dialogue.
       (See also <a href="#dfn-extended-audio-description" class="internalDFN" data-link-type="dfn">extended audio description</a>.)
-   </p>
+   </p></div>
    
-   <p>Where all of the <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> information is already provided in existing <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a>, no additional audio description is necessary.
-   </p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-52" aria-level="3"><span>Note</span></div><p class="">Where all of the <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a> information is already provided in existing <a href="#dfn-audio" class="internalDFN" data-link-type="dfn">audio</a>, no additional audio description is necessary.
+   </p></div>
    
-   <p>Also called "video description" and "descriptive narration."</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-53" aria-level="3"><span>Note</span></div><p class="">Also called "video description" and "descriptive narration."</p></div>
    
 </dd>
+
                 
                 <dt><dfn data-dfn-type="dfn" id="dfn-audio-only">audio-only</dfn></dt>
 <dd>
@@ -2628,11 +2632,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p>switch back and forth between two visual states in a way that is meant to draw attention</p>
    
-   <p>See also <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn">flash</a>. It is possible for something to be large enough and blink brightly enough at the
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-54" aria-level="3"><span>Note</span></div><p class="">See also <a href="#dfn-flashes" class="internalDFN" data-link-type="dfn">flash</a>. It is possible for something to be large enough and blink brightly enough at the
       right frequency to be also classified as a flash.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-blocks-of-text">blocks of text</dfn></dt>
 <dd>
@@ -2648,16 +2653,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       Apart"
    </p>
    
-   <p>CAPTCHA tests often involve asking the user to type in text that is displayed in an
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-55" aria-level="3"><span>Note</span></div><p class="">CAPTCHA tests often involve asking the user to type in text that is displayed in an
       obscured image or audio file.
-   </p>
+   </p></div>
    
-   <p>A Turing test is any system of tests designed to differentiate a human from a computer.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-56" aria-level="3"><span>Note</span></div><p class="">A Turing test is any system of tests designed to differentiate a human from a computer.
       It is named after famed computer scientist Alan Turing. The term was coined by researchers
       at Carnegie Mellon University. [<cite><a class="bibref" href="#bib-CAPTCHA">CAPTCHA</a></cite>]
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-captions">captions</dfn></dt>
 <dd>
@@ -2665,27 +2671,28 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p>synchronized visual and/or <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn">text alternative</a> for both speech and non-speech audio information needed to understand the media content
    </p>
    
-   <p>Captions are similar to dialogue-only subtitles except captions convey not only the
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-57" aria-level="3"><span>Note</span></div><p class="">Captions are similar to dialogue-only subtitles except captions convey not only the
       content of spoken dialogue, but also equivalents for non-dialogue audio information
       needed to understand the program content, including sound effects, music, laughter,
       speaker identification and location.
-   </p>
+   </p></div>
    
-   <p>Closed Captions are equivalents that can be turned on and off with some players.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-58" aria-level="3"><span>Note</span></div><p class="">Closed Captions are equivalents that can be turned on and off with some players.</p></div>
    
-   <p>Open Captions are any captions that cannot be turned off. For example, if the captions
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-59" aria-level="3"><span>Note</span></div><p class="">Open Captions are any captions that cannot be turned off. For example, if the captions
       are visual equivalent <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn">images of text</a> embedded in <a href="#dfn-video" class="internalDFN" data-link-type="dfn">video</a>.
-   </p>
+   </p></div>
    
-   <p>Captions should not obscure or obstruct relevant information in the video.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-60" aria-level="3"><span>Note</span></div><p class="">Captions should not obscure or obstruct relevant information in the video.</p></div>
    
-   <p>In some countries, captions are called subtitles.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-61" aria-level="3"><span>Note</span></div><p class="">In some countries, captions are called subtitles.</p></div>
    
-   <p><a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn">Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-62" aria-level="3"><span>Note</span></div><p class=""><a href="#dfn-audio-descriptions" class="internalDFN" data-link-type="dfn">Audio descriptions</a> can be, but do not need to be, captioned since they are descriptions of information
       that is already presented visually.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt class="new"><dfn data-lt="character keys|character key" data-dfn-type="dfn" id="dfn-character-keys">character key</dfn></dt>
 <dd class="new">
@@ -2722,17 +2729,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       
    </ol>
    
-   <p>A change of content is not always a change of context. Changes in content, such as
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-63" aria-level="3"><span>Note</span></div><p class="">A change of content is not always a change of context. Changes in content, such as
       an expanding outline, dynamic menu, or a tab control do not necessarily change the
       context, unless they also change one of the above (e.g., focus).
-   </p>
+   </p></div>
    
-   <p>Opening a new window, moving focus to a different component, going to a new page (including
+   <p class="example">Opening a new window, moving focus to a different component, going to a new page (including
       anything that would look to a user as if they had moved to a new page) or significantly
       re-arranging the content of a page are examples of changes of context.
    </p>
    
 </dd>
+
                 
                 <dt><dfn data-lt="conform|conformance" data-dfn-type="dfn" id="dfn-conform">conformance</dfn></dt>
 <dd>
@@ -3476,7 +3484,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <dd class="new">
   <p class="change">[new]</p>
   <p>a perceivable, programmatically determined section of content.</p>
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-46" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-64" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
 </dd>
 
 
@@ -3626,7 +3634,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-47" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-65" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
