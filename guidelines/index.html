@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 2037318681;--></p>
+  <p><!--_hyper: -1046519601;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -1250,7 +1250,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
      <li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
      <li>Word spacing to at least 0.16 times the font size.</li>
    </ul>
-  
+ 
+ <p>Exception: Human languages and scripts which do not make use of one or more of these text style properties in written text can conform using only the properties that are used.</p>
+ 
 </section>
 
 
@@ -1750,10 +1752,9 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    
    					
-   <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> that uses multipoint or path-based gestures for operation can be operated with a <a href="#dfn-single-pointer" class="internalDFN" data-link-type="dfn">single pointer</a>, unless a multipoint or path-based gesture is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>.</p>
+   <p>All <a href="#dfn-functionality" class="internalDFN" data-link-type="dfn">functionality</a> that uses multipoint or path-based gestures for operation can be operated with a <a href="#dfn-single-pointer" class="internalDFN" data-link-type="dfn">single pointer</a> without a path-based gesture, unless a multipoint or path-based gesture is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn">essential</a>.</p>
    					
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note</span></div><p class="">This requirement applies to web content that interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).
-   </p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-22" aria-level="5"><span>Note</span></div><p class="">This requirement applies to web content that interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).</p></div>
 	
 </section>
 
@@ -3709,13 +3710,11 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <dd class="new">
    					
    
-   					
-   <p>one point of contact with the screen</p>
-	<p>This is in contrast to multi-touch. A pointer can be any point of contact on the screen made by a mouse cursor, pen, touch (including multi-touch), or other pointing input device. This model makes it easier to write sites and applications that work well no matter what hardware the user has. For scenarios when device-specific handling is desired, the <a href="https://www.w3.org/TR/pointerevents/">Pointer Events</a> [<cite><a class="bibref" href="#bib-pointerevents">pointerevents</a></cite>] specification also defines properties for inspecting.
-
-   </p>
-   				
+   	
+   <p>Pointer input that operates with one point of contact with the screen, including single taps and clicks, double-taps and clicks, long presses, and path-based gestures</p>
+  				
 </dd>
+
 
                 
                 <dt><dfn data-dfn-type="dfn" id="dfn-specific-sensory-experience">specific sensory experience</dfn></dt>
