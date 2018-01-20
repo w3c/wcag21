@@ -90,7 +90,12 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	<style id="respec-mainstyle">/*****************************************************************
+    	
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -363,12 +368,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style>
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -282300990;--></p>
+  <p><!--_hyper: -1045282808;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -2011,7 +2011,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <div class="doclinks"><a href="https://www.w3.org/TR/WCAG21/quickref/#consistent-identification">How to Meet Consistent Identification</a> <span class="screenreader">|</span> <br><a href="../understanding/21/consistent-identification.html">Understanding Consistent Identification</a></div><p class="conformance-level">(Level AA)</p>
    
-   <p>Components that have the <a href="#dfn-same-functionality" class="internalDFN" data-link-type="dfn">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified consistently.
+   <p>Components that have the <a class="respec-offending-element" title="Linking error: not matching <dfn>">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified consistently.
    </p>
    
 </section>
@@ -3537,6 +3537,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       black and 1 for lightest white
    </p>
    
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-118" aria-level="3"><span>Note</span></div><div class="">
    <p>For the sRGB colorspace, the relative luminance of a color is defined as L = 0.2126
       * <strong>R</strong> + 0.7152 * <strong>G</strong> + 0.0722 * <strong>B</strong> where <strong>R</strong>, <strong>G</strong> and <strong>B</strong> are defined as:
    </p>
@@ -3569,25 +3570,28 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p>The "^" character is the exponentiation operator. (Formula taken from [<cite><a class="bibref" href="#bib-sRGB">sRGB</a></cite>] and
       [<cite><a class="bibref" href="#bib-IEC-4WD">IEC-4WD</a></cite>]).
    </p>
-   
-   <p>Almost all systems used today to view Web content assume sRGB encoding. Unless it
+
+  </div></div>
+  
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-119" aria-level="3"><span>Note</span></div><p class="">Almost all systems used today to view Web content assume sRGB encoding. Unless it
       is known that another color space will be used to process and display the content,
       authors should evaluate using sRGB colorspace. If using other color spaces, see <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast">Understanding Success Criterion 1.4.3</a>.
-   </p>
+   </p></div>
    
-   <p>If dithering occurs after delivery, then the source color value is used. For colors
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-120" aria-level="3"><span>Note</span></div><p class="">If dithering occurs after delivery, then the source color value is used. For colors
       that are dithered at the source, the average values of the colors that are dithered
       should be used (average R, average G, and average B).
-   </p>
+   </p></div>
    
-   <p>Tools are available that automatically do the calculations when testing contrast and
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-121" aria-level="3"><span>Note</span></div><p class="">Tools are available that automatically do the calculations when testing contrast and
       flash.
-   </p>
+   </p></div>
    
-   <p>A <a href="relative-luminance.xml">MathML version of the relative luminance definition</a> is available.
-   </p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-122" aria-level="3"><span>Note</span></div><p class="">A <a href="relative-luminance.xml">MathML version of the relative luminance definition</a> is available.
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-relied-upon">relied upon</dfn> (technologies that are)
 </dt>
@@ -3605,37 +3609,29 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       content
    </p>
    
-   <p>A number that indicates whether an image functions as a hyperlink, command button,
+   <p class="example">A number that indicates whether an image functions as a hyperlink, command button,
       or check box.
    </p>
    
 </dd>
 
-                <dt><dfn data-dfn-type="dfn" id="dfn-same-functionality">same functionality </dfn></dt>
-<dd>
-   
-   <p>same result when used</p>
-   
-   <p>A submit "search" button on one Web page and a "find" button on another Web page may
-      both have a field to enter a term and list topics in the Web site related to the term
-      submitted. In this case, they would have the same functionality but would not be labeled
-      consistently.
-   </p>
-   
-</dd>
+
+                404: Not Found
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-same-relative-order">same relative order</dfn></dt>
 <dd>
    
    <p>same position relative to other items</p>
    
-   <p>Items are considered to be in the same relative order even if other items are inserted
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-123" aria-level="3"><span>Note</span></div><p class="">Items are considered to be in the same relative order even if other items are inserted
       or removed from the original order. For example, expanding navigation menus may insert
       an additional level of detail or a secondary navigation section may be inserted into
       the reading order.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-lt="satisfies|satisfies a success criterion" data-dfn-type="dfn" id="dfn-satisfies">satisfies a success criterion</dfn></dt>
 <dd>
@@ -3651,11 +3647,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       or thoughts
    </p>
    
-   <p>A section may consist of one or more paragraphs and include graphics, tables, lists
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-124" aria-level="3"><span>Note</span></div><p class="">A section may consist of one or more paragraphs and include graphics, tables, lists
       and sub-sections.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-set-of-web-pages">set of web pages</dfn></dt>
 <dd>
@@ -3669,7 +3666,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-118" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-125" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
@@ -3688,11 +3685,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p>translation of one language, generally a spoken language, into a <a href="#dfn-sign-language" class="internalDFN" data-link-type="dfn">sign language</a></p>
    
-   <p>True sign languages are independent languages that are unrelated to the spoken language(s)
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-126" aria-level="3"><span>Note</span></div><p class="">True sign languages are independent languages that are unrelated to the spoken language(s)
       of the same country or region.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt class="new"><dfn data-dfn-type="dfn" id="dfn-single-pointer">single pointer</dfn></dt>
 <dd class="new">
@@ -3714,9 +3712,10 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       information or perform a function
    </p>
    
-   <p>Examples include a performance of a flute solo, works of visual art etc.</p>
+   <p class="example">Examples include a performance of a flute solo, works of visual art etc.</p>
    
 </dd>
+
                 
                 <dt class="new"><dfn data-lt="states|state" data-dfn-type="dfn" id="dfn-states">State</dfn></dt>
 <dd class="new">
@@ -3773,17 +3772,18 @@ sheets);</li>
    <p>additional <a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a> that illustrates or clarifies the primary content
    </p>
    
-   <p>An audio version of a <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn">Web page</a>.
+   <p class="example">An audio version of a <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn">Web page</a>.
    </p>
    
-   <p>An illustration of a complex <a href="#dfn-processes" class="internalDFN" data-link-type="dfn">process</a>.
+   <p class="example">An illustration of a complex <a href="#dfn-processes" class="internalDFN" data-link-type="dfn">process</a>.
    </p>
    
-   <p>A paragraph summarizing the major outcomes and recommendations made in a research
+   <p class="example">A paragraph summarizing the major outcomes and recommendations made in a research
       study.
    </p>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-synchronized-media">synchronized media</dfn></dt>
 <dd>
