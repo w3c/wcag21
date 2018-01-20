@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 1044488447;--></p>
+  <p><!--_hyper: -1075632332;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -907,7 +907,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       or sound.
    </p>
   
-  <p>For requirements related to color, refer to <a ref="#distinguishable" class="respec-offending-element" title="Linking error: not matching <dfn>">Guideline 1.4</a>.</p>
+  <p>For requirements related to color, refer to <a href="#distinguishable">Guideline 1.4</a>.</p>
    
 </section>
 
@@ -953,7 +953,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       action, prompting a response, or distinguishing a visual element.
    </p>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><p class="">This success criterion addresses color perception specifically. Other forms of perception are covered in <a ref="#adapable" class="respec-offending-element" title="Linking error: not matching <dfn>">Guideline 1.3</a> including programmatic access to color and other visual presentation coding.</p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-0" aria-level="5"><span>Note</span></div><p class="">This success criterion addresses color perception specifically. Other forms of perception are covered in <a ref="#adaptable" class="respec-offending-element" title="Linking error: not matching <dfn>">Guideline 1.3</a> including programmatic access to color and other visual presentation coding.</p></div>
   
 </section>
 
@@ -2011,7 +2011,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <div class="doclinks"><a href="https://www.w3.org/TR/WCAG21/quickref/#consistent-identification">How to Meet Consistent Identification</a> <span class="screenreader">|</span> <br><a href="../understanding/21/consistent-identification.html">Understanding Consistent Identification</a></div><p class="conformance-level">(Level AA)</p>
    
-   <p>Components that have the <a class="respec-offending-element" title="Linking error: not matching <dfn>">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified consistently.
+   <p>Components that have the <a href="#dfn-same-functionality" class="internalDFN" data-link-type="dfn">same functionality</a> within a <a href="#dfn-set-of-web-pages" class="internalDFN" data-link-type="dfn">set of Web pages</a> are identified consistently.
    </p>
    
 </section>
@@ -3616,7 +3616,18 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 </dd>
 
 
-                404: Not Found
+                <dt><dfn data-dfn-type="dfn" id="dfn-same-functionality">same functionality</dfn></dt>
+<dd>
+   
+   <p>same result when used</p>
+   
+   <p class="example">A submit "search" button on one Web page and a "find" button on another Web page may
+      both have a field to enter a term and list topics in the Web site related to the term
+      submitted. In this case, they would have the same functionality but would not be labeled
+      consistently.
+   </p>
+   
+</dd>
 
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-same-relative-order">same relative order</dfn></dt>
@@ -3959,16 +3970,17 @@ sheets);</li>
    
    <p>object in which the user agent presents content</p>
    
-   <p>The <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agent</a> presents content through one or more viewports. Viewports include windows, frames,
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-136" aria-level="3"><span>Note</span></div><p class="">The <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agent</a> presents content through one or more viewports. Viewports include windows, frames,
       loudspeakers, and virtual magnifying glasses. A viewport may contain another viewport
       (e.g., nested frames). Interface components created by the user agent such as prompts,
       menus, and alerts are not viewports.
-   </p>
+   </p></div>
    
-   <p>This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a> [<cite><a class="bibref" href="#bib-UAAG10">UAAG10</a></cite>].
-   </p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-137" aria-level="3"><span>Note</span></div><p class="">This definition is based on <a href="https://www.w3.org/TR/WAI-USERAGENT/glossary.html">User Agent Accessibility Guidelines 1.0 Glossary</a> [<cite><a class="bibref" href="#bib-UAAG10">UAAG10</a></cite>].
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-visually-customized">visually customized</dfn></dt>
 <dd>
@@ -3983,27 +3995,27 @@ sheets);</li>
    <p>a non-embedded resource obtained from a single URI using HTTP plus any other resources
       that are used in the rendering or intended to be rendered together with it by a <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agent</a></p>
    
-   <p>Although any "other resources" would be rendered together with the primary resource,
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-138" aria-level="3"><span>Note</span></div><p class="">Although any "other resources" would be rendered together with the primary resource,
       they would not necessarily be rendered simultaneously with each other.
-   </p>
+   </p></div>
    
-   <p>For the purposes of conformance with these guidelines, a resource must be "non-embedded"
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-139" aria-level="3"><span>Note</span></div><p class="">For the purposes of conformance with these guidelines, a resource must be "non-embedded"
       within the scope of conformance to be considered a Web page.
-   </p>
+   </p></div>
    
-   <p>A Web resource including all embedded images and media.</p>
+   <p class="example">A Web resource including all embedded images and media.</p>
    
-   <p>A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
+   <p class="example">A Web mail program built using Asynchronous JavaScript and XML (AJAX). The program
       lives entirely at http://example.com/mail, but includes an inbox, a contacts area
       and a calendar. Links or buttons are provided that cause the inbox, contacts, or calendar
       to display, but do not change the URI of the page as a whole.
    </p>
    
-   <p>A customizable portal site, where users can choose content to display from a set of
+   <p class="example">A customizable portal site, where users can choose content to display from a set of
       different content modules.
    </p>
    
-   <p>When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
+   <p class="example">When you enter "http://shopping.example.com/" in your browser, you enter a movie-like
       interactive shopping environment where you visually move around in a store dragging
       products off of the shelves around you and into a visual shopping cart in front of
       you. Clicking on a product causes it to be demonstrated with a specification sheet
@@ -4012,6 +4024,7 @@ sheets);</li>
    </p>
    
 </dd>
+
 
             </dl>
         </section>
