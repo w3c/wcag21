@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 51729757;--></p>
+  <p><!--_hyper: -559349240;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -1200,12 +1200,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    					
    
    					
-   <p>Content can be presented at a width equivalent to 320 CSS pixels without loss of information or functionality, and without requiring scrolling in two dimensions, except for parts of the content that require two-dimensional layout for usage or meaning.</p>
+   <p>Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:</p>
+   <ul>
+       <li>Vertical scrolling content at a width equivalent to 320 CSS pixels;</li>
+       <li>Horizontal scrolling content at a height equivalent to 256 CSS pixels;</li>
+   </ul>
+   <p>Except for parts of the content which require two-dimensional layout for usage or meaning.</p>
   
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. 
-     For web pages that are designed to scroll horizontally, the 320px should be taken as the height rather than width.</p></div>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-5" aria-level="5"><span>Note</span></div><p class="">Note: 320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which are designed to scroll horizontally (e.g. with vertical text), the 256 CSS pixels is equivalent to a starting viewport height of 1024px at 400% zoom.</p></div>
    
-   <div class="note"><div role="heading" class="note-title marker" id="h-note-6" aria-level="5"><span>Note</span></div><p class="">Examples of content that require two-dimensional layout are images, maps, diagrams, 
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-6" aria-level="5"><span>Note</span></div><p class="">Examples of content which require two-dimensional layout are images, maps, diagrams, 
      video, games, presentations, data tables, and interfaces where it is necessary to keep toolbars in view while
      manipulating content.</p></div>
    				
