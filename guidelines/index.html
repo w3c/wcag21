@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -278509479;--></p>
+  <p><!--_hyper: 1167208684;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -3142,24 +3142,25 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p>interface used by software to obtain keystroke input</p>
    
-   <p>A keyboard interface allows users to provide keystroke input to programs even if the
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-90" aria-level="3"><span>Note</span></div><p class="">A keyboard interface allows users to provide keystroke input to programs even if the
       native technology does not contain a keyboard.
-   </p>
+   </p></div>
    
-   <p>A touchscreen PDA has a keyboard interface built into its operating system as well
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-91" aria-level="3"><span>Note</span></div><p class="">A touchscreen PDA has a keyboard interface built into its operating system as well
       as a connector for external keyboards. Applications on the PDA can use the interface
       to obtain keyboard input either from an external keyboard or from other applications
       that provide simulated keyboard output, such as handwriting interpreters or speech-to-text
       applications with "keyboard emulation" functionality.
-   </p>
+   </p></div>
    
-   <p>Operation of the application (or parts of the application) through a keyboard-operated
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-92" aria-level="3"><span>Note</span></div><p class="">Operation of the application (or parts of the application) through a keyboard-operated
       mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
       interface because operation of the program is through its pointing device interface,
       not through its keyboard interface.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt class="new"><dfn data-lt="keyboard shortcuts|keyboard shortcut" data-dfn-type="dfn" id="dfn-keyboard-shortcuts">keyboard shortcut</dfn></dt>
 <dd class="new">
@@ -3176,13 +3177,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p><a href="#dfn-text" class="internalDFN" data-link-type="dfn">text</a> or other component with a <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn">text alternative</a> that is presented to a user to identify a component within Web <a href="#dfn-content" class="internalDFN" data-link-type="dfn">content</a></p>
    
-   <p>A label is presented to all users whereas the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-93" aria-level="3"><span>Note</span></div><p class="">A label is presented to all users whereas the <a href="#dfn-name" class="internalDFN" data-link-type="dfn">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
       the name and the label are the same.
-   </p>
+   </p></div>
    
-   <p>The term label is not limited to the label element in HTML.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-94" aria-level="3"><span>Note</span></div><p class="">The term label is not limited to the label element in HTML.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-lt="large-scale|large scale" data-dfn-type="dfn" id="dfn-large-scale">large scale</dfn> (text)
 </dt>
@@ -3192,16 +3194,16 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       for Chinese, Japanese and Korean (CJK) fonts
    </p>
    
-   <p>Fonts with extraordinarily thin strokes or unusual features and characteristics that
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-95" aria-level="3"><span>Note</span></div><p class="">Fonts with extraordinarily thin strokes or unusual features and characteristics that
       reduce the familiarity of their letter forms are harder to read, especially at lower
       contrast levels.
-   </p>
+   </p></div>
    
-   <p>Font size is the size when the content is delivered. It does not include resizing
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-96" aria-level="3"><span>Note</span></div><p class="">Font size is the size when the content is delivered. It does not include resizing
       that may be done by a user.
-   </p>
+   </p></div>
    
-   <p>The actual size of the character that a user sees is dependent both on the author-defined
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-97" aria-level="3"><span>Note</span></div><p class="">The actual size of the character that a user sees is dependent both on the author-defined
       size and the user's display or user-agent settings. For many mainstream body text
       fonts, 14 and 18 point is roughly equivalent to 1.2 and 1.5 em or to 120% or 150%
       of the default size for body text (assuming that the body font is 100%), but authors
@@ -3210,33 +3212,35 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       The point size should be obtained from the user agent, or calculated based on font
       metrics as the user agent does, when evaluating this success criterion. Users who
       have low vision would be responsible for choosing appropriate settings.
-   </p>
+   </p></div>
    
-   <p>When using text without specifying the font size, the smallest font size used on major
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-98" aria-level="3"><span>Note</span></div><p class="">When using text without specifying the font size, the smallest font size used on major
       browsers for unspecified text would be a reasonable size to assume for the font. If
       a level 1 heading is rendered in 14pt bold or higher on major browsers, then it would
       be reasonable to assume it is large text. Relative scaling can be calculated from
       the default sizes in a similar fashion.
-   </p>
+   </p></div>
    
-   <p>The 18 and 14 point sizes for roman texts are taken from the minimum size for large
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-99" aria-level="3"><span>Note</span></div><p class="">The 18 and 14 point sizes for roman texts are taken from the minimum size for large
       print (14pt) and the larger standard font size (18pt). For other fonts such as CJK
       languages, the "equivalent" sizes would be the minimum large print size used for those
       languages and the next larger standard large print size.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-legal-commitments">legal commitments</dfn></dt>
 <dd>
    
    <p>transactions where the person incurs a legally binding obligation or benefit</p>
    
-   <p>A marriage license, a stock trade (financial and legal), a will, a loan, adoption,
+   <p class="example">A marriage license, a stock trade (financial and legal), a will, a loan, adoption,
       signing up for the army, a contract of any type, etc.
    </p>
    
 </dd>
+
 
                 <dt><dfn data-lt="purpose of each link|link purpose" data-dfn-type="dfn" id="dfn-purpose-of-each-link">link purpose</dfn></dt>
 <dd>
@@ -3252,14 +3256,15 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       no more than a broadcast delay
    </p>
    
-   <p>A broadcast delay is a short (usually automated) delay, for example used in order
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-100" aria-level="3"><span>Note</span></div><p class="">A broadcast delay is a short (usually automated) delay, for example used in order
       to give the broadcaster time to cue or censor the audio (or video) feed, but not sufficient
       to allow significant editing.
-   </p>
+   </p></div>
    
-   <p>If information is completely computer generated, it is not live.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-101" aria-level="3"><span>Note</span></div><p class="">If information is completely computer generated, it is not live.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-lower-secondary-education-level">lower secondary education level</dfn></dt>
 <dd>
@@ -3267,11 +3272,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p>the two or three year period of education that begins after completion of six years
       of school and ends nine years after the beginning of <a href="#dfn-primary-education" class="internalDFN" data-link-type="dfn">primary education</a></p>
    
-   <p>This definition is based on the International Standard Classification of Education
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-102" aria-level="3"><span>Note</span></div><p class="">This definition is based on the International Standard Classification of Education
       [<cite><a class="bibref" href="#bib-UNESCO">UNESCO</a></cite>].
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-mechanism">mechanism</dfn></dt>
 <dd>
@@ -3279,12 +3285,13 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p><a href="#dfn-processes" class="internalDFN" data-link-type="dfn">process</a> or technique for achieving a result
    </p>
    
-   <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a>.
-   </p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-103" aria-level="3"><span>Note</span></div><p class="">The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a>.
+   </p></div>
    
-   <p>The mechanism needs to meet all success criteria for the conformance level claimed.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-104" aria-level="3"><span>Note</span></div><p class="">The mechanism needs to meet all success criteria for the conformance level claimed.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-media-alternative-for-text">media alternative for text</dfn></dt>
 <dd>
@@ -3293,25 +3300,27 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       or via text alternatives)
    </p>
    
-   <p>A media alternative for text is provided for those who benefit from alternate representations
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-105" aria-level="3"><span>Note</span></div><p class="">A media alternative for text is provided for those who benefit from alternate representations
       of text. Media alternatives for text may be audio-only, video-only (including sign-language
       video), or audio-video.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-name">name</dfn></dt>
 <dd>
    
    <p>text by which software can identify a component within Web content to the user</p>
    
-   <p>The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">label</a> is presented to all users. In many (but not all) cases, the label and the name are
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-106" aria-level="3"><span>Note</span></div><p class="">The name may be hidden and only exposed by assistive technology, whereas a <a href="#dfn-labels" class="internalDFN" data-link-type="dfn">label</a> is presented to all users. In many (but not all) cases, the label and the name are
       the same.
-   </p>
+   </p></div>
    
-   <p>This is unrelated to the name attribute in HTML.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-107" aria-level="3"><span>Note</span></div><p class="">This is unrelated to the name attribute in HTML.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-navigated-sequentially">navigated sequentially</dfn></dt>
 <dd>
@@ -3499,7 +3508,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 <dd class="new">
   <p class="change">[new]</p>
   <p>a perceivable, programmatically determined section of content.</p>
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-90" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-108" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
 </dd>
 
 
@@ -3649,7 +3658,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-91" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-109" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
