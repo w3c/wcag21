@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: 2010075146;--></p>
+  <p><!--_hyper: -585583559;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -3812,21 +3812,22 @@ sheets);</li>
    
    <p><a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn">mechanism</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agents</a></p>
    
-   <p>As used in these guidelines "Web Technology" and the word "technology" (when used
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-127" aria-level="3"><span>Note</span></div><p class="">As used in these guidelines "Web Technology" and the word "technology" (when used
       alone) both refer to Web Content Technologies.
-   </p>
+   </p></div>
    
-   <p>Web content technologies may include markup languages, data formats, or programming
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-128" aria-level="3"><span>Note</span></div><p class="">Web content technologies may include markup languages, data formats, or programming
       languages that authors may use alone or in combination to create end-user experiences
       that range from static Web pages to synchronized media presentations to dynamic Web
       applications.
-   </p>
+   </p></div>
    
-   <p>Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-129" aria-level="3"><span>Note</span></div><p class="">Some common examples of Web content technologies include HTML, CSS, SVG, PNG, PDF,
       Flash, and JavaScript.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-text">text</dfn></dt>
 <dd>
@@ -3843,14 +3844,15 @@ sheets);</li>
       from the non-text content.
    </p>
    
-   <p>An image of a chart is described in text in the paragraph after the chart. The short
+   <p class="example">An image of a chart is described in text in the paragraph after the chart. The short
       text alternative for the chart indicates that a description follows.
    </p>
    
-   <p>Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Text Alternatives</a> for more information.
-   </p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-130" aria-level="3"><span>Note</span></div><p class="">Refer to <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance">Understanding Text Alternatives</a> for more information.
+   </p></div>
    
 </dd>
+
 
                 <dt class="new"><dfn data-dfn-type="dfn" id="dfn-up-event">up-event</dfn></dt>
 <dd class="new">
@@ -3867,34 +3869,37 @@ sheets);</li>
       in order to understand the content correctly
    </p>
    
-   <p>The term "gig" means something different if it occurs in a discussion of music concerts
+   <p class="example">The term "gig" means something different if it occurs in a discussion of music concerts
       than it does in article about computer hard drive space, but the appropriate definition
       can be determined from context. By contrast, the word "text" is used in a very specific
       way in WCAG 2.1, so a definition is supplied in the glossary.
    </p>
    
 </dd>
+
                 
                 <dt><dfn data-lt="user agents|user agent" data-dfn-type="dfn" id="dfn-user-agents">user agent</dfn></dt>
 <dd>
    
    <p>any software that retrieves and presents Web content for users</p>
    
-   <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+   <p class="example">Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
    </p>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-user-controllable">user-controllable</dfn></dt>
 <dd>
    
    <p>data that is intended to be accessed by users</p>
    
-   <p>This does not refer to such things as Internet logs and search engine monitoring data.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-131" aria-level="3"><span>Note</span></div><p class="">This does not refer to such things as Internet logs and search engine monitoring data.</p></div>
    
-   <p>Name and address fields for a user's account.</p>
+   <p class="example">Name and address fields for a user's account.</p>
    
 </dd>
+
 
                 <dt><dfn data-lt="user interface components|user interface component" data-dfn-type="dfn" id="dfn-user-interface-components">user interface component</dfn></dt>
 <dd>
@@ -3903,25 +3908,26 @@ sheets);</li>
       function
    </p>
    
-   <p>Multiple user interface components may be implemented as a single programmatic element.
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-132" aria-level="3"><span>Note</span></div><p class="">Multiple user interface components may be implemented as a single programmatic element.
       Components here is not tied to programming techniques, but rather to what the user
       perceives as separate controls.
-   </p>
+   </p></div>
    
-   <p>User interface components include form elements and links as well as components generated
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-133" aria-level="3"><span>Note</span></div><p class="">User interface components include form elements and links as well as components generated
       by scripts.
-   </p>
+   </p></div>
    
-   <p>What is meant by "component" or "user interface component" here is also sometimes
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-134" aria-level="3"><span>Note</span></div><p class="">What is meant by "component" or "user interface component" here is also sometimes
       called "user interface element".
-   </p>
+   </p></div>
    
-   <p>An applet has a "control" that can be used to move through content by line or page
+   <p class="example">An applet has a "control" that can be used to move through content by line or page
       or random access. Since each of these would need to have a name and be settable independently,
       they would each be a "user interface component."
    </p>
    
 </dd>
+
             	
             	<dt class="new"><dfn data-dfn-type="dfn" id="dfn-user-inactivity">user inactivity</dfn></dt>
 <dd class="new">
@@ -3935,9 +3941,10 @@ sheets);</li>
    
    <p>the technology of moving or sequenced pictures or images</p>
    
-   <p>Video can be made up of animated or photographic images, or both.</p>
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-135" aria-level="3"><span>Note</span></div><p class="">Video can be made up of animated or photographic images, or both.</p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-video-only">video-only</dfn></dt>
 <dd>
