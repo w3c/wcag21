@@ -90,12 +90,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -368,7 +363,12 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 .hljs-strong {
   font-weight: bold;
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -502,7 +502,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
     <p>
       <a class="logo" href="https://www.w3.org/"><img width="72" height="48" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C"></a>
     </p>
-  <p><!--_hyper: -28567306;--></p>
+  <p><!--_hyper: 1737508106;--></p>
   <h1 class="title p-name" id="title" property="dcterms:title">Web Content Accessibility Guidelines (WCAG) 2.1</h1>
   <h2 id="w3c-editor-s-draft-20-january-2018"><abbr title="World Wide Web Consortium">W3C</abbr> Editor's Draft <time property="dcterms:issued" class="dt-published" datetime="2018-01-20">20 January 2018</time><span class="permalink" typeof="bookmark"><a href="#undefined" aria-label="Permalink for W3C Editor's Draft 20 January 2018" title="Permalink for W3C Editor's Draft 20 January 2018" property="url"><span property="title" content="W3C Editor's Draft 20 January 2018">§</span></a></span></h2>
   <dl>
@@ -3410,27 +3410,29 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       any previous education
    </p>
    
-   <p>This definition is based on the International Standard Classification of Education
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-112" aria-level="3"><span>Note</span></div><p class="">This definition is based on the International Standard Classification of Education
       [<cite><a class="bibref" href="#bib-UNESCO">UNESCO</a></cite>].
-   </p>
+   </p></div>
    
 </dd>
+
                 
                 <dt><dfn data-lt="processes|process" data-dfn-type="dfn" id="dfn-processes">process</dfn></dt>
 <dd>
    
    <p>series of user actions where each action is required in order to complete an activity</p>
    
-   <p>Successful use of a series of Web pages on a shopping site requires users to view
+   <p class="example">Successful use of a series of Web pages on a shopping site requires users to view
       alternative products, prices and offers, select products, submit an order, provide
       shipping information and provide payment information.
    </p>
    
-   <p>An account registration page requires successful completion of a Turing test before
+   <p class="example">An account registration page requires successful completion of a Turing test before
       the registration form can be accessed.
    </p>
    
 </dd>
+
 
                 <dt><dfn data-lt="programmatically determinable|programmatically determined" data-dfn-type="dfn" id="dfn-programmatically-determinable">programmatically determined</dfn> (programmatically determinable)
 </dt>
@@ -3440,16 +3442,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn">assistive technologies</a>, can extract and present this information to users in different modalities
    </p>
    
-   <p>Determined in a markup language from elements and attributes that are accessed directly
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-113" aria-level="3"><span>Note</span></div><p class="">Determined in a markup language from elements and attributes that are accessed directly
       by commonly available assistive technology.
-   </p>
+   </p></div>
    
-   <p>Determined from technology-specific data structures in a non-markup language and exposed
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-114" aria-level="3"><span>Note</span></div><p class="">Determined from technology-specific data structures in a non-markup language and exposed
       to assistive technology via an accessibility API that is supported by commonly available
       assistive technology.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-programmatically-determined-link-context">programmatically determined link context</dfn></dt>
 <dd>
@@ -3457,16 +3460,17 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    <p>additional information that can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn">programmatically determined</a> from <a href="#dfn-relationships" class="internalDFN" data-link-type="dfn">relationships</a> with a link, combined with the link text, and presented to users in different modalities
    </p>
    
-   <p>In HTML, information that is programmatically determinable from a link in English
+   <p class="example">In HTML, information that is programmatically determinable from a link in English
       includes text that is in the same paragraph, list, or table cell as the link or in
       a table header cell that is associated with the table cell that contains the link.
    </p>
    
-   <p>Since screen readers interpret punctuation, they can also provide the context from
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-115" aria-level="3"><span>Note</span></div><p class="">Since screen readers interpret punctuation, they can also provide the context from
       the current sentence, when the focus is on a link in that sentence.
-   </p>
+   </p></div>
    
 </dd>
+
 
                 <dt><dfn data-dfn-type="dfn" id="dfn-programmatically-set">programmatically set</dfn></dt>
 <dd>
@@ -3482,13 +3486,14 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
    
    <p>serving only an aesthetic purpose, providing no information, and having no functionality</p>
    
-   <p>Text is only purely decorative if the words can be rearranged or substituted without
+   <div class="note"><div role="heading" class="note-title marker" id="h-note-116" aria-level="3"><span>Note</span></div><p class="">Text is only purely decorative if the words can be rearranged or substituted without
       changing their purpose.
-   </p>
+   </p></div>
    
-   <p>The cover page of a dictionary has random words in very light text in the background.</p>
+   <p class="example">The cover page of a dictionary has random words in very light text in the background.</p>
    
 </dd>
+
                 
                 <dt><dfn data-lt="real-time events|real-time event" data-dfn-type="dfn" id="dfn-real-time-events">real-time event</dfn></dt>
 <dd>
@@ -3497,23 +3502,24 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       by the content
    </p>
    
-   <p>A Webcast of a live performance (occurs at the same time as the viewing and is not
+   <p class="example">A Webcast of a live performance (occurs at the same time as the viewing and is not
       prerecorded).
    </p>
    
-   <p>An on-line auction with people bidding (occurs at the same time as the viewing).</p>
+   <p class="example">An on-line auction with people bidding (occurs at the same time as the viewing).</p>
    
-   <p>Live humans interacting in a virtual world using avatars (is not completely generated
+   <p class="example">Live humans interacting in a virtual world using avatars (is not completely generated
       by the content and occurs at the same time as the viewing).
    </p>
    
 </dd>
 
+
                 <dt class="new"><dfn data-lt="regions|region" data-dfn-type="dfn" id="dfn-regions">region</dfn></dt>
 <dd class="new">
   <p class="change">[new]</p>
   <p>a perceivable, programmatically determined section of content.</p>
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-112" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-117" aria-level="3"><span>Note</span></div><p class="">Note: In HTML, any area designated with a landmark role would be a region.</p></div>
 </dd>
 
 
@@ -3663,7 +3669,7 @@ github.com style (c) Vasily Polovnyov <vast@whiteants.net>
       full set of pages.
    </p>
 
-  <div class="note"><div role="heading" class="note-title marker" id="h-note-113" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-118" aria-level="3"><span>Note</span></div><p class="">Different language versions would be considered different sets of Web pages.</p></div>
    
 </dd>
 
