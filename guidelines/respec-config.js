@@ -12,7 +12,7 @@ var respecConfig = {
 	crEnd:                "2018-03-30",
 	implementationReportURI: "https://www.w3.org/WAI/WCAG21/implementation-report/",
 	//perEnd:               "2013-07-23",
-	publishDate:          "2018-01-25",
+	publishDate:          "2018-01-30",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
