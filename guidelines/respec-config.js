@@ -26,7 +26,7 @@ var respecConfig = {
 	
 	// if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
 	// and its maturity status
-	previousPublishDate:  "2018-12-07",
+	previousPublishDate:  "2017-12-07",
 	previousMaturity:  "WD",
 	prevRecURI: "https://www.w3.org/TR/WCAG20/",
 	//previousDiffURI: "https://www.w3.org/TR/2014/REC-wai-aria-20140320/",
