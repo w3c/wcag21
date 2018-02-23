@@ -14,12 +14,16 @@
 		</section>
 		<section class="applicability">
 			<h2>When to Use</h2>
-			<p class="instructions">Describe the situations in which to use the technique, such as types of pages, features in use that might use the technique, etc.</p>
+			<p class="instructions">This technique relates to:
+				<ul>
+					<li>Success Criterion 3.2.6 Status Changes</li>
+				</ul>
+			</p>
 		</section>
 		<section class="description">
 			<h2>Description</h2>
 			<p class="instructions">
-				The purpose of this technique is to notify Assistive Technologies (AT) when content has been updated with  information about the user's or application's status. The aria role of status has an implicit aria-live value of polite, which allows a user to be notified via AT (such as a screen reader)  when status messages are added. The role of status also has an aria-atomic value of true, so that updates to the region marked with a role of status will result in the AT presenting the entire contents of the region to the user, including any author-defined label. The content within the aria-live region is automatically read by the AT, without the AT having to focus on the place where the text is displayed. See <a href="https://www.w3.org/TR/wai-aria-1.1/#status">WAI-ARIA 1.1 status (role)</a> for more details.
+				The purpose of this technique is to notify Assistive Technologies (AT) when content has been updated with information about the user's or application's status. The aria live region role of status has an implicit aria-live value of polite, which allows a user to be notified via AT (such as a screen reader)  when status messages are added. The role of status also has an aria-atomic value of true, so that updates to the region marked with a role of status will result in the AT presenting the entire contents of the region to the user, including any author-defined label. The content within the aria-live region is automatically read by the AT, without the AT having to focus on the place where the text is displayed. See <a href="https://www.w3.org/TR/wai-aria-1.1/#status">WAI-ARIA 1.1 status (role)</a> for more details.
 
 </p>
 
@@ -28,9 +32,25 @@
 			<h2>Examples</h2>
 			<p class="instructions">Copy the following section for each example. Examples must have a title and a description, and usually have a code sample. Code samples should be elided if necessary to show the core of the technique without necessarily providing all the surrounding code that would also be involved. A working example link references a location where the technique can be shown working live.</p>
 			<section class="example">
-				<h3>Example Title</h3>
-				<p>Description</p>
-				<code>Code sample</code>
+				<h3>Including a search results message</h3>
+				<p>After a user presses a Search button, the page content is updated to include the results of the search, which are displayed in a section below the Search button. The change to content also includes the message "5 results returned" near the top of this new content. This text is given an appropriate role for a status message. A screen reader will announce "Five results returned".</p>
+				<div class="code">
+					<pre>
+						<code><p role="status">5 results returned.</p></code>
+					</pre>
+				</div>
+				<p>Working example: link</p>
+			</section>
+			<section class="example">
+				<h3>Updating the shopping cart status</h3>
+				<p>After a user presses an Add to Shopping Cart button, a section of content near the Shopping Cart icon updates the text to read "6 items". The div containing this text is marked with the role of status. Because the shopping cart icon adds visual context, a label is added with aria. A screen reader will announce "Shopping cart, six items".</p>
+				<div class="code">
+					<pre>
+						<code>
+							<div class="total-items" id="cart-items" role="status" aria-label="shopping cart">6 items</div>
+						</code>
+					</pre>
+				</div>
 				<p>Working example: link</p>
 			</section>
 		</section>
@@ -39,13 +59,14 @@
 			<section class="test-procedure">
 				<h3>Procedure</h3>
 				<ol>
-					<li>Step 1</li>
+					<li>Determine if text that meets the definition of a status message appears on the page.</li>
+					<li>Determine if the container for the text is given a role of "status".</li>
 				</ol>
 			</section>
 			<section class="test-results">
 				<h3>Expected Results</h3>
 				<ul>
-					<li>Result</li>
+					<li>If #1 is true, then #2 is true.</li>
 				</ul>
 			</section>
 		</section>
