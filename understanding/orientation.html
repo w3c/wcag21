@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Understanding Success Criterion 2.6.2: Orientation</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="http://www.w3.org/StyleSheets/TR/2016/base"/>
+      <link rel="stylesheet" type="text/css" href="understanding.css"/>
+   </head>
+   <body>
+      <nav>
+         <ul id="navigation">
+            <li>
+               <a href="." title="Table of Contents">Contents</a>
+            </li>
+            <li>
+               <a href="additional-sensor-inputs.html">
+                  <abbr title="Guideline">GL</abbr>: Additional sensor inputs</a>
+            </li>
+            <li>
+               <a href="motion-actuation.html">Previous <abbr title="Success Criterion">SC</abbr>: Motion Actuation</a>
+            </li>
+            <li>
+               <a href="language-of-page.html">Next <abbr title="Success Criterion">SC</abbr>: Language of Page</a>
+            </li>
+         </ul>
+      </nav>
+      <h1>Understanding Success Criterion 2.6.2: Orientation</h1>
+      <blockquote class="scquote">
+         <p>Content does not restrict its view and operation to a single display orientation, such as portrait or landscape, unless a specific display orientation is <a>essential</a>.</p>
+         <p class="note">Examples where a particular display orientation may be essential are a bank check, a piano application, slides for a projector or television, or virtual reality content where binary display orientation is not applicable.</p>
+      </blockquote>
+      <main>
+         <section>
+            <h2>Intent of Success Criterion 2.6.2: Orientation</h2>
+            <p>The intent of this Success Criterion is to ensure that all content and functionality is available regardless of the display orientation (portrait or landscape).  Some websites and applications automatically set the screen to a particular display orientation and expect
+			that users will respond by rotating their device to match. However, some users have their devices mounted
+			in a fixed orientation (e.g. on the arm of a power wheelchair). Therefore, websites and applications need to support both orientations
+			by making sure content and functionality is available in each orientation. While the order of content and method of functionality
+			may have differences the content and functionality is available. When a particular orientation is essential, the user
+			needs to be advised of the orientation requirements.</p>
+         </section>
+         <section>
+            <h2>Benefits of Success Criterion 2.6.2: Orientation</h2>
+            <ul>
+					          <li>Users with dexterity impairments, who have a mounted device will be able to use the content in their fixed orientation.</li>
+				        </ul>
+         </section>
+         <section>
+            <h2>Examples of Success Criterion 2.6.2: Orientation</h2>
+            <ul>
+				           <li>
+                  <strong>Example 1: Online video site</strong>
+                  <br/>
+				Videos are not locked to a specific orientation.  A user can start a video with their device in a portrait orientation resulting in a smaller video being displayed and then rotate the device to landscape and have the video expand to fill the entire screen.  All controls and functionality are still available in the landscape orientation.</li>
+				           <li>
+                  <strong>Example 2: Messaging website</strong>
+                  <br/>
+				A messaging website can display messages in both portrait and landscape orientations without a loss of content or functionality. </li>
+				           <li>
+                  <strong>Example 3: eReader web app</strong>
+                  <br/>
+				An eReader web app can display the contents of a book in both portrait and landscape mode without a loss of content or functionality</li>
+				           <li>
+                  <strong>Example 4: Check deposit in banking app</strong>
+                  <br/>
+				An example where orientation is essential could be a banking app that requires the device be in landscape mode to easily and accurately capture an image of a check for deposit.</li>
+				           <li>
+                  <strong>Example 5: Piano app</strong>
+                  <br/>
+				An example where orientation is essential could be a piano app that requires the device to be in landscape mode to allow enough room for all of the piano keys to be accessible and usable.</li>
+			         </ul>
+            <section class="example"/>
+         </section>
+         <section>
+            <h2>Resources Success Criterion 2.6.2: Orientation</h2>
+            <ul>
+				           <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation">Managing Screen Orientation</a>
+               </li>
+				           <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">Using Media Queries</a>
+               </li>
+				           <li>
+                  <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">Media Queries for Standard Devices</a>
+               </li>
+				           <li>
+                  <a href="https://css-tricks.com/snippets/css/orientation-lock/">Orientation Lock</a>
+               </li>
+				           <li>
+                  <a href="https://css-tricks.com/forums/topic/responsive-design-for-landscape-orientation/">Responsive Design for Landscape Orientation</a>
+               </li>
+				           <li>
+                  <a href="https://www.w3.org/TR/css-device-adapt-1/#orientation-desc">The Orientation Descriptor</a>
+               </li>
+				           <li>
+                  <a href="https://www.w3.org/TR/screen-orientation/">The Screen Orientation API</a>
+               </li>
+			         </ul>
+         </section>
+         <section>
+            <h2>Techniques for Success Criterion 2.6.2: Orientation</h2>
+            <div>
+				           <p>Each numbered item in this section represents a technique or combination of techniques that the <acronym title="Web Content Accessibility Guidelines">WCAG</acronym> Working Group deems sufficient for meeting this Success Criterion. However, it is not necessary to use these particular techniques. For information on using other techniques, see <a href="http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20161007/understanding-techniques.html">Understanding Techniques for WCAG Success Criteria</a>, particularly the "Other Techniques" section. </p>
+			         </div>
+            <section>
+               <h3>Sufficient Techniques</h3>
+               <ul>
+					             <li>Using CSS to set the orientation to allow both landscape and portrait.</li>
+					             <li>Use of show/hide controls to allow access to content in different orientations.</li>
+				           </ul>
+            </section>
+            <section>
+               <h3>Failures</h3>
+               <ul>
+					             <li>Locking the orientation.</li>
+					             <li>Functionality that is only available in one orientation.</li>
+				           </ul>
+            </section>
+         </section>
+      </main>
+   </body>
+</html>

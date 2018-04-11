@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Understanding Success Criterion 2.4.12: Label in Name</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="http://www.w3.org/StyleSheets/TR/2016/base"/>
+      <link rel="stylesheet" type="text/css" href="understanding.css"/>
+   </head>
+   <body>
+      <nav>
+         <ul id="navigation">
+            <li>
+               <a href="." title="Table of Contents">Contents</a>
+            </li>
+            <li>
+               <a href="navigable.html">
+                  <abbr title="Guideline">GL</abbr>: Navigable</a>
+            </li>
+            <li>
+               <a href="character-key-shortcuts.html">Previous <abbr title="Success Criterion">SC</abbr>: Character Key Shortcuts</a>
+            </li>
+            <li>
+               <a href="pointer-gestures.html">Next <abbr title="Success Criterion">SC</abbr>: Pointer Gestures</a>
+            </li>
+         </ul>
+      </nav>
+      <h1>Understanding Success Criterion 2.4.12: Label in Name</h1>
+      <blockquote class="scquote">
+         <p>For <a>user interface components</a> with <a>labels</a> that include <a>text</a> or <a>images of text</a>, the <a>name</a> contains the text that is presented visually.</p>
+         <p class="note">A best practice is to have  the text of the label at the start of the name.</p>
+      </blockquote>
+      <main>
+         <section>
+            <h2>Intent of Success Criterion 2.4.12: Label in Name</h2>
+            <p>Webpages often have visible text labels. Visible text labels also have Accessible Names. Some types of users have a much better experience if visible text labels match Accessible Names.</p>
+            <p>Speech input users can navigate webpages by speaking the visible text labels of menus, links and button labels that appear on a webpage. It’s confusing to speech input users when they say a visible text label they see and the command does not work because the accessible name is enabled  as a command but does not match the visible label.</p>
+            <p>An Accessible Name that is different from the visible label acts like a hidden command for speech input users.</p>
+            <p>Text-to-speech users will also have a better experience if the text they hear matches the text they see on the screen.</p>
+            <p>This issue is even more important for Speech input and text-to-speech users who also have cognitive challenges. Remembering a speech command that does not match a visible label increases cognitive load. Parsing text output that does not match the visible label also increases cognitive load.</p>
+            <p>Note that if an icon has no accompanying text its visible label is its hover text.</p>
+         </section>
+         <section>
+            <h2>Benefits of Success Criterion 2.4.12: Label in Name</h2>
+            <ul>
+					          <li>Speech input users can directly activate controls on a page with fewer surprising changes of focus.</li>
+					          <li>Text-to-speech users will have a better experience because the labels that they hear match the visible text labels labels that they see on the screen.</li>
+				        </ul>
+         </section>
+         <section>
+            <h2>Examples of Success Criterion 2.4.12: Label in Name</h2>
+            <ul>
+				           <li>
+                  <strong>Accessible matches Visible</strong> The visible and accessible name of a label match.</li>
+				           <li>
+                  <strong>Accessible starts with Visible</strong> The acessible label of the Buy Now button begins with the visible label.</li>
+			         </ul>
+         </section>
+         <section>
+            <h2>Resources Success Criterion 2.4.12: Label in Name</h2>
+            <ul>
+				           <li>
+                  <a href="https://www.w3.org/TR/accname-aam-1.1/">Accessible Name and Description Computation /</a>
+               </li>
+			         </ul>
+         </section>
+         <section>
+            <h2>Techniques for Success Criterion 2.4.12: Label in Name</h2>
+            <section>
+               <h3>Sufficient Techniques</h3>
+               <ul>
+                  <li>Ensure that visible labels, including hover labels of icons, match hidden labels.</li>
+               </ul>
+            </section>
+            <section>
+               <h3>Advisory Techniques</h3>
+               <p>None</p>
+            </section>
+            <section>
+               <h3>Failures</h3>
+               <ul>
+                  <li>Accessible name does not contain the visible label text</li>
+               </ul>
+            </section>
+         </section>
+      </main>
+   </body>
+</html>

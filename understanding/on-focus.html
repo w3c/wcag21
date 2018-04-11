@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title xmlns:wcag="https://www.w3.org/WAI/GL/">Understanding Success Criterion 3.2.1: On Focus</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="http://www.w3.org/StyleSheets/TR/2016/base"/>
+      <link rel="stylesheet" type="text/css" href="understanding.css"/>
+   </head>
+   <body>
+      <nav>
+         <ul id="navigation">
+            <li>
+               <a href="." title="Table of Contents">Contents</a>
+            </li>
+            <li>
+               <a href="predictable.html">
+                  <abbr title="Guideline">GL</abbr>: Predictable</a>
+            </li>
+            <li>
+               <a href="language-of-page.html">Previous <abbr title="Success Criterion">SC</abbr>: Keyboard</a>
+            </li>
+            <li>
+               <a href="on-input.html">Next <abbr title="Success Criterion">SC</abbr>: On Input</a>
+            </li>
+         </ul>
+      </nav>
+      <h1 xmlns:wcag="https://www.w3.org/WAI/GL/">Understanding Success Criterion 3.2.1: On Focus</h1>
+      <blockquote class="scquote">
+         <p>When any <a>user interface component</a> receives focus, it does not initiate a <a>change of context</a>.
+   </p>
+      </blockquote>
+      <main>
+         <section>
+            <h2>Intent of Success Criterion 3.2.1: On Focus</h2>
+            <p>The intent of this Success Criterion is to ensure that functionality is predictable
+         as visitors navigate their way through a document. Any component that is able to trigger
+         an event when it receives focus must not change the context.          Examples of
+         changing context when a component receives focus include, but are not limited to:
+         
+      </p>
+            <ul>
+         
+               <li>forms submitted automatically when a component receives focus;</li>
+         
+               <li>new windows launched when a component receives focus;</li>
+         
+               <li>focus is changed to another component when that component receives focus;</li>
+         
+            </ul>
+            <p>Focus may be moved to a control either via the keyboard (e.g. tabbing to a control) or the mouse (e.g. clicking on a text field). Moving the mouse over a control does not move the focus
+         unless scripting implements this behavior. Note that for some types of controls, clicking
+         on a control may also activate the control (e.g. button), which may, in turn, initiate a change in context.
+         					
+      </p>
+            <div class="note">
+         
+               <p>What is meant by "component" here is also sometimes called "user interface element"
+            or "user interface component''.
+         </p>
+         
+            </div>
+         </section>
+         <section>
+            <h2>Benefits of Success Criterion 3.2.1: On Focus</h2>
+            <ul>
+            
+               <li>This Success Criterion helps people with visual disabilities, cognitive limitations,
+               and motor impairments by reducing the chance that a change of context will occur unexpectedly.
+            </li>
+            
+            </ul>
+         </section>
+         <section>
+            <h2>Examples of Success Criterion 3.2.1: On Focus</h2>
+            <ul>
+         
+               <li>
+            
+                  <p>
+               								       
+                     <strong>Example 1:  A dropdown menu</strong>
+               							     
+                  </p>
+            
+                  <p>A dropdown menu on a page allows users to choose between jump destinations. If the
+               person uses the keyboard to move down to a choice and activates it (with a spacebar
+               or enter key) it will jump to a new page.  However, if the person moves down to a
+               choice and either hits the escape or the tab key to move out of the pulldown menu
+               – it does not jump to a new screen as the focus shifts out of the dropdown menu. 
+            </p>
+            
+               </li>
+         
+               <li>
+            
+                  <p>
+               								       
+                     <strong>
+                  Example of a Failure:  A help dialog
+                  
+               </strong>
+               							     
+                  </p>
+            
+                  <p>
+               When a field receives focus, a help dialog window describing the field and providing
+               options opens. As a keyboard user tabs through the Web page, the dialog opens, moving
+               the keyboard focus away from the control every time the user attempts to tab past
+               the field.
+               
+            </p>
+            
+               </li>
+         
+            </ul>
+         </section>
+         <section>
+            <h2>Resources Success Criterion 3.2.1: On Focus</h2>
+         </section>
+         <section>
+            <h2>Techniques for Success Criterion 3.2.1: On Focus</h2>
+            <section>
+               <h3>Sufficient Techniques</h3>
+               <ol>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G107">Using "activate" rather than "focus" as a trigger for changes of context</a>
+               								       
+                  </li>
+            
+               </ol>
+               <div class="note">
+            
+                  <p>A change of content is not always a 
+               <a href="https://www.w3.org/TR/WCAG20/#context-changedef">change of context</a>. This success criterion is automatically met if changes in content are not also changes
+               of context.
+            </p>
+            
+               </div>
+            </section>
+            <section>
+               <h3>Advisory Techniques</h3>
+               <ul>
+            
+                  <li>Not causing persistent changes of state or value when a component receives focus,
+               or providing an alternate means to reset any changes (future link)
+            </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G200">Opening new windows and tabs from a link only when necessary</a>
+               								       
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G201">Giving users advanced warning when opening a new window</a>
+               								       
+                  </li>
+            
+               </ul>
+            </section>
+            <section>
+               <h3>Failures</h3>
+               <ul>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/F52">Failure due to opening a new window as soon as a new page is loaded without prior
+                  warning
+               </a>
+               								       
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/F55">Failure due to using script to remove focus when focus is received</a>
+               								       
+                  </li>
+            
+               </ul>
+            </section>
+         </section>
+      </main>
+   </body>
+</html>

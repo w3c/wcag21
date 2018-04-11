@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title>Understanding Success Criterion 4.1.3: Status Messages</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="http://www.w3.org/StyleSheets/TR/2016/base"/>
+      <link rel="stylesheet" type="text/css" href="understanding.css"/>
+   </head>
+   <body>
+      <nav>
+         <ul id="navigation">
+            <li>
+               <a href="." title="Table of Contents">Contents</a>
+            </li>
+            <li>
+               <a href="compatible.html">
+                  <abbr title="Guideline">GL</abbr>: Compatible</a>
+            </li>
+            <li>
+               <a href="name-role-value.html">Previous <abbr title="Success Criterion">SC</abbr>: Name, Role, Value</a>
+            </li>
+         </ul>
+      </nav>
+      <h1>Understanding Success Criterion 4.1.3: Status Messages</h1>
+      <blockquote class="scquote">
+         <p>In content implemented using markup languages, <a>status messages</a> can be <a>programmatically determined</a> through <a>role</a> or properties such that they can be presented to the user by <a>assistive technologies</a> without receiving focus.</p>
+         <p class="ednote">The working group seeks input regarding the feasibility and applicability of complex gaming scenarios for this SC.</p>
+      </blockquote>
+      <main>
+         <section>
+            <h2>Intent of Success Criterion 4.1.3: Status Messages</h2>
+            <p>The intent of this Success Criterion is to ensure more users can be made aware of important changes in content that are not given focus, in a way that doesn't unnecessarily interrupt their work.</p>
+            <p>The intended beneficiaries are blind and low vision users of assistive technologies with screen reader capabilities. As well, assistive technologies for users with cognitive disabilities may achieve an alternative means of indicating (or even delaying or supressing) status messages, as preferred by the user.</p>
+            <p>The scope of this Success Criterion is specific to changes in content that involve status messages. Information can frequently be added to pages which does not meet the definition of a status message. For example, the list of results obtained from a search are not considered a status update and thus are not covered by this Success Criterion. However, brief text messages displayed about the completion or status of the search, such as "18 results returned" or "no results returned" would be status updates. Examples of status messages are given in the section titled <a href="#status-examples">Status Message Examples</a> below.</p>
+            <p>This Success Criterion specifically addresses scenarios where new content is added to the screen without changing the user's context. <a href="https://www.w3.org/TR/2006/WD-WCAG20-20060427/appendixA.html#context-changedef">Changes of context</a>, by their nature, interrupt the user; they are already surfaced by assistive technologies, and so have already met the objectives of this Success Criterion. Examples of scenarios that add new content by changing the context are given in the section titled <a href="#excepted-examples">Examples of Excepted Context Changes</a> below.</p>
+         </section>
+         <section>
+            <h2>Benefits of Success Criterion 4.1.3: Status Messages</h2>
+            <ul>
+					          <li>When appropriate roles or properties are assigned to status messages, the new content is spoken by screen readers in such a way as to assist blind and low vision users. Most sighted users can observe text peripherally added to the viewport. Such content provides additional information without affecting the user's current point of regard. The ability of an assistive technology to announce such new important text content allows more users to benefit from awareness of the information in an equivalent manner.</li>
+			            <li>Assigning proper roles or properties to status messages provides possible future uses, such as the potential to be exploited by assistive technologies created for users with some cognitive disabilities. Where page authors elect to design additions to the screen which do not change the user's context (i.e., take focus), the information is arguably of less importance than something presented using a modal dialog, which must be acknowledged by the user. As such, depending on the user's preferences, an assistive technology may choose to delay, suppress, or transform such messages so a user is not unnecessarily interrupted; or conversely the assistive technology may highlight such messages where the user finds it optimal to do so.</li>
+            </ul>
+         </section>
+         <section>
+            <h2>Examples of Success Criterion 4.1.3: Status Messages</h2>
+            <section class="example">
+				           <h3>Status Message Examples</h3>
+			         </section>
+            <ol>
+				           <li>After a user presses a Search button, the contents are updated to include the results of the search, which are displayed in a section below the Search button. The content changes also include the message "5 results returned" near the top of this new content. This text is given an appropriate role for a status message. . A screen reader announces, "Five results returned".</li>
+				           <li>After a user presses an Add to Shopping Cart button, a section of content near the Shopping Cart icon adds the text "5 items". A screen reader announces "5 items" or "Shopping cart, 5 items".</li>
+				           <li>After a user enters incorrect text in an input called Postal Code, a message appears above the input reading "Invalid entry".  The screen reader announces, "Invalid entry" or "Postal code, invalid entry".</li>
+				           <li>After a user activates a process, an icon symbolizing 'busy'  appears on the screen, then disappears after 25 seconds. The screen reader announces "Application busy", then after 25 seconds announces "Application available".</li>
+				           <li>An application displays a progressbar to indicate the status of an upgrade. The element is implemented using best authoring practices, and is assigned a suitable role and importance. The screen reader provides intermittent announcements of the progress. </li>
+               <li>After a user submits a form, the screen reader announces "Your form was successfully submitted."</li> 
+               <li>After a user unsuccessfully fills in a form because some of the data is in the incorrect format, the screen reader announces "5 errors on page"</li>
+			         </ol>
+            <section class="example">
+				           <h3>Examples of Changes that Do Not Add New Text to the Screen</h3>
+			         </section>
+            <p>Not all changes to content involve the addition of text to the screen. The following are all considerations relevant to this Success Criterion:</p>
+            <ul>
+					          <li>Non-displayed text specific to AT users</li>
+
+               <li>Modification of status text</li>
+               <li>Removal of status text</li>
+               <li>textual status content, such as images</li>
+				        </ul>
+         </section>
+         <section>
+            <h2>Resources Success Criterion 4.1.3: Status Messages</h2>
+            <p>In addition to the use of non-displayed text for AT users, there are a number of considerations for content changes which are relevant to this Success Criterion, but which fall outside its scope. To prevent the possible perpetuation of poor design, the following best practices are discussed.</p>
+            <p>@@@ Cover all David's situations here? And also auto-updating? @@@</p>
+         </section>
+         <section>
+            <h2>Techniques for Success Criterion 4.1.3: Status Messages</h2>
+            <section>
+               <h3>Sufficient Techniques</h3>
+               <section class="situation">
+
+					             <h4>Situation</h4>
+					             <p>@@@ do we need situations, such as 'Situation A Where a status message is confirmation'? I think it would be an idea to see how many situations we can think of, and whether this provides clarify and guidance @@@</p>
+					             <ul>
+						               <li>
+                        <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G199">G199: Providing success feedback when data is submitted successfully</a> in combination with any of the following:
+							<ul>
+								                   <li>
+                              <a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA19">ARIA19: Using ARIA role=alert or Live Regions to Identify Errors</a>
+                           </li>
+								                   <li>using role="status"</li>
+							                 </ul>
+						               </li>
+						               <li>Using role="log"</li>
+						               <li>Using role="timer"</li>
+						               <li>Using role="progressbar"</li>
+					             </ul>
+				           </section>
+            </section>
+            <section>
+               <h3>Advisory Techniques</h3>
+               <ul>
+		                <li>Using role="marquee"</li>
+		                <li>Using role="feed" (future)</li>
+		                <li>Moving focus to new content</li>
+		                <li>Providing an option for users to set a preference on live content</li>
+	              </ul>
+            </section>
+            <section>
+               <h3>Failures</h3>
+               <ul>
+				              <li>Using role="alert" or aria-live="assertive" on content which is not critical and time-sensitive</li>
+			            </ul>
+            </section>
+         </section>
+      </main>
+   </body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+   <head>
+      <meta charset="UTF-8"/>
+      <title xmlns:wcag="https://www.w3.org/WAI/GL/">Understanding Success Criterion 1.4.2: Audio Control</title>
+      <link rel="stylesheet"
+            type="text/css"
+            href="http://www.w3.org/StyleSheets/TR/2016/base"/>
+      <link rel="stylesheet" type="text/css" href="understanding.css"/>
+   </head>
+   <body>
+      <nav>
+         <ul id="navigation">
+            <li>
+               <a href="." title="Table of Contents">Contents</a>
+            </li>
+            <li>
+               <a href="distinguishable.html">
+                  <abbr title="Guideline">GL</abbr>: Distinguishable</a>
+            </li>
+            <li>
+               <a href="use-of-color.html">Previous <abbr title="Success Criterion">SC</abbr>: Use of Color</a>
+            </li>
+            <li>
+               <a href="contrast-minimum.html">Next <abbr title="Success Criterion">SC</abbr>: Contrast (Minimum)</a>
+            </li>
+         </ul>
+      </nav>
+      <h1 xmlns:wcag="https://www.w3.org/WAI/GL/">Understanding Success Criterion 1.4.2: Audio Control</h1>
+      <blockquote class="scquote">
+         <p>If any audio on a Web page plays automatically for more than 3 seconds, either a <a>mechanism</a> is available to pause or stop the audio, or a mechanism is available to control audio
+      volume independently from the overall system volume level.
+   </p>
+         <p class="note">Since any content that does not meet this success criterion can interfere with a user's
+      ability to use the whole page, all content on the Web page (whether or not it is used
+      to meet other success criteria) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
+   </p>
+      </blockquote>
+      <main>
+         <section>
+            <h2>Intent of Success Criterion 1.4.2: Audio Control</h2>
+            <p>Individuals who use screen reading software can find it hard to hear the speech output
+         if there is other audio playing at the same time. This difficulty is exacerbated when
+         the screen reader's speech output is software based (as most are today) and is controlled
+         via the same volume control as the sound. Therefore, it is important that the user
+         be able to turn off the background sound. Note: Having control of the volume includes
+         being able to reduce its volume to zero.
+      </p>
+            <div class="note">
+         
+               <p>Playing audio automatically when landing on a page may affect a screen reader user's
+            ability to find the mechanism to stop it because they navigate by listening and automatically
+            started sounds might interfere with that navigation. Therefore, we discourage the
+            practice of automatically starting sounds (especially if they last more than 3 seconds),
+            and encourage that the sound be 
+            <em>started</em> by an action initiated by the user after they reach the page, rather than requiring
+            that the sound be 
+            <em>stopped</em> by an action of the user after they land on the page.
+         </p>
+         
+            </div>
+            <p>See also 
+         <a href="#visual-audio-contrast-noaudio"/>.
+      </p>
+         </section>
+         <section>
+            <h2>Benefits of Success Criterion 1.4.2: Audio Control</h2>
+            <ul>
+            
+               <li>Individuals who use screen reading technologies can hear the screen reader without
+               other sounds playing. This is especially important for those who are hard of hearing
+               and for those whose screen readers use the system volume (so they cannot turn sound
+               down and screen reader up).
+            </li>
+            
+               <li>This Success Criterion also benefits people who have difficulty focusing on visual
+               content (including text) when audio is playing.
+            </li>
+            
+            </ul>
+         </section>
+         <section>
+            <h2>Examples of Success Criterion 1.4.2: Audio Control</h2>
+            <ul>
+         
+               <li>An audio file begins playing automatically when a page is opened. However, the audio
+            can be stopped by the user by selecting a "silent" link at the top of the page.
+         </li>
+         
+               <li>
+            A Flash splash page with sound that plays and then stops in less than 3 seconds.
+            
+            
+            
+         </li>
+         
+               <li>
+            A Flash splash page with sound that plays automatically includes a control at the
+            top that allows users to turn the sound off. 
+            
+            
+         </li>
+         
+            </ul>
+         </section>
+         <section>
+            <h2>Resources Success Criterion 1.4.2: Audio Control</h2>
+         </section>
+         <section>
+            <h2>Techniques for Success Criterion 1.4.2: Audio Control</h2>
+            <section>
+               <h3>Sufficient Techniques</h3>
+               <ol>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G60">Playing a sound that turns off automatically within three seconds</a>
+               								       
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G170">Providing a control near the top of the Web page that turns off sounds that play automatically</a>
+               								       
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/G171">Playing sounds only on user request</a>
+               								       
+                  </li>
+            
+                  <li>
+               
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/SL24"/>
+               
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH18">Providing a control to turn off sounds that play automatically in Flash</a>
+               								       
+                  </li>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/FLASH34">Using screen reader detection to turn off sounds that play automatically</a>
+               								       
+                  </li>
+            
+                  <li>
+               
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/SL3"/>
+               
+                  </li>
+            
+               </ol>
+            </section>
+            <section>
+               <h3>Advisory Techniques</h3>
+               <ul>
+            
+                  <li>
+               Providing a site-wide preference to turn off audio in addition to providing a control
+               near the top of the Web page that turns off sounds that play automatically (future
+               link)
+               
+            </li>
+            
+               </ul>
+            </section>
+            <section>
+               <h3>Failures</h3>
+               <ul>
+            
+                  <li>
+               									         
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/F23">Failure due to playing a sound longer than 3 seconds where there is no mechanism to
+                  turn it off
+               </a>
+               								       
+                  </li>
+            
+                  <li>
+               				    
+                     <a href="https://www.w3.org/TR/WCAG20-TECHS/F93"/>
+               
+                  </li>
+            
+               </ul>
+            </section>
+         </section>
+      </main>
+   </body>
+</html>
