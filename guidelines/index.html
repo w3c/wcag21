@@ -112,12 +112,7 @@ input.task-list-item-checkbox {
 
         <title>Web Content Accessibility Guidelines (WCAG) 2.1</title>
     	
-    	
-    	
-    	
-    	
-        <link rel="stylesheet" type="text/css" href="guidelines.css">
-    <style id="respec-mainstyle">/*****************************************************************
+    	<style id="respec-mainstyle">/*****************************************************************
  * ReSpec 3 CSS
  * Robin Berjon - http://berjon.com/
  *****************************************************************/
@@ -291,7 +286,12 @@ details.respec-tests-details > li {
     display: none;
   }
 }
-</style><link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
+</style>
+    	
+    	
+    	
+        <link rel="stylesheet" type="text/css" href="guidelines.css">
+    <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/W3C-ED"><link rel="canonical" href="https://www.w3.org/TR/WCAG21/"><script id="initialUserConfig" type="application/json">{
   "trace": true,
   "useExperimentalStyles": true,
   "doRDFa": "1.1",
@@ -3997,7 +3997,7 @@ sheets);</li>
 	<!--OddPage--><h2 id="x7-input-purposes-for-user-interface-components"><span class="secno">7. </span>Input Purposes for User Interface Components<span class="permalink"><a href="#input-purposes" aria-label="Permalink for 7. Input Purposes for User Interface Components" title="Permalink for 7. Input Purposes for User Interface Components"><span>§</span></a></span></h2>
 	<p>This section contains a listing of common <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn">user interface component</a> input purposes. The terms below are not keywords that must be used, but instead represent purposes that must be captured in the taxonomy adopted by a webpage. Where applicable, authors mark up controls with the chosen taxonomy to indicate the semantic purpose. This provides the potential for user agents and assistive technologies to apply personalized presentations that can enable more people to understand and use the content.</p>
   
-  <p>TBD @@ add info about HTML 5.2 linkage</p>
+  <div class="note"><div role="heading" class="note-title marker" id="h-note-141" aria-level="3"><span>Note</span></div><p class="">The list of input type purposes is based on the control purposes defined in the <a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">HTML 5.2 Autofill field section</a>, but it is important to understand that a different technology may have some or all of the same concepts defined in its specification and only the concepts that are mapped to the meanings below are required.</p></div>
 	    
     <section id="input-control-purposes">
         <h3 id="x7-1-common-input-control-purposes"><span class="secno">7.1 </span>Common Input Control Purposes<span class="permalink"><a href="#input-control-purposes" aria-label="Permalink for 7.1 Common Input Control Purposes" title="Permalink for 7.1 Common Input Control Purposes"><span>§</span></a></span></h3>
@@ -4010,16 +4010,11 @@ sheets);</li>
           <li>Address - Inputs used to handle address information (e.g. street address, city, region, postal code, etc.)</li>
           <li>Country Code - A country's abbreviation code</li>
           <li>Country Name - Full name of a country</li>
-          <li>Credit Card - Inputs used to handle information about credit card payments</li>
-          <li>Credit Card Holder Name - Full name as given on the payment instrument</li>
-          <li>Credit Card Number - Code identifying the payment instrument (e.g., the credit card number)</li>
-          <li>Credit Card Expiration Date - Expiration date of the payment instrument</li>
-          <li>Credit Card Security Code - Security code for the payment instrument (also known as the card security code (CSC), card validation code (CVC), card verification value (CVV), signature panel code (SPC), credit card ID (CCID), etc)</li>
-          <li>Credit Card Type - Type of payment instrument	(e.g. Visa)</li>
+          <li>Credit Card - Inputs used to handle information about credit card payments (e.g. credit card holder name, card number, Security code, card type, etc.)</li>
           <li>Transaction Currency - The monetary system being used for the transaction</li>
           <li>Transaction Amount - The amount that the user is committing to for a transaction (e.g., when entering a bid or sale price)</li>
           <li>Language - Preferred language</li>
-          <li>Birthdate - Birthday information</li>
+          <li>Birthdate - Inputs used to handle information about a user's birthdate</li>
           <li>URL - Home page or other Web page corresponding to the user</li>
           <li>Photo - Photograph, icon, or other image corresponding to the user</li>
           <li>Telephone Number - Inputs used to handle information about telephone numbers</li>
