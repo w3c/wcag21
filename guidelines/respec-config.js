@@ -12,7 +12,7 @@ var respecConfig = {
 	crEnd: "2018-03-30",
 	prEnd:                "2018-05-22",
 	//perEnd:               "2013-07-23",
-	publishDate:          "2018-04-23",
+	publishDate:          "2018-04-24",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
