@@ -9,10 +9,10 @@ do
   sed -i "s/Technique Title/$3/g" techniques/$1/$2.html
   git add techniques/$1/$2.html
   git commit -m "Set up $2 technique"
-  echo git push --set-upstream origin tech-$2
+  git push --set-upstream origin tech-$2
   shift
   shift
   shift
 done
 rm ../technique-template.html
-echo git checkout technique-setup
+git checkout technique-setup
