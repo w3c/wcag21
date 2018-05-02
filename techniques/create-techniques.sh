@@ -5,6 +5,7 @@ while [ $# -gt 0 ]
 do
   git checkout --orphan tech-$2
   git rm -rf .
+  mkdir techniques/$1
   cp ../technique-template.html techniques/$1/$2.html
   sed -i "s/Technique Title/$3/g" techniques/$1/$2.html
   echo git add .
