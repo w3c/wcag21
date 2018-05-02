@@ -1,6 +1,5 @@
 #!/bin/bash
-cp technique-template.html ../../technique-template.html
-cd ..
+cp techniques/technique-template.html ../technique-template.html
 while [ $# -gt 0 ]
 do
   git checkout --orphan tech-$2
