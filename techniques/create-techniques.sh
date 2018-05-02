@@ -8,7 +8,7 @@ do
   mkdir techniques/$1
   cp ../technique-template.html techniques/$1/$2.html
   sed -i "s/Technique Title/$3/g" techniques/$1/$2.html
-  git add .
+  git add techniques/$1/$2.html
   git commit -m "Set up $2 technique"
   echo git push --set-upstream origin tech-$2
   shift
