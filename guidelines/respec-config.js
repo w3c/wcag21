@@ -8,10 +8,11 @@ var respecConfig = {
 	permalinkHide:     false,
 	tocIntroductory: true,
 	// specification status (e.g., WD, LC, NOTE, etc.). If in doubt use ED.
-	specStatus:           "ED",
+	specStatus:           "REC",
+	errata: "https://www.w3.org/WAI/WCAG21/errata/",
 	//crEnd:                "2012-04-30",
 	//perEnd:               "2013-07-23",
-	//publishDate:          "2013-08-22",
+	publishDate:          "2018-06-05",
 	diffTool:             "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
 	
 	// the specifications short name, as in https://www.w3.org/TR/short-name/
@@ -25,13 +26,13 @@ var respecConfig = {
 	
 	// if there is a previously published draft, uncomment this and set its YYYY-MM-DD date
 	// and its maturity status
-	//previousPublishDate:  "2014-06-12",
-	//previousMaturity:  "WD",
+	previousPublishDate:  "2018-04-24",
+	previousMaturity:  "PR",
 	prevRecURI: "https://www.w3.org/TR/2008/REC-WCAG20-20081211/",
 	//previousDiffURI: "https://www.w3.org/TR/2014/REC-wai-aria-20140320/",
 	
 	// if there a publicly available Editors Draft, this is the link
-	edDraftURI: "https://w3c.github.io/wcag21/guidelines/",
+	edDraftURI: "https://w3c.github.io/wcag21/guidelines/@@",
 	
 	// if this is a LCWD, uncomment and set the end of its review period
 	// lcEnd: "2012-02-21",
