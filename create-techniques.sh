@@ -16,7 +16,7 @@ do
   sed -i "s|Technique Title|$4|g" techniques/$1/$2.html
   git add techniques/$1/$2.html
   git commit -m "Set up $2 technique"
-#  git push --set-upstream origin tech-$2
+  git push --set-upstream origin tech-$2
   shift
   shift
   shift
