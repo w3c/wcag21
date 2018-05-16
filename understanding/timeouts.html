@@ -30,10 +30,11 @@
       <blockquote class="scquote">
          <p>Users are warned of the duration of any <a>user inactivity</a> that could cause data loss, unless the data is preserved for more than 20 hours when the user does not take any actions.</p>
          <p class="note">Privacy regulations may require explicit user consent before user identification has been authenticated and before user data is preserved. In cases where the user is a minor, explicit consent may not be solicited in most jurisdictions, countries or regions. Consultation with privacy professionals and legal counsel is advised when considering data preservation as an approach to satisfy this success criterion.</p>
+         <p>(Level AAA)</p>
       </blockquote>
       <main>
-         <section>
-            <h2>Intent of Success Criterion 2.2.6: Timeouts</h2>
+         <section id="intent">
+            <h2>Intent</h2>
             <p>The use of timed events can present significant barriers for users with cognitive disabilities, as these users may require more time to read content or to perform functions, such as completing an online form.</p>
             <p>During the completion of an online process for reserving a hotel room and purchasing a plane ticket, a user with a cognitive impairment may become overwhelmed with the amount of instruction and data input required to complete the process. The user may not be able to complete the process in one sitting, and may need to take a break. Ideally, users should be able to leave a process without losing their current place within the process, and without losing data that have already been entered. If users cannot take a break and check their work, many will often be unable to complete a task correctly.</p>
             <p>When the user cannot finish the task in the time allotted, not only does the site become unusable but they lose confidence in using the web and question if they are able to use technology independently. Losing your work because you are not fast enough is incredibly frustrating. When this happens multiple times, the user may give up on trying to perform tasks online.</p>
@@ -48,8 +49,8 @@
             <p>Ways that this success criteria can be met include: Saving the saving the users data (such as by storing the session variable data) giving the user a warning at the start of the process about any expected timeouts, or avoiding timeouts altogether. </p>
             <p>This success criterion only applies to timeouts that are within the content providers knowledge or control. For example, if the user closes a web browser or device, and looses content in an open page that has not yet been submitted, the success criteria has not been violated.</p>
          </section>
-         <section>
-            <h2>Benefits of Success Criterion 2.2.6: Timeouts</h2>
+         <section id="benefits">
+            <h2>Benefits</h2>
             <p>This Success Criterion helps users who need additional time performing tasks or reading content. </p>
             <p>A user can take a break and check their work without needing to start again. This enables many users to complete tasks online that they otherwise could not do. </p>
             <p>If a situation exists where a timeout is necessary, the user is warned at the start of the task about the length of inactivity that would generate a timeout. The user  can then decide if they can manage this task or not in the given time. This will  reduce the frustration of working hard at a task just to have all their work deleted due to a timeout.</p>
@@ -61,25 +62,25 @@
 				           <li> disabilities that affect executive function and decision making. </li>
 			         </ul>
          </section>
-         <section>
-            <h2>Examples of Success Criterion 2.2.6: Timeouts</h2>
+         <section id="examples">
+            <h2>Examples</h2>
             <ul>
 				           <li>While making a purchase on an e-commerce Web site, a user with a cognitive disability may not remember required information (e.g., a phone number or a zip code) that may seem easy to remember for users without a cognitive impairment. </li>
 				           <li>Users with cognitive disabilities may need additional time to look up the information required to complete a transaction, without losing their place in the process, and without losing data that have already been entered.</li>
 				           <li>Users’ cognitive skills may temporarily diminish as they get tired. They then must stop the task for that day, and continue it when they are feeling better, and when their reading or processing skills are back to their higher levels.</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Resources Success Criterion 2.2.6: Timeouts</h2>
+         <section id="resources">
+            <h2>Related Resources</h2>
             <ul>
 				           <li>
                   <a href="https://rawgit.com/w3c/coga/master/gap-analysis/table.html">User Needs Table 3: Entering data, error prevention &amp; recovery</a>
                </li>
 			         </ul>
          </section>
-         <section>
-            <h2>Techniques for Success Criterion 2.2.6: Timeouts</h2>
-            <section>
+         <section id="techniques">
+            <h2>Techniques</h2>
+            <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
 					             <li> Do not expire a session timeout unless there has been a 24 hours of inactivity. </li>

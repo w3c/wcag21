@@ -45,10 +45,11 @@
          <p class="note">Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://www.w3.org/TR/html/dom.html#the-title-attribute">
                      <code>title</code> attribute</a>.</p>
          <p class="note">Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.</p>
+         <p>(Level AA)</p>
       </blockquote>
       <main>
-         <section>
-            <h2>Intent of Success Criterion 1.4.13: Content on Hover or Focus</h2>
+         <section id="intent">
+            <h2>Intent</h2>
             <p>Additional content that appears and disappears in coordination with keyboard focus or pointer hover often leads to accessibility issues. Reasons for such issues include:
 			<ol>
 			               <li>the user may not have intended to trigger the interaction</li>
@@ -94,8 +95,8 @@
 			            <li>Content which can be triggered via pointer hover should also be able to be triggered by keyboard focus.  Refer to <a href="https://www.w3.org/TR/WCAG21/#keyboard">Success Criterion 2.1.1, Keyboard</a>.</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Benefits of Success Criterion 1.4.13: Content on Hover or Focus</h2>
+         <section id="benefits">
+            <h2>Benefits</h2>
             <ul>
 			            <li>Users with low vision who view content under magnification will be better able to view content on hover or focus without reducing their desired magnification.</li>
 			            <li>Users who increase the size of mouse cursors via platform settings or assistive technology will be able to employ a technique to view obscured content on hover.</li>
@@ -103,24 +104,24 @@
 			            <li>users with low pointer accuracy will be able to more easily dismiss unintentionally-triggered additional content</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Examples of Success Criterion 1.4.13: Content on Hover or Focus</h2>
-            <section class="example">
-				           <h3>Example 1: Tooltip Allowing for Visible Trigger</h3>
+         <section id="examples">
+            <h2>Examples</h2>
+            <section class="example" id="example-1:-dismissable-tooltip">
+				           <h3>Example 1: Dismissable Tooltip</h3>
 				           <figure>
 				              <img src="https://i.imgur.com/K3k8WYk.png"
                        alt="Screenshot of a button with a mouse pointer over it, and a tooltip displayed  below the button"/>
 				              <img src="https://i.imgur.com/i0ndsmP.png"
                        alt="Screenshot of a button with a mouse pointer over it, and no tooltip"/>
-				              <figcaption>A tooltip is displayed below a button on hover so as not to obscure the button itself.  A user can also press the Escape key to clear the tooltip without moving the mouse.</figcaption>
+				              <figcaption>A tooltip is displayed below a LVTF button on hover so as not to obscure the button itself. It does however obscure content below the button (the next red button, called ~comment-zoom-content). To meet the Dismissible requirement, a user can press the Escape key to clear the tooltip without moving the mouse, as demonstrated in the second image.</figcaption>
 				           </figure>
 				           <figure>
 				              <img src="https://i.imgur.com/625Nyod.png"
                        alt="Screenshot of a button with a focus indicator on it, and no tooltip"/>
-				              <figcaption>The button's tooltip also appears on focus and can be removed with the Escape key.</figcaption>
+				              <figcaption>The button's tooltip also appears on focus and can be removed with the Escape key. The screen shot shows the same LVTF button with focus, but the tooltip has been dismissed and is no longer visible.</figcaption>
 				           </figure>
 			         </section>
-            <section class="example">
+            <section class="example" id="example-2:-hoverable-tooltip">
 				           <h3>Example 2: Hoverable Tooltip</h3>
 				           <figure>
 				              <img src="https://i.imgur.com/9Br0nqM.png"
@@ -131,33 +132,33 @@
 				           </figure>
 			         </section>
          </section>
-         <section>
-            <h2>Resources Success Criterion 1.4.13: Content on Hover or Focus</h2>
+         <section id="resources">
+            <h2>Related Resources</h2>
             <ul>
 				           <li>
                   <a href="https://www.w3.org/TR/wai-aria-practices-1.1/#tooltip">Tooltip design described in WAI-ARIA Authoring Practices</a>
                </li>
 			         </ul>
          </section>
-         <section>
-            <h2>Techniques for Success Criterion 1.4.13: Content on Hover or Focus</h2>
-            <section>
+         <section id="techniques">
+            <h2>Techniques</h2>
+            <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
 						            <li>ARIA: Using role="tooltip"</li>
 						            <li>CSS: Using hover and focus pseudo classes</li>
 					          </ul>
             </section>
-            <section>
+            <section id="advisory">
                <h3>Advisory Techniques</h3>
                <ul>
                   <li>None</li>
                </ul>
             </section>
-            <section>
+            <section id="failure">
                <h3>Failures</h3>
                <ul>
-                  <li>Failure to have visible triggers</li>
+                  <li>Failure to make content dismissable without moving pointer hover or keyboard focus</li>
                   <li>Failure to have hover content hoverable</li>
                   <li>Failure to meet by content on hover or focus not remaining visible until dismissed or invalid</li>
                </ul>

@@ -45,11 +45,12 @@
       						
                </dl>
          <p class="note">Functions that emulate a keyboard or numeric keypad key press are considered essential.</p>
-         <p class="note">This requirement applies to web content that interprets pointer gestures (i.e. this does not apply to gestures that are required to operate the user agent or assistive technology).</p>
+         <p class="note">This requirement applies to web content that interprets pointer actions (i.e. this does not apply to actions that are required to operate the user agent or assistive technology).</p>
+         <p>(Level A)</p>
       </blockquote>
       <main>
-         <section>
-            <h2>Intent of Success Criterion 2.5.2: Pointer Cancellation</h2>
+         <section id="intent">
+            <h2>Intent</h2>
             <p>The intent of this success criterion is to make it easier for users to prevent accidental or erroneous pointer input. People with various disabilities can inadvertently initiate touch or mouse events with unwanted results.</p>
             <p>There is a distinction between when someone touches a screen and when they remove their finger. Similarly, in mouse interaction, there is a difference between pressing and releasing the mouse button. When activation occurs only when the pointer is released, users have the opportunity to prevent (cancel) the activation. They can move their finger or other pointer (e.g., the mouse cursor) away from the target when they realise that they touched that target inadvertently or erroneously.</p>
             <p>Up-event activation refers to the activation of a target when the pointer is released. In a touchscreen interaction, when the finger touches a target, the up-event activation ony occurs when the finger is lifted while still being within the target boundary. Similarly in mouse interaction, the up-event occurs when the mouse button is released while the cursor is still within the boundary of the initial target when the mouse button was pressed.</p>
@@ -66,33 +67,33 @@
 				           <li>A program for shooting skeets where waiting for the "up" event would invalidate the activation.</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Benefits of Success Criterion 2.5.2: Pointer Cancellation</h2>
+         <section id="benefits">
+            <h2>Benefits</h2>
             <ul>
 					          <li>Makes it easier for all users to recover from hitting the wrong target.</li>
 					          <li>Helps people with visual disabilities, cognitive limitations, and motor impairments by reducing the chance that a control will be accidentally activated or an action will occur unexpectedly.</li>
 					          <li>Individuals who are unable to detect changes of context are less likely to become disoriented while navigating a site.</li>
 				        </ul>
          </section>
-         <section>
-            <h2>Examples of Success Criterion 2.5.2: Pointer Cancellation</h2>
+         <section id="examples">
+            <h2>Examples</h2>
             <ul>
 				           <li>For interface elements that have a single tap or long press as input, the corresponding event is triggered when the finger is lifted inside that element.</li>
 				           <li>A phone dialling application has number keys that are immediately activated on touch (i.e. via the down-event). A user can undo an unwanted number input by hitting the backspace button to delete the erroneous digit.</li>
                <li>A drag-and-drop interface allows users to sort vertically stacked cards by picking up one card with the pointer (down-event), move it to a new position, and insert it at the new location when the pointer is released (up-event). Releasing the pointer outside the drop target area reverts the action, i.e., it moves the card back to the old position before the interaction started.</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Resources Success Criterion 2.5.2: Pointer Cancellation</h2>
+         <section id="resources">
+            <h2>Related Resources</h2>
             <ul>
 				           <li>Resource</li>
 			         </ul>
          </section>
-         <section>
-            <h2>Techniques for Success Criterion 2.5.2: Pointer Cancellation</h2>
-            <section>
+         <section id="techniques">
+            <h2>Techniques</h2>
+            <section id="sufficient">
                <h3>Sufficient Techniques</h3>
-               <section class="situation">
+               <section class="situation" id="situation">
 					             <h4>Situation</h4>
 					             <ul>
 						               <li>Activating a control using the up-Event in HTML, iOS and Android</li>
@@ -102,10 +103,10 @@
                   </ul>
 				           </section>
             </section>
-            <section>
+            <section id="advisory">
                <h3>Advisory Techniques</h3>
             </section>
-            <section>
+            <section id="failure">
                <h3>Failures</h3>
                <ul>
                   <li>

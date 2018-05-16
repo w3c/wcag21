@@ -29,10 +29,11 @@
       <h1>Understanding Success Criterion 1.3.6: Identify Purpose</h1>
       <blockquote class="scquote">
          <p>In content implemented using markup languages, the purpose of <a>User Interface Components</a>, icons, and <a>regions</a> can be <a>programmatically determined</a>.</p>
+         <p>(Level AAA)</p>
       </blockquote>
       <main>
-         <section>
-            <h2>Intent of Success Criterion 1.3.6: Identify Purpose</h2>
+         <section id="intent">
+            <h2>Intent</h2>
             <p>The intent of this success criterion is to support personalization and support user preferences and user needs. This extra support will enable more people to use the web, communicate and interact with society. </p>
             <p>For example, having familiar terms and symbols is key for users with a limited vocabulary to being able to use the web. However, what is familiar for some users may not be for other users, requiring them to learn new symbols. Personalization could include loading a set of symbols that is appropriate for the specific user, ensuring that all users find the icons simple and familiar.</p>
             <p>Technology holds the promise of being extremely flexible. The design of many systems includes the expectation that users will be able to optimise their interaction experience according to their personal preferences or accessibility requirements (needs).</p>
@@ -49,8 +50,8 @@ Adding context using Microdata and the ARIA ePub vocabulary </li>
 Providing the purpose of a field using autocomplete - these techniques work on all the common fields. </li>
             </ul>
          </section>
-         <section>
-            <h2>Benefits of Success Criterion 1.3.6: Identify Purpose</h2>
+         <section id="benefits">
+            <h2>Benefits</h2>
             <p>Products for people who are non-vocal often use symbols to help users communicate. These symbols are in fact peoples’ language. Unfortunately, many of these symbols are both subject to copy write AND not interoperable. That means end-users can only use one device, and cannot use content,  apps or AT that has not been made by a single company.
      </p>
             <p>This success criteria enables symbols to be interoperable so that nonverbal people so that symbol users can understand different content that was not just made by one company.  When user’s symbols are mapped to the same nodes then users agents will be able to load the user understandable symbol. That means the end use could buy the symbols and use them across different devices or applications. (Note that the symbols would still be proprietary, but they would also be interoperable.)
@@ -84,22 +85,22 @@ Providing the purpose of a field using autocomplete - these techniques work on a
             <p>Research on these benefits can be found at [<a href="https://github.com/w3c/wcag21/issues/6#bib-cudd-1">@@need a proper URI and description: cudd-1</a>] and the task force's<a href="https://rawgit.com/w3c/coga/master/issue-papers/personalization-preferences.html">issue-papers on personalization and preferences</a>. Also see the<a href="https://rawgit.com/ayelet-seeman/coga.personalisation/demo/conactUs.html">example of an adaptive page</a>
             </p>
          </section>
-         <section>
-            <h2>Examples of Success Criterion 1.3.6: Identify Purpose</h2>
-            <section class="example">
+         <section id="examples">
+            <h2>Examples</h2>
+            <section class="example" id="@@title-example-1">
 				           <h3>@@title Example 1</h3>
 				           <p>An example is a user can be a person growing older whose ability to learn new things has slowed down. This includes learning new interfaces, symbols, and designs. They may also rely on tool tips. So long as the design is one they know they can use the application and stay in the work force. When interfaces change, they may try to learn the new interface, but the cognitive load becomes too great and they need to retire.</p>
 
 				           <p>For example, assume an author can make it programanticaly known that a button is used to send an email. At at the user end, the button could be renderer with a symbol, term, and/or tooltips that is understandable for this particular user. It could automatically imply F1 help that explains the send function in simple terms. It could be identified with a keyboard short cut that will always be used for send. In addition it could be identified as important and always rendered, or rendered as a large button. </p>
 			         </section>
-            <section class="example">
+            <section class="example" id="@@title-example-2">
 				           <h3>@@title Example 2</h3>
 
 				           <p>In another example products for people who are non vocal often use symbols to help users communicate. These symbols are in fact people's language. Unfortunately many of these symbols are both subject to copyright and are not interoperable. That means end-users can only use one device, and can not use apps or AT from a different company. An open set of references for symbol codes for these symbol sets however, could be interoperable. That means the end user could use an open source symbol set or buy the symbols and use them across different devices or applications. Symbols could still be proprietary but they would also be interoperable. </p>
 			         </section>
          </section>
-         <section>
-            <h2>Resources Success Criterion 1.3.6: Identify Purpose</h2>
+         <section id="resources">
+            <h2>Related Resources</h2>
             <ul>
                <li>  https://slidewiki.org/, ATbar. Slidewiki  https://slidewiki.org/  using icons/symbols to demonstrate actions (seen as bold text) that occur to the logged in person’s decks and slides by others using the webservice - the icons are generated automatically and shown in a personal notifications area.  </li>
 
@@ -129,9 +130,9 @@ Providing the purpose of a field using autocomplete - these techniques work on a
 				           </li>
 			         </ul>
          </section>
-         <section>
-            <h2>Techniques for Success Criterion 1.3.6: Identify Purpose</h2>
-            <section>
+         <section id="techniques">
+            <h2>Techniques</h2>
+            <section id="sufficient">
                <h3>Sufficient Techniques</h3>
                <ul>
 					             <li> Use semantics to provide extra context (<a href="https://rawgit.com/w3c/coga/master/techniques/index.html">COGA Techniques</a> 4.1). EG: &lt;button coga-action="undo" &gt;default&lt;/button&gt; </li>
@@ -153,7 +154,7 @@ Providing the purpose of a field using autocomplete - these techniques work on a
 					             <li> Identifying part in the process using coga sematics https://w3c.github.io/personalization-semantics/#logs </li>
 				           </ul>
             </section>
-            <section>
+            <section id="advisory">
                <h3>Advisory Techniques</h3>
                <ul>
 					             <li> Enable user agents to find the version of the content that best fits their needs. </li>
