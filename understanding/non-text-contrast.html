@@ -26,6 +26,26 @@
             </li>
          </ul>
       </nav>
+      <nav class="navtoc">
+         <p>On this page:</p>
+         <ul id="navbar">
+            <li>
+               <a href="#intent">Intent</a>
+            </li>
+            <li>
+               <a href="#benefits">Benefits</a>
+            </li>
+            <li>
+               <a href="#examples">Examples</a>
+            </li>
+            <li>
+               <a href="#resources">Related Resources</a>
+            </li>
+            <li>
+               <a href="#techniques">Techniques</a>
+            </li>
+         </ul>
+      </nav>
       <h1>Understanding Success Criterion 1.4.11: Non-text Contrast</h1>
       <blockquote class="scquote">
          <p>The visual <a>presentation</a> of the following have a <a>contrast ratio</a> of at least 3:1 against adjacent color(s):</p>
@@ -208,7 +228,7 @@
 					             </ul>
 				           </section>
 
-				           <h4>Gradients</h4>
+				           <h3>Gradients</h3>
 
 				           <p>Gradients can reduce the apparent contrast between areas, and make it more difficult to test. The general principles is to identify the graphical object(s) required for understanding, and take the central color of that area. If you remove the adjacent colour which does not have sufficient contrast, can you still identify and understand the graphical object?</p>
 				           <figure>
@@ -220,13 +240,13 @@
 
 
 				           <section id="dynamic">
-					             <h3>Dynamic Examples</h3>
+					             <h4>Dynamic Examples</h4>
 	
 					             <p>Some graphics may have interactions that either vary the contrast, or display the information as text when you mouseover/tap/focus each graphical object. In order for someone to discern the graphics exist at all, there must be contrasting colors or text in order to find the graphics. Within that area, information available by a conforming method (e.g. focusable elements) can be used to make that information available dynamically as text, or dynamically increase the contrast.</p>
 				           </section>
 
 				           <section id="infographics">
-					             <h3>Infographics</h3>
+					             <h4>Infographics</h4>
 	
 					             <p>Infographics can mean any graphic conveying data, such as a chart or diagram. On the web it is often used to indicate a large graphic with lots of statements, pictures, charts or other ways of conveying data. In the context of graphics contrast, each item within such an infographic should be treated as a set of graphical objects, regardless of whether it is in one file or separate files.</p>
 
@@ -243,7 +263,7 @@
 				           </section>
 
 				           <section id="exceptions">
-					             <h3>Essential exception</h3>
+					             <h4>Essential exception</h4>
 	
 					             <p>The exception for graphical objects is for when "a particular presentation of graphics is essential to the information being conveyed". This is intended to apply when there is no way of presenting the graphic with sufficient contrast without undermining the meaning. For example:</p>
 					             <ul>
@@ -263,7 +283,7 @@
 				           </section>
 
 				           <section id="testing-principles">
-					             <h2>Testing Principles</h2>
+					             <h4>Testing Principles</h4>
 					             <p>Each technique has a test procedure, but there are top-line principles that help to assess graphical objects on a web page:</p>
 					             <ul>
 						               <li>Identify each user-interface component on the page and:
