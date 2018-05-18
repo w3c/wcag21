@@ -166,6 +166,7 @@
 							<xsl:if test="name($meta) = 'success-criterion'"><p>(Level <xsl:value-of select="$meta/level"/>)</p></xsl:if>
 						</blockquote>
 						<main>
+					<!--		<xsl:apply-templates select="//html:section[@id = 'personas']"/> -->
 							<xsl:apply-templates select="//html:section[@id = 'intent']"/>
 							<xsl:apply-templates select="//html:section[@id = 'benefits']"/>
 							<xsl:apply-templates select="//html:section[@id = 'examples']"/>
@@ -188,6 +189,14 @@
 		<xsl:if test="name($meta) != 'understanding'">Understanding </xsl:if><xsl:call-template name="name"/>
 	</xsl:template>
 	
+	<xsl:template match="html:section[@id = 'personas']">
+		<xsl:copy>
+			<xsl:apply-templates select="@*"/>
+			<h2>Persona Quotes</h2>
+			<xsl:apply-templates select="html:*[not(wcag:isheading(.) or @id = 'benefits')]"/>
+		</xsl:copy>
+	</xsl:template>
+	
 	<xsl:template match="html:section[@id = 'intent']">
 		<xsl:copy>
 			<xsl:apply-templates select="@*"/>
@@ -196,7 +205,7 @@
 		</xsl:copy>
 	</xsl:template>
 	
-	<xsl:template match="html:section[@id = 'benefits']">
+  <xsl:template match="html:section[@id = 'benefits']">
 		<xsl:copy>
 			<xsl:apply-templates select="@*"/>
 			<h2>Benefits</h2>
