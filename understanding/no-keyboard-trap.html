@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="keyboard-accessible.html">
+               <a href="keyboard-accessible">
                   <abbr title="Guideline">GL</abbr>: Keyboard Accessible</a>
             </li>
             <li>
-               <a href="keyboard.html">Previous <abbr title="Success Criterion">SC</abbr>: Keyboard</a>
+               <a href="keyboard">Previous <abbr title="Success Criterion">SC</abbr>: Keyboard</a>
             </li>
             <li>
-               <a href="keyboard-no-exception.html">Next <abbr title="Success Criterion">SC</abbr>: Keyboard (No Exception)</a>
+               <a href="keyboard-no-exception">Next <abbr title="Success Criterion">SC</abbr>: Keyboard (No Exception)</a>
             </li>
          </ul>
       </nav>
@@ -48,7 +48,8 @@
       </nav>
       <h1>Understanding Success Criterion 2.1.2: No Keyboard Trap</h1>
       <blockquote class="scquote">
-         <p>If keyboard focus can be moved to a component of the page using a <a href="https://www.w3.org/TR/WCAG21/#dfn-keyboard-interface"
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#no-keyboard-trap"
+               style="font-weight: bold;">2.1.2 No Keyboard Trap</a> (Level A): If keyboard focus can be moved to a component of the page using a <a href="https://www.w3.org/TR/WCAG21/#dfn-keyboard-interface"
                target="terms">keyboard interface</a>, then focus can be moved away from that component using only a keyboard interface,
       and, if it requires more than unmodified arrow or tab keys or other standard exit
       methods, the user is advised of the method for moving focus away.
@@ -57,7 +58,6 @@
       ability to use the whole page, all content on the Web page (whether it is used to
       meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p>
-         <p>(Level A)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -179,6 +179,34 @@
             
                </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-keyboard-interface">keyboard interface</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">interface used by software to obtain keystroke input</p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">A keyboard interface allows users to provide keystroke input to programs even if the
+      native technology does not contain a keyboard.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">A touchscreen PDA has a keyboard interface built into its operating system as well
+      as a connector for external keyboards. Applications on the PDA can use the interface
+      to obtain keyboard input either from an external keyboard or from other applications
+      that provide simulated keyboard output, such as handwriting interpreters or speech-to-text
+      applications with "keyboard emulation" functionality.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Operation of the application (or parts of the application) through a keyboard-operated
+      mouse emulator, such as MouseKeys, does not qualify as operation through a keyboard
+      interface because operation of the program is through its pointing device interface,
+      not through its keyboard interface.
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="input-modalities.html">
+               <a href="input-modalities">
                   <abbr title="Guideline">GL</abbr>: Input Modalities</a>
             </li>
             <li>
-               <a href="pointer-cancellation.html">Previous <abbr title="Success Criterion">SC</abbr>: Pointer Cancellation</a>
+               <a href="pointer-cancellation">Previous <abbr title="Success Criterion">SC</abbr>: Pointer Cancellation</a>
             </li>
             <li>
-               <a href="motion-actuation.html">Next <abbr title="Success Criterion">SC</abbr>: Motion Actuation</a>
+               <a href="motion-actuation">Next <abbr title="Success Criterion">SC</abbr>: Motion Actuation</a>
             </li>
          </ul>
       </nav>
@@ -48,10 +48,10 @@
       </nav>
       <h1>Understanding Success Criterion 2.5.3: Label in Name</h1>
       <blockquote class="scquote">
-         <p>For <a href="https://www.w3.org/TR/WCAG21/#dfn-user-interface-component"
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#label-in-name"
+               style="font-weight: bold;">2.5.3 Label in Name</a> (Level A): For <a href="https://www.w3.org/TR/WCAG21/#dfn-user-interface-component"
                target="terms">user interface components</a> with <a href="https://www.w3.org/TR/WCAG21/#dfn-label" target="terms">labels</a> that include <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> or <a href="https://www.w3.org/TR/WCAG21/#dfn-image-of-text" target="terms">images of text</a>, the <a href="https://www.w3.org/TR/WCAG21/#dfn-name" target="terms">name</a> contains the text that is presented visually.</p>
          <p class="note">A best practice is to have  the text of the label at the start of the name.</p>
-         <p>(Level A)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -121,6 +121,93 @@
                   <li>Accessible name contains the visible label text, but one or more other words comes before the visible label text</li>
                </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-image-of-text">image of text</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
+      a particular visual effect
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">This does not include <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> that is part of a picture that contains significant other visual content.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A person's name on a nametag in a photograph.</p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-label">label</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> or other component with a <a href="https://www.w3.org/TR/WCAG21/#dfn-text-alternative"
+                        target="terms">text alternative</a> that is presented to a user to identify a component within Web <a href="https://www.w3.org/TR/WCAG21/#dfn-content" target="terms">content</a>
+                  </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">A label is presented to all users whereas the <a href="https://www.w3.org/TR/WCAG21/#dfn-name" target="terms">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
+      the name and the label are the same.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">The term label is not limited to the label element in HTML.</p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-name">name</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">text by which software can identify a component within Web content to the user</p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">The name may be hidden and only exposed by assistive technology, whereas a <a href="https://www.w3.org/TR/WCAG21/#dfn-label" target="terms">label</a> is presented to all users. In many (but not all) cases, the label and the name are
+      the same.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">This is unrelated to the name attribute in HTML.</p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-text">text</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined"
+                        target="terms">programmatically determined</a>, where the sequence is expressing something in <a href="https://www.w3.org/TR/WCAG21/#dfn-human-language" target="terms">human language</a>
+                  </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-user-interface-component">user interface component</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
+      function
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Multiple user interface components may be implemented as a single programmatic element.
+      Components here is not tied to programming techniques, but rather to what the user
+      perceives as separate controls.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">User interface components include form elements and links as well as components generated
+      by scripts.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">What is meant by "component" or "user interface component" here is also sometimes
+      called "user interface element".
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
+      or random access. Since each of these would need to have a name and be settable independently,
+      they would each be a "user interface component."
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="input-modalities.html">
+               <a href="input-modalities">
                   <abbr title="Guideline">GL</abbr>: Input Modalities</a>
             </li>
             <li>
-               <a href="motion-actuation.html">Previous <abbr title="Success Criterion">SC</abbr>: Motion Actuation</a>
+               <a href="motion-actuation">Previous <abbr title="Success Criterion">SC</abbr>: Motion Actuation</a>
             </li>
             <li>
-               <a href="concurrent-input-mechanisms.html">Next <abbr title="Success Criterion">SC</abbr>: Concurrent Input Mechanisms</a>
+               <a href="concurrent-input-mechanisms">Next <abbr title="Success Criterion">SC</abbr>: Concurrent Input Mechanisms</a>
             </li>
          </ul>
       </nav>
@@ -48,7 +48,8 @@
       </nav>
       <h1>Understanding Success Criterion 2.5.5: Target Size</h1>
       <blockquote class="scquote">
-         <p>The size of the <a href="https://www.w3.org/TR/WCAG21/#dfn-target" target="terms">target</a> for <a href="https://www.w3.org/TR/WCAG21/#dfn-pointer-input" target="terms">pointer inputs</a> is at least 44 by 44 <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixel" target="terms">CSS pixels</a> except when:</p>
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#target-size"
+               style="font-weight: bold;">2.5.5 Target Size</a> (Level AAA): The size of the <a href="https://www.w3.org/TR/WCAG21/#dfn-target" target="terms">target</a> for <a href="https://www.w3.org/TR/WCAG21/#dfn-pointer-input" target="terms">pointer inputs</a> is at least 44 by 44 <a href="https://www.w3.org/TR/WCAG21/#dfn-css-pixel" target="terms">CSS pixels</a> except when:</p>
          <dl>
 	                 <dt>Equivalent</dt> 
                   <dd>The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;</dd>
@@ -59,7 +60,6 @@
 	                 <dt>Essential</dt> 
                   <dd>A particular presentation of the target is <a href="https://www.w3.org/TR/WCAG21/#dfn-essential" target="terms">essential</a> to the information being conveyed.</dd>
                </dl>
-         <p>(Level AAA)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -191,6 +191,45 @@
                   <li>Failure of success criterion 2.5.3 due to target size of a paragraph that is also a link being less than 44 x 44 CSS pixels.</li>
                </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-essential">essential</dt>
+            <dd>
+               <definition xmlns="">
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
+      <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+   </p>
+   				
+               </definition>
+            </dd>
+            <dt id="dfn-pointer-input">pointer input</dt>
+            <dd>
+               <definition xmlns="">
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">input device that can target a specific coordinate (or set of coordinates) on a screen,
+      such as a mouse, pen, or touch contact
+   </p>
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">See also <a href="https://www.w3.org/TR/pointerevents/#dfn-pointer">Pointer Events pointer definition</a> [[!pointerevents]].
+   </p>
+   				
+               </definition>
+            </dd>
+            <dt id="dfn-target">target</dt>
+            <dd>
+               <definition xmlns="">
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">region of the display that will accept a pointer action, such as the interactive area of a user interface component</p> 
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">If two or more touch targets are overlapping, the overlapping area should not be included in the measurement of the target size, except when the overlapping targets perform the same action or open the same page.</p>
+  
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

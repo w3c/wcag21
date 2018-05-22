@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="distinguishable.html">
+               <a href="distinguishable">
                   <abbr title="Guideline">GL</abbr>: Distinguishable</a>
             </li>
             <li>
-               <a href="audio-control.html">Previous <abbr title="Success Criterion">SC</abbr>: Audio Control</a>
+               <a href="audio-control">Previous <abbr title="Success Criterion">SC</abbr>: Audio Control</a>
             </li>
             <li>
-               <a href="resize-text.html">Next <abbr title="Success Criterion">SC</abbr>: Resize text</a>
+               <a href="resize-text">Next <abbr title="Success Criterion">SC</abbr>: Resize text</a>
             </li>
          </ul>
       </nav>
@@ -48,7 +48,8 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.3: Contrast (Minimum)</h1>
       <blockquote class="scquote">
-         <p>The visual presentation of <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> and <a href="https://www.w3.org/TR/WCAG21/#dfn-image-of-text" target="terms">images of text</a> has a <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" target="terms">contrast ratio</a> of at least 4.5:1, except for the following:
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#contrast-minimum"
+               style="font-weight: bold;">1.4.3 Contrast (Minimum)</a> (Level AA): The visual presentation of <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> and <a href="https://www.w3.org/TR/WCAG21/#dfn-image-of-text" target="terms">images of text</a> has a <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" target="terms">contrast ratio</a> of at least 4.5:1, except for the following:
    </p>
          <dl>
       
@@ -82,7 +83,6 @@
                   </dd>
       
                </dl>
-         <p>(Level AA)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -447,7 +447,7 @@
                
                      <li>
                   
-                        <a href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL13"/>
+                        <a href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL13">SL13</a>
                   
                      </li>
                
@@ -486,7 +486,7 @@
                
                      <li>
                   
-                        <a href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL13"/>
+                        <a href="https://www.w3.org/WAI/WCAG21/Techniques/silverlight/SL13">SL13</a>
                   
                      </li>
                
@@ -565,6 +565,127 @@
             
                </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-contrast-ratio">contrast ratio</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05), where</p>
+   
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+      
+                     <li>L1 is the <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                           target="terms">relative luminance</a> of the lighter of the colors, and
+      </li>
+      
+                     <li>L2 is the <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                           target="terms">relative luminance</a> of the darker of the colors.
+      </li>
+      
+                  </ul>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Because authors do not have control over user settings as to how text is rendered
+      (for example font smoothing or anti-aliasing), the contrast ratio for text can be
+      evaluated with anti-aliasing turned off.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
+      to the specified background over which the text is rendered in normal usage. If no
+      background color is specified, then white is assumed.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Background color is the specified color of content over which the text is to be rendered
+      in normal usage. It is a failure if no background color is specified when the text
+      color is specified, because the user's default background color is unknown and cannot
+      be evaluated for sufficient contrast. For the same reason, it is a failure if no text
+      color is specified when a background color is specified.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">When there is a border around the letter, the border can add contrast and would be
+      used in calculating the contrast between the letter and its background. A narrow border
+      around the letter would be used as the letter. A wide border around the letter that
+      fills in the inner details of the letters acts as a halo and would be considered background.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">WCAG conformance should be evaluated for color pairs specified in the content that
+      an author would expect to appear adjacent in typical presentation. Authors need not
+      consider unusual presentations, such as color changes made by the user agent, except
+      where caused by authors' code.
+   </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-image-of-text">image of text</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">text that has been rendered in a non-text form (e.g., an image) in order to achieve
+      a particular visual effect
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">This does not include <a href="https://www.w3.org/TR/WCAG21/#dfn-text" target="terms">text</a> that is part of a picture that contains significant other visual content.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">A person's name on a nametag in a photograph.</p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-pure-decoration">pure decoration</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">serving only an aesthetic purpose, providing no information, and having no functionality</p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Text is only purely decorative if the words can be rearranged or substituted without
+      changing their purpose.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">The cover page of a dictionary has random words in very light text in the background.</p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-text">text</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">sequence of characters that can be <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined"
+                        target="terms">programmatically determined</a>, where the sequence is expressing something in <a href="https://www.w3.org/TR/WCAG21/#dfn-human-language" target="terms">human language</a>
+                  </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-user-interface-component">user interface component</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
+      function
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Multiple user interface components may be implemented as a single programmatic element.
+      Components here is not tied to programming techniques, but rather to what the user
+      perceives as separate controls.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">User interface components include form elements and links as well as components generated
+      by scripts.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">What is meant by "component" or "user interface component" here is also sometimes
+      called "user interface element".
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
+      or random access. Since each of these would need to have a name and be settable independently,
+      they would each be a "user interface component."
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

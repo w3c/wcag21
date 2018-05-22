@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="distinguishable.html">
+               <a href="distinguishable">
                   <abbr title="Guideline">GL</abbr>: Distinguishable</a>
             </li>
             <li>
-               <a href="reflow.html">Previous <abbr title="Success Criterion">SC</abbr>: Reflow</a>
+               <a href="reflow">Previous <abbr title="Success Criterion">SC</abbr>: Reflow</a>
             </li>
             <li>
-               <a href="text-spacing.html">Next <abbr title="Success Criterion">SC</abbr>: Text Spacing</a>
+               <a href="text-spacing">Next <abbr title="Success Criterion">SC</abbr>: Text Spacing</a>
             </li>
          </ul>
       </nav>
@@ -48,7 +48,8 @@
       </nav>
       <h1>Understanding Success Criterion 1.4.11: Non-text Contrast</h1>
       <blockquote class="scquote">
-         <p>The visual <a href="https://www.w3.org/TR/WCAG21/#dfn-presentation" target="terms">presentation</a> of the following have a <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" target="terms">contrast ratio</a> of at least 3:1 against adjacent color(s):</p>
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#non-text-contrast"
+               style="font-weight: bold;">1.4.11 Non-text Contrast</a> (Level AA): The visual <a href="https://www.w3.org/TR/WCAG21/#dfn-presentation" target="terms">presentation</a> of the following have a <a href="https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio" target="terms">contrast ratio</a> of at least 3:1 against adjacent color(s):</p>
          <dl>
       						
                   <dt>User Interface Components</dt>
@@ -61,7 +62,6 @@
                   <dd>Parts of graphics required to understand the content, except when a particular presentation of graphics is <a href="https://www.w3.org/TR/WCAG21/#dfn-essential" target="terms">essential</a> to the information being conveyed.</dd>
       						
                </dl>
-         <p>(Level AA)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -419,6 +419,117 @@
                   </li>
 				           </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-contrast-ratio">contrast ratio</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">(L1 + 0.05) / (L2 + 0.05), where</p>
+   
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+      
+                     <li>L1 is the <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                           target="terms">relative luminance</a> of the lighter of the colors, and
+      </li>
+      
+                     <li>L2 is the <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                           target="terms">relative luminance</a> of the darker of the colors.
+      </li>
+      
+                  </ul>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Contrast ratios can range from 1 to 21 (commonly written 1:1 to 21:1).</p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Because authors do not have control over user settings as to how text is rendered
+      (for example font smoothing or anti-aliasing), the contrast ratio for text can be
+      evaluated with anti-aliasing turned off.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">For the purpose of Success Criteria 1.4.3 and 1.4.6, contrast is measured with respect
+      to the specified background over which the text is rendered in normal usage. If no
+      background color is specified, then white is assumed.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Background color is the specified color of content over which the text is to be rendered
+      in normal usage. It is a failure if no background color is specified when the text
+      color is specified, because the user's default background color is unknown and cannot
+      be evaluated for sufficient contrast. For the same reason, it is a failure if no text
+      color is specified when a background color is specified.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">When there is a border around the letter, the border can add contrast and would be
+      used in calculating the contrast between the letter and its background. A narrow border
+      around the letter would be used as the letter. A wide border around the letter that
+      fills in the inner details of the letters acts as a halo and would be considered background.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">WCAG conformance should be evaluated for color pairs specified in the content that
+      an author would expect to appear adjacent in typical presentation. Authors need not
+      consider unusual presentations, such as color changes made by the user agent, except
+      where caused by authors' code.
+   </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-essential">essential</dt>
+            <dd>
+               <definition xmlns="">
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">if removed, would fundamentally change the information or functionality of the content,
+      <strong>and</strong> information and functionality cannot be achieved in another way that would conform
+   </p>
+   				
+               </definition>
+            </dd>
+            <dt id="dfn-presentation">presentation</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">rendering of the <a href="https://www.w3.org/TR/WCAG21/#dfn-content" target="terms">content</a> in a form to be perceived by users
+   </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-state">state</dt>
+            <dd>
+               <definition xmlns="">
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">New</p>
+   					
+                  <p xmlns="http://www.w3.org/1999/xhtml">dynamic property expressing characteristics of a user interface component that may change in response to user action or automated processes</p>
+	                 <p xmlns="http://www.w3.org/1999/xhtml">States do not affect the nature of the component, but represent data associated with the component or user interaction possibilities. Examples include focus, hover, select, press, check, visited/unvisited, and expand/collapse.</p>
+               </definition>
+            </dd>
+            <dt id="dfn-user-interface-component">user interface component</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">a part of the content that is perceived by users as a single control for a distinct
+      function
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Multiple user interface components may be implemented as a single programmatic element.
+      Components here is not tied to programming techniques, but rather to what the user
+      perceives as separate controls.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">User interface components include form elements and links as well as components generated
+      by scripts.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">What is meant by "component" or "user interface component" here is also sometimes
+      called "user interface element".
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="example">An applet has a "control" that can be used to move through content by line or page
+      or random access. Since each of these would need to have a name and be settable independently,
+      they would each be a "user interface component."
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="adaptable.html">
+               <a href="adaptable">
                   <abbr title="Guideline">GL</abbr>: Adaptable</a>
             </li>
             <li>
-               <a href="orientation.html">Previous <abbr title="Success Criterion">SC</abbr>: Orientation</a>
+               <a href="orientation">Previous <abbr title="Success Criterion">SC</abbr>: Orientation</a>
             </li>
             <li>
-               <a href="identify-purpose.html">Next <abbr title="Success Criterion">SC</abbr>: Identify Purpose</a>
+               <a href="identify-purpose">Next <abbr title="Success Criterion">SC</abbr>: Identify Purpose</a>
             </li>
          </ul>
       </nav>
@@ -48,13 +48,13 @@
       </nav>
       <h1>Understanding Success Criterion 1.3.5: Identify Input Purpose</h1>
       <blockquote class="scquote">
-         <p>The purpose of each input field collecting information about the user can be <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined"
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#identify-input-purpose"
+               style="font-weight: bold;">1.3.5 Identify Input Purpose</a> (Level AA): The purpose of each input field collecting information about the user can be <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined"
                target="terms">programmatically determined</a> when:</p>
          <ul>
                   <li>The input field serves a purpose identified in the <a href="#input-purposes">Input Purposes for User Interface Components section</a>; and</li>
                   <li>The content is implemented using technologies with support for identifying the expected meaning for form input data.</li>
                </ul>
-         <p>(Level AA)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -98,6 +98,29 @@
 					             <li>Use HTML5.2 autocomplete attributes (@@@ link, Hxx?)</li>
 				           </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-programmatically-determined">programmatically determined</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
+      <a href="https://www.w3.org/TR/WCAG21/#dfn-user-agent" target="terms">user agents</a>, including <a href="https://www.w3.org/TR/WCAG21/#dfn-assistive-technology"
+                        target="terms">assistive technologies</a>, can extract and present this information to users in different modalities
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Determined in a markup language from elements and attributes that are accessed directly
+      by commonly available assistive technology.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Determined from technology-specific data structures in a non-markup language and exposed
+      to assistive technology via an accessibility API that is supported by commonly available
+      assistive technology.
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="seizures-and-physical-reactions.html">
+               <a href="seizures-and-physical-reactions">
                   <abbr title="Guideline">GL</abbr>: Seizures and Physical Reactions</a>
             </li>
             <li>
-               <a href="timing-adjustable.html">Previous <abbr title="Success Criterion">SC</abbr>: Non-text Content</a>
+               <a href="timing-adjustable">Previous <abbr title="Success Criterion">SC</abbr>: Non-text Content</a>
             </li>
             <li>
-               <a href="three-flashes.html">Next <abbr title="Success Criterion">SC</abbr>: Three Flashes</a>
+               <a href="three-flashes">Next <abbr title="Success Criterion">SC</abbr>: Three Flashes</a>
             </li>
          </ul>
       </nav>
@@ -48,7 +48,8 @@
       </nav>
       <h1>Understanding Success Criterion 2.3.1: Three Flashes or Below Threshold</h1>
       <blockquote class="scquote">
-         <p>
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#three-flashes-or-below-threshold"
+               style="font-weight: bold;">2.3.1 Three Flashes or Below Threshold</a> (Level A): 
                   <a href="https://www.w3.org/TR/WCAG21/#dfn-web-page" target="terms">Web pages</a> do not contain anything that flashes more than three times in any one second period,
       or the <a href="https://www.w3.org/TR/WCAG21/#dfn-flash" target="terms">flash</a> is below the <a href="https://www.w3.org/TR/WCAG21/#dfn-general-flash-and-red-flash-thresholds"
                target="terms">general flash and red flash thresholds</a>.
@@ -57,7 +58,6 @@
       ability to use the whole page, all content on the Web page (whether it is used to
       meet other success criteria or not) must meet this success criterion. See <a href="#cc5">Conformance Requirement 5: Non-Interference</a>.
    </p>
-         <p>(Level A)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -257,6 +257,94 @@
                <h3>Failures</h3>
                <p>The following are common mistakes that are considered failures of this Success Criterion by the WCAG Working Group.</p>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-flash">flash</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">a pair of opposing changes in <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                        target="terms">relative luminance</a> that can cause seizures in some people if it is large enough and in the right frequency
+      range
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">See <a href="https://www.w3.org/TR/WCAG21/#dfn-general-flash-and-red-flash-thresholds"
+                        target="terms">general flash and red flash thresholds</a> for information about types of flash that are not allowed.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">See also <a href="https://www.w3.org/TR/WCAG21/#dfn-blinking" target="terms">blinking</a>.
+   </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-general-flash-and-red-flash-thresholds">general flash and red flash thresholds</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">a <a href="https://www.w3.org/TR/WCAG21/#dfn-flash" target="terms">flash</a> or rapidly changing image sequence is below the threshold (i.e., content <strong>passes</strong>) if any of the following are true:
+   </p>
+   
+                  <ol xmlns="http://www.w3.org/1999/xhtml">
+      
+                     <li>there are no more than three <strong>general flashes</strong> and / or no more than three <strong>red flashes</strong> within any one-second period; or
+      </li>
+      
+                     <li>the combined area of flashes occurring concurrently occupies no more than a total
+         of .006 steradians within any 10 degree visual field on the screen (25% of any 10
+         degree visual field on the screen) at typical viewing distance
+      </li>
+      
+                  </ol>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">where:</p>
+   
+                  <ul xmlns="http://www.w3.org/1999/xhtml">
+      
+                     <li>A <strong>general flash</strong> is defined as a pair of opposing changes in <a href="https://www.w3.org/TR/WCAG21/#dfn-relative-luminance"
+                           target="terms">relative luminance</a> of 10% or more of the maximum relative luminance where the relative luminance of
+         the darker image is below 0.80; and where "a pair of opposing changes" is an increase
+         followed by a decrease, or a decrease followed by an increase, and
+      </li>
+      
+                     <li>A <strong>red flash</strong> is defined as any pair of opposing transitions involving a saturated red
+      </li>
+      
+                  </ul>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">
+                     <em>Exception:</em> Flashing that is a fine, balanced, pattern such as white noise or an alternating
+      checkerboard pattern with "squares" smaller than 0.1 degree (of visual field at typical
+      viewing distance) on a side does not violate the thresholds.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">For general software or Web content, using a 341 x 256 pixel rectangle anywhere on
+      the displayed screen area when the content is viewed at 1024 x 768 pixels will provide
+      a good estimate of a 10 degree visual field for standard screen sizes and viewing
+      distances (e.g., 15-17 inch screen at 22-26 inches). (Higher resolutions displays
+      showing the same rendering of the content yield smaller and safer images so it is
+      lower resolutions that are used to define the thresholds.)
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">A transition is the change in relative luminance (or relative luminance/color for
+      red flashing) between adjacent peaks and valleys in a plot of relative luminance (or
+      relative luminance/color for red flashing) measurement against time. A flash consists
+      of two opposing transitions.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">The current working definition in the field for <strong>"pair of opposing transitions involving a saturated red"</strong> is where, for either or both states involved in each transition, R/(R+ G + B) &gt;=
+      0.8, and the change in the value of (R-G-B)x320 is &gt; 20 (negative values of (R-G-B)x320
+      are set to zero) for both transitions. R, G, B values range from 0-1 as specified
+      in “relative luminance” definition. [[HARDING-BINNIE]]
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Tools are available that will carry out analysis from video screen capture. However,
+      no tool is necessary to evaluate for this condition if flashing is less than or equal
+      to 3 flashes in any one second. Content automatically passes (see #1 and #2 above).
+   </p>
+   
+               </definition>
+            </dd>
          </section>
       </main>
    </body>

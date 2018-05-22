@@ -15,14 +15,14 @@
                <a href="." title="Table of Contents">Contents</a>
             </li>
             <li>
-               <a href="adaptable.html">
+               <a href="adaptable">
                   <abbr title="Guideline">GL</abbr>: Adaptable</a>
             </li>
             <li>
-               <a href="identify-input-purpose.html">Previous <abbr title="Success Criterion">SC</abbr>: Identify Input Purpose</a>
+               <a href="identify-input-purpose">Previous <abbr title="Success Criterion">SC</abbr>: Identify Input Purpose</a>
             </li>
             <li>
-               <a href="use-of-color.html">Next <abbr title="Success Criterion">SC</abbr>: Use of Color</a>
+               <a href="use-of-color">Next <abbr title="Success Criterion">SC</abbr>: Use of Color</a>
             </li>
          </ul>
       </nav>
@@ -48,10 +48,10 @@
       </nav>
       <h1>Understanding Success Criterion 1.3.6: Identify Purpose</h1>
       <blockquote class="scquote">
-         <p>In content implemented using markup languages, the purpose of <a href="https://www.w3.org/TR/WCAG21/#dfn-user-interface-component"
+         <p>Success Criterion <a href="https://www.w3.org/TR/WCAG21/#identify-purpose"
+               style="font-weight: bold;">1.3.6 Identify Purpose</a> (Level AAA): In content implemented using markup languages, the purpose of <a href="https://www.w3.org/TR/WCAG21/#dfn-user-interface-component"
                target="terms">User Interface Components</a>, icons, and <a href="https://www.w3.org/TR/WCAG21/#dfn-region" target="terms">regions</a> can be <a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determined"
                target="terms">programmatically determined</a>.</p>
-         <p>(Level AAA)</p>
       </blockquote>
       <main>
          <section id="intent">
@@ -187,6 +187,37 @@ Providing the purpose of a field using autocomplete - these techniques work on a
 					             <li>Use of aria-invalid and aria-required</li>
 				           </ul>
             </section>
+         </section>
+         <section id="key-terms">
+            <h2>Key Terms</h2>
+            <dt id="dfn-programmatically-determined">programmatically determined</dt>
+            <dd>
+               <definition xmlns="">
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml">determined by software from author-supplied data provided in a way that different
+      <a href="https://www.w3.org/TR/WCAG21/#dfn-user-agent" target="terms">user agents</a>, including <a href="https://www.w3.org/TR/WCAG21/#dfn-assistive-technology"
+                        target="terms">assistive technologies</a>, can extract and present this information to users in different modalities
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Determined in a markup language from elements and attributes that are accessed directly
+      by commonly available assistive technology.
+   </p>
+   
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">Determined from technology-specific data structures in a non-markup language and exposed
+      to assistive technology via an accessibility API that is supported by commonly available
+      assistive technology.
+   </p>
+   
+               </definition>
+            </dd>
+            <dt id="dfn-region">region</dt>
+            <dd>
+               <definition xmlns="">
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="change">new</p>
+                  <p xmlns="http://www.w3.org/1999/xhtml">perceivable, programmatically determined section of content</p>
+                  <p xmlns="http://www.w3.org/1999/xhtml" class="note">In HTML, any area designated with a landmark role would be a region.</p>
+               </definition>
+            </dd>
          </section>
       </main>
    </body>
