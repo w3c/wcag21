@@ -28,6 +28,7 @@ var respecConfig = {
 	// and its maturity status
 	previousPublishDate:  "2018-04-24",
 	previousMaturity:  "PR",
+	implementationReportURI: "https://www.w3.org/WAI/WCAG21/implementation-report/",
 	prevRecURI: "https://www.w3.org/TR/2008/REC-WCAG20-20081211/",
 	//previousDiffURI: "https://www.w3.org/TR/2014/REC-wai-aria-20140320/",
 	
