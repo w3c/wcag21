@@ -26,7 +26,7 @@
 			<p class="instructions">Copy the following section for each example. Examples must have a title and a description, and usually have a code sample. Code samples should be elided if necessary to show the core of the technique without necessarily providing all the surrounding code that would also be involved. A working example link references a location where the technique can be shown working live.</p>
 			<section class="example">
 				<h3>No Off for Search Shortcut</h3>
-				<p>A program enables the single-character shortcut  “s” To allow the user, whenever the focus is not in a text field, jo jump the focus to the search box.  There is no mechanism for the user to disable or remap this shortcut.  Whenever the user accidentally hits the “s” key, she loses her place because the focus jumps to the search box at the top of the page.</p>
+				<p>A program enables the single-character shortcut  “s” To allow the user, whenever the focus is not in a text field, to jump the focus to the search box.  There is no mechanism for the user to disable or remap this shortcut.  Whenever the user accidentally hits the “s” key, she loses her place because the focus jumps to the search box at the top of the page.</p>
 				<code>Code sample</code>
 				<p>Working example: link</p>
 			</section>
@@ -36,13 +36,14 @@
 			<section class="test-procedure">
 				<h3>Procedure</h3>
 				<ol>
-					<li>Step 1</li>
+					<li>There is no mechanism available to disable or remap character key only shortcuts</li>
+					<li>Pressing a character-only shortcut while the focus is on the page rather than within a form field or on an element invokes an action.</li>			
 				</ol>
 			</section>
 			<section class="test-results">
 				<h3>Expected Results</h3>
 				<ul>
-					<li>Result</li>
+					<li>If steps #1 and #2 are true, then this failure condition applies and the content fails this Success Criterion. </li>
 				</ul>
 			</section>
 		</section>
